@@ -1,0 +1,98 @@
+.CementMill3Baikunth{
+    .line-16{transform: translate(75.2vw, 43vh);}
+    .line-17{transform: translate(77.2vw, 42.5vh) rotate(38deg);height: 62px;}
+    .line-18{transform: translate(62.8vw, 19vh); height: 25px;}
+    .pipe-9{transform: translate(31vw, 71vh); width: 150px;}
+    .pipe-21 {height: 75px;}
+    .pipe-28{transform: translate(17.5vw, 33.5vh); height: 280px;}
+    .pipe-49{transform: translate(15.7vw, 33.5vh);}
+    .pipe-50{transform: translate(15.7vw, 36.5vh);}
+    .pipe-51{transform: translate(15.7vw, 39.5vh);}
+    .pipe-52{transform: translate(15.7vw, 42.5vh);}
+    .single-text-9{transform: translate(53.1vw, 5vh);}
+    .single-text-10{transform: translate(74.5vw, 6vh);}
+    .single-text-12{transform: translate(82vw, 30vh);}
+    .single-text-18{transform: translate(13vw, 33vh);}
+    .single-text-19{transform: translate(13vw, 36vh);}
+    .single-text-20{transform: translate(13vw, 39vh);}
+    .single-text-21{transform: translate(13vw, 42vh);}
+    .single-text-28{transform: translate(69vw, 46.4vh) rotate(21.45deg); width: 135px;}
+    .single-text-38{transform: translate(9.3vw, 34vh);}
+    .single-text-36{transform: translate(74.6vw, 41.8vh);}
+    .single-text-37{transform: translate(77.5vw, 41.8vh);}
+    .single-text-44{transform: translate(87vw, 27.8vh);}
+    .single-text-53{transform: translate(27vw, 77.4vh);}
+    .single-text-54{transform: translate(74vw, 13.4vh); }
+    .single-text-63 { transform: translate(86.5vw, 33vh); }
+    .single-text-65 {transform: translate(36.5vw, 58vh);}
+    .single-text-69{.text-dark:nth-child(2){writing-mode: vertical-rl;text-orientation: upright;}}    
+    .single-text-73{transform: translate(48vw, 26vh);}
+    .single-text-74{transform: translate(69.5vw, 47vh);}
+    .single-text-75{transform: translate(67.8vw, 48vh);}
+    .single-text-76{transform: translate(20.8vw, 54vh);}
+}
+@media (max-width: 1440px) {
+    .CementMill3Baikunth{
+        .img-66 {
+            height: 50px;
+            width: 37px;
+        }
+        .line-17 {
+            height: 44px;
+        }
+        .pipe-21 {
+            height: 60px;
+        }
+        .pipe-23 {
+            height: 94px;
+        }
+        .pipe-28 {            
+            height: 220px;
+        }
+        .single-text-28 {
+            width: 107px;
+        }
+    }
+}
+// mobile responsive 
+@media (max-width: 1367px) {
+    .CementMill3Baikunth{
+        .line-16{transform: translate(1030px, 275px);}
+        .line-17{transform: translate(1060px, 265px) rotate(38deg);height: 44px;}
+        .line-18{transform: translate(858px, 118px);height: 14px;}
+        .pipe-9{transform: translate(425px, 438px);}
+        .pipe-21{height: 40px;}
+        .pipe-28{transform: translate(255px, 207px); height: 184px;}
+        .pipe-49{transform: translate(216px, 206px);}
+        .pipe-50{transform: translate(216px, 225px);}
+        .pipe-51{transform: translate(216px, 244px);}
+        .pipe-52{transform: translate(216px, 264px);}
+        .single-text-9{transform: translate(722px, 33px);}
+        .single-text-10{transform: translate(1014px, 38px);}
+        .single-text-12{transform: translate(1117px, 184px);}
+        .single-text-18{transform: translate(178px, 204px);}
+        .single-text-19{transform: translate(178px, 222px);}
+        .single-text-20{transform: translate(178px, 241px);}
+        .single-text-21{transform: translate(178px, 260px);}
+        .single-text-28{transform: translate(947px, 289px) rotate(21.45deg);width: 98px;}
+        .single-text-36{transform: translate(74.6vw, 41.8vh);}
+        .single-text-36{transform: translate(1019px, 257px);}
+        .single-text-37{transform: translate(1063px, 257px);}
+        .single-text-38{transform: translate(128px, 208px);}
+        .single-text-44{transform: translate(1170px, 169px);}
+        .single-text-53{transform: translate(366px, 482px);}
+        .single-text-54{transform: translate(1014px, 79px);}
+        .single-text-62{transform: translate(765px, 158px);}        
+        .single-text-63 {transform: translate(1164px, 208px);}
+        .single-text-64 {transform: translate(500px, 238px);}
+        .single-text-65{transform: translate(498px, 356px);}
+        .single-text-69{transform: translate(326px, 133px);
+            .p-3 {padding: 0.5rem!important;}
+            .mt-5{margin-top: 2rem!important;}
+        }  
+        .single-text-73{transform: translate(653px, 160px);}
+        .single-text-74{transform: translate(951px, 289px);}
+        .single-text-75{transform: translate(926px, 300px);}
+        .single-text-76{transform: translate(275px, 332px);}
+    }
+}

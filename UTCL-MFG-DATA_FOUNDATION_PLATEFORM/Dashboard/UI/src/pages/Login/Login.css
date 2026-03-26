@@ -1,0 +1,75 @@
+.main-content {
+  background-image: url(../../img/construction-silhouette.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: 50%;
+  display: flex;
+}
+.login .left {
+  background-color: #fff500;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+.login .left h6 {
+  font-size: 2rem;
+  color: #021642;
+  position: relative;
+}
+.login .left h6:before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 5px;
+  bottom: -15px;
+  background: #024726;
+  left: 40%;
+  border-radius: 34px;
+}
+.login .container {
+  max-width: 700px;
+}
+.login .card {
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login .right {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-1 {
+  background: #fff500 !important;
+  color: #024726 !important;
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px !important;
+}
+.invalid-form-control {
+  border: 3px solid tomato;
+  box-shadow: 0 0 0 0.2rem rgb(255 245 0 / 26%);
+}
+.form-control:focus,
+.dropdown-container .css-1pahdxg-control:focus {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px !important;
+}
+
+.invalid-text {
+  color: tomato;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.div-timeout {
+  display: none;
+}
+@media (max-width: 767px) {
+  .login .left, .login .right {  min-height: 250px;}
+  .btn-1 { font-size: 16px !important;}
+}

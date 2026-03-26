@@ -1,0 +1,141 @@
+import { CementMill4Nodes, CementMill4NodesType } from "../../../reactflow";
+import "./CementMill4.scss";
+import { ReactFlowRenderer } from "../../../components/ReactFlowRenderer/ReactFlowRenderer";
+import { ReactFlowProvider } from "reactflow";
+
+export const CementMill4 = () => {
+  return (
+    <ReactFlowProvider>
+      <ReactFlowRenderer
+        node={CementMill4Nodes}
+        nodeType={CementMill4NodesType}
+        plantDetails={{
+          plantCode: "NDCW",
+          plantName: "nathdwara",
+          sectionName: "Cement Mill-2",
+          section: "Cement Mill",
+          line: "2",
+          extraTagDetails: [
+            {
+              Section: "Cement Mill", //line 2
+              Tags: [
+                "N3MILLFDSP",
+                "N2563WF1N01SZ1",
+                "N2563FM1A01F01",
+                "N2563BM1N02T01",
+                "N2563BE1A1",
+                "N2593BE1A1",
+                "N2563BM1N06N01_PID",
+                "N2563BM1N06N01_PID",
+                "N2563BM1N05T01",
+                "N2512HP1N01L02",
+                "N2K22HP1N02L01",
+                "N2K22HP2N02L01",
+              ],
+            },
+            {
+              Section: "Cement Mill-3", //line 1
+              Tags: [
+                "N2563BM1N02T01",
+                "N2563BM1N05T01",
+                "N2512HP1N01L02",
+                "N2K22HP1N02L01",
+                "N2K22HP2N02L01",
+                "N2563FM1A01F01",
+              ],
+            },
+            {
+              Section: "Cement Mill-4", //line 1
+              Tags: [
+                "N3564WP1_ZZ1",
+                "N3564WP2_ZZ1",
+                "N3564LD1ZZ1",
+                "N3564MW1ZZ1",
+                "N3544FM1ZZ1",
+                "N3564MD2_IZ1",
+                "N3564SR1IZ1",
+                "N3534WF1IZ1",
+                "N3534WF2IZ1",
+                "N3534WF3IZ1",
+                "N3564FN8IZ1",
+                "N3564CM4HD_PZ1",
+                "N3564CM4HD_PZ2",
+                "N3564CM4TL_PZ1",
+                "N3564CM4TL_PZ2",
+                "N3564LU9_PZ1",
+                "N3564BH2_PZ3",
+                "N3564CM4HD_PZ3",
+                "N3564CM4TL_PZ3",
+                "N3564SR1_PZ1",
+                "N3564CP_PZ1",
+                "N3564CM4TZ3",
+                "N3564CM4TZ4",
+                "N3564CM4HD_TZ1",
+                "N3564CM4HD_TZ2",
+                "N3564CM4HD_TZ3",
+                "N3564CM4HD_TZ4",
+                "N3564CM4TL_TZ1",
+                "N3564CM4TL_TZ2",
+                "N3564CM4TL_TZ3",
+                "N3564CM4TL_TZ4",
+                "N3564LU9_TZ1",
+                "N3564LU9_TZ2",
+                "N3564SR1_TZ1",
+                "N3564SR1_TZ2",
+                "N3564BH1_TZ1",
+                "N3564BH1_TZ2",
+                "N3564BH2_TZ1",
+                "N3564BH2_TZ2",
+                "N3564LUB_TZ2",
+                "N3564LUB_TZ1",
+                "N3564FN9_TZA",
+                "N3564FN9_TZB",
+                "N3564FN9_TZ1",
+                "N3564FN9_TZ2",
+                "N3564MD1JZ1",
+                "N3564FN8JZ1",
+                "N3534LU1_FZ1",
+                "N3564CM4TL_FZ1",
+                "N3564CM4HD_FZ1",
+                "N3564LU9_FZ1",
+                "N3564WP1_FZ1",
+                "N3564WP2_FZ1",
+                "N3594MD1_IZ1",
+                "N3564FN9AZ1",
+                "N3564FN9AZ2",
+                "N3564FN8AZ1",
+                "N3564FN8AZ2",
+                "N3564BF2DP",
+                "N3564CM4PZ2",
+                "N3564BH1_DPZ1",
+                "N3564BH1_PZ1",
+                "N3564BH1_PZ2",
+                "N3564BH2_DPZ1",
+                "N3564BH2_PZ1",
+                "N3564BH2_PZ2",
+                "N3564CM4PZ1",
+                "N3564FN9_SZ1",
+                "N3564SR1SZ1",
+                "N3534LU1SZ1",
+                "N3534WF1SZ1",
+                "N3534WF2SZ1",
+                "N3534WF3SZ1",
+                "N3564FN8_SZ1",
+                "N3534LU1_SP1",
+                "N3544FM1LZ1",
+                "N3564FM1_FZ1",
+                "N3544FM1FZ1",
+                "N3534WF2FZ1",
+                "N3534WF3FZ1",
+                "N3534BC1IZ1",
+                "N3564LD2ZZ1",
+                "N3564CM4FOL",
+                "N3564CM4TZ2",
+              ],
+            },
+          ],
+        }}
+      />
+    </ReactFlowProvider>
+  );
+};

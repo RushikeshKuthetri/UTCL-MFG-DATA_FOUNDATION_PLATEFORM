@@ -1,0 +1,13 @@
+export { RPMagdalla } from "./RollerPress/RPressMagdalla";
+export { CementGrindingRollerPressMagdalla } from "./CementGrindingRollerPress/CementGrindingRollerPressMagdalla";
+export { ClinkerMaterialHandlngMagdalla } from "./ClinkerandMaterialHandlng/ClinkerMaterialHandlngMagdalla";
+export { FlyashHandlingMagdalla } from "./FlyashHandling/FlyashHandlingMagdalla";
+export { Packer2Magdalla } from "./Packer2/Packer2Magdalla";
+export { Packer1Magdalla } from "./Packer1/Packer1Magdalla";
+export { BallMillOverviewMagdalla } from "./BallMillOverview/BallMillOverviewMagdalla";
+export { Packer3Magdalla } from "./Packer-3/Packer3Magdalla";
+export { BallMillTotalizerPopup } from "./BallMillOverview/Popup/BallMillTotalizerPopup";
+export { GrindingSectionMagdalla } from "./GrindingSection/GrindingSectionMagdalla";
+export { MaterialHandlingMagdalla } from "./MaterialHandling/MaterialHandlingMagdalla";
+export { SiloFeedPackingMagdalla } from "./SiloFeedPacking/SiloFeedPackingMagdalla";
+export { FlyashCircuitMagdalla } from "./FlyashCircuit/FlyashCircuitMagdalla";

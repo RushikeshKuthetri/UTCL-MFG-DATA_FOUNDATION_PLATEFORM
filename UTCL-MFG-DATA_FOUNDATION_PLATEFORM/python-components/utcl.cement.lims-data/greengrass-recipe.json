@@ -1,0 +1,37 @@
+{
+  "RecipeFormatVersion": "2020-01-25",
+  "ComponentName": "utcl.cement.lims-data",
+  "ComponentVersion": "0.0.1",
+  "ComponentType": "aws.greengrass.generic",
+  "ComponentDescription": "Reads from LIMS API, for ACW and sends to SiteWise",
+  "ComponentPublisher": "UTCL",
+  "ComponentConfiguration": {
+    "DefaultConfiguration": {
+      
+    }
+  },
+  "Manifests": [
+    {
+      "Platform": {
+        "os": "linux"
+      },
+      "Lifecycle": {
+        "Install": "pip install stream-manager requests boto3",
+        "Run": "python3 {artifacts:decompressedPath}/utcl.cement.lims-data/src/main.py"
+      },
+      "Artifacts": [
+        {
+          "Uri": "s3://utcl-greengrass-artifacts/utcl.cement.lims-data/0.0.1/utcl.cement.lims-data.zip",
+          "Digest": "phOeDaCHLmRdSSQCE1woX+RuCy6gSfrzShtooJbApB4=",
+          "Algorithm": "SHA-256",
+          "Unarchive": "ZIP",
+          "Permission": {
+            "Read": "OWNER",
+            "Execute": "NONE"
+          }
+        }
+      ]
+    }
+  ],
+  "Lifecycle": {}
+}

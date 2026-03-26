@@ -1,0 +1,51 @@
+.Kiln2Baikunth{
+    .pipe-36{height: 277px;  }
+    .pipe-51{transform: translate(11.1vw, 11.5vh);height: 40px;}
+    .pipe-53{transform: translate(8.8vw, 11.5vh);}
+    .pipe-82{width: 39px;}
+    .pipe-109{transform: translate(67vw, 59vh); height: 72px;}
+    .pipe-123{transform: translate(15.4vw, 75.5vh); width: 116px;}
+    .pipe-124{transform: translate(72.7vw, 21.9vh); width: 84px;}
+    .pipe-125{transform: translate(61vw, 25.9vh); width: 260px;}
+    .pipe-126{transform: translate(57vw, 21.9vh); height: 25px;}
+    .single-text-27{transform: translate(8vw, 13.3vh);}
+    .single-text-54 {transform: translate(90vw, 75.5vh);}
+    .pipe-56 {width: 129px;}
+    .single-text-57 {transform: translate(67vw, 75vh);}
+    .single-text-62 {transform: translate(15vw, 28vh);}
+    .single-text-72 {transform: translate(12vw, 74vh);}
+    .single-text-75 {transform: translate(29.5vw, 21vh);}
+    .single-text-77 {transform: translate(46vw, 6vh);}
+    .single-text-83 {transform: translate(43.5vw, 86vh);}
+    .single-text-88 {transform: translate(51.5vw, 23vh);}
+    .single-text-89 {transform: translate(68.5vw, 57vh);}
+    .single-text-100{transform: translate(55vw, 25vh);.img-89 {padding-left: 80px; padding-top: 10px;}}
+    .single-text-101 {transform: translate(15.6vw, 36vh);}
+   
+}
+// mobile responsive 
+@media (max-width: 1366px) {
+    .Kiln2Baikunth{
+        
+        .img-89 {padding-left: 52px;padding-top: 5px;}
+        .pipe-36 {height: 186px;}
+        .pipe-51 {transform: translate(151px, 68px);}
+        .pipe-82 {width: 27px;}
+        .pipe-109 {transform: translate(915px, 365px); height: 43px;}
+        .pipe-123 {transform: translate(212px, 466px); width: 81px;}
+        .pipe-124 {transform: translate(994px, 134px);width: 58px;}
+        .pipe-125 {transform: translate(830px, 160px); width: 186px;}
+        .pipe-126 {transform: translate(778px, 136px); height: 16px;}
+        .single-text-54{transform: translate(1237px, 473px);}
+        .single-text-57 {transform: translate(930px, 458px);}
+        .single-text-62 {transform: translate(200px, 180px);}
+        .single-text-72 {transform: translate(159px, 460px);}
+        .single-text-75 {transform: translate(395px, 128px);}
+        .single-text-77 {transform: translate(648px, 41px);}
+        .single-text-83 {transform: translate(611px, 537px);}
+        .single-text-88 {transform: translate(697px, 140px);}
+        .single-text-89 {transform: translate(940px, 351px);}
+        .single-text-100{transform: translate(750px, 155px);}
+        .single-text-101 {transform: translate(213px, 224px);}
+}
+}

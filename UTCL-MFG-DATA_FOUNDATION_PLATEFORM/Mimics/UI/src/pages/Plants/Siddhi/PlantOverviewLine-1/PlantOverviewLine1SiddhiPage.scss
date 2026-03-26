@@ -1,0 +1,45 @@
+.PlantOverviewLine1{
+    .single-text-5 {
+        .single-text-5a{
+            transform: translate(-90px, -18px);
+        }
+      }
+      .single-text-6 {
+        .single-text-6a {
+            transform: translate(25px, -10px) !important;
+        }
+      }
+      .single-text-13 {
+        height: 335px!important;
+    }
+    .single-text-14 {
+        transform: translate(68vw, 57vh)!important;
+    }
+    .single-text-15 {
+        transform: translate(68vw, 66vh)!important;
+        height: 230px!important;
+    }
+    .single-text-16 {
+        transform: translate(68vw, 46vh);
+        width: 575px;
+    }
+}
+// mobile responsiveness and 1366px
+@media (max-width: 1366px) {
+    .PlantOverviewLine1{
+        .single-text-13 {
+            height: 215px !important;
+        }
+        .single-text-14 {
+            transform: translate(930px, 348px)!important;
+        }
+        .single-text-15 {
+            transform: translate(930px, 405px) !important;
+            height: 154px !important;
+        }
+        .single-text-16{
+            transform: translate(930px, 276px);
+            width: 425px;
+        }
+}
+}

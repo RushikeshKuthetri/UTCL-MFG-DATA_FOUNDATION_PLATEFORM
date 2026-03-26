@@ -1,0 +1,7 @@
+pyodbc
+pandas
+numpy
+boto3
+python-dotenv
+sqlalchemy
+requests

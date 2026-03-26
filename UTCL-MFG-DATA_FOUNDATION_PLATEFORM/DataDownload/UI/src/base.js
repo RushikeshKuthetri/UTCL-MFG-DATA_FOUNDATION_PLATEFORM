@@ -1,0 +1,5 @@
+export const BASE_URL = process.env.REACT_APP_BASE_URL;
+export const SOCKET_URL_PROD = process.env.REACT_APP_SOCKET_URL_PROD;
+export const REDIRECT_URL_PROD = process.env.REACT_APP_REDIRECT_URL_PROD;
+export const DOWNLOAD_HANDLER_URL = process.env.REACT_APP_DOWNLOAD_HANDLER_URL;
+export const FETCH_TAG_MASTER_HANDLER_URL = process.env.REACT_APP_FETCH_TAG_MASTER_HANDLER_URL;

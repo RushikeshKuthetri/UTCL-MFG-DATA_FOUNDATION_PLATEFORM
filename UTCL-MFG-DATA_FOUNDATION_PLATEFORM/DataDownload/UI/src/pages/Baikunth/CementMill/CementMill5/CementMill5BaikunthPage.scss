@@ -1,0 +1,266 @@
+// cement mill 5 css
+.CementMill5Baikunth {
+    .gap {
+        gap: 1rem;
+    }
+    .e-text {
+        font-size: 10px;
+        position: absolute;
+        background: #fff;
+        border: 1px solid #000;
+        padding: 0 2px;
+        line-height: 1;
+        right: -10px;
+        top: 21px;
+    }
+    .rotate {
+        padding: 0.2rem;
+        transform: rotate(90deg);
+    }
+
+    .single-text-43 {
+        transform: translate(31.5vw, 7vh);
+    }
+
+    .single-text-47 {
+        transform: translate(27.9vw, 7.3vh);
+    }   
+
+    .single-text-51 {
+        transform: translate(16vw, 45vh);
+    }
+
+    .single-text-52 {
+        transform: translate(20vw, 45vh);
+    }
+
+    .single-text-53 {
+        transform: translate(24vw, 45vh);
+    }
+
+    .single-text-54 {
+        transform: translate(12vw, 16vh);
+    }
+
+    .single-text-55 {
+        transform: translate(12.7vw, 19vh);
+    }
+
+    .single-text-56 {
+        transform: translate(14.3vw, 22vh);
+    }
+
+    .single-text-57 {
+        transform: translate(10.3vw, 66vh);
+    }
+
+    .single-text-58 {
+        transform: translate(38.3vw, 57vh);
+    }
+
+    .single-text-59 {
+        transform: translate(38.6vw, 60vh);
+    }
+
+    .single-text-60 {
+        transform: translate(28.6vw, 82vh);
+    }
+
+    .single-text-61 {
+        transform: translate(28.6vw, 85vh);
+    }
+
+    .single-text-62 {
+        transform: translate(28.6vw, 73vh);
+    }
+
+    .single-text-63 {
+        transform: translate(28.6vw, 66vh);
+    }  
+
+    .single-text-65 {
+        transform: translate(52vw, 88vh);
+    }
+
+    .single-text-66 {
+        transform: translate(54vw, 79vh);
+        z-index: 99;
+    }
+    .single-text-67 {
+        transform: translate(52vw, 74vh);
+    }
+    .single-text-68 {
+        transform: translate(60vw, 60.5vh);
+    }
+    .single-text-69 {
+        transform: translate(60vw, 63.5vh);
+    }
+    .single-text-72 {
+        transform: translate(68.2vw, 62.4vh);
+    }
+    .single-text-73 {
+        transform: translate(73.2vw, 62.4vh);
+    }
+    .single-text-75 {
+        transform: translate(77.2vw, 32.4vh);
+    }
+    .single-text-76 {
+        transform: translate(88.2vw, 33.4vh);
+    }
+    .single-text-77 {
+        transform: translate(72.2vw, 5.4vh);
+    }
+    .single-text-78 {       
+    transform: translate(31.2vw, 22.4vh);
+    }
+    .single-text-79 {
+        transform: translate(51.2vw, 5.4vh);
+    }
+    .single-text-80 {
+        transform: translate(59.2vw, 45.4vh);        
+        z-index: 3;
+    }
+    .single-text-81 {
+        z-index: 99;
+        transform: translate(51vw, 24.4vh);
+    }
+    .single-text-82 {
+        transform: translate(63vw, 28.4vh);
+        z-index: 99;
+    }
+
+    .single-text-83 {
+        transform: translate(66vw, 29.4vh);
+        z-index: 99;
+    }
+
+    .single-text-84 {
+        transform: translate(63vw, 33.4vh);
+        z-index: 99;
+    }
+
+    .single-text-85 {
+        transform: translate(66vw, 34.4vh);
+        z-index: 99;
+    }
+
+    .single-text-86 {
+        transform: translate(63.5vw, 36.4vh);
+        z-index: 99;
+    }
+
+    .single-text-87 {
+        transform: translate(64.5vw, 40.4vh);
+        z-index: 99;
+    }
+
+    .single-text-88 {
+        transform: translate(19vw, 38vh);
+    }
+    .single-text-89 {
+        transform: translate(47vw, 49vh);
+    }
+    .single-text-90 {
+        transform: translate(26vw, 63vh);
+    }
+    .single-text-91 {
+        transform: translate(31vw, 79vh);
+    }
+    .single-text-92 {
+        transform: translate(65vw, 87vh);
+    }
+    .single-text-93 {
+        transform: translate(58vw, 74vh);
+    }
+    .single-text-94 {
+        transform: translate(65vw, 52vh);
+    }
+    .single-text-95 {
+        transform: translate(90vw, 44vh);
+    }
+    .single-text-96 {
+        transform: translate(79vw, 78vh);
+    }
+    .single-text-97 {
+        transform: translate(31vw, 22vh);
+    }
+    .single-text-98 {
+        transform: translate(18.5vw, 29vh);
+    }
+    .single-text-99 {
+        transform: translate(44vw, 30vh);
+    }
+    .single-text-100 {
+        transform: translate(60vw, 36vh);
+    }
+    .single-text-101 {
+        transform: translate(65vw, 43vh);
+    }
+    .single-text-103 {
+        transform: translate(52.9vw, 17vh);
+        z-index: 99;
+    }
+    .single-text-104 {
+        transform: translate(53.2vw, 20vh);
+        z-index: 99;
+    }
+}
+
+// mobile responsive
+@media (max-width: 1366px) {
+    .CementMill5Baikunth {
+    .single-text-43 { transform: translate(430px, 36px);}
+    .single-text-47 { transform: translate(370px, 36px);}
+    .single-text-51 { transform: translate(210px, 273px);}
+    .single-text-52 { transform: translate(267px, 273px);}
+    .single-text-53 { transform: translate(320px, 273px);}
+    .single-text-54 { transform: translate(169px, 96px);}
+    .single-text-55 { transform: translate(178px, 111px);}    
+    .single-text-56 { transform: translate(203px, 127px);}  
+    .single-text-57 { transform: translate(150px, 400px);}  
+    .single-text-58 { transform: translate(523px, 345px);}  
+    .single-text-59 { transform: translate(527px, 362px);}  
+    .single-text-60 { transform: translate(527px, 362px);} 
+    .single-text-61 { transform: translate(400px, 520px);} 
+    .single-text-62 { transform: translate(390px, 441px);} 
+    .single-text-63 { transform: translate(390px, 410px);}
+    .single-text-65 { transform: translate(707px, 540px);}
+    .single-text-66 { transform: translate(737px, 483px);}
+    .single-text-67 { transform: translate(713px, 452px);}
+    .single-text-68 { transform: translate(816px, 365px);}
+    .single-text-69 { transform: translate(816px, 390px);}
+    .single-text-72 { transform: translate(916px, 378px);}
+    .single-text-73 { transform: translate(998px, 378px);}
+    .single-text-75 {transform: translate(1046px, 190px);}
+    .single-text-76 {transform: translate(1204px, 201px);}
+    .single-text-77 {transform: translate(976px, 19px);}
+    .single-text-78 {transform: translate(450px, 138px);}
+    .single-text-79 {transform: translate(700px, 24px);}
+    .single-text-80 {transform: translate(809px, 289px);}
+    .single-text-81 {transform: translate(702px, 147px);}
+    .single-text-82 {transform: translate(856px, 172px);}
+    .single-text-83 {transform: translate(903px, 181px);}
+    .single-text-84 {transform: translate(860px, 206px);}
+    .single-text-85 {transform: translate(901px, 212px);}
+    .single-text-86 {transform: translate(867px, 224px);}
+    .single-text-87 {transform: translate(867px, 224px);}
+    .single-text-88 {transform: translate(253px, 224px);}
+    .single-text-89 {transform: translate(629px, 293px);}
+    .single-text-90 {transform: translate(357px, 382px);}
+    .single-text-91 {transform: translate(419px, 482px);}
+    .single-text-92 {transform: translate(890px, 529px);}
+    .single-text-93 {transform: translate(790px, 437px);}
+    .single-text-94 {transform: translate(896px, 307px);}
+    .single-text-95 {transform: translate(1226px, 273px);}
+    .single-text-96 {transform: translate(1075px, 473px);}
+    .single-text-98 {transform: translate(251px, 173px);}
+    .single-text-99 {transform: translate(595px, 181px);}
+    .single-text-100 {transform: translate(817px, 217px);}
+    .single-text-101 {transform: translate(884px, 251px);}
+    .single-text-103 {transform: translate(724px, 97px);}
+    .single-text-104 {transform: translate(724px, 117px);}
+    }
+
+
+
+}

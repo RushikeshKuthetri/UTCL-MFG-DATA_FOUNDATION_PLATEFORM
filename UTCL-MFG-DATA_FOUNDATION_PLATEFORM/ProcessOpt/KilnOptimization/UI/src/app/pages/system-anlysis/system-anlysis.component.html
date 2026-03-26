@@ -1,0 +1,665 @@
+<div class="flex  justify-between ">
+  <div class="">
+     <h5 class="text-[18px] title-font font-medium  text-[var(--title)] ">
+      Process Control Dashboard - {{displayName}}
+    </h5>
+  </div>
+
+  <div class="flex items-end justify-end gap-4 mb-1">
+  
+
+    <!-- Notification -->
+    <a class="cursor-pointer"
+      (click)="openModal(recommedationtemplate);getRecommendationPopupData();getEquipmentFailureData();bellClick()">
+      <span class="relative top-1 inline-flex items-center justify-center w-[20px] h-[20px]"
+        [matBadge]="no_recommendation" matBadgeColor="warn" matBadgeOverlap="true" matBadgePosition="above after">
+        <span class="material-symbols-outlined text-[20px] leading-none text-[var(--text-color)] ">
+          notifications
+        </span>
+      </span>
+    </a>
+  </div>
+
+</div>
+<div class=" flex flex-col space-y-3 w-full ">
+
+  <div class=" flex flex-col space-y-3 w-full  rounded-lg text-[var(--text-color)] border border-[var(--form-border)]">
+
+    <!-- {{payload | json}} -->
+    <!-- {{checkToken}} -->
+    <div class="rounded-xl ">
+      <div class=" ">
+        <app-filters *ngIf="checkToken" [filtersData]="payload" [filtersDate]="recommendationDate" type='datepicker1'
+          (filterData)="onChangeFilter($event)"></app-filters>
+      </div>
+    </div>
+
+    <span *ngIf="shutMillFlag"
+      class=" animate__animated animate__lightSpeedInLeft inline-block px-3 py-1 text-xs font-medium rounded-md border bg-[var(--status-inactive-bg)] text-[var(--status-inactive-text)] border-[var(--status-inactive-text)] shadow-sm">
+      It seems Kiln is in Shutdown State
+    </span>
+
+    <div class="flex items-center justify-center w-full " [hidden]="!flags.showLoader">
+      <app-apploader></app-apploader>
+    </div>
+
+
+    <!-- table for disturbance warning -->
+    <div [hidden]="flags.showLoader">
+      <!-- <div class="row mb-4"> -->
+      <!-- {{tagDetails.length}} -->
+      <!-- {{flags.showLoader}} -->
+      <!-- <div class="col-md-12 col-sm-12 col-12" *ngIf="dataSource && !shutMillFlag && tagDetails.length>0">
+          <div class="card card_apply">
+            <div class="tableFixHead"> -->
+      <!-- disturbance warnimg -->
+      <!-- <p class="kiln-disturb-class">Kiln likely to get disturb in next 4-5 minutes.</p>
+              <table class="table table-hover tbody-bg"> -->
+      <!-- <thead>
+                  <tr>
+                    <th>Parameter Name</th>
+                    <th>Spot Value</th>
+                    <th>TimeStamp</th>
+                  </tr>
+                </thead> -->
+      <!-- <tbody>
+                  <tr *ngFor="let item of tagDetails; let index=index">
+                    <td>{{item.Tag_Generic_Description}}</td>
+                    <td>{{item?.Spot_Value}}</td>
+                    <td>{{item?.Trigger_Time | date: 'yyyy-MM-dd HH:mm:ss' : "UTC"}}</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div> -->
+
+
+      <!-- </div> -->
+
+      <!-- </div>
+      </div> -->
+
+      <!-- table for disturbance warning -->
+      <div class="mb-4 w-full custom-scrollbar">
+        <div *ngIf="dataSource && !shutMillFlag && tagDetails.length > 0" class="w-full">
+
+          <!-- Card  -->
+          <div class="rounded-xl border border-[var(--form-border)] bg-[var(--card-bg)] shadow-sm overflow-hidden">
+
+            <!-- disturbance Warning -->
+            <p class="px-6 py-2 text-[13px] font-medium text-red-600 border-b border-[var(--form-border)]">
+              Kiln likely to get disturb in next 4-5 minutes.
+            </p>
+
+            <!-- table Wrapper -->
+            <div class="w-full overflow-x-auto">
+
+              <table class="w-full min-w-[900px] border-collapse">
+
+                <!-- table Header -->
+                <thead class="bg-gradient-to-r from-orange-400 to-orange-300 text-black">
+                  <tr>
+                    <th
+                      class="text-[14px] text-black text-left px-6 py-2 font-semibold border-b border-[var(--form-border)]">
+                      Parameter Name
+                    </th>
+                    <th
+                      class="text-[14px] text-black text-left px-6 py-2 font-semibold border-b border-[var(--form-border)]">
+                      Spot Value
+                    </th>
+                    <th
+                      class="text-[14px] text-black text-left px-6 py-2 font-semibold border-b border-[var(--form-border)]">
+                      TimeStamp
+                    </th>
+                  </tr>
+                </thead>
+
+                <!-- Table Body -->
+                <tbody class="border-b border-[var(--form-border)]">
+
+                  <tr *ngFor="let item of tagDetails; let index = index"
+                    class="border-b border-[var(--form-border)] hover:bg-[var(--select-input-hover)] transition">
+                    <td class="text-[13px] px-6 py-2 whitespace-nowrap text-[var(--text-color)]">
+                      {{ item.Tag_Generic_Description }}
+                    </td>
+
+                    <td class="text-[13px] px-6 py-2 whitespace-nowrap text-[var(--text-color)]">
+                      {{ item?.Spot_Value }}
+                    </td>
+
+                    <td class="text-[13px] px-6 py-2 whitespace-nowrap text-[var(--text-color)]">
+                      {{ item?.Trigger_Time | date: 'yyyy-MM-dd HH:mm:ss' : "UTC" }}
+                    </td>
+                  </tr>
+
+                </tbody>
+
+              </table>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--card for app-gauge-graph -->
+      <div class="w-full mb-4">
+        <!-- {{flags.showLoader}} -->
+        <div class="w-full md:w-1/2 p-2" *ngIf="dataSource && dataSource.Resultant_Tags_Data.length>0 && !shutMillFlag">
+          <div class="bg-[var(--card-bg)] border border-[var(--form-border)] rounded-xl shadow-sm"
+            *ngIf="getKilnLatestData">
+            <div class="p-4">
+
+              <!-- Header -->
+              <div class="mb-2">
+                <p class="text-[14px] font-semibold text-[var(--text-color)]">
+                  RESULTANT PARAMETERS
+                </p>
+              </div>
+
+              <!-- Gauge Graph Component -->
+              <app-gauge-graph [datasorce]="dataSource.Resultant_Tags_Data" [payload]="payload"
+                [timestamp]="dataSource.timestamp" type="resultant">
+              </app-gauge-graph>
+
+            </div>
+          </div>
+        </div>
+
+        <!--         
+        <div class="col-md-6 col-sm-6 col-xs-12"
+          *ngIf="dataSource && dataSource.Control_Tags_Data.length>0 && !shutMillFlag">
+          <div class="card card_apply" *ngIf="getKilnLatestData">
+            <div class="card-body">
+              <div class="parent-div">
+                <p class="card-text titlecls">
+                  CONTROL PARAMETERS
+                </p>
+              </div>
+
+             
+              <div class="row">
+                <div class="col-12">
+                  <app-control-gauge [datasorce]="dataSource.Control_Tags_Data" [timestamp]="dataSource.timestamp"
+                    [payload]="payload" type='controlable'></app-control-gauge>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!--card for app-control-gauge -->
+        <div class="w-full lg:w-1/2 px-2"
+          *ngIf="dataSource && dataSource.Control_Tags_Data.length > 0 && !shutMillFlag">
+          <div class="bg-black border border-gray-600 rounded-lg p-4" *ngIf="getKilnLatestData">
+            <div class="flex flex-col">
+
+              <!-- Title -->
+              <div class="mb-3">
+                <p class="text-[var(--text-color)] text-sm font-semibold tracking-wide">
+                  CONTROL PARAMETERS
+                </p>
+              </div>
+
+              <!-- Gauge Section -->
+              <div class="w-full">
+                <app-control-gauge [datasorce]="dataSource.Control_Tags_Data" [timestamp]="dataSource.timestamp"
+                  [payload]="payload" type="controlable">
+                </app-control-gauge>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- {{flags.showLoader}} -->
+
+        <div class="mx-2.5 flex flex-col items-center justify-center h-40 rounded-lg"
+          *ngIf="!getKilnLatestData">
+          <!-- Icon -->
+          <div class="text-3xl mb-3 zoom-animation">🔍</div>
+
+          <!-- Title -->
+          <h2 class="text-lg font-semibold text-[var(--leftdrawer-text)] mb-2">
+            No Data Found
+          </h2>
+
+          <!-- Description -->
+          <p class="text-sm text-[var(--card-subtle)] mb-1">
+            Try changing the filters or refresh the data
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+<!-- modal for Acknowledge  rec -->
+<!-- <ng-template #recommedationtemplate> -->
+<!-- <div class="modal-content">
+    <div class="modal-header align-items-center">
+      <h4 class="modal-title-heading">
+        Acknowledge Recommendation( {{recommendationDate?recommendationDate:''}})
+      </h4>
+
+      <div>
+        <button class="btn btnSubmit btn-class-update" (click)="updateRecommendation()"
+          [hidden]="recommendationDataSource?.length===0">
+          Update
+        </button>
+
+        <button class="btn btnSubmit" (click)="modalRef?.hide();closeRecomPop()">
+          Close
+        </button>
+      </div>
+
+    </div>
+    <div class="modal-body">
+      <div class="row d-none">
+        <div class="col-10">
+          <div class="d-flex flex-column">
+            <app-datetimepicker type='datepicker' (dateTime)="onSelectDatetime($event)"
+              class="m2-10 testz"></app-datetimepicker>
+          </div>
+        </div>
+        <div class="col-2">
+          <button type="button" class="btn btnSubmit" (click)="getRecommendationPopupData()">Submit</button>
+        </div>
+
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>
+              Parameter Name
+            </th>
+            <th>
+              Initial Value
+            </th>
+            <th>
+              Recommended Value
+            </th>
+            <th>
+              Remarks
+            </th>
+            <th>
+              Acknowledge
+            </th>
+            <th>
+              Action Taken
+            </th>
+          
+          </tr>
+        </thead>
+        <tbody id="style-OqqBV" class="style-OqqBV">
+          <tr class="mat-row" *ngFor="let item of recommendationDataSource">
+            <td class="mat-cell content text-align-left">
+              {{item.paramName?item.Display_Name:'NA'}}
+            </td>
+            <td class="mat-cell content">
+              {{item.initialValue?item.initialValue.toFixed(2):0}}
+            </td>
+            <td class="mat-cell content">
+              {{item.recommendedValue?item.recommendedValue.toFixed(2):0}}
+            </td>
+            <td class="mat-cell content">
+              <div class="comment_box" [hidden]="!showEditIcon">
+                <span style="margin-right: 10px;" [hidden]="item.showTextBox ">{{item.comments}}
+                </span>
+                <div class="editIcon content-center">
+                  <span class="material material-symbols-outlined" (click)="showTextBox(item)"
+                    [hidden]="item.showTextBox ">
+                    edit
+                  </span>
+                </div>
+
+              </div>
+              <div class="textBox" [hidden]="!item.showTextBox">
+                <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1"
+                  cdkAutosizeMaxRows="5" [(ngModel)]="item.userComment"></textarea>
+                <button type="button" class="close " aria-label="Close" (click)="showTextBox(item)">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            </td>
+
+            <td class="mat-cell content">
+              <input type="checkbox" [checked]="item.isAcknowledged==='Yes'" (change)="checkBoxAck($event,item)">
+            </td>
+
+            <td class="mat-cell content">
+              <mat-radio-group [(ngModel)]="item.action_taken">
+                <mat-radio-button [value]="true" [checked]="item.action_taken===true">Yes </mat-radio-button>
+                <mat-radio-button [value]="false" [checked]="item.action_taken===false">No</mat-radio-button>
+              </mat-radio-group>
+            </td>
+
+           
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal-footer">
+    </div>
+  </div> -->
+<!-- below table for Equipment Failure -->
+<!-- <div class="modal-content">
+    <div class="modal-header align-items-center">
+      <h4 class="modal-title-heading">
+        Equipment Failure List ( {{equipmentDate?equipmentDate:''}})
+      </h4>
+
+      
+    </div>
+    <div class="modal-body">
+      <div class="row d-none">
+        <div class="col-10">
+          <div class="d-flex flex-column">
+            <app-datetimepicker type='datepicker' (dateTime)="onSelectDatetime($event)"
+              class="m2-10 testz"></app-datetimepicker>
+          </div>
+        </div>
+        <div class="col-2">
+          <button type="button" class="btn btnSubmit" (click)="getRecommendationPopupData()">Submit</button>
+        </div>
+
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>
+              Equipment Name
+            </th>
+            <th>
+              Lower Bound
+            </th>
+            <th>
+              Upper Bound
+            </th>
+            <th>
+              Spot Value
+            </th>
+            <th>
+              DateTime
+            </th>
+
+
+          </tr>
+        </thead>
+        <tbody id="style-OqqBV" class="style-OqqBV">
+          <tr class="mat-row" *ngFor="let item of equipmentDataSource">
+            <td class="mat-cell content">
+              {{item.Equipment_Name?item.Equipment_Name:'NA'}}
+            </td>
+            <td class="mat-cell content">
+              {{item.lower_bound?item.lower_bound.toFixed(2):0}}
+            </td>
+            <td class="mat-cell content">
+              {{item.upper_bound?item.upper_bound.toFixed(2):0}}
+            </td>
+            <td class="mat-cell content">
+              {{item.spot_value?item.spot_value.toFixed(2):0}}
+            </td>
+            <td class="mat-cell content">
+              {{item.timestamp? equipmentDate:'N/A'}}
+            </td>
+        
+              
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal-footer">
+    </div>
+  </div> -->
+
+
+<!-- </ng-template> -->
+
+<ng-template #recommedationtemplate>
+
+  <div
+    class="modal-content w-full rounded-xl shadow-lg bg-[var(--card-bg)] text-[var(--text-color)] border border-[var(--form-border)]">
+
+    <div
+      class="modal-header flex items-center justify-between px-6 py-4 bg-[var(--card-bg)] border-b border-[var(--form-border)]">
+
+      <h4 class="text-lg font-semibold text-[var(--title)]">
+        Acknowledge Recommendation ({{recommendationDate ? recommendationDate : ''}})
+      </h4>
+
+      <div class="flex gap-3">
+
+        <button
+          class="px-4 py-1 rounded-md bg-orange-500 hover:bg-orange-600 text-sm font-medium text-white transition cursor-pointer"
+          (click)="updateRecommendation()" [hidden]="recommendationDataSource?.length===0">
+          Update
+        </button>
+
+        <button
+          class="px-4 py-1 rounded-md border border-[var(--form-border)] text-[var(--text-color)] hover:bg-[var(--table-hover)] transition cursor-pointer"
+          (click)="modalRef?.hide();closeRecomPop()">
+          Close
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <div class="p-6 w-full bg-[var(--card-bg)]">
+
+      <div class="w-full overflow-x-auto overflow-y-auto rounded-xl border border-[var(--form-border)]">
+
+        <table class="w-full min-w-[900px] border-collapse bg-[var(--card-bg)]">
+
+          <thead class="text-black bg-gradient-to-r from-orange-400 to-orange-300">
+
+            <tr>
+
+              <th class="text-[14px] text-left px-6 py-2 font-semibold border-b border-[var(--form-border)]">
+                Parameter Name
+              </th>
+
+              <th class="text-[14px] text-left px-6 py-2 font-semibold border-b border-[var(--form-border)]">
+                Initial Value
+              </th>
+
+              <th class="text-[14px] text-left px-6 py-2 font-semibold border-b border-[var(--form-border)]">
+                Recommended Value
+              </th>
+
+              <th class="text-[14px] text-left px-6 py-2 font-semibold border-b border-[var(--form-border)]">
+                Remarks
+              </th>
+
+              <th class="text-[14px] text-left px-6 py-2 font-semibold border-b border-[var(--form-border)]">
+                Acknowledge
+              </th>
+
+              <th class="text-[14px] text-left px-6 py-2 font-semibold border-b border-[var(--form-border)]">
+                Action Taken
+              </th>
+
+            </tr>
+
+          </thead>
+
+
+          <tbody class="border-b border-[var(--form-border)]">
+
+            <tr *ngFor="let item of recommendationDataSource"
+              class="border-b border-[var(--form-border)] transition hover:bg-[var(--table-hover)]">
+
+              <td class="px-6 py-2 text-sm text-[var(--text-color)]">
+                {{item.paramName ? item.Display_Name : 'NA'}}
+              </td>
+
+              <td class="px-6 py-2 text-sm text-[var(--text-color)]">
+                {{item.initialValue ? item.initialValue.toFixed(2) : 0}}
+              </td>
+
+              <td class="px-6 py-2 text-sm text-[var(--text-color)]">
+                {{item.recommendedValue ? item.recommendedValue.toFixed(2) : 0}}
+              </td>
+
+
+              <td class="px-6 py-2 text-sm text-[var(--text-color)]">
+
+                <div class="flex items-center gap-2" [hidden]="!showEditIcon">
+
+                  <span class="text-sm" [hidden]="item.showTextBox">
+                    {{item.comments}}
+                  </span>
+
+                  <span
+                    class="material-symbols-outlined text-[18px] cursor-pointer text-[var(--text-color)] opacity-70 hover:text-orange-500"
+                    (click)="showTextBox(item)" [hidden]="item.showTextBox">
+                    edit
+                  </span>
+
+                </div>
+
+
+                <div class="flex items-start gap-2" [hidden]="!item.showTextBox">
+
+                  <textarea
+                    class="w-full border border-[var(--form-border)] bg-[var(--modal-bg)] rounded-md px-2 py-1 text-sm text-[var(--text-color)] focus:outline-none focus:border-orange-400"
+                    rows="2" [(ngModel)]="item.userComment"></textarea>
+
+                  <button class="text-red-500 text-lg hover:text-red-600" (click)="showTextBox(item)">
+                    ✕
+                  </button>
+
+                </div>
+
+              </td>
+
+
+              <td class="px-6 py-2">
+
+                <input type="checkbox" class="w-3 h-3 accent-orange-500 cursor-pointer"
+                  [checked]="item.isAcknowledged==='Yes'" (change)="checkBoxAck($event,item)" />
+
+              </td>
+
+
+              <td class="px-6 py-2">
+
+                <mat-radio-group [(ngModel)]="item.action_taken" class="flex gap-4 text-sm text-[var(--text-color)]">
+
+                  <mat-radio-button [value]="true">
+                    Yes
+                  </mat-radio-button>
+
+                  <mat-radio-button [value]="false">
+                    No
+                  </mat-radio-button>
+
+                </mat-radio-group>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="w-full max-w-[1100px] mt-3 rounded-xl shadow-lg bg-[var(--card-bg)] border border-[var(--form-border)]">
+
+
+    <div class="flex items-center bg-[var(--card-bg)] justify-between px-6 py-4 border-b border-[var(--form-border)]">
+
+      <h4 class="text-lg font-semibold text-[var(--title)]">
+        Equipment Failure List ({{equipmentDate ? equipmentDate : ''}})
+      </h4>
+
+    </div>
+
+
+    <div class="p-6 bg-[var(--card-bg)]">
+
+      <div
+        class="w-full overflow-x-auto overflow-y-auto rounded-xl bg-[var(--card-bg)] border border-[var(--form-border)]">
+
+        <table class="w-full min-w-[800px] border-collapse bg-[var(--card-bg)]">
+
+          <thead class="text-black bg-gradient-to-r from-orange-400 to-orange-300">
+
+            <tr>
+
+              <th class="text-[14px] text-left px-6 py-2 font-semibold border-b border-[var(--form-border)]">
+                Equipment Name
+              </th>
+
+              <th class="text-[14px] text-left px-6 py-2 font-semibold border-b border-[var(--form-border)]">
+                Lower Bound
+              </th>
+
+              <th class="text-[14px] text-left px-6 py-2 font-semibold border-b border-[var(--form-border)]">
+                Upper Bound
+              </th>
+
+              <th class="text-[14px] text-left px-6 py-2 font-semibold border-b border-[var(--form-border)]">
+                Spot Value
+              </th>
+
+              <th class="text-[14px] text-left px-6 py-2 font-semibold border-b border-[var(--form-border)]">
+                DateTime
+              </th>
+
+            </tr>
+
+          </thead>
+
+
+          <tbody class="border-b border-[var(--form-border)]">
+
+            <tr *ngFor="let item of equipmentDataSource"
+              class="border-b border-[var(--form-border)] transition hover:bg-[var(--table-hover)]">
+
+              <td class="px-6 py-2 text-sm text-[var(--text-color)]">
+                {{item.Equipment_Name ? item.Equipment_Name : 'NA'}}
+              </td>
+
+              <td class="px-6 py-2 text-sm text-[var(--text-color)]">
+                {{item.lower_bound ? item.lower_bound.toFixed(2) : 0}}
+              </td>
+
+              <td class="px-6 py-2 text-sm text-[var(--text-color)]">
+                {{item.upper_bound ? item.upper_bound.toFixed(2) : 0}}
+              </td>
+
+              <td class="px-6 py-2 text-sm text-[var(--text-color)]">
+                {{item.spot_value ? item.spot_value.toFixed(2) : 0}}
+              </td>
+
+              <td class="px-6 py-2 text-sm text-[var(--text-color)]">
+                {{item.timestamp ? equipmentDate : 'N/A'}}
+              </td>
+
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</ng-template>

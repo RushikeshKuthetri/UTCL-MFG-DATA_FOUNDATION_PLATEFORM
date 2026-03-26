@@ -1,0 +1,13 @@
+export { CoalMillMalkapurL1Page } from "./Coal Mill/CoalMillMalkapurL1Page";
+export { PoldosSCMalkapurL1Page } from "./Poldos SC/PoldosSCMalkpurL1Page";
+export { CoolerMalkapurLine1Page } from "./Cooler/CoolerMalkapurLine1Page";
+export { VRMBFMalkapurL1Page } from "./VRM BF/VRMBFMalkapurL1Page";
+export { RawMill1MalkapurL1Page } from "./Raw Mill 1/RawMill1MalkapurL1Page";
+export { LimestonecrusherMalkapurL1Page } from "./Limestone crusher/LimestonecrusherMalkapurL1Page";
+export { KilnPHMalkapurL1Page } from "./Kiln PH/KilnPHMalkapurL1Page";
+export { Limestonecrusher2MalkapurL1Page } from "./Limestone crusher 2/Limestonecrusher2MalkapurL1Page";
+export { BlendingSiloMalkapurLine1Page } from "./Blending Silo/BlendingSiloMalkapurLine1Page";
+export { CementMill1MalkapurLine1Page } from "./Cement Mill 1/CementMill1MalkapurLine1Page";
+export { Packer1and2MalkapurL1Page } from "./Packer 1 and 2/Packer1and2MalkpurL1Page";
+export { Packer3and4MalkapurL1Page } from "./Packer 3 and 4/Packer3and4MalkpurL1Page";
+export { FlyAshSiloMalkapurL1Page } from "./Fly Ash Silo/FlyAshSiloMalkapurL1Page";

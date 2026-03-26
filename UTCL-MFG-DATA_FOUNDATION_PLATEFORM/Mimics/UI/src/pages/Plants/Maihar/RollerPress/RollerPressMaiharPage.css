@@ -1,0 +1,151 @@
+.RollerPressMaihar .single-text-1 {
+  transform: translate(1vw, 3.3vh);
+}
+.RollerPressMaihar .single-text-2 {
+  transform: translate(3vw, 66.3vh);
+}
+.RollerPressMaihar .single-text-3 .single-text-a, .RollerPressMaihar .single-text-4 .single-text-a {
+  transform: translate(0px, -9px);
+}
+.RollerPressMaihar .single-text-3:before, .RollerPressMaihar .single-text-4:before {
+  height: 10px;
+  position: absolute;
+  content: "";
+  left: 3%;
+  background-color: #346667;
+  width: 68%;
+  top: -5px;
+}
+.RollerPressMaihar .single-text-3 {
+  transform: translate(81.5vw, 58.5vh);
+  width: 198px;
+}
+.RollerPressMaihar .single-text-4 {
+  transform: translate(82.5vw, 6.5vh);
+  width: 198px;
+}
+.RollerPressMaihar .single-text-5 {
+  transform: translate(40.5vw, 9.7vh);
+}
+.RollerPressMaihar .single-text-6 {
+  transform: translate(41.9vw, 19.1vh);
+}
+.RollerPressMaihar .single-text-6 .fa-solid {
+  line-height: 0.5;
+  font-size: 19px;
+}
+.RollerPressMaihar .pipe-1 {
+  transform: translate(42.1vw, 22vh);
+  height: 29px;
+}
+.RollerPressMaihar .single-text-7 {
+  transform: translate(41.8vw, 24.7vh);
+}
+.RollerPressMaihar .single-text-7 .greenSqure {
+  width: 7px;
+  height: 25px;
+  transform: rotate(45deg);
+}
+.RollerPressMaihar .pipe-2 {
+  transform: translate(42.1vw, 22vh);
+  width: 479px;
+  height: 22px;
+}
+.RollerPressMaihar .pipe-3 {
+  transform: translate(44.1vw, 19vh);
+  width: 407px;
+  height: 74px;
+}
+.RollerPressMaihar .pipe-4 {
+  transform: translate(67.1vw, 22.7vh);
+  width: 82px;
+  height: 9px;
+}
+.RollerPressMaihar .single-text-9 {
+  transform: translate(68.8vw, 21vh) scale(-1);
+  width: 10px;
+  height: 63px;
+  background-position: center;
+}
+.RollerPressMaihar .single-text-10 {
+  transform: translate(70.8vw, 21vh) scale(-1);
+  width: 25px;
+  height: 63px;
+  background-position: bottom;
+}
+.RollerPressMaihar .single-text-11 {
+  transform: translate(73.3vw, 21vh) scale(-1);
+  width: 15px;
+  height: 63px;
+  background-position: bottom;
+}
+.RollerPressMaihar .single-text-8 {
+  transform: translate(-12.2vw, 8.7vh);
+}
+.RollerPressMaihar .single-text-16 {
+  transform: translate(-12.2vw, 71.7vh) scale(1, -1);
+}
+.RollerPressMaihar .single-text-16 .pipe-3 {
+  transform: translate(44.1vw, 19vh) scale(1.1, -1.1);
+  width: 407px;
+  height: 74px;
+}
+.RollerPressMaihar .pipe-5 {
+  transform: translate(74.1vw, 22.7vh);
+  width: 66px;
+  height: 9px;
+}
+.RollerPressMaihar .pipe-6 {
+  transform: translate(73.4vw, 17.4vh);
+  height: 26px;
+}
+.RollerPressMaihar .pipe-7 {
+  transform: translate(72.4vw, 17.4vh);
+  width: 51px;
+}
+.RollerPressMaihar .pipe-8 {
+  transform: translate(72.4vw, 15vh);
+  height: 25px;
+}
+.RollerPressMaihar .pipe-9 {
+  transform: translate(74.4vw, 15vh);
+  height: 25px;
+}
+.RollerPressMaihar .single-text-12 {
+  transform: translate(76.8vw, 19.7vh) scale(-1);
+  width: 107px;
+  height: 98px;
+  background-position: right;
+}
+.RollerPressMaihar .single-text-13 {
+  transform: translate(74.4vw, 12vh);
+}
+.RollerPressMaihar .single-text-13 .img-86 {
+  width: 62px;
+  height: 35px;
+  transform: scale(1.1, -1.1);
+}
+.RollerPressMaihar .single-text-14 {
+  transform: translate(69.7vw, 12vh);
+}
+.RollerPressMaihar .single-text-14 .img-86 {
+  width: 62px;
+  height: 35px;
+  transform: scale(-1.1, -1.1);
+}
+.RollerPressMaihar .line-1 {
+  transform: translate(74.4vw, 20.2vh);
+  height: 58px;
+}
+.RollerPressMaihar .line-2 {
+  transform: translate(70.4vw, 20.2vh);
+  height: 58px;
+}
+.RollerPressMaihar .line-3 {
+  transform: translate(70.4vw, 20.2vh);
+  width: 77px;
+}
+.RollerPressMaihar .line-4 {
+  transform: translate(70.4vw, 26.2vh);
+  width: 77px;
+}/*# sourceMappingURL=RollerPressMaiharPage.css.map */

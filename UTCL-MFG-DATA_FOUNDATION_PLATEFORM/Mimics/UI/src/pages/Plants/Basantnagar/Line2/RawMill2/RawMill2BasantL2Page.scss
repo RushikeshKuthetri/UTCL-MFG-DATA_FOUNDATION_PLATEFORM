@@ -1,0 +1,33 @@
+ .RawMill2BasantL2{
+    .single-text-48 {
+        transform: translate(49.8vw, 64.1vh);
+        .connector-icon {
+            height: 24px;
+            width: 31px;
+        transform: scale(-1.1, 1.1) rotate(-87deg);
+        .dot{
+            transform: scale(1.1, 1.1) rotate(87deg); 
+        }
+    }
+    .single-text-15 {
+        transform: translate(33.9vw, 27.2vh);
+    }
+    }
+ }
+ @media (max-width: 1366px) {
+    .RawMill2BasantL2 {
+ .single-text-15 {
+    transform: translate(464.9px, 158.2px);
+    z-index: 1;
+}
+
+.single-text-48 {
+    transform: translate(644.8px, 380.1px);
+.connector-icon {
+    height: 16px;
+    width: 21px;
+    transform: scale(-1.1, 1.1) rotate(-87deg);
+}
+}
+    }
+}

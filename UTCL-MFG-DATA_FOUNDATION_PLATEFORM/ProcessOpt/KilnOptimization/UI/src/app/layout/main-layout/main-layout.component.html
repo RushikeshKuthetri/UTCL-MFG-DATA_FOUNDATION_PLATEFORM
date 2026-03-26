@@ -1,0 +1,52 @@
+<!-- main-layout.component.html -->
+<div class="flex flex-col h-screen overflow-hidden bg-[var(--bg-color)]">
+
+  <!-- HEADER -->
+  <app-header></app-header>
+
+  <!-- BODY -->
+  <div class="flex flex-1 overflow-hidden">
+
+    <!-- SIDEBAR — no mt-3 wrapper, flush with header -->
+    <app-sidebr [open]="drawerOpen" (openChange)="drawerOpen = $event" [collapsed]="collapsed"
+      (collapsedChange)="collapsed = $event" class=""></app-sidebr>
+
+  
+   <!-- CONTENT AREA -->
+<div class="flex-1 flex flex-col overflow-hidden transition-all duration-300"
+  [ngClass]="collapsed ? 'lg:ml-20' : 'lg:ml-60'">
+
+  <!-- TOP BAR -->
+  <div class="flex items-center justify-between pr-4 ml-2.5 mt-1 mb-0 shrink-0">
+    <app-breadcrumb></app-breadcrumb>
+    <app-searchbar></app-searchbar>
+  </div>
+
+  <!-- MAIN AREA -->
+  <main class=" h-[82vh] flex flex-col overflow-hidden px-2 sm:px-3 pl-1 lg:pr-6 lg:pl-2 pb-2 sm:pb-3"
+    >
+
+    <!-- SCROLLABLE CONTAINER -->
+    <div class="
+        flex-1
+        mt-1
+        px-3 sm:px-4 md:px-5 lg:px-4 lg:pt-2 lg:pb-4 pt-2 sm:pt-3 pb-3 sm:pb-4
+        rounded-xl sm:rounded-2xl
+        bg-[var(--bg-leftdrawer)]
+        [box-shadow:var(--left-drawer-shadow)]
+        transition-all duration-300
+        overflow-y-auto scroll-smooth custom-scrollbar
+        w-full mx-auto
+      " [ngClass]="collapsed ? 'lg:max-w-none' : 'lg:max-w-[1400px] xl:max-w-[1700px]'">
+
+      <router-outlet></router-outlet>
+
+    </div>
+  </main>
+</div>
+  </div>
+
+  <!-- FOOTER -->
+  <app-footer></app-footer>
+
+</div>

@@ -1,0 +1,416 @@
+.CementMill4FeedGujaratLine2 {
+  .single-text-1 {
+    transform: translate(12.5vw, 2.2vh);
+  }
+  .single-text-3 {
+    transform: translate(26.6vw, 31vh);
+    gap: 159px;
+    .squareplustri {
+      .yellowline-Vr {
+        height: 16px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      &:nth-child(5) {
+        transform: scale(0.7);
+        margin-top: -40px;
+        margin-left: -40px;
+        .circle-img {
+          position: absolute;
+          top: 113%;
+          left: 50%;
+          transform: translateX(-41%);
+        }
+        .yellowline-Vr {
+          transform: scale(1);
+          height: 80px;
+        }
+        .text-dark {
+          font-size: 17px;
+        }
+        .text-last {
+          position: absolute;
+          top: 163%;
+          left: 50%;
+          transform: translateX(-47%);
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  .single-text-4 {
+    transform: translate(23vw, 14.4vh);
+    .line-2 {
+      transform: translate(37.2px, -41px);
+      width: 49px;
+      height: 2px;
+    }
+  }
+  .single-text-6 {
+    transform: translate(85.4vw, 64.4vh);
+  }
+  .single-text-8 {
+    transform: translate(83.7vw, 45vh);
+  }
+
+  .single-text-9 {
+    transform: translate(19vw, 5vh);
+    .line-1 {
+      height: 110px;
+    }
+  }
+
+  .single-text-10 {
+    transform: translate(31vw, 16.4vh);
+    .line-1 {
+      height: 66px;
+    }
+  }
+  .single-text-11 {
+    transform: translate(57.4vw, 11.1vh);
+  }
+  .single-text-12 {
+    transform: translate(12vw, 31.7vh);
+  }
+  .single-text-13 {
+    transform: translate(7.5vw, 55.7vh);
+  }
+  .single-text-14 {
+    transform: translate(36.6vw, 67.2vh);
+  }
+  .single-text-15 {
+    transform: translate(89.5vw, 50.2vh);
+  }
+
+  .single-text-16 {
+    transform: translate(95vw, 40.5vh);
+  }
+  .pipe-2 {
+    .hpipecircle {
+      width: 100%;
+    }
+    .line-19 {
+      height: 60px;
+    }
+  }
+  .pipe-3 {
+    transform: translate(25.9vw, 49vh);
+    gap: 67px;
+    .hpipecircle {
+      width: 220px;
+    }
+
+    .d-flex:nth-child(2) {
+      margin-right: 60px;
+      .hpipecircle {
+        width: 165px;
+      }
+    }
+  }
+
+  .pipe-4 {
+    transform: translate(48.4vw, 51.4vh);
+    .hpipecircle {
+      width: 100px;
+    }
+  }
+
+  .pipe-8 {
+    transform: translate(52.6vw, 59.4vh);
+    .hpipecircle {
+      width: 100px;
+    }
+  }
+
+  .pipe-9 {
+    transform: translate(57vw, 63.4vh);
+    width: 100px;
+  }
+
+  .line-20 {
+    transform: translate(62vw, 64vh);
+    width: 35px;
+    .yellowline-Hr {
+      width: 35px;
+    }
+  }
+
+  .single-text-5 {
+    transform: translate(64vw, 63vh);
+  }
+
+  .pipe-5 {
+    transform: translate(18.4vw, 55.2vh);
+    width: 1035px;
+
+    .hpipecircle {
+      width: 100%;
+    }
+    .truck {
+      margin-top: 65px;
+      margin-left: -30px;
+    }
+    .line-18 {
+      height: 40px;
+    }
+  }
+
+  .pipe-6 {
+    transform: translate(69.6vw, 60vh);
+    width: 333px;
+    .hpipecircle {
+      width: 100%;
+    }
+  }
+
+  .pipe-7 {
+    transform: translate(26vw, 7vh);
+    width: 700px;
+  }
+
+  .line-11 {
+    transform: translate(46.5vw, 13.7vh);
+    width: 270px;
+  }
+
+  .line-12 {
+    transform: translate(64.9vw, 13.7vh);
+    width: 246px;
+  }
+
+  .line-13 {
+    transform: translate(46.5vw, 13.7vh);
+    height: 153px;
+  }
+  .line-14 {
+    transform: translate(62vw, 13.7vh);
+    height: 153px;
+  }
+  .line-15 {
+    transform: translate(62vw, 8.5vh);
+  }
+
+  .line-16 {
+    transform: translate(77.6vw, 13.7vh);
+    height: 153px;
+  }
+
+  .line-18 {
+    height: 35px;
+  }
+
+  .line-19 {
+    height: 70px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .CementMill4FeedGujaratLine2 {
+    .single-text-1 {
+      transform: translate(180.6px, -8.8px);
+    }
+
+    .single-text-3 {
+      transform: translate(346.5px, 184px);
+      gap: 123px;
+      .squareplustri {
+        .yellowline-Vr {
+          height: 10px;
+        }
+        &:nth-child(5) {
+          .yellowline-Vr {
+            height: 55px;
+          }
+          .text-dark {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .single-text-4 {
+      transform: translate(315px, 80px);
+      .gap-1 {
+        gap: 10px;
+      }
+      .squareplustri {
+        width: 27px;
+        height: 47px;
+      }
+      .line-circle {
+        transform: rotate(90deg);
+        z-index: 1;
+      }
+      .line-1 {
+        transform: translate(12.2px, -4px);
+        height: 22px;
+      }
+      .line-2 {
+        transform: translate(27.2px, -29px);
+        width: 40px;
+        height: 2px;
+      }
+      .line-3 {
+        transform: translate(65.2px, -46px);
+        height: 17px;
+      }
+    }
+
+    .single-text-5 {
+      transform: translate(838.6px, 362.94px);
+    }
+    .single-text-6 {
+      transform: translate(1166.7px, 388.4px);
+    }
+    .single-text-8 {
+      transform: translate(1149px, 260.1px);
+      .line-1 {
+        height: 33px;
+      }
+    }
+    .single-text-9 {
+      transform: translate(254px, 30px);
+      .line-1 {
+        height: 73px;
+      }
+    }
+
+    .single-text-10 {
+      transform: translate(411.1px, 90.1px);
+      .line-1 {
+        height: 45px;
+      }
+    }
+    .single-text-11 {
+      transform: translate(784.3px, 66.9px);
+    }
+    .single-text-12 {
+      transform: translate(163.9px, 186.4px);
+    }
+
+    .single-text-13 {
+      transform: translate(102px, 360px);
+    }
+    .single-text-14 {
+      transform: translate(436.6px, 393px);
+    }
+    .single-text-15 {
+      transform: translate(1224.5px, 304.5px);
+    }
+    .single-text-16 {
+      transform: translate(1297px, 235px);
+    }
+
+    .line-11 {
+      transform: translate(888px, 81.5px);
+      width: 185px;
+    }
+
+    .line-12 {
+      transform: translate(635px, 81.5px);
+      width: 195px;
+    }
+
+    .line-13 {
+      transform: translate(635px, 83.5px);
+      height: 96px;
+    }
+
+    .line-14 {
+      transform: translate(845.1px, 84.5px);
+      height: 96px;
+    }
+
+    .line-15 {
+      transform: translate(845.1px, 47.5px);
+      height: 21px;
+    }
+    .line-16 {
+      transform: translate(1071.1px, 84.5px);
+      height: 96px;
+    }
+
+    .line-18 {
+      height: 24px;
+    }
+
+    .line-19 {
+      height: 42px;
+    }
+
+    .line-20 {
+      transform: translate(823px, 377px);
+      width: 12px;
+    }
+
+    .pipe-2 {
+      .line-19 {
+        height: 30px;
+      }
+    }
+
+    .pipe-3 {
+      transform: translate(338.9px, 300px);
+      gap: 70px;
+      .hpipecircle {
+        width: 140px;
+      }
+
+      .d-flex:nth-child(2) {
+        // margin-right: 60px;
+        .hpipecircle {
+          width: 100px;
+        }
+      }
+    }
+
+    .pipe-4,
+    .pipe-8,
+    .pipe-9 {
+      width: 75px;
+      .hpipecircle {
+        width: 100%;
+      }
+    }
+    .pipe-4 {
+      transform: translate(633px, 312px);
+      .line-19 {
+        height: 40px;
+      }
+    }
+    .pipe-8 {
+      transform: translate(689px, 351px);
+      .line-18 {
+        height: 20px;
+      }
+    }
+    .pipe-9 {
+      transform: translate(747px, 372px);
+    }
+
+    .pipe-5 {
+      transform: translate(253px, 331.3px);
+      width: 754px;
+
+      .line-19 {
+        height: 70px;
+      }
+      .line-18 {
+        height: 26px;
+      }
+    }
+
+    .pipe-6 {
+      transform: translate(950px, 359.6px);
+      width: 245px;
+    }
+
+    .pipe-7 {
+      transform: translate(354.5px, 36.5px);
+      width: 500px;
+    }
+  }
+}

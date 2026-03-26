@@ -1,0 +1,12 @@
+export { CoolerPageBaga } from "./Cooler/CoolerPageBaga";
+export { CementMillPageBaga } from "./CementMill/CementMillPageBaga";
+export { CoalMillBaga } from "./CoalMill/CoalMillBaga";
+export { PreheaterBagaPage } from "./Preheater/PreheaterBagaPage";
+export { RawMill2BagaPage } from "./RawMill2/RawMill2BagaPage";
+export { CSExtractionTransportPackersBagaPage } from "./CementSiloExtractionTransportPackers/CSExtractionTransportPackersBagaPage";
+export { RawMill1BagaPage } from "./RawMill1/RawMill1BagaPage";
+export { KilnCoolerParamsBagaPage } from "./UH/Kiln_Cooler/KilnCoolerParamsBagaPage";
+export { RawMill1ParamsBagaPage } from "./UH/RawMill-1/RawMill1ParamsBagaPage";
+export { RawMill2ParamsBagaPage } from "./UH/RawMill-2/RawMill2ParamsBagaPage";
+export { CoalMillParamsBagaPage } from "./UH/CoalMill/CoalMillParamsBagaPage";
+export { CementMillParamsBagaPage } from "./UH/CementMill/CementMillParamsBagaPage";

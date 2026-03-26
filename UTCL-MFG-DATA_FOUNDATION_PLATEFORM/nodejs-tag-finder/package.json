@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-tag-finder",
+  "version": "1.0.0",
+  "description": "A Node.js application that reads JavaScript files in a folder and extracts unique tags.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "keywords": [
+    "nodejs",
+    "tags",
+    "file-reader"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

@@ -1,0 +1,86 @@
+
+<!-- <label *ngIf="type=='datepicker'" class="block w-full">
+   <input [owlDateTime]="dt1" [owlDateTimeTrigger]="dt1"  [disabled]="!date_time" [(ngModel)]="date_time"
+    class="h-12 w-full rounded-[18px] border-2 border-[#bcc2c5] bg-[#f4f6f6] px-4 text-[15px] text-[#1f2a37] outline-none focus:border-[#d78312]" (dateTimeChange)="onselectDateTime($event)"
+      placeholder="Date Time">
+   <owl-date-time #dt1 [pickerType]="'calendar'"></owl-date-time>
+</label> -->
+
+<label *ngIf="type=='datepicker'" class="block w-full ">
+  <input
+    [owlDateTime]="dt1"
+    [owlDateTimeTrigger]="dt1"
+    [(ngModel)]="date_time"
+    [disabled]="!date_time"
+    (dateTimeChange)="onselectDateTime($event)"
+    placeholder="Date Time"
+
+    class="date-input w-full px-2 py-[4px] text-[13px]
+           rounded-lg border
+           bg-[var(--input-enable-bg)]
+           text-[var(--select-input-value)]
+           border-[var(--input-enable-border)]
+           focus:outline-none
+           focus:border-[#888888]
+           focus:ring-1 focus:ring-[#888888]
+           transition-all duration-200"
+  />
+
+  <owl-date-time #dt1 [pickerType]="'calendar'"></owl-date-time>
+</label>
+
+<!-- <label *ngIf="type=='datepicker1'" class="block w-full">
+   <input [owlDateTime]="dt2" [owlDateTimeTrigger]="dt2"  [disabled]="!date_times" [(ngModel)]="date_times"
+    class="h-12 w-full rounded-[18px] border-2 border-[#bcc2c5] bg-[#f4f6f6] px-4 text-[15px] text-[#1f2a37] outline-none focus:border-[#d78312]" (dateTimeChange)="onselectDateTimes($event)"
+      placeholder="Date Time">
+   <owl-date-time #dt2></owl-date-time>
+</label> -->
+
+<label *ngIf="type=='datepicker1'" class="block w-full">
+  <input
+    [owlDateTime]="dt2"
+    [owlDateTimeTrigger]="dt2"
+    [(ngModel)]="date_times"
+    [disabled]="!date_times"
+    (dateTimeChange)="onselectDateTimes($event)"
+    placeholder="Date Time"
+
+    class="date-input w-full px-2 py-[4px] text-[13px]
+           rounded-lg border bg-[var(--input-enable-bg)] text-[var(--select-input-value)]
+           border-[var(--input-enable-border)] focus:outline-none focus:border-[#888888]
+           focus:ring-1 focus:ring-[#888888] transition-all duration-200"
+  />
+
+  <owl-date-time #dt2></owl-date-time>
+</label>
+<!-- 
+<label *ngIf="type=='rangepicker'" class="block w-full">
+   <input [owlDateTimeTrigger]="dt10" [owlDateTime]="dt10" [(ngModel)]="selectedRange" class="h-12 w-full rounded-[18px] border-2 border-[#bcc2c5] bg-[#f4f6f6] px-4 text-[15px] text-[#1f2a37] outline-none focus:border-[#d78312]" (dateTimeChange)="onselectDateTimeRange($event)" 
+      [selectMode]="'range'" placeholder="Select Date Range" [max]="maxDate">
+   <owl-date-time #dt10></owl-date-time>
+</label>  -->
+
+
+<label *ngIf="type=='rangepicker'" class="block w-full  ">
+  <input
+    [owlDateTimeTrigger]="dt10"
+    [owlDateTime]="dt10"
+    [(ngModel)]="selectedRange"
+    (dateTimeChange)="onselectDateTimeRange($event)"
+    [selectMode]="'range'"
+    [max]="maxDate"
+    placeholder="Select Date Range"
+
+    class="date-input w-full px-2 py-[4px] text-[13px]
+           rounded-lg border
+           bg-[var(--input-enable-bg)]
+           text-[var(--select-input-value)]
+           border-[var(--input-enable-border)]
+           focus:outline-none
+           focus:border-[#888888]
+           focus:ring-1 focus:ring-[#888888]
+           transition-all duration-200"
+  />
+
+  <owl-date-time #dt10></owl-date-time>
+</label>

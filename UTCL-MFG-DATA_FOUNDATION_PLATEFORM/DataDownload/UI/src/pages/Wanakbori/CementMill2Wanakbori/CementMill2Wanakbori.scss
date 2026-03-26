@@ -1,0 +1,120 @@
+.CementMill2wankbori {
+
+  .single-text-5 {
+    transform: translate(27.8vw, 2vh);
+  }
+  .single-text-9 {
+    transform: translate(32.2vw, 18vh);
+  }
+
+  .single-text-28 {
+    .line-circle {
+      transform: rotate(0deg);
+    }
+  }
+
+  .single-text-36 {
+    transform: translate(29.5vw, 12vh);
+  }
+  .single-text-40 {
+    transform: translate(27vw, 18vh);
+  }
+  .single-text-41 {
+    transform: translate(23vw, 13.5vh);
+  }
+  .single-text-43 {
+    transform: translate(35vw, 10vh);
+  }
+  .single-text-88 {
+    transform: translate(26vw, 0vh);
+  }
+  .single-text-89 {
+    transform: translate(31vw, 4vh);
+    .line-circle {
+      transform: rotate(90deg);
+    }
+  }
+  .single-text-90 {
+    transform: translate(28.3vw, 9vh);
+  }
+  .single-text-104 {
+    transform: translate(58vw, 56vh);
+  }
+  .single-text-112 {
+    .green-line-circle {
+      transform: rotate(90deg);
+    }
+  }
+
+  .pipe-30 {
+    transform: translate(28.8vw, 7.6vh);
+  }
+  .pipe-31 {
+    transform: translate(33.5vw, 2.6vh);
+  }
+  .pipe-32 {
+    transform: translate(28.5vw, 5.2vh);
+  }
+  .pipe-33 {
+    transform: translate(32.8vw, 20.2vh);
+    height: 31px;
+  }
+
+  // new
+  .single-text-132 {
+    transform: translate(20vw, 18.2vh);
+  }
+}
+
+@media (max-width: 1367px) {
+  .CementMill2wankbori {
+
+    .single-text-5 {
+      transform: translate(377px, 14px);
+    }
+    .single-text-9 {
+      transform: translate(437px, 109px);
+    }
+    .single-text-36 {
+      transform: translate(403px, 68px);
+    }
+    .single-text-40 {
+      transform: translate(367px, 117px);
+    }
+    .single-text-41 {
+      transform: translate(312px, 84px);
+    }
+    .single-text-43 {
+      transform: translate(477px, 61px);
+    }
+    .single-text-88 {
+      transform: translate(360px, 0px);
+    }
+    .single-text-89 {
+      transform: translate(417px, 25px);
+    }
+    .single-text-90 {
+      transform: translate(384px, 55px);
+    }
+    .single-text-104 {
+      transform: translate(786px, 350px);
+    }
+    // new
+    .single-text-132 {
+      transform: translate(269px, 111px);
+    }
+    .pipe-30 {
+      transform: translate(391px, 49px);
+    }
+    .pipe-31 {
+      transform: translate(456px, 16px);
+    }
+    .pipe-32 {
+      transform: translate(387px, 31px);
+    }
+    .pipe-33 {
+      transform: translate(446px, 122px);
+      height: 21px;
+    }
+  }
+}

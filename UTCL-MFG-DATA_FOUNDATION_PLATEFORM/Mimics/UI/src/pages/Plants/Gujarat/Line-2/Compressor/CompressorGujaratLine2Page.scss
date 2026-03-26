@@ -1,0 +1,61 @@
+.CompressorGujaratLine2 {
+    table,
+    th,
+    td {
+      border: 1px solid white;
+      border-collapse: collapse;
+      cursor: default;
+      text-align: center;
+      padding: 5px 7px;
+    }
+    table tr:hover {
+      background-color: transparent;
+    }
+    .line-circle{
+        transform: rotate(90deg);
+    }
+    .single-text-1,.single-text-2 {
+      .inner_tb{
+        border: none;
+        th,td{
+        border: none;
+      }
+    }
+
+  }
+    .single-text-1 {
+        transform: translate(7.5vw, 1vh);
+     }
+
+    .single-text-2 {
+        transform: translate(58vw, 1vh);
+       }
+
+   
+}
+
+// mobile responsiveness
+@media (max-width: 1366px) {
+  .CompressorGujaratLine2 {
+    table,
+    th,
+    td {
+      padding: 1px 7px;
+    }
+    .mt-3 {
+      margin-top: .5rem !important;
+  }
+  .mt-1{
+    margin-top: .15rem !important;
+}
+    .single-text-1 {
+      transform: translate(117px, 6px);
+  
+  }
+
+  .single-text-2 {
+      transform: translate(792px, 6px);
+  
+   }
+  }
+}

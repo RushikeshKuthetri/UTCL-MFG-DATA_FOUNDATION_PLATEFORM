@@ -1,0 +1,132 @@
+<div class="flex justify-between items-center">
+  <h5 class="text-[18px] title-font font-medium text-[var(--title)] mb-2 ">
+    Admin Page
+  </h5>
+</div>
+
+<div class="bg-[var(--bg-main-container)] text-[var(--text-color)] px-1">
+
+
+  <div class="w-full  space-y-5">
+
+
+    <div class="bg-[var(--card-bg)]
+                rounded-lg
+                border border-[var(--form-border)]
+                shadow-sm
+                overflow-hidden  custom-scrollbar ">
+
+      <div class="overflow-x-auto max-h-screen   bg-[var(--bg-leftdrawer)]">
+        <table class="w-full text-sm overflow-y-auto   bg-[var(--bg-leftdrawer)]">
+          <thead class="bg-gradient-to-r from-orange-400 to-orange-300 text-black py-2">
+            <tr>
+              <th class="text-left px-6 py-2 font-semibold border-b border-[var(--form-border)]">Plant Name</th>
+              <th class="text-left px-6 py-2 font-semibold border-b border-[var(--form-border)]">Plant</th>
+              <th class="text-left px-6 py-2 font-semibold border-b border-[var(--form-border)]">Mill</th>
+              <th class="text-left px-6 py-2 font-semibold border-b border-[var(--form-border)]">Parameter</th>
+              <th class="text-left px-6 py-2 font-semibold border-b border-[var(--form-border)]">Descriptions</th>
+              <th class="text-left px-6 py-2 font-semibold border-b border-[var(--form-border)]">Close Loop</th>
+              <th class="text-left px-6 py-2 font-semibold border-b border-[var(--form-border)]">Action</th>
+            </tr>
+          </thead>
+
+          <!-- DATA -->
+          <tbody *ngIf="!noRecordfound">
+
+            <ng-container *ngFor="let record of tableRecord">
+
+              <tr *ngFor="let result of record.result; let i=index"
+                class="border-b border-[var(--form-border)] transition">
+                <td class="px-6 py-2 text-center whitespace-nowrap">
+                  {{ result['Plant Name'] }}
+                </td>
+                <td class="px-6 py-2 text-center whitespace-nowrap">
+                  {{ result.plant }}
+                </td>
+                <td class="px-6 py-2 text-center whitespace-nowrap">
+                  {{ result.mill }}
+                </td>
+                <td class="px-6 py-2 text-center whitespace-nowrap">
+                  {{
+                  result.parameters === "" ? 'Activate Closed Loop' : result.parameters
+                  }}
+                </td>
+                <td class="px-6 py-2">
+                  {{ result.Description }}
+                </td>
+                <td class="px-6 py-2 text-center">
+
+                  <mat-radio-group [(ngModel)]="result['Close Loop Flag']">
+
+                    <mat-radio-button [value]="true" [checked]="result['Close Loop Flag']===true"
+                      [disabled]="record.result[0]['Close Loop Flag']===false && i >=1"
+                      (change)="handleFlagChange($event,result,record.result)">
+                      Yes
+                    </mat-radio-button>
+
+                    <mat-radio-button [value]="false" [checked]="result['Close Loop Flag']===false"
+                      [disabled]="record.result[0]['Close Loop Flag']===false"
+                      (change)="handleFlagChange($event,result,record.result)">
+                      No
+                    </mat-radio-button>
+
+                  </mat-radio-group>
+
+                </td>
+
+                <!-- Submit button -->
+                <td *ngIf="i === 0" class="px-6 py-2 text-center">
+
+                  <button class="px-4 py-1 rounded-md
+                           bg-orange-500
+                           text-white
+                           hover:bg-orange-600
+                           transition" (click)="handleSubmitKiln()"
+                    [disabled]="submitButtonsDisabled[result.plant][result.mill]">
+
+                    Submit
+
+                  </button>
+
+                </td>
+
+              </tr>
+
+            </ng-container>
+
+          </tbody>
+
+          <!-- NO DATA / LOADER -->
+          <tbody *ngIf="noRecordfound">
+
+            <tr>
+
+              <td colspan="7" *ngIf="noCloseLoopData">
+
+                <div class="flex justify-center py-10">
+                  <app-apploader></app-apploader>
+                </div>
+
+              </td>
+
+              <td colspan="7" *ngIf="!noCloseLoopData">
+
+                <div class="flex justify-center py-10 text-gray-500">
+                  {{ dataNotFound ? 'No Record Found'   : 'No Record Found' }}
+                </div>
+
+              </td>
+
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

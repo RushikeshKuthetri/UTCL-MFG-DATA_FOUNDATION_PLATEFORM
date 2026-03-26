@@ -1,0 +1,58 @@
+/* .setting_data_1{
+    
+align-items: center;
+    margin: 150px 0 0 140px;
+}
+.setting_data_2{
+  
+
+    margin: 40px 0 0 140px;
+}
+.setting_data_3{
+
+
+    margin: 40px 0 0 140px;
+}
+.card_container {
+   
+    border-radius: 5px;
+    display: grid;
+    align-content: space-between;
+    justify-content: center;
+    justify-items: end;
+}
+.card_body{
+    float: right;
+    margin-top: 120px;
+    margin-right: 40px;
+    padding-bottom: 5px;
+    display: flex;
+
+}
+.card_body > span{
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 2px;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.dashboard_container span{
+    margin-left: 0;
+    margin-bottom: 5px;
+}
+.plant_name{
+    cursor: pointer;
+    
+}
+.button{
+    width: 6rem;
+    padding-top: 10px;
+
+}
+.edit_card_details{
+    cursor: pointer;
+    font-size: 32px;
+}
+.data_input{
+    width: 14rem;
+} */

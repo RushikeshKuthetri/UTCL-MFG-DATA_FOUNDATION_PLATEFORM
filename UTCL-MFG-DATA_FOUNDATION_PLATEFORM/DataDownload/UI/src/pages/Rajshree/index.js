@@ -1,0 +1,9 @@
+export { KilnRajshreePage } from "./Kiln/KilnRajshreePage";
+export { KilnBurnerRajshreePage } from "./KilnBurner/KilnBurnerRajshreePage";
+export { CoalTransportRajshreePage } from "./CoalTransport/CoalTransportRajshreePage";
+export { PreheaterRajshreePage } from "./Preheater/PreheaterRajshreePage";
+export { RawMill1RajshreePage } from "./RawMills/RawMill-1/RawMill1RajshreePage";
+export { RawMill2RajshreePage } from "./RawMills/RawMill-2/RawMill2RajshreePage";
+export { BlendingSiloFeedingRajshreePage } from "./BlendingSiloFeeding/BlendingSiloFeedingRajshreePage";
+export { CoolerRajshreePage } from "./Cooler/CoolerRajshreePage";
+export { CementMill2Page } from "./CementMill/CementMill-2/CementMill2Page";

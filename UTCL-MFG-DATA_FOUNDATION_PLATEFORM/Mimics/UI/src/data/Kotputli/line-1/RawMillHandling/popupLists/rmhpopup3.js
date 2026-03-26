@@ -1,0 +1,58 @@
+export const rmhpopup3 = [
+  {
+    cgrnTxt: "RM_311BC2_BTE1",
+    blackTextLabel: "RM_311BC2_BTE1",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: "RM_311BC2_BTE2",
+    blackTextLabel: "RM_311BC2_BTE2",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: "RM_311BC2_WTE1",
+    blackTextLabel: "RM_311BC2_WTE1",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: "RM_311BC2_WTE2",
+    blackTextLabel: "RM_311BC2_WTE2",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: "RM_311BC2_WTE3",
+    blackTextLabel: "RM_311BC2_WTE3",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: "RM_311BC2_WTE4",
+    blackTextLabel: "RM_311BC2_WTE4",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: "RM_311BC2_WTE5",
+    blackTextLabel: "RM_311BC2_WTE5",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: "RM_311BC2_WTE6",
+    blackTextLabel: "RM_311BC2_WTE6",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+];

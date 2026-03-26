@@ -1,0 +1,96 @@
+.cm_2_maihar {
+  .single-text-16 {
+    transform: translate(58vw, 70vh) !important;
+  }
+  .single-text-52 {
+    transform: translate(73vw, 42vh) rotate(3deg) !important;
+    width: 147px !important;
+  }
+  .single-text-75 {
+    transform: translate(53vw, 73vh) !important;
+  }
+  .single-text-79 {
+    transform: translate(74vw, 19vh) !important;
+  }
+  .single-text-93 {
+    transform: translate(79.5vw, 52vh) !important;
+  }
+  .line-15 {
+    transform: translate(80.5vw, 44vh) !important;
+  }
+
+  // new text
+  .single-text-111 {
+    transform: translate(70.8vw, 37.5vh);
+  }
+  .single-text-112 {
+    transform: translate(77.4vw, 37.5vh);
+  }
+  .single-text-113 {
+    transform: translate(88vw, 42.5vh);
+  }
+  .single-text-114 {
+    transform: translate(58.5vw, 39.5vh);
+  }
+  .single-text-115 {
+    transform: translate(58.5vw, 63.5vh);
+  }
+  .single-text-116 {
+    transform: translate(61.5vw, 75.5vh);
+  }
+  .single-text-117 {
+    transform: translate(86.5vw, 69.5vh);
+  }
+  .single-text-118 {
+    transform: translate(62.5vw, 31.5vh);
+  }
+}
+
+// mobile responsiveness and 1366px
+@media (max-width: 1366px) {
+  .cm_2_maihar {
+    .single-text-16 {
+      transform: translate(794px, 430px) !important;
+    }
+    .single-text-52 {
+      transform: translate(997px, 262px) rotate(4deg) !important;
+      width: 108px !important;
+    }
+    .single-text-75 {
+      transform: translate(724px, 439px) !important;
+    }
+    .single-text-79 {
+      transform: translate(1000px, 120px) !important;
+    }
+    .single-text-93 {
+      transform: translate(1086px, 313px) !important;
+    }
+    .line-15 {
+      transform: translate(1101px, 272px) !important;
+    }
+    .single-text-111 {
+      transform: translate(967px, 240px);
+    }
+    .single-text-112 {
+      transform: translate(1056px, 240px);
+    }
+    .single-text-113 {
+      transform: translate(1205px, 256px);
+    }
+    .single-text-114 {
+      transform: translate(808px, 240px);
+    }
+    .single-text-115 {
+      transform: translate(808px, 400px);
+    }
+    .single-text-116 {
+      transform: translate(836px, 457px);
+    }
+    .single-text-117 {
+      transform: translate(1185px, 426px);
+    }
+    .single-text-118 {
+      transform: translate(856px, 204px);
+    }
+  }
+}

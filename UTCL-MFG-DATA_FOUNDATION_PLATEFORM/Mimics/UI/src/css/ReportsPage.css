@@ -1,0 +1,111 @@
+
+
+.form-control:focus {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px !important;
+}
+
+.multiTagSelection{
+  width:auto
+}
+.tagSelector {
+  width: 80%;
+  padding-left: 10px;  
+}
+
+
+.outerContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.settingContainer{
+  display: flex;
+  width: 100%;
+  padding: 30px;
+  justify-content: left;
+  /* align-items: center; */
+  flex-direction: column;
+}
+.labelContainer{
+  width: 70%;
+  display: flex;
+  padding: 10px;
+  
+  align-items: center;
+  justify-content: space-between;
+
+}
+.form-control {
+  width: 100% !important;
+}
+.perameterContainer{
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+.parameterSelect{
+  width: 45%;
+}
+.parameterCross{
+  top: 0px !important;
+  right: 75px !important;
+}
+.HeaderContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+}
+.conditionContainer{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space; */
+  width: 50%;
+}
+.ActiveSelect{
+  width: 45%;
+}
+.scheduleContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cross{ font-size: 16px;}
+
+.scheduleItem-1{
+  flex: 0 0 22%;
+}
+
+
+
+.tag-item {
+  background-color: #d4d5d6;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 30px;
+  height: 30px;
+  padding: 0  0.3rem 0px 1rem;
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0.3rem 0.3rem 0;
+}
+
+.tag-item > .button {
+  background-color: white;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  margin-left: 10px;
+  font-weight: bold;
+  padding: 0;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

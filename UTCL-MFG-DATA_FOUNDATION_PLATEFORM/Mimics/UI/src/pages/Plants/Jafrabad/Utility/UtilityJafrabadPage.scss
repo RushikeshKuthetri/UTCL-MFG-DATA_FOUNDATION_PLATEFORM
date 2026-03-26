@@ -1,0 +1,273 @@
+.UtilityJafrabad {
+  .single-text-1 {
+    transform: translate(3.1vw, 6vh);
+  }
+  .single-text-2 {
+    transform: translate(20.1vw, 11vh);
+    gap: 250px;
+  }
+  .single-text-3 {
+    transform: translate(21.1vw, 29vh);
+    gap: 97px;
+  }
+  .single-text-4 {
+    transform: translate(66.1vw, 29vh);
+    gap: 97px;
+  }
+  .single-text-5 {
+    transform: translate(79.1vw, 6vh);
+    .containerImage {
+      height: 95px;
+      width: 111px;
+    }
+  }
+  .single-text-6 {
+    transform: translate(6.1vw, 64vh);
+  }
+  .single-text-7 {
+    transform: translate(18.1vw, 65vh);
+  }
+  .single-text-8 {
+    transform: translate(85.1vw, 44vh);
+  }
+  .single-text-9 {
+    transform: translate(72.1vw, 42vh);
+  }
+  .single-text-10 {
+    transform: translate(13.7vw, 43vh);
+    gap: 142px;
+    .line-1 {
+      transform: translate(0.3px, 9px);
+      height: 32px;
+    }
+  }
+  .single-text-11 {
+    transform: translate(23.4vw, 53vh);
+    gap: 102px;
+    .text-1 {
+      .line-circle {
+        transform: rotate(-90deg);
+      }
+    }
+    .line-1 {
+      transform: translate(0.3px, 9px);
+      height: 32px;
+    }
+  }
+  .single-text-12 {
+    transform: translate(53.7vw, 62vh);
+
+    .line-1 {
+      transform: translate(0.3px, 9px);
+      height: 32px;
+    }
+  }
+  .single-text-13 {
+    transform: translate(42.7vw, 69vh);
+  }
+  .single-text-14 {
+    transform: translate(0.7vw, 75vh);
+  }
+  .single-text-15 {
+    transform: translate(14.7vw, 41vh);
+    gap: 145px;
+  }
+  .single-text-16 {
+    transform: translate(38.7vw, 29vh);
+    gap: 441px;
+  }
+  .single-text-17 {
+    transform: translate(77.7vw, 29vh);
+  }
+  .single-text-18 {
+    transform: translate(27vw, 9.8vh);
+    gap: 637px;
+  }
+  .line-1 {
+    transform: translate(22.3vw, 26vh);
+    height: 32px;
+  }
+  .line-2 {
+    transform: translate(37.2vw, 26vh);
+    height: 32px;
+  }
+  .line-3 {
+    transform: translate(29.8vw, 16.6vh);
+    height: 118px;
+  }
+  .line-4 {
+    transform: translate(22.3vw, 25.9vh);
+    width: 288px;
+  }
+  .line-5 {
+    transform: translate(67.3vw, 26vh);
+    height: 32px;
+  }
+  .line-6 {
+    transform: translate(74.7vw, 26vh);
+    height: 32px;
+  }
+  .line-7 {
+    transform: translate(67.3vw, 25.9vh);
+    width: 144px;
+  }
+  .line-8 {
+    transform: translate(71.3vw, 17vh);
+    height: 82px;
+  }
+  .line-9 {
+    transform: translate(29.9vw, 20vh);
+    width: 796px;
+  }
+  .line-10 {
+    transform: translate(14.9vw, 44vh);
+    width: 1093px;
+  }
+  .line-11 {
+    transform: translate(24.6vw, 54vh);
+    width: 907px;
+  }
+  .line-12 {
+    transform: translate(54.9vw, 63vh);
+    width: 323px;
+  }
+  .line-13 {
+    transform: translate(54.9vw, 73vh);
+    width: 323px;
+  }
+  .line-14 {
+    transform: translate(85.1vw, 13vh);
+    width: 71px;
+  }
+}
+//mobile responsiveness
+@media (max-width: 1366px) {
+  .UtilityJafrabad {
+    .single-text-1 {
+      transform: translate(26.1px, 27px);
+    }
+    .single-text-2 {
+      transform: translate(250.1px, 59px);
+      gap: 172px;
+    }
+    .single-text-5 {
+      transform: translate(1087.1px, 20px);
+      .containerImage {
+        height: 70px;
+        width: 80px;
+      }
+    }
+    .single-text-6 {
+      transform: translate(77.1px, 397px);
+    }
+    .single-text-7 {
+      transform: translate(254.1px, 415px);
+    }
+    .single-text-14 {
+      transform: translate(5.7px, 432px);
+    }
+    .single-text-13 {
+      transform: translate(545.7px, 391px);
+    }
+    .single-text-8 {
+      transform: translate(1163.1px, 244px);
+    }
+    .single-text-9 {
+      transform: translate(1071.1px, 203px);
+    }
+    .single-text-3 {
+      transform: translate(289.1px, 184px);
+      gap: 69px;
+    }
+    .line-1 {
+      transform: translate(304.3px, 156px);
+      height: 32px;
+    }
+    .line-2 {
+      transform: translate(508.3px, 156px);
+      height: 32px;
+    }
+    .line-3 {
+      transform: translate(406.8px, 94.6px);
+      height: 94px;
+    }
+    .line-4 {
+      transform: translate(304.3px, 155.9px);
+      width: 206px;
+    }
+    .line-9 {
+      transform: translate(407.9px, 119px);
+      width: 570px;
+    }
+    .single-text-4 {
+      transform: translate(904.1px, 184px);
+      gap: 67px;
+    }
+    .single-text-18 {
+      transform: translate(368px, 47.8px);
+      gap: 456px;
+    }
+    .line-7 {
+      transform: translate(920.3px, 155.9px);
+      width: 102px;
+    }
+    .line-8 {
+      transform: translate(978.3px, 98.3px);
+      height: 60px;
+    }
+    .line-14 {
+      transform: translate(1171.1px, 69px);
+      width: 50px;
+    }
+    .single-text-16 {
+      transform: translate(532.7px, 168px);
+      gap: 313px;
+    }
+    .line-10 {
+      transform: translate(201.9px, 241px);
+      width: 865px;
+    }
+    .single-text-10 {
+      transform: translate(185.6px, 223px);
+      gap: 95px;
+      .line-1 {
+        transform: translate(0.3px, 19px);
+        height: 31px;
+      }
+    }
+    .single-text-15 {
+      transform: translate(207.7px, 228px);
+      gap: 93px;
+    }
+    .line-11 {
+      transform: translate(333.9px, 300px);
+      width: 734px;
+    }
+    .single-text-11 {
+      transform: translate(318.4px, 292px);
+      gap: 58px;
+    }
+    .line-12 {
+      transform: translate(750.9px, 351px);
+      width: 317px;
+    }
+    .line-13 {
+      transform: translate(750.9px, 432px);
+      width: 317px;
+    }
+    .single-text-12 {
+      transform: translate(735.7px, 342px);
+    }
+    .single-text-17 {
+      transform: translate(1048.7px, 165px);
+    }
+    .line-5 {
+      transform: translate(920.3px, 156px);
+      height: 32px;
+    }
+    .line-6 {
+      transform: translate(1020.3px, 156px);
+      height: 32px;
+    }
+  }
+}

@@ -1,0 +1,212 @@
+.cd_table_bg {
+  font-weight: 600;
+  height: 100vh;
+  padding-bottom: 20px;
+  padding-top: 70px;
+
+  .cd_heading {
+    font-weight: 700;
+  }
+}
+
+.mill-running {
+  .table-responsive {
+    .fix-table {
+
+      th,
+      td {
+        padding: 0.2rem !important;
+        text-align: center;
+      }
+    }
+
+    table.cd_table {
+      margin-bottom: .5rem;
+      border: 1px solid black;
+      border-collapse: collapse;
+      position: relative;
+      min-width: max-content;
+
+      th {
+        background-color: #ffffff;
+        color: #000;
+      }
+
+      thead>tr:first-child {
+        th {
+          position: sticky;
+          top: -1px;
+          text-align: center;
+          z-index: 9;
+
+          &::after {
+            content: " ";
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #000000;
+          }
+        }
+
+        th:first-child {
+          left: 1px;
+          z-index: 11;
+        }
+      }
+
+      thead>tr:nth-child(2) {
+
+        th:nth-child(1),
+        th:nth-child(2),
+        th:nth-child(3) {
+          z-index: 11;
+        }
+
+        th:nth-child(1) {
+          left: 0px;
+        }
+
+        th:nth-child(2) {
+          left: 93px;
+        }
+
+        th:nth-child(3) {
+          left: 143px;
+        }
+
+        th:nth-child(1)::after,
+        th:nth-child(2)::after,
+        th:nth-child(3):after {
+          content: "";
+          position: absolute;
+          height: 39px;
+          width: 1px;
+          background-color: #000;
+          right: 0 !important;
+          top: 0;
+        }
+      }
+
+      thead>tr:nth-child(2) th {
+        position: sticky;
+        top: 38.8px;
+      }
+
+      thead>tr:nth-child(2) th::before {
+        content: " ";
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #000000;
+      }
+
+      th,
+      td {
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+        padding: 0.45rem;
+      }
+
+      .th_bg {
+        background-color: #b5e6a2;
+        text-align: center;
+      }
+
+      .plant_name {
+        font-weight: 800;
+      }
+
+      tbody {
+        overflow: scroll;
+        -webkit-overflow-scrolling: scroll;
+
+        .cluster-last-row {
+          border-bottom: 10px solid #b5e6a2;
+        }
+
+        .text-dark {
+          font-size: 14px;
+          font-weight: 700;
+          // cursor: pointer;
+        }
+
+        tr {
+          th {
+            position: sticky;
+          }
+
+          th:nth-child(1) {
+            left: 0px;
+          }
+
+          th:nth-child(2) {
+            left: 93px;
+          }
+
+          th:nth-child(3) {
+            left: 143px;
+          }
+
+          th:nth-child(1)::before,
+          th:nth-child(2)::before,
+          th:nth-child(3)::before {
+            content: "";
+            position: absolute;
+            height: 39px;
+            width: 1px;
+            background-color: #000;
+            right: 0;
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .table-scroll {
+    height: calc(100vh - 149px);
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
+
+@media (max-width: 1367px) {
+  .cd_table_bg {
+    padding-top: 40px;
+
+    .cd_heading {
+      font-weight: 600;
+    }
+  }
+
+  .mill-running {
+    .table-scroll {
+      height: calc(100vh - 118px);
+    }
+  }
+}
+
+
+//Added by TRID AI for north cluster summary
+.equip-column {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+// .equip-box {
+//   padding: 2px 6px;
+//   font-size: 11px;
+//   font-weight: 700;
+//   background-color: #2e7d32;
+//   color: #fff;
+//   border-radius: 4px;
+//   text-align: center;
+// }

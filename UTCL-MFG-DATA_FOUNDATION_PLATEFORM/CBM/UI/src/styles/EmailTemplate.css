@@ -1,0 +1,37 @@
+
+.error{
+  border: 1px solid red !important;
+}
+.tagContainer{
+  padding: 10px;
+}
+.tag-item {
+  background-color: #f0f0f0;;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 30px;
+  height: 30px;
+  padding: 0 1rem 0 1rem;
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0.3rem 0.3rem 0;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.tag-item > .button {
+  background-color: white;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  margin-left: 10px;
+  font-weight: bold;
+  padding: 0;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

@@ -1,0 +1,93 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+.container-fluid {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  /* position: sticky; */
+}
+label {
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  padding-left: 0.3rem;
+}
+
+.react-flow__attribution.right {
+  display: none;
+}
+
+.react-flow__node {
+  pointer-events: none !important;
+}
+
+.greenTxt {
+  pointer-events: auto !important;
+  cursor: pointer;
+}
+
+.form-control,
+.multi-select,
+.dropdown-container,
+.chakra-select {
+  background: #fff;
+  border-top: 1px solid #e5e5e5;
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px,
+    rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+}
+.css-k7r2wc:focus,
+.css-k7r2wc[data-focus],
+.dropdown-container:focus-within {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px !important;
+}
+.dropdown-container .css-1pahdxg-control {
+  border-color: #80bdff;
+  box-shadow: none;
+  outline: 0;
+}
+
+.dropdown-container .css-1s2u09g-control:hover {
+  border-color: #ced4da;
+  border: 1px solid #ced4da;
+}
+.form-control:focus,
+.dropdown-container .css-1pahdxg-control:focus {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px !important;
+}
+.dropdown-container .css-1pahdxg-control:hover,
+.dropdown-container .css-1pahdxg-control:focus,
+.dropdown-container .css-1pahdxg-control:visited,
+.dropdown-container .css-1pahdxg-control.dropdown-container:focus-within {
+  border-color: #80bdff;
+  outline: 0;
+}
+/* .multi-select .dropdown-container {
+  border: none;
+} */
+.multi-select .dropdown-heading {
+  border-radius: 8px;
+  padding: 0.375rem 0.75rem;
+}
+.table .thead-dark th {
+  background-color: #2b2b2b;
+  border-color: #2b2b2b;
+  border: none;
+}
+.table-bordered td,
+.table-bordered th {
+  border: none;
+}
+.text-dark {
+  color: #000000 !important;
+}
+@media (max-width: 1367px) {
+  .logo {
+    width: 110px;
+  }
+  .tonav .nav-link {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,14 @@
+.Turbinevikram {
+    .single-text-7 {
+        transform: translate(72vw, 23.5vh) !important;
+    }
+}
+
+//mobile responsiveness
+@media (max-width: 1366px) {
+    .Turbinevikram {
+        .single-text-7 {
+            transform: translate(984px, 141px) !important;
+        }
+    }
+}

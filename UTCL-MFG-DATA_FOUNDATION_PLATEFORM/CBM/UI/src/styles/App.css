@@ -1,0 +1,307 @@
+.App {
+    text-align: center;
+}
+
+.data-area-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.iconText {
+    margin: 0 .5rem
+}
+
+
+.btnfrst:hover, .btnsecond:hover {
+  box-shadow: 0 5px 15px rgb(0 0 0 / 30%);
+  transition: box-shadow 0.5s ease, transform 0.2s ease;
+}
+.btnsecond:hover {
+  color: #fff;
+}
+.logout{
+  border: none;
+  background-color: transparent;
+}
+.logout_btn {
+  transform: rotate(90deg);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+
+
+
+.navbarButton {
+    /* color: #fff !important; */
+    padding: .5rem 1rem !important;
+}
+
+.tableColumn {
+    word-break: break-all
+}
+
+.table {
+    max-height: 37rem;
+}
+
+.card {
+    max-width: 20rem !important;
+    margin: 2px;
+    padding: 2px;
+}
+
+.cardImage {
+    width: 180px !important;
+    height: 180px;
+
+}
+
+.warningMessage {
+    color: red;
+}
+ 
+/* navbar*/
+a{
+  text-decoration: none !important;
+  color: #000 !important;
+
+}
+.nav_menu_active {
+      position: fixed;
+      left: -100%;
+}
+.nav_menu {
+  left: 0;
+  transition: 850ms;
+  background: #2b2b2b;
+  width: 300px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  transition: 450ms;
+  z-index: 99999;
+}
+.nav_text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+.nav_text a {
+  text-decoration: none !important;
+  color: white !important;
+  font-size: 16px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.nav_text svg {
+  color: white !important;
+}
+
+.nav_text a:hover {
+  background-color: #fff500;
+  color: #000 !important;
+}
+.nav_text  a:hover svg {
+  background-color: #fff500;
+  color: #000 !important;
+}
+.nav_text_active a {
+  background-color: #fff500;
+  color: #000 !important;
+}
+.nav_text_active a svg {
+  background-color: #fff500;
+  color: #000 !important;
+}
+.nav_menu_items {
+  width: 100%;
+  padding-left: 0px;
+}
+.navbar_toggle {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 12px 20px;
+}
+.dropdownContainer{
+  display: flex;
+  flex-direction:column ;
+  height: 200px;
+  overflow-y: scroll;
+  color: #fff;
+  padding-left: 30px;
+}
+.dropdown-collepsed{
+  display: none !important;
+}
+.dropdownContainer ::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #fafafa;
+}
+
+.dropdownContainer::-webkit-scrollbar
+{
+  width: 6px;
+  background-color: transparent;
+}
+
+.dropdownContainer::-webkit-scrollbar-thumb
+{
+  background-color: #fff500 ;
+ border-radius: 10px;
+}
+  
+
+
+
+
+.form-control, .select__control{
+  font-size: .75rem!important;
+ min-height: 38px;
+}
+label {
+  font-size: 12px;
+  font-weight: 600;
+}
+.para-card{
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+}
+
+@media (max-width: 767px) {
+.navbar-nav { flex-direction: row!important; width: 100%; justify-content: space-between;}
+.dash-top{padding-top: 125px;}
+}
+
+
+/* CKEditor Wrapper */
+.ck-editor {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+/* Toolbar */
+.ck-toolbar {
+  background: var(--button-bg) !important;
+  border: 1px solid var(--form-border) !important;
+  color: var(--text-color) !important;
+}
+
+/* Toolbar Buttons */
+.ck-button {
+  color: var(--text-color) !important;
+}
+
+.ck-button:hover {
+  background: var(--button-hover-bg) !important;
+}
+
+/* Editor Content Area */
+.ck-editor__main {
+  background: var(--bg-color) !important;
+}
+
+/* Actual typing area */
+.ck-content {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  min-height: 200px;
+}
+
+/* Borders */
+.ck-editor__editable {
+  border: none !important;
+}
+
+/* Dropdowns */
+.ck-dropdown__panel {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+.ck-content p,
+.ck-content span,
+.ck-content div {
+  color: var(--text-color) !important;
+}
+
+/* Selected / Active button */
+.ck.ck-button.ck-on,
+.ck.ck-button.ck-on:hover {
+  background-color: orange !important;
+  color: #000 !important;
+}
+
+/* Selected button icon color */
+.ck.ck-button.ck-on .ck-icon {
+  color: #000 !important;
+}
+
+/* Selected button svg paths */
+.ck.ck-button.ck-on svg path {
+  fill: #000 !important;
+}
+
+
+/* Table */
+.ck-content table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+/* All cells */
+.ck-content table td,
+.ck-content table th {
+  background:orange;
+  border-bottom: 1px solid var(--form-border) !important;
+  border-right: none !important;
+  border-left: none !important;
+  border-top: none !important;
+  padding: 8px 12px !important;
+  color: var(--text-color) !important;
+  text-align: left !important;
+}
+
+/* First row — orange gradient header like image */
+.ck-content table tbody tr:first-child {
+  background:orange;
+}
+
+.ck-content table tbody tr:first-child th,
+.ck-content table tbody tr:first-child td {
+  color: #000 !important;
+  font-weight: 600 !important;
+  border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+}
+
+/* Alternating rows */
+.ck-content table tbody tr:nth-child(odd):not(:first-child) {
+  background-color: var(--form-border)  !important;
+}
+
+.ck-content table tbody tr:nth-child(even) {
+  background-color: var(--picker-bg) !important;
+}
+
+/* Hover */
+.ck-content table tbody tr:not(:first-child):hover {
+  background-color: var(--picker-hover) !important;
+}
+
+ 

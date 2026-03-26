@@ -1,0 +1,560 @@
+.TurbineAndhra {
+
+    table,
+    td,
+    th {
+        background-color: transparent;
+        color: black;
+        border: 0px solid black;
+        padding: .12rem;
+    }
+
+    tr:hover {
+        background-color: transparent;
+    }
+
+    th {
+        border-top: 1px solid black;
+    }
+
+    tr:last-child {
+        td {
+            border-bottom: 1px solid black;
+        }
+    }
+
+    tr td:last-child,
+    th:last-child {
+        border-right: 1px solid black;
+    }
+
+    tr td:first-child,
+    th:first-child {
+        border-left: 1px solid black;
+    }
+
+    .single-text-1 {
+        transform: translate(0.5vw, 0.5vh);
+        width: 1310px;
+
+    }
+
+    .single-text-2 {
+        transform: translate(69vw, 0.5vh);
+        width: 400px;
+    }
+
+    .single-text-3,
+    .single-text-4 {
+        .yellowline-Vr {
+            height: 35px;
+        }
+    }
+
+    .single-text-3 {
+        transform: translate(72vw, 81vh);
+    }
+
+    .single-text-4 {
+        transform: translate(97.3vw, 12.5vh);
+    }
+
+    .pipe-1,
+    .pipe-2,
+    .pipe-3,
+    .pipe-4,
+    .pipe-5 {
+        border-top-right-radius: 35px;
+        border-bottom-right-radius: 35px;
+    }
+
+    .pipe-1 {
+        transform: translate(94vw, 4.5vh);
+        width: 45px;
+        height: 45px;
+    }
+
+    .pipe-2,
+    .pipe-3 {
+        width: 35px;
+        height: 40px;
+    }
+
+    .pipe-2 {
+        transform: translate(79.7vw, 37.9vh);
+    }
+
+    .pipe-3 {
+        transform: translate(91.3vw, 11vh);
+    }
+
+    .pipe-4 {
+        transform: translate(69.7vw, 77vh);
+        width: 28px;
+        height: 29px;
+    }
+
+    .pipe-5 {
+        transform: translate(74.7vw, 55vh);
+        width: 84px;
+        height: 66px;
+    }
+
+
+    .single-text-5,
+    .single-text-6 {
+        gap: 20px;
+    }
+
+    .single-text-5 {
+        transform: translate(83vw, 47vh);
+    }
+
+    .single-text-6 {
+        transform: translate(80vw, 27vh);
+    }
+
+    .single-text-7,
+    .single-text-8,
+    .single-text-10,
+    .single-text-11 {
+        gap: 16px;
+    }
+
+    .single-text-7 {
+        transform: translate(71.5vw, 26.5vh);
+    }
+
+    .single-text-8 {
+        transform: translate(70vw, 39vh);
+    }
+
+    .single-text-9 {
+        transform: translate(76vw, 71vh);
+    }
+
+    .single-text-10 {
+        transform: translate(92vw, 41vh);
+    }
+
+    .single-text-11 {
+        transform: translate(92vw, 59vh);
+    }
+
+    .single-text-12 {
+        transform: translate(97.5vw, 9vh);
+    }
+
+    .single-text-13 {
+        transform: translate(91.5vw, 77vh);
+    }
+
+    .single-text-14 {
+        transform: translate(74.5vw, 81vh);
+    }
+
+    .single-text-15 {
+        transform: translate(89.5vw, 24vh);
+    }
+
+    .line-1 {
+        transform: translate(90vw, 6vh);
+        width: 100px;
+    }
+
+    .line-2 {
+        transform: translate(90vw, 7vh);
+        width: 132px;
+    }
+
+    .line-3 {
+        transform: translate(93.5vw, 8vh);
+        width: 46px;
+    }
+
+    .line-4 {
+        transform: translate(90vw, 13vh);
+        width: 68px;
+    }
+
+    .line-5 {
+        transform: translate(96.8vw, 14.4vh);
+        width: 49px;
+    }
+
+    .line-6 {
+        transform: translate(71vw, 22.4vh);
+        width: 543px;
+    }
+
+    .line-7 {
+        transform: translate(77.5vw, 35.4vh);
+        width: 25px;
+    }
+
+    .line-8 {
+        transform: translate(78.8vw, 39.4vh);
+        width: 30px;
+    }
+
+    .line-9 {
+        transform: translate(77vw, 40.4vh);
+        width: 60px;
+    }
+
+    .line-10 {
+        transform: translate(71vw, 56.4vh);
+        width: 80px;
+    }
+
+    .line-11 {
+        transform: translate(69vw, 58.4vh);
+        width: 232px;
+    }
+
+    .line-13 {
+        transform: translate(74vw, 60.4vh);
+        width: 47px;
+    }
+
+    .line-14 {
+        transform: translate(69vw, 78.4vh);
+        width: 50px;
+    }
+
+    .line-15 {
+        transform: translate(69vw, 83vh);
+        width: 97px;
+    }
+
+    .line-16 {
+        transform: translate(81vw, 47.5vh);
+        gap: 33px;
+
+        .yellowline-Hr {
+            width: 50px;
+        }
+    }
+
+    .line-17 {
+        transform: translate(71vw, 22.5vh);
+        height: 310px;
+    }
+
+    .line-18 {
+        transform: translate(93.5vw, 8vh);
+        height: 47px;
+    }
+
+    .line-19 {
+        transform: translate(96.8vw, 7vh);
+        height: 68px;
+    }
+
+    .line-20 {
+        transform: translate(99.3vw, 14.5vh);
+        height: 74px;
+    }
+
+    .line-21 {
+        transform: translate(78.7vw, 35.5vh);
+        height: 37px;
+    }
+
+    .line-22 {
+        transform: translate(79.5vw, 40.5vh);
+        height: 164px;
+    }
+
+    .line-23 {
+        transform: translate(81vw, 47.5vh);
+        height: 176px;
+    }
+
+    .line-24 {
+        transform: translate(74vw, 60.5vh);
+        height: 207px;
+    }
+
+    .line-25 {
+        transform: translate(71.5vw, 78.5vh);
+        height: 43px;
+    }
+
+    .line-26 {
+        transform: translate(2vw, 2vh);
+    }
+
+    .line-27 {
+        transform: translate(2vw, 2vh);
+    }
+
+    .line-28 {
+        transform: translate(2vw, 2vh);
+    }
+}
+
+//mobile responsiveness
+@media (max-width: 1366px) {
+    .TurbineAndhra {
+        .p-3 {
+            padding: 0.55rem !important;
+        }
+        table,
+        td,
+        th {
+            padding: .07rem;
+        }
+
+        .single-text-1 {
+            transform: translate(2px, 1px);
+            width: 937px;
+
+        }
+
+        .single-text-2 {
+            transform: translate(940px, 1px);
+            width: 288px;
+        }
+
+        .single-text-3,
+        .single-text-4 {
+            .yellowline-Vr {
+                height: 20px;
+            }
+        }
+
+        .single-text-3 {
+            transform: translate(984px, 486px);
+        }
+
+        .single-text-4 {
+            transform: translate(1329px, 75px);
+        }
+
+     
+
+        .pipe-1 {
+            transform: translate(1284px, 27px);
+            width: 27px;
+            height: 27px;
+        }
+
+        .pipe-2,
+        .pipe-3 {
+            width: 20px;
+            height: 24px;
+        }
+
+        .pipe-2 {
+            transform: translate(1089px, 227px);
+        }
+
+        .pipe-3 {
+            transform: translate(1247px, 66px);
+        }
+
+        .pipe-4 {
+            transform: translate(952px, 462px);
+            width: 18px;
+            height: 20px;
+        }
+
+        .pipe-5 {
+            transform: translate(1020px, 330px);
+            width: 52px;
+            height: 45px;
+        }
+
+
+        .single-text-5,
+        .single-text-6 {
+            gap: 8px;
+        }
+
+        .single-text-5 {
+            transform: translate(1134px, 282px);
+        }
+
+        .single-text-6 {
+            transform: translate(1120px, 168px);
+        }
+
+        .single-text-7,
+        .single-text-8,
+        .single-text-10,
+        .single-text-11 {
+            gap: 6px;
+        }
+
+        .single-text-7 {
+            transform: translate(977px, 159px);
+        }
+
+        .single-text-8 {
+            transform: translate(956px, 230px);
+        }
+
+        .single-text-9 {
+            transform: translate(1038px, 426px);
+        }
+
+        .single-text-10 {
+            transform: translate(1257px, 246px);
+        }
+
+        .single-text-11 {
+            transform: translate(1249px, 354px);
+        }
+
+        .single-text-12 {
+            transform: translate(1332px, 54px);
+        }
+
+        .single-text-13 {
+            transform: translate(1250px, 462px);
+        }
+
+        .single-text-14 {
+            transform: translate(1018px, 486px);
+        }
+
+        .single-text-15 {
+            transform: translate(1223px, 144px);
+        }
+
+        .line-1 {
+            transform: translate(1229px, 36px);
+            width: 60px;
+        }
+
+        .line-2 {
+            transform: translate(1229px, 42px);
+            width: 94px;
+        }
+
+        .line-3 {
+            transform: translate(1277px, 48px);
+            width: 24px;
+        }
+
+        .line-4 {
+            transform: translate(1229px, 78px);
+            width: 50px;
+        }
+
+        .line-5 {
+            transform: translate(1322px, 86px);
+            width: 36px;
+        }
+
+        .line-6 {
+            transform: translate(970px, 134px);
+            width: 387px;
+        }
+
+        .line-7 {
+            transform: translate(1059px, 212px);
+            width: 18px;
+        }
+
+        .line-8 {
+            transform: translate(1076px, 236px);
+            width: 20px;
+        }
+
+        .line-9 {
+            transform: translate(1052px, 242px);
+            width: 40px;
+        }
+
+        .line-10 {
+            transform: translate(970px, 338px);
+        }
+
+        .line-11 {
+            transform: translate(943px, 350px);
+            width: 163px;
+        }
+
+        .line-13 {
+            transform: translate(1011px, 362px);
+        }
+
+        .line-14 {
+            transform: translate(943px, 470px);
+            width: 36px;
+        }
+
+        .line-15 {
+            transform: translate(943px, 498px);
+            width: 70px;
+        }
+
+        .line-16 {
+            transform: translate(1106px, 285px);
+            gap: 20px;
+
+            .yellowline-Hr {
+                width: 32px;
+            }
+        }
+
+        .line-17 {
+            transform: translate(970px, 135px);
+            height: 204px;
+        }
+
+        .line-18 {
+            transform: translate(1277px, 48px);
+            height: 32px;
+        }
+
+        .line-19 {
+            transform: translate(1322px, 42px);
+            height: 45px;
+        }
+
+        .line-20 {
+            transform: translate(1356px, 87px);
+            height: 48px;
+        }
+
+        .line-21 {
+            transform: translate(1075px, 213px);
+            height: 24px;
+        }
+
+        .line-22 {
+            transform: translate(1086px, 243px);
+            height: 109px;
+        }
+
+        .line-23 {
+            transform: translate(1106px, 285px);
+            height: 111px;
+        }
+
+        .line-24 {
+            transform: translate(1011px, 363px);
+            height: 137px;
+        }
+
+        .line-25 {
+            transform: translate(977px, 471px);
+            height: 28px;
+        }
+
+        .line-26 {
+            transform: translate(27px, 12px);
+        }
+
+        .line-27 {
+            transform: translate(27px, 12px);
+        }
+
+        .line-28 {
+            transform: translate(27px, 12px);
+        }
+    }
+}

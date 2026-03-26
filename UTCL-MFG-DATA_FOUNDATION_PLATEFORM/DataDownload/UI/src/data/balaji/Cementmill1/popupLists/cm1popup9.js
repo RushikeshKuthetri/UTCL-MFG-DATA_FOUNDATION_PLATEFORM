@@ -1,0 +1,96 @@
+export const cm1popup91 = [
+  {
+    cgrnTxt: "GAP SP",
+    blackTextLabel: "561MG_SP",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "mm",
+  },
+  {
+    cgrnTxt: "LS GP",
+    blackTextLabel: "561HT1_PT01",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "mm",
+  },
+  {
+    cgrnTxt: "LS GAP",
+    blackTextLabel: "561RP1_ZT01",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "mm",
+  },
+  {
+    cgrnTxt: "MG5 ZT",
+    blackTextLabel: "561MG5_ZT01",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "mm",
+  },
+  {
+    cgrnTxt: "MG5 SPM",
+    blackTextLabel: "561MG5_SP_SPM",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "mm",
+  },
+  {
+    cgrnTxt: "MG6 ZT",
+    blackTextLabel: "561MG6_ZT01",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "mm",
+  },
+  {
+    cgrnTxt: "MG6 SPM",
+    blackTextLabel: "561MG6_SP_SPM",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "mm",
+  },
+];
+
+export const cm1popup92 = [
+  {
+    cgrnTxt: "Press. SP",
+    blackTextLabel: "561HT1_PRES_SP",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "mm",
+  },
+  {
+    cgrnTxt: "RS GP",
+    blackTextLabel: "561HT1_PT02",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "mm",
+  },
+  {
+    cgrnTxt: "RS GAP",
+    blackTextLabel: "561RP1_ZT02",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "mm",
+  },
+  {
+    cgrnTxt: "MG4 SPM",
+    blackTextLabel: "561MG4_SP_SPM",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "mm",
+  },
+  {
+    cgrnTxt: "MG7 ZT",
+    blackTextLabel: "561MG7_ZT01",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "mm",
+  },
+  {
+    cgrnTxt: "MG7 SPM",
+    blackTextLabel: "561MG7_SP_SPM",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "mm",
+  },
+];

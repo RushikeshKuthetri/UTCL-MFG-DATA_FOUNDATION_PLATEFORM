@@ -1,0 +1,103 @@
+@import "../../css/bootstrap.min.css";
+@import "../../css/all.min.css";
+.tonav {
+  position: fixed;
+  width: 100%;
+  background: #fff500;
+  z-index: 99;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.tonav .navbar {
+  padding: 0.3rem 1rem;
+}
+
+.tonav .navbar-brand {
+  padding: 0 0;
+}
+
+.tonav .nav-item {
+  margin-right: 15px;
+}
+.logo {
+  width: 160px;
+}
+.tonav .nav-link {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+.tonav .dropdown-menu.show {
+  background: #fff500;
+}
+.tonav .dropdown-menu.show .dropdown-item {
+  font-weight: 600;
+}
+.tonav .dropdown-item:focus,
+.tonav .dropdown-item:hover {
+  background-color: #fffa7d;
+}
+.tonav .dropdown-item.active,
+.tonav .dropdown-item:active {
+  color: #000;
+  background-color: #fffa7d;
+}
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+}
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+  color: #262626;
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+.user {
+  background: #fff;
+  font-size: 20px;
+  padding: 5px 6px;
+  border-radius: 33px;
+  vertical-align: middle;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
+}
+
+.logout_btn {
+  transform: rotate(90deg);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.navbar-plant-heading {
+  margin: 0 auto;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+@media (max-width: 1367px) {
+  .username{font-size: 14px; }
+}
+@media (max-width: 767px) {
+  .tonav .nav-item {
+    width: max-content;
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  .tonav .navbar {
+    padding: 0.3rem .5rem;
+    justify-content: left;
+}
+  .username{ font-size: 12px; flex-direction: row; gap: 15px;    justify-content: space-between;  width: 100%;margin-top: 10px;}
+  .logout_btn{font-size: 12px;}
+  
+}

@@ -1,0 +1,170 @@
+.AwarpurCBAMines {
+  .greenTxt {
+    color: white !important;
+    background-color: transparent;
+    font-size: 20px;
+  }
+  table tr:hover {
+    background: none;
+  }
+  table,
+  th,
+  td {
+    border: 1px solid white;
+    padding: 15px 42px;
+  }
+  .text-white {
+    font-size: 20px;
+  }
+  .single-text-1 {
+    transform: translate(2.6vw, 3vh);
+  }
+  .single-text-2 {
+    transform: translate(65.4vw, 61vh);
+    .stone2 {
+      height: 106px;
+      width: 120px;
+    }
+  }
+  .single-text-3 {
+    transform: translate(78vw, 59vh);
+    .stone1 {
+      height: 106px;
+      width: 136px;
+    }
+  }
+  .single-text-4 {
+    transform: translate(91vw, 27vh);
+    width: 150px;
+    height: 64px;
+  }
+  .single-text-5 {
+    transform: translate(83.6vw, 19vh);
+    font-size: 97px;
+  }
+  .single-text-6 {
+    transform: translate(66.6vw, 22vh);
+    font-size: 53px;
+  }
+  .single-text-7 {
+    transform: translate(65.6vw, 17vh);
+  }
+  .single-text-8 {
+    transform: translate(83.9vw, 19vh);
+  }
+  .pipe-1 {
+    transform: translate(65.2vw, 23vh) rotate(7deg);
+    width: 360px;
+    height: 7px;
+  }
+}
+@media (max-width: 1440px) {
+  .AwarpurCBAMines {
+    .single-text-1 {
+      transform: translate(2vw, 2vh);
+  }
+    table, th, td {
+      padding: 10px 30px;
+  }
+  .single-text-6 {
+    transform: translate(70.6vw, 24vh);
+    font-size: 31px;
+}
+.pipe-1 {
+  transform: translate(66.2vw, 25vh) rotate(7deg);
+  width: 257px;
+  height: 6px;
+}
+.single-text-5 {
+  transform: translate(83.8vw, 24vh);
+  font-size: 37px;
+}
+
+.single-text-7 {
+  transform: translate(67.6vw, 19vh);
+ 
+}
+.single-text-7, .single-text-8{
+.text-white {
+  font-size: 10px;
+}
+}
+.single-text-4 {
+  transform: translate(94vw, 27vh);
+  width: 71px;
+  height: 28px;
+}
+.single-text-2 {
+  transform: translate(72vw, 64vh);
+.stone2 {
+  height: 73px;
+  width: 83px;
+}
+}
+.single-text-3 {
+  transform: translate(82vw, 65vh);
+.stone1 {
+  height: 63px;
+  width: 83px;
+}
+}
+.single-text-8 {
+  transform: translate(82.9vw, 22vh);
+}
+
+  }
+}
+@media (max-width: 1366px) {
+  .AwarpurCBAMines {
+    .greenTxt,
+    .text-white {
+      font-size: 14px;
+    }
+    table,
+    th,
+    td {
+      padding: 9.6px 30px;
+    }
+    .single-text-1 {
+      transform: translate(9.6px, 18px);
+    }
+    .single-text-7 {
+      transform: translate(867.6px, 183px);
+    }
+    .single-text-8 {
+      transform: translate(1125.9px, 199px);
+    }
+    .single-text-2 {
+      transform: translate(834.6px, 366px);
+      .stone2 {
+        width: 95px;
+        height: 84px;
+      }
+    }
+    .single-text-3 {
+      transform: translate(1028.6px, 357px);
+      .stone1 {
+        width: 106px;
+        height: 84px;
+      }
+    }
+    .single-text-4 {
+      transform: translate(1234.6px, 239px);
+      width: 113px;
+      height: 47px;
+    }
+    .single-text-6 {
+      transform: translate(896.6px, 214px);
+      font-size: 31px;
+    }
+    .pipe-1 {
+      transform: translate(867.5px, 220px) rotate(7deg);
+      width: 262px;
+      height: 5px;
+    }
+    .single-text-5 {
+      transform: translate(1124.6px, 203px);
+      font-size: 66px;
+    }
+  }
+}

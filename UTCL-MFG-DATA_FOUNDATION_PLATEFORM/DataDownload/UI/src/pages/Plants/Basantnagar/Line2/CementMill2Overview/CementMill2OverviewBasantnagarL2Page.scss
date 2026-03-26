@@ -1,0 +1,82 @@
+.CM2OverviewBsntngrL2 {
+    .single-text-61 {
+        transform: translate(80vw, 12vh);
+    }
+
+    .single-text-62 {
+        transform: translate(83vw, 13vh);
+    }
+
+    .single-text-63 {
+        transform: translate(86vw, 9vh);
+    }
+
+    .pipe-40 {
+        transform: translate(81vw, 17vh);
+        height: 139px;
+    }
+
+    .pipe-41 {
+        transform: translate(79vw, 14vh);
+        width: 80px;
+    }
+
+    .pipe-42 {
+        transform: translate(85.5vw, 13vh);
+        width: 21px;
+    }
+
+    .pipe-43 {
+        transform: translate(79vw, 15vh);
+        height: 160px;
+    }
+
+}
+
+//1440 responsiveness
+@media (max-width: 1440px) {
+    .CM2OverviewBsntngrL2 {
+        .pipe-40 {
+            height: 111px;
+        }
+
+        .pipe-43 {
+            height: 135px;
+        }
+    }
+}
+
+//mobile responsiveness
+@media (max-width: 1367px) {
+    .CM2OverviewBsntngrL2 {
+        .single-text-61 {
+            transform: translate(1093px, 72px);
+        }
+
+        .single-text-62 {
+            transform: translate(1136px, 77px);
+        }
+
+        .single-text-63 {
+            transform: translate(1178px, 54px);
+        }
+
+        .pipe-40 {
+            transform: translate(1106px, 102px);
+            height: 93px;
+        }
+
+        .pipe-41 {
+            transform: translate(1079px, 84px);
+        }
+
+        .pipe-42 {
+            transform: translate(1168px, 78px);
+        }
+
+        .pipe-43 {
+            transform: translate(1079px, 90px);
+            height: 113px;
+        }
+    }
+}

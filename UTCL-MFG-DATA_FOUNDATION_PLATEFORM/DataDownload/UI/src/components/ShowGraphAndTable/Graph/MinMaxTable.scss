@@ -1,0 +1,23 @@
+.min-max-table {
+  overflow-x: auto !important;
+  th {
+    position: sticky;
+    left: -2px;
+    font-weight: 700;
+    background-color: #f3f3f3;
+    width: 70px;
+  }
+  td {
+    font-weight: 600;
+    padding-right: 10px;
+  }
+  th,
+  td {
+    border-top: 1px solid #eeeeee;
+    font-size: 12px;
+    word-break: keep-all;
+    white-space: nowrap;
+    vertical-align: middle;
+    color: #212529;
+  }
+}

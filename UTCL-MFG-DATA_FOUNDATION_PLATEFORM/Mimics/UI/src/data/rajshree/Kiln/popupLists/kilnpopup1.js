@@ -1,0 +1,58 @@
+export const kilnpopup1 = [
+  {
+    cgrnTxt: "KILN MAIN MOTOR-1 BEARING TEMP-1",
+    blackTextLabel: "KL_464MD1_BTE1",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: "KILN MAIN MOTOR-1 BEARING TEMP-2",
+    blackTextLabel: "KL_464MD1_BTE2",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: "KILN MAIN MOTOR-1 WINDING TEMP-1",
+    blackTextLabel: "KL_464MD1_WTE1",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: "KILN MAIN MOTOR-1 WINDING TEMP-2",
+    blackTextLabel: "KL_464MD1_WTE2",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: "KILN MAIN MOTOR-1 WINDING TEMP-3",
+    blackTextLabel: "KL_464MD1_WTE3",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: "KILN MAIN MOTOR-1 WINDING TEMP-4",
+    blackTextLabel: "KL_464MD1_WTE4",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: "KILN MAIN MOTOR-1 WINDING TEMP-5",
+    blackTextLabel: "KL_464MD1_WTE5",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: "KILN MAIN MOTOR-1 WINDING TEMP-6",
+    blackTextLabel: "KL_464MD1_WTE6",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+];

@@ -1,0 +1,82 @@
+<!-- old code -->
+
+<!-- <div class="modal-header">
+    <h4 class="modal-title pull-left modal-lg">
+      Raw Data
+    </h4>
+    <button
+      type="button"
+      class="btn-close close pull-right"
+      aria-label="Close"
+      (click)="modalRef?.hide()"
+    >
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    
+    <div class="flex justify-content-center align-items-center" [formGroup]="form">
+      <input
+      formControlName="rawdDatedate"
+      [owlDateTimeTrigger]="dt12"
+      [owlDateTime]="dt12"
+      [selectMode]="'range'"
+      [max]="max"
+      class="form-control mb-2"
+      placeholder="Select Date Range"
+      (dateTimeChange)="downloadRawdata($event)"
+     
+    />
+        <owl-date-time #dt12></owl-date-time>
+      </div>
+    
+    </div>
+  -->
+
+  <!-- Modal Header -->
+<div class="flex items-center justify-between border-b border-[var(--form-border)] px-5 py-3">
+
+  <h4 class="text-lg font-semibold text-[var(--title)]">
+    Raw Data
+  </h4>
+
+  <button
+    type="button"
+    aria-label="Close"
+    (click)="modalRef?.hide()"
+    class="text-xl font-bold text-[var(--text-color)] hover:text-red-500 transition"
+  >
+    ✕
+  </button>
+
+</div>
+
+
+<!-- Modal Body -->
+<div class="px-5 py-4">
+
+  <div class="flex justify-center items-center" [formGroup]="form">
+
+    <input
+      formControlName="rawdDatedate"
+      [owlDateTimeTrigger]="dt12"
+      [owlDateTime]="dt12"
+      [selectMode]="'range'"
+      [max]="max"
+      placeholder="Select Date Range"
+      (dateTimeChange)="downloadRawdata($event)"
+      class="w-full max-w-sm
+             px-3 py-2
+             rounded-md
+             border border-[var(--form-border)]
+             bg-[var(--input-bg)]
+             text-[var(--text-color)]
+             placeholder-[var(--search-placeholder)]
+             focus:outline-none focus:ring-2 focus:ring-orange-400"
+    />
+
+    <owl-date-time #dt12></owl-date-time>
+
+  </div>
+
+</div>

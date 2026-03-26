@@ -1,0 +1,41 @@
+{
+    "RecipeFormatVersion": "2020-01-25",
+    "ComponentName": "utcl.cement.opcua-read-store",
+    "ComponentVersion": "1.0.5",
+    "ComponentType": "aws.greengrass.generic",
+    "ComponentDescription": "Reads from OPCUA source and send to sitewise stream",
+    "ComponentPublisher": "UTCL",
+    "ComponentConfiguration": {
+      "DefaultConfiguration": {}
+    },
+    "ComponentDependencies": {
+      "aws.greengrass.TokenExchangeService": {
+        "VersionRequirement": ">=2.0.0 <3.0.0",
+        "DependencyType": "HARD"
+      }
+    },
+    "Manifests": [
+      {
+        "Platform": {
+          "os": "linux"
+        },
+        "Lifecycle": {
+          "Install": "pip install stream-manager asyncua",
+          "Run": "python3 {artifacts:decompressedPath}/utcl.cement.opcua-read-store/main.py"
+        },
+        "Artifacts": [
+          {
+            "Uri": "s3://utcl-greengrass-artifacts/utcl.cement.opcua-read-store/1.0.5/utcl.cement.opcua-read-store.zip",
+            "Digest": "Tc/bxvh8fpFa/hAjy1a8o52q1ys74bZX4jGje6VBL18=",
+            "Algorithm": "SHA-256",
+            "Unarchive": "ZIP",
+            "Permission": {
+              "Read": "OWNER",
+              "Execute": "NONE"
+            }
+          }
+        ]
+      }
+    ],
+    "Lifecycle": {}
+  }

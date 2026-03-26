@@ -1,0 +1,98 @@
+<div class="row ng-star-inserted">
+  <div class="col-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+      <div
+        *ngFor="let item of datasorce; let i = index"
+        class="group relative rounded-xl border-2 border-[var(--chart-nav-border)] flex flex-col items-center justify-center p-1 cursor-pointer hover:border-[var(--picker-accent)] transition-all duration-200"
+        (dblclick)="openModal(secondsDataChart, item.iotTagId, item.parameterName, item.unitofmeasurement)"
+        title="Double click to view history"
+      >
+        <!-- <div class="mat-grid-tile-content cursor-class"> -->
+
+        <!-- Parameter name -->
+        <span class="text-[11px] mb-1 text-[var(--text-color)] text-center leading-tight px-1 flex items-center justify-center">
+          {{ item.parameterName | removebrackets }}
+        </span>
+
+        <!-- Gauge -->
+        <ngx-gauge
+          [size]="110"
+          type="arch"
+          [thick]="11"
+          [value]="item.actualValue.toFixed(2)"
+          [max]="item.actualValue + 250"
+          cap="round"
+          [append]="item.unitofmeasurement"
+          [foregroundColor]="item.foregroundColor"
+          [backgroundColor]="'var(--dashboard-graph-bg)'"
+          class="!w-full justify-center"
+        ></ngx-gauge>
+
+        <!-- Hover hint -->
+        <span class="absolute bottom-1 right-2 text-[9px] text-center text-[var(--text-color)] opacity-0 group-hover:opacity-40 transition-opacity duration-200">
+          double click for history
+        </span>
+
+      </div>
+    </div>
+
+    <!-- <mat-grid-list cols="3" rowheight="1:1.2" gutterSize="8px" class="mat-grid-list">
+      <div>
+        <mat-grid-tile *ngFor="let item of datasorce; let i = index"
+          class="mat-grid-tile dial-card ng-star-inserted"
+          rowspan="1" colspan="1">
+          <div class="mat-grid-tile-content cursor-class"
+            (dblclick)="openModal(secondsDataChart, item.iotTagId, item.parameterName, item.unitofmeasurement)">
+            <div class="group pt-3 pb-2 relative w-full h-full rounded-xl border-2 border-[var(--chart-nav-border)] flex flex-col items-center justify-center overflow-y-visible hover:border-[var(--picker-accent)] transition-all duration-200">
+              <span class="text-[11px] mb-1 text-[var(--text-color)] text-center font-semibold uppercase leading-tight px-1 w-full min-h-[28px] flex items-center justify-center">
+                {{ item.parameterName | removebrackets }}
+              </span>
+              <ngx-gauge [size]="100" type="arch" [thick]="10" [value]="item.actualValue.toFixed(2)"
+                [max]="item.actualValue + 250" cap="round" [append]="item.unitofmeasurement"
+                [foregroundColor]="item.foregroundColor" [backgroundColor]="'var(--dashboard-graph-bg)'"
+                class="!w-full"></ngx-gauge>
+              <span class="absolute bottom-1 right-2 text-[9px] text-center text-[var(--text-color)] opacity-0 group-hover:opacity-40 transition-opacity duration-200">
+                double click for history
+              </span>
+            </div>
+          </div>
+        </mat-grid-tile>
+      </div>
+    </mat-grid-list> -->
+
+  </div>
+</div>
+
+<ng-template class="owl-control" #secondsDataChart>
+  <div class="modal-header bg-[var(--bg-leftdrawer-footer)]">
+    <h4 class="modal-title pull-left text-[var(--text-color)]">History Data for {{ display_name | removebrackets }}</h4>
+    <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide(); closeModal()">
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="control-dateTime">
+      <input
+        [owlDateTimeTrigger]="dt16"
+        [owlDateTime]="dt16"
+        [(ngModel)]="selectRange"
+        class="form-control"
+        (dateTimeChange)="onselectDateTimeRange($event)"
+        [selectMode]="'range'"
+        placeholder="Select Date Range"
+        [max]="max"
+      />
+      <owl-date-time #dt16 class="xyzz"></owl-date-time>
+    </div>
+    <app-loader class="d-flex justify-content-center" *ngIf="loadchart">
+      <div class="d-flex justify-content-center">Loading</div>
+    </app-loader>
+    <app-line-chart
+      *ngIf="chartresult"
+      [dateTimeData]="this.dateTimedata"
+      [seriesData]="this.seriesData"
+      [displayName]="display_name"
+      [unitMeasure]="unit_measure"
+    ></app-line-chart>
+  </div>
+</ng-template>

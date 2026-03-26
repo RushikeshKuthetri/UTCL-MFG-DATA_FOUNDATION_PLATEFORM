@@ -1,0 +1,81 @@
+const express = require("express");
+const router = express.Router();
+const blaineController = require("../controllers/blaineController");
+const authOPTMiddleware = require("../../middleware/authOPT");
+router.post(
+  "/insertPredictionData",
+  authOPTMiddleware,
+  blaineController.insertPredictionData
+);
+router.post(
+  "/getLatestFilteredData",
+  authOPTMiddleware,
+  blaineController.getLatestFilteredData
+);
+router.post(
+  "/getLastTwoHrsData",
+  authOPTMiddleware,
+  blaineController.getLastTwoHrsData
+);
+router.post(
+  "/updateActualBlaineOneHour",
+  authOPTMiddleware,
+  blaineController.updateActualBlaineOneHour
+);
+router.post(
+  "/updateRecommadationForBlaine",
+  authOPTMiddleware,
+  blaineController.updateRecommadationForBlaine
+);
+router.post(
+  "/updateRemarksForBlaine",
+  authOPTMiddleware,
+  blaineController.updateRemarksForBlaine
+);
+router.post(
+  "/getDropDownFilter",
+  authOPTMiddleware,
+  blaineController.getDropDownFilter
+);
+router.post(
+  "/getBarChartData",
+  authOPTMiddleware,
+  blaineController.getBarChartData
+);
+router.post(
+  "/exportBlaineData",
+  authOPTMiddleware,
+  blaineController.exportBlaineData
+);
+router.post(
+  "/getControllableParameters",
+  authOPTMiddleware,
+  blaineController.getControllableParameters
+);
+router.post(
+  "/getBlainePredictionChartData",
+  authOPTMiddleware,
+  blaineController.getBlainePredictionChartData
+);
+router.post(
+  "/getBlainePredictionChartDataForActualBlaine",
+  authOPTMiddleware,
+  blaineController.getBlainePredictionChartDataForActualBlaine
+);
+router.post(
+  "/getPredictionDataWithDatetime",
+  authOPTMiddleware,
+  blaineController.getPredictionDataWithDatetime
+);
+router.post(
+  "/getBlaineAccMTD",
+  authOPTMiddleware,
+  blaineController.getBlaineAccMTD
+);
+router.post(
+  "/getBlaineAccDaywiseMTD",
+  authOPTMiddleware,
+  blaineController.getBlaineAccDaywiseMTD
+);
+
+module.exports = router;

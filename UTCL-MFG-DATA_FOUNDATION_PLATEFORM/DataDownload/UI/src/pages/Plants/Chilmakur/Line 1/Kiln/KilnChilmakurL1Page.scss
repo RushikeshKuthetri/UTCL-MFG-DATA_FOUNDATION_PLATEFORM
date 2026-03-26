@@ -1,0 +1,621 @@
+.KilnChilmakurL1 {
+  .connector-both-side-2 {
+    height: 32px;
+    width: 54px;
+    background-size: 54px 32px;
+  }
+
+  .containerImage {
+    height: 95px;
+    width: 98px;
+    background-size: 98px 174px;
+    background-position-y: -63px;
+  }
+
+  .single-text-1 {
+    transform: translate(11.3vw, 39.5vh) scaleY(-1) rotate(180deg);
+    height: 87px;
+    width: 1343px;
+    background-size: 1423px 96px;
+  }
+
+  .single-text-2 {
+    transform: translate(5vw, 14vh);
+  }
+
+  .single-text-3 {
+    transform: translate(14.2vw, 14vh);
+  }
+
+  .single-text-4 {
+    transform: translate(15.5vw, 70vh);
+    gap: 5px;
+
+    .connector-both-side-2 {
+      transform: rotate(90deg);
+
+      .line-circle {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  .single-text-5,
+  .single-text-26 {
+    .connector-both-side-2 {
+      transform: rotate(-90deg);
+
+      .dot {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  .single-text-5 {
+    transform: translate(75.6vw, 28vh);
+  }
+
+  .single-text-6 {
+    transform: translate(2vw, 24.4vh);
+  }
+
+  .single-text-7 {
+    transform: translate(20.5vw, 5.4vh);
+  }
+
+  .single-text-8 {
+    transform: translate(29.5vw, 5.4vh);
+  }
+
+  .single-text-9 {
+    transform: translate(68.5vw, 5.4vh);
+  }
+
+  .single-text-10 {
+    transform: translate(19.5vw, 38vh);
+  }
+
+  .single-text-11 {
+    transform: translate(36.5vw, 38vh);
+  }
+
+  .single-text-12 {
+    transform: translate(55.5vw, 38vh);
+  }
+
+  .single-text-13 {
+    transform: translate(55.5vw, 50vh);
+  }
+
+  .single-text-14 {
+    transform: translate(36.5vw, 50vh);
+  }
+
+  .single-text-15 {
+    transform: translate(19.5vw, 50vh);
+  }
+
+  .single-text-16 {
+    transform: translate(11.5vw, 56vh);
+  }
+
+  .single-text-17 {
+    transform: translate(79vw, 32vh);
+  }
+
+  .single-text-18 {
+    transform: translate(48vw, 25vh);
+  }
+
+  .single-text-19 {
+    transform: translate(46vw, 53vh);
+
+    .square {
+      transform: rotate(45deg);
+    }
+  }
+
+  .single-text-20 {
+    transform: translate(77vw, 58.5vh);
+    width: 308px;
+  }
+
+  .single-text-21 {
+    transform: translate(89vw, 45vh);
+    gap: 3px;
+  }
+
+  .single-text-22 {
+    transform: translate(40.3vw, 43.5vh);
+  }
+
+  .single-text-23 {
+    transform: translate(5vw, 54vh);
+  }
+
+  .single-text-24 {
+    transform: translate(1vw, 63vh);
+  }
+
+  .single-text-25 {
+    transform: translate(17vw, 55.5vh);
+  }
+
+  .single-text-26 {
+    transform: translate(33.5vw, 52vh);
+  }
+
+  .single-text-27 {
+    transform: translate(45vw, 61vh);
+  }
+
+  .single-text-28 {
+    transform: translate(6vw, 34vh);
+  }
+
+  .single-text-29 {
+    transform: translate(16vw, 34vh);
+  }
+
+  .single-text-30 {
+    transform: translate(6vw, 48vh);
+  }
+
+  .single-text-31 {
+    transform: translate(29vw, 49.5vh);
+  }
+
+  .single-text-32 {
+    transform: translate(89vw, 24vh);
+  }
+
+  .single-text-33 {
+    transform: translate(2vw, 60vh);
+  }
+
+  .single-text-34 {
+    transform: translate(-3.5vw, 30vh) rotate(90deg);
+  }
+
+  .single-text-35 {
+    transform: translate(53.3vw, 43.5vh);
+  }
+
+  .single-text-36 {
+       transform: translate(94vw, 39vh);
+  }
+  .single-text-37 {
+       transform: translate(13.5vw, 42.5vh);
+  }
+
+
+
+  .pipe-1 {
+    transform: translate(11.2vw, 24vh);
+    height: 282px;
+    width: 32px;
+  }
+
+  .pipe-2 {
+    transform: translate(77vw, 38vh);
+    height: 186px;
+    width: 45px;
+  }
+
+  .pipe-3 {
+    transform: translate(11.3vw, 20.5vh);
+    height: 50px;
+  }
+
+  .pipe-4 {
+    transform: translate(12.3vw, 20.5vh);
+    height: 50px;
+  }
+
+  .pipe-5 {
+    transform: translate(5.5vw, 38vh);
+    height: 67px;
+  }
+
+  .pipe-6 {
+    transform: translate(82.3vw, 28vh);
+    height: 285px;
+  }
+
+  .pipe-7 {
+    transform: translate(85.1vw, 37vh);
+    height: 78px;
+  }
+
+  .pipe-8 {
+    transform: translate(86.7vw, 46vh);
+    height: 87px;
+  }
+
+  .pipe-9 {
+    transform: translate(8vw, 20.4vh);
+    width: 67px;
+  }
+
+  .pipe-10 {
+    transform: translate(12.8vw, 20.4vh);
+    width: 67px;
+  }
+
+  .pipe-11 {
+    transform: translate(13vw, 27.3vh);
+    width: 1342px;
+  }
+
+  .pipe-12 {
+    transform: translate(5.5vw, 37.3vh);
+    width: 110px;
+  }
+
+  .pipe-13 {
+    transform: translate(79.3vw, 38.5vh);
+    width: 59px;
+  }
+
+  .pipe-14 {
+    transform: translate(79.3vw, 45.2vh);
+    width: 198px;
+  }
+
+  .pipe-15 {
+    transform: translate(87.3vw, 54.2vh);
+    width: 55px;
+  }
+
+  .pipe-16 {
+    transform: translate(85.5vw, 37vh);
+    width: 55px;
+  }
+
+  .line-1 {
+    transform: translate(17.3vw, 65vh);
+    gap: 57px;
+
+    .upArrow {
+      height: 50px;
+    }
+  }
+
+  .line-2 {
+    transform: translate(76.5vw, 34vh);
+    height: 55px;
+  }
+
+  .line-3 {
+    transform: translate(7.5vw, 22vh);
+    height: 160px;
+  }
+
+  .line-4 {
+    transform: translate(16.8vw, 22vh);
+    height: 160px;
+  }
+
+  .line-5 {
+    transform: translate(4vw, 28.2vh);
+    width: 134px;
+  }
+
+  .line-6 {
+    transform: translate(4vw, 32.5vh);
+    width: 134px;
+  }
+
+  .line-7 {
+    transform: translate(7.5vw, 39.5vh);
+    width: 68px;
+  }
+
+  .line-8 {
+    transform: translate(13.5vw, 39.5vh);
+    width: 68px;
+  }
+
+  .line-9 {
+    transform: translate(88.5vw, 37.5vh);
+    width: 42px;
+  }
+
+}
+
+//mobile responsiveness
+@media (max-width: 1366px) {
+  .KilnChilmakurL1 {
+    .connector-both-side-2 {
+      height: 20px;
+      width: 40px;
+      background-size: 40px 20px;
+    }
+
+    .containerImage {
+      height: 62px;
+      width: 68px;
+      background-size: 67px 146px;
+      background-position-y: -69px;
+    }
+
+    .single-text-1 {
+      transform: translate(154px, 239px) scaleY(-1) rotate(180deg);
+      height: 56px;
+      width: 924px;
+      background-size: 980px 60px;
+    }
+
+    .single-text-2 {
+      transform: translate(68px, 84px);
+    }
+
+    .single-text-3 {
+      transform: translate(194px, 84px);
+    }
+
+    .single-text-4 {
+      transform: translate(212px, 420px);
+      gap: 3px;
+    }
+
+    .single-text-5 {
+      transform: translate(1032px, 168px);
+    }
+
+    .single-text-6 {
+      transform: translate(27px, 146px);
+    }
+
+    .single-text-7 {
+      transform: translate(280px, 32px);
+    }
+
+    .single-text-8 {
+      transform: translate(403px, 32px);
+    }
+
+    .single-text-9 {
+      transform: translate(936px, 32px);
+    }
+
+    .single-text-10 {
+      transform: translate(266px, 228px);
+    }
+
+    .single-text-11 {
+      transform: translate(499px, 228px);
+    }
+
+    .single-text-12 {
+      transform: translate(758px, 228px);
+    }
+
+    .single-text-13 {
+      transform: translate(758px, 300px);
+    }
+
+    .single-text-14 {
+      transform: translate(499px, 300px);
+    }
+
+    .single-text-15 {
+      transform: translate(266px, 300px);
+    }
+
+    .single-text-16 {
+      transform: translate(157px, 336px);
+    }
+
+    .single-text-17 {
+      transform: translate(1079px, 192px);
+    }
+
+    .single-text-18 {
+      transform: translate(656px, 150px);
+    }
+
+    .single-text-19 {
+      transform: translate(628px, 318px);
+    }
+
+    .single-text-20 {
+      transform: translate(1052px, 363px);
+      width: 228px;
+    }
+
+    .single-text-21 {
+      transform: translate(1216px, 270px);
+      gap: 2px;
+    }
+
+    .single-text-22 {
+      transform: translate(550px, 261px);
+    }
+
+    .single-text-23 {
+      transform: translate(68px, 324px);
+    }
+
+    .single-text-24 {
+      transform: translate(14px, 378px);
+    }
+
+    .single-text-25 {
+      transform: translate(232px, 333px);
+    }
+
+    .single-text-26 {
+      transform: translate(458px, 312px);
+    }
+
+    .single-text-27 {
+      transform: translate(615px, 366px);
+    }
+
+    .single-text-28 {
+      transform: translate(82px, 204px);
+    }
+
+    .single-text-29 {
+      transform: translate(219px, 204px);
+    }
+
+    .single-text-30 {
+      transform: translate(82px, 288px);
+    }
+
+    .single-text-31 {
+      transform: translate(396px, 297px);
+    }
+
+    .single-text-32 {
+      transform: translate(1216px, 144px);
+    }
+
+    .single-text-33 {
+      transform: translate(27px, 360px);
+    }
+
+    .single-text-34 {
+      transform: translate(-48px, 180px) rotate(90deg);
+    }
+
+    .single-text-35 {
+      transform: translate(728px, 261px);
+    }
+
+    .single-text-36 {
+      transform: translate(27px, 12px);
+    }
+
+  .single-text-36 {
+       transform: translate(1284px, 234px);
+  }
+  .single-text-37 {
+       transform: translate(184px, 255px);
+  }
+    .pipe-1 {
+      transform: translate(153px, 144px);
+      height: 176px;
+      width: 23px;
+    }
+
+    .pipe-2 {
+      transform: translate(1052px, 228px);
+      width: 36px;
+    }
+
+    .pipe-3 {
+      transform: translate(154px, 123px);
+    }
+
+    .pipe-4 {
+      transform: translate(168px, 123px);
+    }
+
+    .pipe-5 {
+      transform: translate(75px, 228px);
+      height: 40px;
+    }
+
+    .pipe-6 {
+      transform: translate(1124px, 168px);
+      height: 210px;
+    }
+
+    .pipe-7 {
+      transform: translate(1162px, 222px);
+      height: 56px;
+    }
+
+    .pipe-8 {
+      transform: translate(1184px, 276px);
+      height: 66px;
+    }
+
+    .pipe-9 {
+      transform: translate(109px, 122px);
+      width: 46px;
+    }
+
+    .pipe-10 {
+      transform: translate(175px, 122px);
+    }
+
+    .pipe-11 {
+      transform: translate(178px, 164px);
+      width: 954px;
+    }
+
+    .pipe-12 {
+      transform: translate(75px, 224px);
+      width: 90px;
+    }
+
+    .pipe-13 {
+      transform: translate(1083px, 231px);
+      width: 43px;
+    }
+
+    .pipe-14 {
+      transform: translate(1083px, 271px);
+      width: 135px;
+    }
+
+    .pipe-15 {
+      transform: translate(1192px, 333px);
+      width: 25px;
+    }
+
+    .pipe-16 {
+      transform: translate(1168px, 222px);
+      width: 35px;
+    }
+
+    .line-1 {
+      transform: translate(236px, 390px);
+      gap: 41px;
+    }
+
+    .line-2 {
+      transform: translate(1045px, 204px);
+      height: 34px;
+    }
+
+    .line-3 {
+      transform: translate(102px, 132px);
+      height: 107px;
+    }
+
+    .line-4 {
+      transform: translate(229px, 132px);
+      height: 107px;
+    }
+
+    .line-5 {
+      transform: translate(55px, 172px);
+      width: 94px;
+    }
+
+    .line-6 {
+      transform: translate(55px, 200px);
+      width: 94px;
+    }
+
+    .line-7 {
+      transform: translate(102px, 237px);
+      width: 46px;
+    }
+
+    .line-8 {
+      transform: translate(184px, 237px);
+      width: 46px;
+    }
+
+    .line-9 {
+      transform: translate(1209px, 225px);
+    }
+
+  }
+}

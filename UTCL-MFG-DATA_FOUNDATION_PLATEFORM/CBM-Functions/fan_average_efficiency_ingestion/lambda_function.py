@@ -1,0 +1,4 @@
+from main_module import fan_average_efficiency_ingestion_main
+
+def handler(event,context):
+    return fan_average_efficiency_ingestion_main(event,context)

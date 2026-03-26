@@ -1,0 +1,969 @@
+.CoalFiringLine3 {
+  .img-86 {
+    height: 40px;
+    width: 65px;
+    transform: scaleX(-1);
+    .dot {
+      margin-top: 20px;
+      margin-left: 35px;
+    }
+  }
+  .connector-icon {
+    height: 25px;
+    width: 35px;
+    .dot {
+      margin-left: -6px;
+    }
+  }
+  .dot-square-line {
+    transform: rotate(90deg);
+    .squar {
+      width: 12px;
+      height: 5px;
+    }
+  }
+  .pipe-1 {
+    transform: translate(22.65vw, 45vh);
+    height: 360px;
+  }
+  .pipe-2 {
+    transform: translate(45.87vw, 45vh);
+    height: 290px;
+  }
+  .pipe-3 {
+    transform: translate(69vw, 45vh);
+    height: 290px;
+  }
+  .pipe-4 {
+    transform: translate(23vw, 76vh);
+    width: 550px;
+  }
+  .pipe-5 {
+    transform: translate(65.2vw, 76vh);
+    width: 475px;
+  }
+  .pipe-6 {
+    transform: translate(37vw, 76.7vh);
+    height: 75px;
+  }
+  .pipe-7 {
+    transform: translate(51vw, 76vh);
+    height: 75px;
+  }
+  .pipe-8 {
+    transform: translate(65.2vw, 76vh);
+    height: 75px;
+  }
+  .pipe-9 {
+    transform: translate(77.2vw, 76.6vh);
+    height: 75px;
+  }
+  .pipe-10 {
+    transform: translate(89.4vw, 76vh);
+    height: 75px;
+  }
+  .pipe-11 {
+    transform: translate(20vw, 35vh);
+    width: 255px;
+  }
+  .pipe-12 {
+    transform: translate(20vw, 39vh);
+    width: 255px;
+  }
+  .pipe-13 {
+    transform: translate(63vw, 35vh);
+    width: 255px;
+  }
+  .pipe-14 {
+    transform: translate(63vw, 39vh);
+    width: 255px;
+  }
+  .pipe-15 {
+    transform: translate(39.9vw, 13vh);
+    height: 65px;
+  }
+  .pipe-16 {
+    transform: translate(56.08vw, 13vh);
+    height: 65px;
+  }
+  .pipe-17 {
+    transform: translate(41vw, 10vh);
+    width: 50px;
+  }
+  .pipe-18 {
+    transform: translate(57vw, 10vh);
+    width: 65px;
+  }
+  .pipe-19 {
+    transform: translate(43vw, 10vh);
+    height: 35px;
+  }
+  .pipe-20 {
+    transform: translate(60vw, 10vh);
+    height: 35px;
+  }
+  .pipe-21 {
+    transform: translate(30vw, 27vh);
+    width: 155px;
+  }
+  .pipe-22 {
+    transform: translate(32vw, 24vh);
+    height: 35px;
+  }
+  .pipe-23 {
+    transform: translate(32vw, 23.5vh);
+    width: 117px;
+  }
+  .pipe-24 {
+    transform: translate(72vw, 27vh);
+    width: 155px;
+  }
+  .pipe-25 {
+    transform: translate(74vw, 24vh);
+    height: 35px;
+  }
+  .pipe-26 {
+    transform: translate(74vw, 23.5vh);
+    width: 117px;
+  }
+  .pipe-27 {
+    transform: translate(63.8vw, 46.5vh);
+    height: 85px;
+  }
+  .pipe-28 {
+    transform: translate(34.2vw, 7.1vh);
+    width: 72px;
+  }
+  .pipe-29 {
+    transform: translate(40.2vw, 7.8vh);
+    width: 90px;
+  }
+  .pipe-30 {
+    transform: translate(45.2vw, 7vh);
+    width: 40px;
+  }
+  .pipe-31 {
+    transform: translate(47.2vw, 4vh);
+    height: 29px;
+  }
+  .pipe-32 {
+    transform: translate(50.3vw, 7.1vh);
+    width: 72px;
+  }
+  .pipe-33 {
+    transform: translate(56.2vw, 7.8vh);
+    width: 90px;
+  }
+  .pipe-34 {
+    transform: translate(61.2vw, 7vh);
+    width: 40px;
+  }
+  .pipe-35 {
+    transform: translate(63.2vw, 4vh);
+    height: 29px;
+  }
+  .pipe-36 {
+    transform: translate(27vw, 32vh);
+    height: 26px;
+  }
+  .pipe-37 {
+    transform: translate(27vw, 36vh);
+    height: 25px;
+  }
+  .pipe-38 {
+    transform: translate(23vw, 40vh);
+    height: 44px;
+  }
+  .pipe-39 {
+    transform: translate(69vw, 32vh);
+    height: 26px;
+  }
+  .pipe-40 {
+    transform: translate(69vw, 36vh);
+    height: 25px;
+  }
+  .pipe-41 {
+    transform: translate(69.2vw, 40vh);
+    height: 44px;
+  }
+  .pipe-42 {
+    transform: translate(64vw, 40vh);
+    height: 33px;
+  }
+  .pipe-43 {
+    transform: translate(33vw, 40vh);
+    width: 253px;
+  }
+  .pipe-44 {
+    transform: translate(46.1vw, 40vh);
+    height: 44px;
+  }
+  .pipe-45,
+  .pipe-46,
+  .pipe-47 {
+    width: 7px;
+  }
+  .pipe-48,
+  .pipe-49,
+  .pipe-50,
+  .pipe-51 {
+    height: 7px;
+  }
+  .pipe-45 {
+    transform: translate(23.4vw, 61vh);
+    height: 44px;
+  }
+  .pipe-46 {
+    transform: translate(46.6vw, 61vh);
+    height: 44px;
+  }
+  .pipe-47 {
+    transform: translate(69.75vw, 61vh);
+    height: 44px;
+  }
+  .pipe-48 {
+    transform: translate(23.6vw, 61vh);
+    width: 25px;
+  }
+  .pipe-49 {
+    transform: translate(46.8vw, 61vh);
+    width: 25px;
+  }
+  .pipe-50 {
+    transform: translate(46.8vw, 62.5vh);
+    width: 25px;
+  }
+  .pipe-51 {
+    transform: translate(70vw, 61vh);
+    width: 25px;
+  }
+  .single-text-1 {
+    gap: 235px;
+    transform: translate(38vw, 5vh);
+    .containerImage {
+      height: 89px;
+      width: 75px;
+    }
+  }
+  .single-text-2 {
+    gap: 645px;
+    transform: translate(22.7vw, 18vh);
+    .containerImage {
+      height: 140px;
+      width: 160px;
+    }
+  }
+  .single-text-3 {
+    gap: 370px;
+    transform: translate(21vw, 50vh);
+    .containerImage {
+      height: 85px;
+      width: 75px;
+    }
+  }
+  .single-text-4 {
+    gap: 405px;
+    transform: translate(22vw, 64vh);
+    .img-108 {
+      width: 39px;
+      height: 104px;
+    }
+  }
+  .single-text-5 {
+    gap: 210px;
+    transform: translate(21.5vw, 82vh);
+  }
+  .single-text-6 {
+    gap: 160px;
+    transform: translate(64.5vw, 82vh);
+  }
+  .single-text-7 {
+    gap: 215px;
+    transform: translate(25.5vw, 84vh);
+  }
+  .single-text-8 {
+    gap: 164px;
+    transform: translate(68vw, 84vh);
+  }
+  .single-text-9 {
+    gap: 350px;
+    transform: translate(16vw, 67vh);
+  }
+  .single-text-10 {
+    gap: 160px;
+    transform: translate(34vw, 6.5vh);
+  }
+  .single-text-11 {
+    gap: 160px;
+    transform: translate(50vw, 6.5vh);
+  }
+  .single-text-12 {
+    gap: 340px;
+    transform: translate(24vw, 47vh);
+  }
+  .single-text-13 {
+    gap: 25px;
+    transform: translate(37.7vw, 16vh);
+  }
+  .single-text-14 {
+    gap: 25px;
+    transform: translate(53.8vw, 16vh);
+  }
+  .single-text-15 {
+    transform: translate(65.8vw, 7vh);
+  }
+  .single-text-16 {
+    transform: translate(84vw, 6vh);
+  }
+  .single-text-17 {
+    transform: translate(60.6vw, 43.9vh);
+  }
+  .single-text-18 {
+    gap: 160px;
+    transform: translate(42vw, 15vh);
+  }
+  .single-text-19 {
+    transform: translate(56.5vw, 53vh);
+    .img-86 {
+      height: 40px;
+      width: 65px;
+      transform: scaleX(1);
+    }
+  }
+  .single-text-20 {
+    gap: 430px;
+    transform: translate(22.6vw, 47vh);
+  }
+  .single-text-21 {
+    gap: 432px;
+    transform: translate(23vw, 43.5vh);
+  }
+  .single-text-22 {
+    gap: 410px;
+    transform: translate(25vw, 60.7vh);
+  }
+}
+@media (max-width: 1440px) {
+  .CoalFiringLine3 {
+    .pipe-1 {
+      height: 295px;
+    }
+    .pipe-2 {
+      height: 235px;
+    }
+    .pipe-3 {
+      height: 235px;
+    }
+    .pipe-4 {
+      width: 410px;
+    }
+    .pipe-5 {
+      width: 355px;
+    }
+    .pipe-6 {
+      height: 67px;
+    }
+    .pipe-7 {
+      height: 70px;
+    }
+    .pipe-8 {
+      height: 72px;
+    }
+    .pipe-9 {
+      height: 67px;
+    }
+    .pipe-10 {
+      height: 72px;
+    }
+    .pipe-11 {
+      width: 200px;
+    }
+    .pipe-12 {
+      width: 200px;
+    }
+    .pipe-13 {
+      width: 200px;
+    }
+    .pipe-14 {
+      width: 200px;
+    }
+    .pipe-15 {
+      height: 55px;
+    }
+    .pipe-16 {
+      height: 55px;
+    }
+    .pipe-17 {
+      width: 40px;
+    }
+    .pipe-18 {
+      width: 42px;
+    }
+    .pipe-19 {
+      height: 25px;
+    }
+    .pipe-20 {
+      transform: translate(59.3vw, 10vh);
+      height: 25px;
+    }
+    .pipe-21 {
+      width: 120px;
+    }
+    .pipe-22 {
+      height: 28px;
+    }
+    .pipe-23 {
+      width: 91px;
+    }
+    .pipe-24 {
+      width: 120px;
+    }
+    .pipe-25 {
+      height: 29px;
+    }
+    .pipe-26 {
+      width: 91px;
+    }
+    .pipe-27 {
+      transform: translate(63.3vw, 46.9vh);
+      height: 65px;
+    }
+    .pipe-28 {
+      width: 53px;
+    }
+    .pipe-29 {
+      width: 60px;
+    }
+    .pipe-30 {
+      width: 30px;
+    }
+    .pipe-31 {
+      height: 24px;
+    }
+    .pipe-32 {
+      width: 54px;
+    }
+    .pipe-33 {
+      width: 70px;
+    }
+    .pipe-34 {
+      width: 30px;
+    }
+    .pipe-35 {
+      height: 24px;
+    }
+    .pipe-36 {
+      transform: translate(26.8vw, 31vh);
+      height: 27px;
+    }
+    .pipe-37 {
+      height: 20px;
+    }
+    .pipe-38 {
+      height: 29px;
+    }
+    .pipe-39 {
+      transform: translate(69vw, 31vh);
+      height: 27px;
+    }
+    .pipe-40 {
+      height: 20px;
+    }
+    .pipe-41 {
+      height: 28px;
+    }
+    .pipe-42 {
+      transform: translate(63.7vw, 40vh);
+
+      height: 25px;
+    }
+    .pipe-43 {
+      width: 190px;
+    }
+    .pipe-44 {
+      height: 28px;
+    }
+    .pipe-45,
+    .pipe-46,
+    .pipe-47 {
+      width: 5px;
+    }
+    .pipe-48,
+    .pipe-49,
+    .pipe-50,
+    .pipe-51 {
+      height: 5px;
+    }
+    .pipe-45 {
+      transform: translate(23.56vw, 61vh);
+      height: 44px;
+    }
+    .pipe-46 {
+      transform: translate(46.77vw, 61vh);
+      height: 44px;
+    }
+    .pipe-47 {
+      transform: translate(69.87vw, 61vh);
+    }
+    .pipe-48 {
+      width: 18px;
+    }
+    .pipe-49 {
+      width: 18px;
+    }
+    .pipe-50 {
+      width: 18px;
+    }
+    .pipe-51 {
+      width: 18px;
+    }
+    .img-86 {
+      height: 35px;
+      width: 56px;
+      transform: scaleX(-1);
+      .dot {
+        margin-top: 17px;
+        margin-left: 31px;
+      }
+    }
+    .single-text-1 {
+      gap: 176px;
+      .containerImage {
+        height: 66px;
+        width: 57px;
+      }
+    }
+    .single-text-2 {
+      gap: 490px;
+
+      .containerImage {
+        height: 100px;
+        width: 115px;
+      }
+    }
+    .single-text-3 {
+      gap: 273px;
+
+      .containerImage {
+        height: 70px;
+        width: 60px;
+      }
+    }
+    .single-text-4 {
+      gap: 309px;
+      transform: translate(22.2vw, 64vh);
+      .img-108 {
+        width: 25px;
+        height: 65px;
+      }
+    }
+    .single-text-5 {
+      gap: 150px;
+    }
+    .single-text-6 {
+      gap: 115px;
+    }
+    .single-text-7 {
+      gap: 167px;
+    }
+    .single-text-8 {
+      gap: 117px;
+    }
+    .single-text-9 {
+      gap: 237px;
+      transform: translate(16vw, 66.5vh);
+    }
+    .single-text-10 {
+      gap: 110px;
+      transform: translate(33.5vw, 6.5vh);
+    }
+    .single-text-11 {
+      gap: 117px;
+      transform: translate(49.5vw, 6.5vh);
+    }
+    .single-text-12 {
+      gap: 233px;
+      transform: translate(23.5vw, 47vh);
+    }
+    .single-text-13 {
+      gap: 25px;
+      transform: translate(37.2vw, 15.5vh);
+    }
+    .single-text-14 {
+      gap: 25px;
+      transform: translate(53.3vw, 15.5vh);
+    }
+    .single-text-15 {
+      transform: translate(65.8vw, 7vh);
+    }
+    .single-text-16 {
+      transform: translate(82vw, 6vh);
+    }
+    .single-text-17 {
+      transform: translate(59.4vw, 43.9vh);
+    }
+    .single-text-18 {
+      gap: 107px;
+      transform: translate(42vw, 14vh);
+    }
+    .single-text-19 {
+      transform: translate(54.5vw, 53vh);
+      .img-86 {
+        height: 40px;
+        width: 65px;
+        transform: scaleX(1);
+      }
+    }
+    .single-text-20 {
+      gap: 318px;
+    }
+    .single-text-21 {
+      transform: translate(23vw, 42.3vh);
+
+      gap: 321px;
+    }
+    .single-text-22 {
+      gap: 300px;
+    }
+  }
+}
+@media (max-width: 1366px) {
+  .CoalFiringLine3 {
+  .img-86 {
+    height: 32px !important;
+    width: 50px !important;
+    transform: scaleX(-1) !important;
+    .dot {
+      margin-top: 16px !important;
+      margin-left: 27px !important;
+    }
+  }
+  .connector-icon {
+    height: 20px !important;
+    width: 26px !important;
+  }
+  .CoalFiringLine3 {
+    .single-text-1 {
+      gap: 165px;
+      transform: translate(519px, 27px);
+      .containerImage {
+        height: 65px;
+        width: 55px;
+      }
+    }
+    .single-text-2 {
+      gap: 470px;
+      transform: translate(315px, 105px);
+      .containerImage {
+        height: 90px;
+        width: 105px;
+      }
+    }
+    .single-text-3 {
+      gap: 256px;
+      transform: translate(284px, 298px);
+      .containerImage {
+        height: 70px;
+        width: 60px;
+      }
+    }
+    .single-text-4 {
+      gap: 293px;
+      transform: translate(301px, 383px);
+      .img-108 {
+        width: 24px;
+        height: 66px;
+      }
+    }
+    .single-text-5 {
+      gap: 142px;
+      transform: translate(293px, 493px);
+    }
+    .single-text-6 {
+      gap: 115px;
+      transform: translate(876px, 493px);
+    }
+    .single-text-7 {
+      gap: 158px;
+      transform: translate(349px, 502px);
+    }
+    .single-text-8 {
+      gap: 131px;
+      transform: translate(930px, 505px);
+    }
+    .single-text-9 {
+      gap: 270px;
+      transform: translate(220px, 390px);
+    }
+    .single-text-10 {
+      gap: 108px;
+      transform: translate(465px, 39px);
+    }
+    .single-text-11 {
+      gap: 108px;
+      transform: translate(679px, 39px);
+    }
+    .single-text-12 {
+      gap: 240px;
+      transform: translate(325px, 283px);
+    }
+    .single-text-13 {
+      gap: 20px;
+      transform: translate(515px, 95px);
+    }
+    .single-text-14 {
+      gap: 20px;
+      transform: translate(736px, 95px);
+    }
+    .single-text-15 {
+      transform: translate(900px, 58px);
+    }
+    .single-text-16 {
+      transform: translate(1135px, 43px);
+    }
+    .single-text-17 {
+      transform: translate(828px, 265px);
+    }
+    .single-text-18 {
+      gap: 129px;
+      transform: translate(560px, 83px);
+    }
+    .single-text-19 {
+      transform: translate(765px, 303px);
+      .img-86 {
+        height: 32px !important;
+        width: 50px !important;
+        transform: scaleX(1) !important;
+      }
+    }
+    .single-text-20 {
+      gap: 304px;
+      transform: translate(307px, 281px);
+    }
+    .single-text-21 {
+      gap: 306px;
+      transform: translate(315px, 257px);
+    }
+    .single-text-22 {
+      gap: 291px;
+      transform: translate(347px, 364px);
+    }
+
+    .pipe-1 {
+      transform: translate(310px, 270px);
+      height: 245px;
+    }
+    .pipe-2 {
+      transform: translate(627px, 270px);
+      height: 190px;
+    }
+    .pipe-3 {
+      transform: translate(943px, 270px);
+      height: 190px;
+    }
+    .pipe-4 {
+      transform: translate(314px, 455px);
+      width: 386px;
+    }
+    .pipe-5 {
+      transform: translate(892px, 455px);
+      width: 335px;
+    }
+    .pipe-6 {
+      transform: translate(500px, 459px);
+      height: 60px;
+    }
+    .pipe-7 {
+      transform: translate(692px, 459px);
+      height: 60px;
+    }
+    .pipe-8 {
+      transform: translate(892px, 459px);
+      height: 60px;
+    }
+    .pipe-9 {
+      transform: translate(1054px, 459px);
+      height: 60px;
+    }
+    .pipe-10 {
+      transform: translate(1220px, 459px);
+      height: 60px;
+    }
+    .pipe-11 {
+      transform: translate(273px, 209px);
+      width: 190px;
+    }
+    .pipe-12 {
+      transform: translate(273px, 235px);
+      width: 190px;
+    }
+    .pipe-13 {
+      transform: translate(860px, 209px);
+      width: 190px;
+    }
+    .pipe-14 {
+      transform: translate(860px, 235px);
+      width: 190px;
+    }
+    .pipe-15 {
+      transform: translate(545px, 79px);
+      height: 47px;
+    }
+    .pipe-16 {
+      transform: translate(766px, 79px);
+      height: 47px;
+    }
+    .pipe-17 {
+      transform: translate(560px, 59px);
+      width: 34px;
+    }
+    .pipe-18 {
+      transform: translate(780px, 59px);
+      width: 34px;
+    }
+    .pipe-19 {
+      transform: translate(587px, 59px);
+      height: 20px;
+    }
+    .pipe-20 {
+      transform: translate(807px, 59px);
+      height: 20px;
+    }
+    .pipe-21 {
+      transform: translate(415px, 165px);
+      width: 100px;
+    }
+    .pipe-22 {
+      transform: translate(437px, 143px);
+      height: 25px;
+    }
+    .pipe-23 {
+      transform: translate(437px, 140px);
+      width: 78px;
+    }
+    .pipe-24 {
+      transform: translate(985px, 165px);
+      width: 100px;
+    }
+    .pipe-25 {
+      transform: translate(1011px, 143px);
+      height: 25px;
+    }
+    .pipe-26 {
+      transform: translate(1014px, 142px);
+      width: 70px;
+    }
+    .pipe-27 {
+      transform: translate(872px, 288px);
+      height: 40px;
+    }
+    .pipe-28 {
+      transform: translate(472px, 42px);
+      width: 45px;
+    }
+    .pipe-29 {
+      transform: translate(550px, 49px);
+      width: 63px;
+    }
+    .pipe-30 {
+      transform: translate(617px, 42px);
+      width: 28px;
+    }
+    .pipe-31 {
+      transform: translate(644px, 24px);
+      height: 20px;
+    }
+    .pipe-32 {
+      transform: translate(692px, 42px);
+      width: 45px;
+    }
+    .pipe-33 {
+      transform: translate(765px, 49px);
+      width: 63px;
+    }
+    .pipe-34 {
+      transform: translate(836px, 42px);
+      width: 28px;
+    }
+    .pipe-35 {
+      transform: translate(862px, 24px);
+      height: 20px;
+    }
+    .pipe-36 {
+      transform: translate(370px, 191px);
+      height: 15px;
+    }
+    .pipe-37 {
+      transform: translate(370px, 215px);
+      height: 17px;
+    }
+    .pipe-38 {
+      transform: translate(313px, 239px);
+      height: 28px;
+    }
+    .pipe-39 {
+      transform: translate(945px, 191px);
+      height: 15px;
+    }
+    .pipe-40 {
+      transform: translate(945px, 217px);
+      height: 15px;
+    }
+    .pipe-41 {
+      transform: translate(945px, 243px);
+      height: 24px;
+    }
+    .pipe-42 {
+      transform: translate(874px, 243px);
+      height: 20px;
+    }
+    .pipe-43 {
+      transform: translate(450px, 240px);
+      width: 180px;
+    }
+    .pipe-44 {
+      transform: translate(629px, 241px);
+      height: 26px;
+    }
+    .pipe-45,
+    .pipe-46,
+    .pipe-47 {
+      width: 5px;
+    }
+    .pipe-48,
+    .pipe-49,
+    .pipe-50,
+    .pipe-51 {
+      height: 5px;
+    }
+    .pipe-45 {
+      transform: translate(319px, 368px);
+      height: 44px;
+    }
+    .pipe-46 {
+      transform: translate(636px, 368px);
+      height: 44px;
+    }
+    .pipe-47 {
+      transform: translate(952px, 368px);
+      height: 44px;
+    }
+    .pipe-48 {
+      transform: translate(320px, 368px);
+      width: 25px;
+    }
+    .pipe-49 {
+      transform: translate(636px, 368px);
+      width: 25px;
+    }
+    .pipe-50 {
+      transform: translate(636px, 377px);
+      width: 25px;
+    }
+    .pipe-51 {
+      transform: translate(952px, 368px);
+      width: 25px;
+    }
+  }
+}
+}

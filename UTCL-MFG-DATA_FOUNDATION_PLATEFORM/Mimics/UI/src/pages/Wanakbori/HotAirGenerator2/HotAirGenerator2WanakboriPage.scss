@@ -1,0 +1,40 @@
+.HotAirGenerator2WanakboriPage {
+  .single-text-7 {
+    transform: translate(16vw, 25.5vh) !important;
+    width: 240px !important;
+  }
+  .single-text-51 {
+    transform: translate(46vw, 26.4vh);
+  }
+  .single-text-65 {
+    transform: translate(31vw, 25.4vh) !important;
+  }
+}
+@media (max-width: 1440px) {
+  .HotAirGenerator2WanakboriPage {
+    .single-text-7 {
+      transform: translate(16vw, 25vh) !important;
+      width: 180px !important;
+    }
+    .single-text-22 {
+      transform: translate(24.3vw, 57vh);
+    }
+    .single-text-65 {
+      transform: translate(30vw, 25.4vh) !important;
+    }
+  }
+}
+@media (max-width: 1367px) {
+  .HotAirGenerator2WanakboriPage {
+    .single-text-7 {
+      width: 166px !important;
+      transform: translate(208px, 155px) !important;
+    }
+    .single-text-51 {
+      transform: translate(625px, 164px);
+    }
+    .single-text-65 {
+      transform: translate(391px, 150px) !important;
+    }
+  }
+}

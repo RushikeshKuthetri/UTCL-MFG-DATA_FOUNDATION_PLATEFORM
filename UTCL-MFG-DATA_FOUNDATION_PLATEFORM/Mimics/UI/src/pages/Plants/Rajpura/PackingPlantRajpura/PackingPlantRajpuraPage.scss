@@ -1,0 +1,767 @@
+.PackingPlantRajpuraPage{
+    .square {
+        display: table !important;
+        font-size: 10px;
+    }
+    .line-circle {
+        transform: rotate(92deg);
+    }
+    .packer-3 {
+        transform:  translate(1.7vw, 7vh);
+    }
+    .packer-2 {
+        transform:  translate(36.7vw, -4vh);
+    }
+    .packer-1 {
+        transform:  translate(65.7vw, -4vh);
+        .pipe-1 {
+            transform: translate(20.3vw, 33.2vh);
+        }
+    }
+    .bg-light{
+        font-size: 9px;
+    }
+    .single-text-1 {
+        transform: translate(6.5vw, 8vh);
+        .dotted-pipe{
+        height: 521px;
+        &:before {
+            right: unset;
+            left: 0;
+        }
+        &:after {
+            left: unset;
+            right: 0;
+        }
+        }  
+    }
+    .line-39{
+        height: 28px;
+    }
+    .fa-solid {
+        line-height: 0.5;
+        font-size: 20px;
+        z-index: 1;
+    }
+    .single-text-2 {
+        transform: translate(3.4vw, 4.8vh);}
+        .single-text-3 {
+            transform: translate(9.8vw, 15.1vh);
+            .img-109{
+                width: 76px;
+                height: 59px;
+            }
+        }
+        .single-text-4, .single-text-8, .single-text-9, .single-text-10 {
+            .squareplustri{
+             width: 37px;
+             height: 65px;
+            }
+            .img-97{
+              width: 46px;
+            height: 22px;
+            transform: scale(1.1, -1.1);
+            position: relative;
+            left: -33px;
+            top: 4px;
+             .line-39 {
+              transform: translate(-9.4px, 4.8px) rotate(313deg);
+          }
+          
+            }
+         }
+        .single-text-4{transform: translate(-1.3vw, 49vh);}
+        .single-text-5{transform: translate(7.3vw, 21.9vh);
+            .containerImage {
+                height: 78px;
+                width: 88px;
+            }
+        }
+        .single-text-6{transform: translate(10.4vw, 38vh);}
+        .single-text-7{transform: translate(10.5vw, 48vh);
+        .img-109{
+            width: 69px;
+            height: 54px;
+        }
+        }
+        .single-text-8{transform: translate(18.4vw, 8vh);}
+        .single-text-9{transform: translate(22.4vw, 23vh);}
+        .single-text-10{transform: translate(28.4vw, 39vh);}
+        .single-text-11{transform: translate(7.4vw, 53vh);
+            .dashedHr-Pipe{
+                width: 130px;
+            }
+        }
+        .single-text-12, .single-text-16, .single-text-17, .single-text-18, .single-text-19, .single-text-20, .single-text-26{
+            .img-66 {
+                height: 27px;
+                width: 24px;
+            }
+            .img-108 {
+            width: 22px;
+            height: 56px;
+            }
+        }
+        .single-text-12 {
+            transform:  translate(10.6vw, 61vh);
+        }
+        .single-text-13 {
+            transform:  translate(0.4vw, 62vh);
+        }
+        .single-text-14 {
+            transform: translate(7.7vw, 32vh);
+            .dot-square-line{
+                transform: rotate(89deg);
+              }
+        }
+        .single-text-15 {
+            transform: translate(15.7vw, 21.5vh);}
+
+            .single-text-16, .single-text-17{
+                .hpipecircle {
+                    width: 180px;
+                }
+            }
+            .single-text-16 {
+                transform: translate(16.7vw, 45.5vh);
+            }
+            .single-text-17 {
+                transform: translate(51.7vw, 37.5vh);
+            }
+            .single-text-18 {
+                transform: translate(79.7vw, 34.5vh);
+                .hpipecircle {
+                    width: 130px;
+                }
+            }
+            .single-text-19 {
+                transform: translate(17.3vw, 57.5vh);
+            }
+            .single-text-20 {
+                transform: translate(21.7vw, 59.5vh);
+                .hpipecircle {
+                    width: 80px;
+                }
+            }
+            .single-text-21 {
+                transform: translate(20.5vw, 69.5vh) rotate(89deg);
+                .hpipecircle {
+                    width: 250px;
+                    .dot{
+                        transform: rotate(270deg);
+                        }
+                }
+            }
+            .single-text-22 {
+                transform: translate(21vw, 66vh) rotate(89deg);
+                .hpipecircle {
+                    width: 310px;
+                    .greenDot{
+                        transform: rotate(270deg);
+                        }
+                }
+            }
+            .single-text-23, .single-text-24{
+                .hpipecircle {
+                    width: 850px;
+                }
+            }
+            .single-text-23 {
+                transform: translate(27.3vw, 76.5vh);
+            }
+            .single-text-24 {
+                transform: translate(27.5vw, 82.5vh);
+            }
+            .single-text-25 {
+                transform: translate(26vw, 87vh);
+                .hpipecircle {
+                    width: 930px;
+                }
+            }
+            .single-text-26 {
+                transform: translate(22vw, 68vh);
+                .dot-square-line{
+                    transform: rotate(270deg);
+                  }
+            }
+            .single-text-27 {
+                transform: translate(28.1vw, 69vh);
+                .dot-square-line{
+                    transform: rotate(270deg);
+                  }
+            }
+            .single-text-28 {
+                transform: translate(28.1vw, 65vh);}
+                .single-text-29 {
+                    transform: translate(30.1vw, 62vh);}
+                    .single-text-30 {
+                        transform: translate(22vw, 67vh);}
+                        .single-text-31 {
+                            transform: translate(55.5vw, 58.5vh) rotate(89deg);
+                            .hpipecircle {
+                                width: 250px;
+                                .greenDot{
+                                transform: rotate(270deg);
+                                }
+                            }
+                        }
+                        .single-text-32 {
+                            transform: translate(56vw, 54vh);
+                            .dot-square-line{
+                                transform: rotate(270deg);
+                              }
+                        }  
+                        .single-text-33 {
+                            transform: translate(57vw, 52vh);}  
+                            .single-text-34 {
+                                transform: translate(62vw, 63vh);
+                                .hpipecircle {
+                                    width: 530px;
+                                }
+                            } 
+                            .single-text-35 {
+                                transform: translate(62vw, 68vh);
+                                .hpipecircle {
+                                    width: 530px;
+                                }
+                            } 
+                            .single-text-36 {
+                                transform: translate(62vw, 73vh);
+                                .hpipecircle {
+                                    width: 550px;
+                                }
+                            }           
+
+                            .single-text-37 {
+                                transform: translate(80.8vw, 56vh) rotate(89deg);
+                                .hpipecircle {
+                                    width: 270px;
+                                    .dot{
+                                        transform: rotate(270deg);
+                                        }
+                                }
+                            }
+       
+                            .single-text-38 {
+                                transform: translate(83vw, 50vh);
+                                .dot-square-line{
+                                    transform: rotate(270deg);
+                                  }
+                            } 
+                            .single-text-39 {
+                                transform: translate(83vw, 48vh);
+                            }
+                            .single-text-40, .single-text-41, .single-text-42, .single-text-43, .single-text-44, .single-text-45{
+                                .truck{
+                                    transform: scale(-1, 1);
+                                    height: 20px;
+    width: 44px;
+                                   }
+                            }
+                            .single-text-40 {
+                                transform: translate(72vw, 76.5vh);
+                             
+                            }
+                            .single-text-41 {
+                                transform: translate(72vw, 82.5vh);
+                            }
+                            .single-text-42 {
+                                transform: translate(75vw, 86.9vh);
+                            }
+                            .single-text-43 {
+                                transform: translate(90vw, 62.9vh);
+                            }
+                            .single-text-44 {
+                                transform: translate(90vw, 67.9vh);
+                            }
+                            .single-text-45 {
+                                transform: translate(91vw, 72.9vh);
+                            }
+                            .single-text-46 {
+                             transform: translate(7vw, 18vh);}
+                             .single-text-47 {
+                                transform: translate(72.8vw, 8.3vh);}
+                                .single-text-48 {
+                                    transform: translate(60.8vw, 47.3vh);}
+                                    .single-text-49 {
+                                        transform: translate(90.8vw, 42.3vh);}
+                                        .single-text-50 {
+                                            transform: translate(19.8vw, 56.7vh);}
+                                            .single-text-51 {
+                                                transform: translate(72.8vw, 59vh);}
+                                                .single-text-52 {
+                                                    transform: translate(58.5vw, 47vh);}
+                         
+
+
+        .line-1 {
+            transform: translate(7.4vw, 9vh);
+            height: 28px;
+        }
+        .line-2 {
+            transform: translate(7.4vw, 12vh);
+            width: 85px;
+        }
+        .line-3 {
+            transform: translate(11.7vw, 12vh);
+            height: 36px;
+        }
+        .line-4 {
+            transform: translate(11.9vw, 21.3vh);
+            height: 23px;
+        }
+        .line-5 {
+            transform: translate(12.2vw, 32.2vh);
+            height: 48px;
+        }
+        .line-6 {
+            transform: translate(12.3vw, 54vh);
+            height: 31px;
+        }
+        .line-7 {
+            transform: translate(11.6vw, 52vh);
+    height: 47px;
+        }
+        .line-8{
+            transform: translate(13vw, 53vh);
+            height: 40px;
+        }
+        .line-9{
+            transform: translate(11.2vw, 59vh);
+            height: 31px;
+        }
+        .line-10{
+            transform: translate(6.2vw, 62.2vh);
+            width: 97px;
+        }
+        .line-11{
+            transform: translate(6.2vw, 62.2vh);
+            height: 17px;
+        }
+        .line-12{
+            transform: translate(12vw, 61vh);
+            width: 78px;
+        }
+        .line-13{
+            transform: translate(11.8vw, 59vh);
+            height: 21px;
+        }
+        .line-14{
+            transform: translate(5.7vw, 62.3vh);
+            height: 15px;
+        }
+        .line-15{
+            transform: translate(2.7vw, 62.2vh);
+            width: 58px;
+        }
+        .line-16{
+            transform: translate(12.7vw, 19.4vh);
+            width: 78px;
+        }
+        .line-17{
+            transform: translate(16.7vw, 19.4vh);
+            height: 22px;
+        }
+        .line-18{
+            transform: translate(26vw, 53.8vh);
+            width: 52px;
+        }
+        .line-19{
+            transform: translate(25.7vw, 59.8vh);
+            width: 17px;
+        }
+        .line-20{
+            transform: translate(61vw, 46.4vh);
+            width: 13px;
+        }
+        .line-21{
+            transform: translate(86.5vw, 43.4vh);
+            width: 25px;
+        }
+        .line-22{
+            transform: translate(27vw, 86.4vh);
+            height: 7px;
+        }
+        .line-23{
+            transform: translate(29.2vw, 86.4vh);
+            height: 7px;
+        }
+
+        .pipe-1 {
+            transform: translate(6.8vw, 66.2vh);
+            .pipeVr{
+                height: 61px;
+                width: 23px;
+            }
+            .img-108{
+                width: 23px;
+                height: 55px;
+            }
+        }
+      
+
+
+}
+@media (max-width: 1366px) {
+    .PackingPlantRajpuraPage{
+        .packer-2 {
+            transform: translate(506.7px, -26px);
+        }
+        .packer-1 {
+            transform: translate(891.7px, -27px);
+            .pipe-1 {
+                transform: translate(269.3px, 155.2px);
+            }
+        }
+        .packer-3 {
+            transform: translate(21.7px, 40px);
+        }
+        .single-text-1 {
+            transform: translate(90.5px, 54px);
+            .dotted-pipe {
+                height: 346px;
+            }
+        }
+        .single-text-17 {
+            transform: translate(703.7px, 208.5px);
+        }
+        .single-text-21 {
+            transform: translate(308.5px, 408.5px) rotate(89deg);
+            .hpipecircle {
+                width: 158px;
+            }
+        }
+        .single-text-26 {
+            transform: translate(301px, 412px);
+        }
+        .single-text-19 {
+            transform: translate(231.3px, 340.5px);
+        }
+        .single-text-30 {
+            transform: translate(302px, 396px);
+        }
+        .single-text-28 {
+            transform: translate(401.1px, 393px);
+        }
+        .single-text-29 {
+            transform: translate(433.1px, 384px);
+        }
+        .single-text-40 {
+            transform: translate(992px, 469.5px);
+        }
+        .line-21 {
+            transform: translate(1181.5px, 259.4px);
+            width: 25px;
+        }
+     
+        .single-text-41 {
+            transform: translate(981px, 493.5px);
+        }
+        .line-19 {
+            transform: translate(375.7px, 359.8px);
+            width: 5px;
+        }
+        .line-23 {
+            transform: translate(422.2px, 513.4px);
+            height: 11px;
+        }
+        .line-22 {
+            transform: translate(390.2px, 513.4px);
+            height: 11px;
+        }
+
+        .line-20 {
+            transform: translate(853px, 277.4px);
+            width: 6px;
+        }
+        .single-text-34 {
+            transform: translate(869px, 393px);
+            .hpipecircle {
+                width: 359px;
+            }
+        }
+        .single-text-35 {
+            transform: translate(869px, 420px);
+            .hpipecircle {
+                width: 359px;
+            }
+        }
+        .single-text-36 {
+            transform: translate(857px, 445px);
+            .hpipecircle {
+                width: 393px;
+            }
+        }
+        .single-text-33 {
+            transform: translate(792px, 302px);
+        }
+        .single-text-32 {
+            transform: translate(788px, 323px);
+        }
+        .single-text-31 {
+            transform: translate(777.5px, 349.5px) rotate(89deg);
+            .hpipecircle {
+                width: 173px;
+            }
+        }
+        .line-18 {
+            transform: translate(376px, 322.8px);
+            width: 37px;
+        }
+        .single-text-42 {
+            transform: translate(1023px, 527.5px);
+        }
+        .single-text-27 {
+            transform: translate(397.1px, 415px);
+        }
+        .single-text-20 {
+            transform: translate(296.7px, 354.5px);
+        }
+        .single-text-23 {
+            transform: translate(398px, 469.5px);
+        }
+        .single-text-18 {
+            transform: translate(1092.7px, 192.5px);
+            .hpipecircle {
+                width: 88px;
+            }
+        }
+        .single-text-45 {
+            transform: translate(1244px, 458.9px);
+        }
+        .single-text-44 {
+            transform: translate(1229px, 421.9px);
+        }
+        .single-text-43 {
+            transform: translate(1230px, 393.9px);
+        }
+
+        .single-text-39 {
+            transform: translate(1127px, 281px);
+        }
+        .single-text-38 {
+            transform: translate(1137px, 298px);
+        }
+        .single-text-37 {
+            transform: translate(1129.8px, 316px) rotate(89deg);
+            .hpipecircle {
+                width: 155px;
+            }
+        }
+        .single-text-24 {
+            transform: translate(398px, 495.5px);
+        }
+        .single-text-25 {
+            transform: translate(384px, 521px);
+            .hpipecircle {
+                width: 637px;
+            }
+        }
+        
+        .single-text-23, .single-text-24 {
+        .hpipecircle {
+            width: 586px;
+        }
+    }
+        .single-text-22 {
+            transform: translate(324px, 392px) rotate(89deg);
+            .hpipecircle {
+                width: 195px;
+            }
+        }
+        .single-text-2 {
+            transform: translate(37.1px, 25.8px);
+        }
+
+        .single-text-4, .single-text-8, .single-text-9, .single-text-10 {
+            .squareplustri{
+             width: 31px;
+             height: 43px;
+            }
+            .img-97{
+                width: 32px;
+                height: 17px;
+                transform: scale(1.1, -1.1);
+                position: relative;
+                left: -23px;
+                top: -11px;
+             .line-39 {
+              transform: translate(-9.4px, 4.8px) rotate(313deg);
+          }
+          
+            }
+         }
+         .single-text-4 {
+            transform: translate(-21.7px, 288px);
+        }
+        .line-1 {
+            transform: translate(108.4px, 61px);
+            height: 17px;
+        }
+        .line-2 {
+            transform: translate(108.4px, 78px);
+            width: 53px;
+        }
+        .line-3 {
+            transform: translate(159.7px, 80px);
+            height: 15px;
+        }
+        .single-text-3 {
+            transform: translate(135.8px, 93.1px);
+          .img-109 {
+                width: 49px;
+                height: 39px;
+            }
+        }
+        .single-text-14 {
+            transform: translate(100.7px, 193px);
+        }
+        .line-5 {
+            transform: translate(180.2px, 195.2px);
+            height: 33px;
+        }
+        .single-text-8 {
+            transform: translate(237.4px, 29px);
+        }
+        .single-text-9 {
+            transform: translate(347.4px, 77px);
+        }
+        .single-text-10 {
+            transform: translate(425.4px, 193px);
+        }
+        .line-8 {
+            transform: translate(187px, 320px);
+            height: 32px;
+        }
+        .line-7 {
+            transform: translate(165.6px, 315px);
+            height: 38px;
+        }
+        .line-14 {
+            transform: translate(74.7px, 378.3px);
+            height: 12px;
+        }
+        .line-15 {
+            transform: translate(28.7px, 378.2px);
+            width: 48px;
+        }
+        .line-11 {
+            transform: translate(84.2px, 373.2px);
+            height: 17px;
+        }
+        .line-10 {
+            transform: translate(86.2px, 373.2px);
+            width: 52px;
+        }
+        .pipe-1 {
+            transform: translate(-11.2px, 400.2px);
+            .img-108 {
+                width: 18px;
+                height: 42px;
+            }
+        }
+        .line-9 {
+            transform: translate(137.2px, 366px);
+            height: 9px;
+        }
+        .line-6 {
+            transform: translate(176.3px, 325px);
+            height: 28px;
+        }
+        .single-text-7 {
+            transform: translate(152.5px, 290px);
+            .img-109 {
+                width: 47px;
+                height: 37px;
+            }
+        }
+        .single-text-6 {
+            transform: translate(150.4px, 231px);
+            .img-110 {
+                width: 48px;
+                height: 61px;}
+        }
+        .single-text-5 {
+            transform: translate(97.3px, 134.9px);
+            .containerImage {
+                height: 46px;
+                width: 52px;
+            }
+        }
+        .line-16 {
+            transform: translate(181.7px, 115px);
+            width: 48px;
+        }
+        .line-17 {
+            transform: translate(227.7px, 115.4px);
+            height: 15px;
+        }
+        .single-text-12 {
+            transform: translate(126.6px, 372px);
+        }
+        .line-13 {
+            transform: translate(149.8px, 366px);
+            height: 7px;
+        }
+        .single-text-11 {
+            transform: translate(102.4px, 317px);
+        }
+        .single-text-15 {
+            transform: translate(222.7px, 130.5px);
+        }
+        .single-text-16 {
+            transform: translate(225.7px, 253.5px);
+        }
+        .bg-light {
+            font-size: 7px;
+        }
+        .single-text-16 , .single-text-17 {
+            .hpipecircle {
+            width: 151px;
+        }
+    }
+        .line-12 {
+            transform: translate(150px, 372px);
+            width: 73px;
+        }
+        .line-4 {
+            transform: translate(162.9px, 129.3px);
+            height: 16px;
+        }
+        .single-text-40, .single-text-41, .single-text-42, .single-text-43, .single-text-44, .single-text-45{
+            .truck{
+                height: 11px;
+width: 24px;
+               }
+        }
+        .single-text-13 {
+            transform: translate(-4.6px, 373px);
+        }
+        .single-text-49 {
+            transform: translate(1234.8px, 232.3px);
+        }
+        .single-text-47 {
+            transform: translate(1001.8px, 52.3px);
+        }
+        .single-text-46 {
+            transform: translate(93px, 115px);
+        }
+        .single-text-50 {
+            transform: translate(262.8px, 332.7px);
+        }
+        .square {
+            font-size: 7px;
+            width: 9px;
+            height: 9px;
+        }
+        .single-text-51 {
+            transform: translate(972.8px, 365px);
+        }
+        .single-text-52 {
+            transform: translate(815.5px, 272px);
+        }
+        .single-text-48 {
+            transform: translate(829.8px, 273.3px);
+        }
+    }
+}

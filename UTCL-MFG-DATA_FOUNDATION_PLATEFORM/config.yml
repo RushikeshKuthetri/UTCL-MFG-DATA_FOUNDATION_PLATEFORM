@@ -1,0 +1,13 @@
+---
+system:
+  rootpath: "/greengrass/v2"
+services:
+  aws.greengrass.Nucleus:
+    version: "2.14.3"
+    configuration:
+      mqtt:
+        port: 443
+      greengrassDataPlanePort: 443
+      networkProxy:
+        proxy:
+          url: "http://185.46.212.90:80"

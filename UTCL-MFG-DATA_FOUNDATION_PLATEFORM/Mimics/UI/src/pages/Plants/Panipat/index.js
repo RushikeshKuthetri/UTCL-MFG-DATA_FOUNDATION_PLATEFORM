@@ -1,0 +1,12 @@
+export { ClinkerHandlingPanipatPage } from "./CLinkerHandling/ClinkerHandlingPanipatPage";
+export { CementPreparationFeedingPanipatPage } from "./CementPreparationFeeding/CementPreparationFeedingPanipatPage";
+export { RPFeedPanipatPage } from "./RollerPressFeed/RPFeedPanipatPage";
+export { ClinkerSiloExtractionPanipatPage } from "./ClinkerSiloExtraction/ClinkerSiloExtractionPanipatPage";
+export { CMBaghousePanipatPage } from "./CementMillBaghouse/CMBaghousePanipatPage";
+export { GypsumWetFlyAshHandlingPanipatPage } from "./GypsumWetFlyAshHandling/GypsumWetFlyAshHandlingPanipatPage";
+export { CementPreparationPanipatPage } from "./CementPreparation/CementPreparationPanipatPage";
+export { FlyashSiloPanipatPage } from "./FlyAshSTRAndTRANS/FlyashSiloPanipatPage";
+export { CSandBLPanipatPage } from "./CementSiloandBlukLoalingPanipat/CSandBLPanipatPage";
+export { RollerPressPanipatPage } from "./RollerPress/RollerPressPanipatPage";
+export { PackingPlantPanipatPage } from "./PackingPlant/PackingPlantPanipatPage";
+export { WRCSiloPanipatPage } from "./WRCSilo/WRCSiloPanipatPage";

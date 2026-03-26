@@ -1,0 +1,761 @@
+ .RawMill1BasantL1{
+ .single-text-1{
+    transform: translate(7vw, 4vh);
+    height: 130px;
+    width: 110px;
+    .line-1{
+        transform: translate(7px, 4px);
+        height: 60px;
+    }
+}
+    .single-text-2{
+        transform: translate(1vw, 22vh);
+        gap: 15px;
+       .line-1{
+        transform: translate(36px, 62px);
+        height: 30px;
+       }
+    }
+    .single-text-3{
+        transform: translate(1vw, 35vh);
+        gap: 12px;
+    .hpipecircle{
+        width: 76px;
+    }
+    }
+    .single-text-4 {
+        transform: translate(1vw, 40.6vh);
+        width: 413px;
+    }
+    .single-text-5 {
+        transform: translate(0.6vw, 45.2vh);
+        table {
+          border: 1px solid;
+        }
+        table th {
+          border: 1px solid;
+          padding: 3px 8px;
+          background-color: transparent;
+          color: black;
+        }
+        tr:hover {
+          background-color: transparent;
+        }
+        td {
+          border: 1px solid;
+          padding: 2px 12px;
+        }
+      }
+      .single-text-6, .single-text-7, .single-text-8, .single-text-9, .single-text-10{
+        .dotted-pipe{
+            &::before {
+                left: 0;}
+                &::after {
+                    left: -14px;}
+        }
+      } 
+      .single-text-6 {
+        transform: translate(22.9vw, 8.2vh);
+        .pipe{
+            height: 552px;
+        }
+}
+.single-text-7{
+    .pipe{
+        height: 202px;
+    }
+    transform: translate(27.9vw, 33.2vh);
+}
+.single-text-8{
+    .pipe{
+        height: 453px;
+    }
+    transform: translate(58.9vw, 18.2vh);
+}
+.single-text-9{
+    .pipe{
+        height: 453px;
+    }
+    transform: translate(75.9vw, 25.2vh);
+}
+.single-text-10{
+    .pipe{
+        height: 453px;
+    }
+    transform: translate(80.9vw, 25.2vh);
+}
+.single-text-11{
+    transform: translate(2.9vw, 73.2vh);
+    .gap-1{
+        gap: 40px;
+    }
+}
+.single-text-12{
+    transform: translate(29.9vw, 2.2vh);}
+    .single-text-13{
+        transform: translate(45.9vw, 24.2vh);}
+        .single-text-14{
+            transform: translate(28.9vw, 19.2vh);}
+            .single-text-15{
+                transform: translate(33.9vw, 23.2vh);}
+                .single-text-16{
+                    transform: translate(39.9vw, 19.2vh);}
+                    .single-text-17 {
+                        transform: translate(34.9vw, 44.2vh);
+                        background-position: center;
+                        width: 370px;
+                        height: 98px;
+                    }
+                    .single-text-18 {
+                        transform: translate(34.6vw, 36.8vh);
+                        .connector-icon{
+                            transform: scale(-1.1, 1.1);
+                        }
+                    }
+                    .single-text-19 {
+                        transform: translate(48.6vw, 17.8vh);
+                        .img-66 {
+                            height: 45px;
+                            width: 35px;
+                        }
+                        .dot {
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                    .single-text-20 {
+                        transform: translate(21vw, 45.8vh);
+                        width: 120px;}
+                        .single-text-21 {
+                            transform: translate(22vw, 63.8vh) rotate(-8deg);
+                            width: 626px;}
+                            .single-text-22 {
+                                transform: translate(41.3vw, 61vh) rotate(19deg);
+                                width: 338px;
+                            }
+                            .single-text-23 {
+                                transform: translate(40vw, 61vh) rotate(51deg);
+                                width: 155px;
+                            }
+                            .single-text-24 {
+                                transform: translate(59vw, 74vh);
+                                width: 322px;
+                            }
+                            .single-text-25 {
+                                transform: translate(46.3vw, 70.3vh) rotate(8deg);
+                                width: 253px;
+                            }
+                            .single-text-26 {
+                                transform: translate(56.3vw, 3.3vh);
+                                z-index: 1;
+                                .squareplustri{
+                                    width: 154px;
+                                    height: 106px;
+                                    background-size: 77px 123px;
+                                    .text-dark{
+                                        font-size: 12px;
+                                    }
+                                }
+
+                                .gap-2{
+                                    transform: translate(28.3px, -3.7px);
+                                    gap: 63px;
+                                }
+                            }
+                            .single-text-27, .single-text-28, .single-text-41, .single-text-43, .single-text-47{
+                                .connector-icon {
+                                    height: 24px;
+                                    width: 31px;
+                                transform: scale(-1.1, 1.1) rotate(-87deg);
+                                .dot{
+                                    transform: scale(1.1, 1.1) rotate(87deg); 
+                                }
+                            }
+                            }
+                            .single-text-27 {
+                                transform: translate(33.3vw, 67.3vh);
+                               gap: 38px;
+                            }
+                            .single-text-28 {
+                                transform: translate(63.3vw, 76.6vh);
+                                gap: 38px;
+                            }
+                            .single-text-29 {
+                                transform: translate(46.3vw, 70.6vh);}
+                                .single-text-30 {
+                                    transform: translate(34.3vw, 39.6vh);
+                                    gap: 237px;
+                                    z-index: 1;
+                                }
+                                .single-text-31 {
+                                    transform: translate(40.3vw, 46.6vh);
+                                    z-index: 1;}
+                                    .single-text-32 {
+                                        transform: translate(44.3vw, 0.6vh);
+                                        z-index: 1;}
+                                        .single-text-33 {
+                                            transform: translate(65.6vw, 3.8vh);
+                                            z-index: 1;
+                                        }
+                                        .single-text-34 {
+                                            transform: translate(77.6vw, 3.8vh);
+                                            z-index: 1;
+                                        }
+                                        .single-text-35 {
+                                            transform: translate(60.6vw, 27.8vh);
+                                            z-index: 1;
+                                            gap: 29px;
+                                            .containerImage {
+                                                width: 101px;
+    height: 164px;
+    border-radius: 19px;
+    background-size: 203px;
+                                            }
+                                        }
+                                        .single-text-36 {
+                                            transform: translate(59.2vw, 23vh) rotate(33deg);
+                                            width: 108px;
+                                        }
+                                        .single-text-37 {
+                                            transform: translate(59.3vw, 23vh) rotate(19deg);
+                                            width: 185px;
+                                        }
+                                        .single-text-38 {
+                                            transform: translate(76.3vw, 30.5vh) rotate(19deg);
+                                            width: 163px;
+                                            z-index: -3;
+                                        }
+                                        .single-text-39 {
+                                            transform: translate(81.3vw, 30.5vh) rotate(45deg);
+                                            width: 78px;
+                                            z-index: -1;
+                                        }
+                                        .single-text-40{
+                                            transform: translate(83.3vw, 33.5vh);
+    width: 178px;
+                                        }
+                                        .single-text-41 {
+                                            transform: translate(84.3vw, 35.6vh);
+                                            gap: 38px;
+                                        }
+                                        .single-text-42 {
+                                            transform: translate(84.3vw, 50.6vh);
+                                            gap: 1px;
+                                            .containerImage {
+                                                width: 70px;
+                                                height: 137px;
+                                                border-radius: 19px;
+                                                background-size: 172px;
+                                            }
+                                        }
+                                        .single-text-43 {
+                                            transform: translate(65.8vw, 27.6vh);}
+                                            .single-text-44 {
+                                                transform: translate(70.7vw, -0.6vh);
+                                                height: 91px;
+                                                width: 33px;
+                                            }
+                                            .single-text-45 {
+                                                transform: translate(81.7vw, 31.9vh);
+                                                z-index: 1;}
+                                                .single-text-46 {
+                                                    transform: translate(75.2vw, 77.3vh);
+                                                    z-index: 1;
+                                                    gap: 70px;
+                                                }
+                                                .single-text-47 {
+                                                    transform: translate(25vw, 15.3vh);
+                                                }
+    .line-1{
+        transform: translate(9.8vw, 18vh);
+        height: 30px;
+       }
+       .line-2{
+        transform: translate(4.4vw, 37vh);
+    height: 30px;
+       }
+       .line-3{
+        transform: translate(9vw, 37vh);
+    height: 30px;
+       }
+       .line-4{
+        transform: translate(13.7vw, 37vh);
+    height: 30px;
+       }
+       .line-5{
+        transform: translate(18.3vw, 37vh);
+    height: 30px;
+       }
+       .line-6{
+        transform: translate(30.8vw, 28.4vh);
+        height: 204px;
+       }
+       .line-7{
+        transform: translate(41.8vw, 15.4vh);
+    height: 378px;
+    z-index: -1;
+       }
+       .line-8 {
+        transform: translate(27vw, 7vh) rotate(-60deg);
+        height: 150px;
+    }
+    .line-9 {
+        transform: translate(29.9vw, 35vh) rotate(-60deg);
+        height: 43px;
+    }
+    .line-10 {
+        transform: translate(49.5vw, 15vh);
+        height: 26px;
+    }
+    .line-11 {
+        transform: translate(41.8vw, 15vh);
+        width: 148px;
+    }
+    .line-12 {
+        transform: translate(30.8vw, 50.7vh);
+        width: 79px;
+    }
+    .line-13 {
+        transform: translate(30.8vw, 37.7vh) rotate(-8deg);
+        width: 73px;
+    }
+    .line-14 {
+        transform: translate(21.8vw, 41.7vh);
+        height: 34px;
+    }
+    .line-15 {
+        transform: translate(27.1vw, 47.7vh);
+        height: 77px;
+    }
+    .line-16 {
+        transform: translate(54.1vw, 6.7vh);
+        height: 483px;
+    }
+    .line-17 {
+        transform: translate(54.1vw, 6.7vh);
+        width: 327px;
+    }
+    .line-18 {
+        transform: translate(32.8vw, 21.7vh);
+        width: 85px;
+    }
+    .line-19 {
+        transform: translate(40.4vw, 4.7vh) rotate(45deg);
+        height: 185px;
+    }
+    .line-20 {
+        transform: translate(47vw, 3vh) rotate(-70deg);
+        height: 129px;
+    }
+    .line-21 {
+        transform: translate(50.2vw, 12.4vh);
+        height: 63px;
+    }
+    .line-22 {
+        transform: translate(50.2vw, 16.4vh);
+        width: 75px;
+    }
+    .line-23 {
+        transform: translate(92.2vw, 34.4vh);
+    height: 84px;
+    }
+    .line-24 {
+        transform: translate(89.2vw, 40vh) rotate(60deg);
+        height: 130px;
+    }
+    .line-25 {
+        transform: translate(94.8vw, 41vh) rotate(-49deg);
+        height: 130px;
+    }
+    .line-26 {
+        transform: translate(93vw, 43vh) rotate(-23deg);
+        height: 68px;
+    }
+    .line-27 {
+        transform: translate(91.4vw, 43vh) rotate(23deg);
+        height: 86px;
+    }
+    .line-28 {
+        transform: translate(63.4vw, 44vh);
+        height: 36px;
+    }
+    .line-29 {
+        transform: translate(70.4vw, 44vh);
+        height: 36px;
+    }
+}
+@media (max-width: 1366px) {
+    .RawMill1BasantL1 {
+        .single-text-1 {
+            transform: translate(116px, 8px);
+            height: 95px;
+            width: 81px;
+        }
+        .line-1 {
+            transform: translate(155.8px, 102px);
+            height: 22px; 
+        }
+        .single-text-2 {
+            transform: translate(11px, 128px);
+            gap: 13px;
+            .line-1 {
+                transform: translate(29px, 39px);
+                height: 19px;
+            }
+            .containerImage {
+                height: 58px;
+                width: 60px;}
+        }
+        .single-text-3 {
+            transform: translate(9px, 206px);
+            gap: 10px;
+            .hpipecircle {
+                width: 64px;
+            }
+        }
+        .line-2 {
+            transform: translate(65.4px, 219px);
+            height: 22px;
+        }
+        .line-3 {
+            transform: translate(139.4px, 219px);
+            height: 22px;
+        }
+        .line-4 {
+            transform: translate(212.4px, 219px);
+            height: 22px;
+        }
+        .line-5 {
+            transform: translate(287.4px, 219px);
+            height: 22px;
+        }
+        .single-text-4 {
+            transform: translate(10px, 243.6px);
+            width: 298px;
+        }
+        .single-text-5 {
+            transform: translate(8.6px, 281.2px);
+            td {
+                padding: 2px 3px;
+            }
+        }
+        .single-text-11 {
+            transform: translate(38.9px, 432.2px);
+            .gap-1 {
+                gap: 10px;
+            }
+            .mt-2 {
+                margin-top: 2px !important;
+            }
+        }
+        .single-text-6 {
+            transform: translate(312.9px, 58.2px);
+            .pipe {
+                height: 338px;
+            }
+        }
+        .single-text-7 {
+            transform: translate(368.9px, 200.2px);
+            .pipe {
+                height: 138px;
+            }
+        }
+        .single-text-20 {
+            transform: translate(288px, 275.8px);
+            width: 78px;
+        }
+        .line-14 {
+            transform: translate(299.8px, 245.7px);
+            height: 27px;
+        }
+        .line-15 {
+            transform: translate(359.1px, 286.7px);
+            height: 59px;
+        }
+        .single-text-12 {
+            transform: translate(405.9px, 12.2px);
+        }
+        .single-text-14 {
+            transform: translate(393.9px, 123.2px);
+            z-index: 1;
+                height: 58px;
+                width: 60px;
+        }
+        .line-7 {
+            transform: translate(570.8px, 91.4px);
+            height: 273px;
+            z-index: -1;
+        }
+        .single-text-21 {
+            transform: translate(296px, 363.8px) rotate(-7deg);
+            width: 474px;
+        }
+        .single-text-27 {
+            transform: translate(415.3px, 391.3px) rotate(-2deg);
+            gap: 10px;
+        }
+        .single-text-27, .single-text-28, .single-text-41, .single-text-43, .single-text-47 {
+        .connector-icon {
+            height: 16px;
+            width: 21px;
+            transform: scale(-1.1, 1.1) rotate(-87deg);
+        }
+    }
+    .single-text-13 {
+        transform: translate(618.9px, 164.2px);
+    }
+    .line-18 {
+        transform: translate(436.8px, 130.7px);
+        width: 63px;
+    }
+    .single-text-19 {
+        transform: translate(658.6px, 112.8px);
+        z-index: 1;
+    }
+    .line-19 {
+        transform: translate(534.4px, 42.7px) rotate(45deg);
+        height: 105px;
+    }
+    .line-20 {
+        transform: translate(629px, 9px) rotate(-81deg);
+        height: 116px;
+    }
+    .line-11 {
+        transform: translate(570.8px, 91px);
+        width: 107px;
+    }
+    .line-10 {
+        transform: translate(676.5px, 91px);
+        height: 26px;
+    }
+    .line-21 {
+        transform: translate(685.2px, 75.4px);
+        height: 63px;
+    }
+    .line-16 {
+        transform: translate(753.1px, 40.7px);
+        height: 299px;
+    }
+    .line-22 {
+        transform: translate(685.2px, 107.4px);
+        width: 68px;
+    }
+    .single-text-26 {
+        transform: translate(775.3px, 22.3px);
+        z-index: 1;
+        .squareplustri {
+            width: 98px;
+            height: 63px;
+            background-size: 49px 77px;
+            .text-dark {
+                font-size: 8px;
+            }
+        }
+        .gap-2 {
+            transform: translate(16.3px, -3.7px);
+            gap: 32px;
+        }
+    }
+    .line-17 {
+        transform: translate(753.1px, 39.7px);
+        width: 240px;
+    }
+    .single-text-33 {
+        transform: translate(893.6px, 17.8px);
+        z-index: 1;
+    }
+    .single-text-44 {
+        transform: translate(986.7px, -7.6px);
+        height: 62px;
+        width: 22px;
+    }
+    .single-text-32 {
+        transform: translate(607.3px, 3.6px);
+        z-index: 1;
+    }
+    .single-text-34 {
+        transform: translate(1077.6px, 13.8px);
+        z-index: 1;
+    }
+    .single-text-35 {
+        transform: translate(829.6px, 181.8px);
+        z-index: 1;
+        gap: 25px;
+        .containerImage {
+            width: 74px;
+            height: 100px;
+            border-radius: 11px;
+            background-size: 176px;
+        }
+    }
+    .single-text-8 {
+        transform: translate(795.9px, 105.2px);
+        .pipe {
+            height: 279px;
+        }
+    }
+    .single-text-36 {
+        transform: translate(804.2px, 148px) rotate(41deg);
+        width: 83px;
+    }
+    .single-text-37 {
+        transform: translate(809.3px, 145px) rotate(19deg);
+        width: 159px;
+    }
+    .single-text-25 {
+        transform: translate(610.3px, 423.3px) rotate(8deg);
+        width: 195px;
+    }
+    .single-text-23 {
+        transform: translate(552px, 382px) rotate(51deg);
+        width: 91px;
+    }
+    .single-text-22 {
+        transform: translate(565.3px, 366px) rotate(8deg);
+        width: 235px;
+    }
+    .single-text-43 {
+        transform: translate(905.8px, 172.6px);
+    }
+    .single-text-9 {
+        transform: translate(1034.9px, 136.2px);
+        .pipe {
+            height: 315px;
+        }
+    }
+    .single-text-24 {
+        transform: translate(796px, 448px);
+        width: 236px;
+    }
+    .single-text-28 {
+        transform: translate(863.3px, 464.6px);
+        gap: 24px;
+    }
+    .single-text-10 {
+        transform: translate(1079.9px, 142.2px);
+    .pipe {
+        height: 308px;
+    }
+}
+.single-text-45 {
+    transform: translate(1108.7px, 179.9px);
+    z-index: 1;
+}
+.line-28 {
+    transform: translate(863.4px, 269px);
+    height: 36px;
+}
+.line-29 {
+    transform: translate(963.4px, 269px);
+    height: 36px;
+}
+.single-text-29 {
+    transform: translate(646.3px, 424.6px);
+}
+.single-text-42 {
+    transform: translate(1134.3px, 329.6px);
+    gap: 1px;
+    .containerImage {
+        width: 55px;
+        height: 90px;
+        border-radius: 11px;
+        background-size: 127px;
+    }
+}
+.single-text-38 {
+    transform: translate(1034.3px, 177.5px) rotate(19deg);
+    width: 115px;
+    z-index: -3;
+}
+.single-text-39 {
+    transform: translate(1078.3px, 174.5px) rotate(26deg);
+    width: 78px;
+    z-index: -1;
+}
+.single-text-40 {
+    transform: translate(1140.3px, 193.5px);
+    width: 126px;
+}
+.single-text-41 {
+    transform: translate(1147.3px, 210.6px);
+    gap: 8px;
+}
+.line-23 {
+    transform: translate(1261.2px, 195.4px);
+    height: 76px;
+}
+.line-24 {
+    transform: translate(1219.2px, 239px) rotate(51deg);
+    height: 108px;
+}
+.line-25 {
+    transform: translate(1293.8px, 249px) rotate(-37deg);
+    height: 111px;
+}
+.line-27 {
+    transform: translate(1243.4px, 257px) rotate(23deg);
+    height: 86px;
+}
+.line-26 {
+    transform: translate(1270px, 261px) rotate(-18deg);
+    height: 68px;
+}
+        .line-8 {
+            transform: translate(378px, 57px) rotate(-60deg);
+            height: 100px;
+        }
+        .single-text-15 {
+            transform: translate(464.9px, 125.2px);
+            z-index: 1;
+        }
+        .single-text-46 {
+            transform: translate(1028.2px, 472.3px);
+            z-index: 1;
+            gap: 22px;
+        }
+        .single-text-18 {
+            transform: translate(483.6px, 219.8px);
+            z-index: 1;
+        }
+        .single-text-30 {
+            transform: translate(476.3px, 240.6px);
+            gap: 207px;
+            z-index: 1;
+        }
+        .single-text-17 {
+            transform: translate(457.9px, 265.2px);
+            background-position: center;
+            width: 293px;
+            height: 78px;
+        }
+        .line-6 {
+            transform: translate(420.8px, 176.4px);
+            height: 135px;
+        }
+        .line-9 {
+            transform: translate(403.9px, 214px) rotate(-60deg);
+            height: 43px;
+        }
+        .line-13 {
+            transform: translate(420.8px, 231.7px) rotate(-19deg);
+            width: 73px;
+        }
+        .line-12 {
+            transform: translate(420.8px, 310.7px);
+            width: 37px;
+        }
+        .single-text-47 {
+            transform: translate(346px, 103.3px);
+        }
+        .single-text-31 {
+            transform: translate(532.3px, 279.6px);
+            z-index: 1;
+        }
+        .single-text-16 {
+            transform: translate(539.9px, 115.2px);
+            .containerImage {
+                height: 58px;
+                width: 60px;}
+        }
+    }
+}

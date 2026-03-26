@@ -1,0 +1,183 @@
+// .dashboard{
+//     padding-top: 70px;
+//     // width: 97%;
+//     // margin: auto;
+// }
+.dashboard .card{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 12px;
+    width: 100%;
+    // margin: auto;
+    position: relative;
+    border: 1px solid #eaedf1;
+    cursor: pointer;
+    box-shadow: 0 0.15rem 1.75rem #c4cde033;
+}
+// .card{
+//     background-color: #fff;
+//     border-radius: 10px;
+//     padding: 12px;
+//     width: 100%;
+//     margin: auto;
+//     position: relative;
+//     border: 1px solid #eaedf1;
+//     cursor: pointer;
+//     box-shadow: 0 0.15rem 1.75rem #c4cde033;
+// }
+label{
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+body{
+    position: relative;
+    background-color: #ecf0fa!important;
+    // overflow-x: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    // width: 100%;
+    // width:100vw;
+
+}
+.form-select{
+    box-shadow: none !important;
+    width: 90% !important;
+}
+.pagination-dropdown-block{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.pagination-select{
+    width: 14% !important;
+}
+.paginatin-button{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 18px;
+    align-items: center;
+}
+.records-page{
+    margin-bottom: 0.5rem !important;
+}
+.table-header{
+    top: 0; 
+    position: sticky;
+}
+.react-datepicker-wrapper{
+    .react-datepicker__input-container{
+        input{
+           border-radius: 6px;
+           height: 38px; 
+        //    border-color: #B6BDBE !important;
+        }
+    }
+}
+ .no-data{
+    // position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18%;
+    font-size: 21px;
+    // left: 46%;
+    // top: 50%;
+    // font-size: 20px;
+}
+.loader-show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18%;
+    
+}
+td{
+    text-align: center;
+}
+.form-control{
+    margin : 0px 0px !important;
+}
+// .check-box {
+// 	transform: scale(2);
+// }
+
+// input[type="checkbox"] {
+//     position: relative;
+//     appearance: none;
+//     width: 32px;
+//     height: 10px;
+//     background: #ccc;
+//     border-radius: 50px;
+//     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+//     cursor: pointer;
+//     transition: 0.4s;
+//     margin-top: 6px;
+//     margin-right: 15px;
+// }
+
+// input:checked[type="checkbox"] {
+//     background: #7da6ff;
+// }
+
+// input[type="checkbox"]::after {
+//     position: absolute;
+//     content: "";
+//     width: 9.5px;
+//     height: 9.5px;
+//     top: 0;
+//     left: 0;
+//     background: #fff;
+//     border-radius: 50%;
+//     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+//     transform: scale(1.1);
+//     transition: 0.4s;
+// }
+
+// input:checked[type="checkbox"]::after {
+//     left: 68%;
+// }
+// .toggle-switch{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+.icon-size{
+    cursor: pointer;
+    font-size: 16px;
+}
+.save-edit-icon{
+    cursor: pointer;
+    font-size: 20px;
+}
+.tableFixHead  { overflow: auto; height: 70vh; }
+.tableFixHead thead th { position: sticky; top: 0; z-index: 1; background-color: black; }
+  
+.search {
+    position: relative;
+    // color: #aaa;
+    font-size: 16px;
+  }
+  
+  .search {display: inline-block;}
+  
+  .search input {
+    width: 250px;
+    height: 35px;
+  
+  /*   background: #fcfcfc; */
+    border: 1px solid #aaa;
+    border-radius: 5px;
+  /*   box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset; */
+  }
+  
+//   .search input { text-indent: 32px;}
+  .search .fa-search { 
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .search .fa-search {left: auto; right: 10px;}

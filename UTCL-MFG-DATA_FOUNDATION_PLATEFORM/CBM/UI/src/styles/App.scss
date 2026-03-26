@@ -1,0 +1,262 @@
+/* kavita Singh */
+.tonav{
+  background: #fff500;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  .navbar {
+    padding: 0.3rem 1rem;
+    position: relative;
+    justify-content: space-between;
+    .logo{
+      width: 160px;
+    }
+    .navbar-brand {
+      padding: 0;
+  }
+}
+.navhead{
+  cursor: pointer;
+  font-size: 1rem;
+    font-weight: 700;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+}
+.menu_bar {
+        background: none;
+    font-size: 2rem;
+    margin-right: 1rem;
+    line-height: 0;
+    svg {  cursor: pointer; height: 30px;}
+      }
+   
+      .menu_bar_open {
+        font-size: 2rem;
+        color: #fff500 !important;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+.cycloneView {
+  background-color: #346667 !important;
+  color: #fff;
+  height: calc(100vh - 94px)!important;
+  border-radius: 0;
+  .containerforEff{
+    position: absolute;
+    height: 106px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ 
+  }
+  
+  .efficiency-C-odd{
+    position: absolute;
+    color: #000;
+    font-weight: bold;
+    left:315px ;
+    top:50px;
+    width:max-content;
+    cursor: pointer;
+  }
+  .efficiency-C-even{
+    position: absolute;
+    color: #000;
+    font-weight: bold;
+    left: -120px;
+    top:50px;
+    width:max-content;
+    cursor: pointer;
+  }
+  
+  .efficiency-K-odd{
+    position: absolute;
+    color: #000;
+    font-weight: bold;
+    left:320px ;
+    top:50px;
+    width:max-content;
+    cursor: pointer;
+  }
+  .efficiency-K-even{
+    position: absolute;
+    color: #000;
+    font-weight: bold;
+    left: -120px;
+    top:50px;
+    width:max-content;
+    cursor: pointer;
+  }
+  .Cyclone-image{    width: 308px;  }
+  
+  .C1,.K1{    
+    transform: translate(-15vw, 1.4vh);
+  }
+  .C2, .K2{
+    transform: translate(15vw, 13.4vh);
+  }
+  .C3, .K3{
+    transform: translate(-15vw, 25.4vh);
+  }
+  .C4, .K4{
+    transform: translate(15.2vw, 37.6vh);
+  }
+  .C5, .K5{
+    transform: translate(-15vw, 49.6vh);
+  }
+  .C6, .K6{
+    transform: translate(15vw, 61vh);
+  }
+
+
+
+}
+
+
+
+.dash-top {
+    background-color: #e7f3f1;
+    background-size: cover;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    height: 100vh;
+    overflow: auto;
+    padding-top: 78px;
+  }
+  .mycard{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px -2px rgb(9 30 66 / 25%), 0 0 0 1px rgb(9 30 66 / 8%);
+    padding: 15px 20px;
+    height: calc(100vh - 94px);
+    overflow: auto;
+  }
+
+  
+.table-design{
+    border: 1px solid #d7d7d7;
+    thead { border-bottom: 1px solid #d7d7d7; }
+    tr{  border: none;   }
+     tr:nth-child(even){   background: #f6f6f6;  }
+     th, td{  padding: 1rem 0.5rem!important;  }
+     th, td{ padding: 1rem 0.5rem!important;  }
+     td{ font-weight: 600;  font-size: 14px;  border: none;
+     svg{  cursor: pointer;  }          }
+     th{        font-weight: 700;
+                font-size: 16px;
+                white-space: nowrap;
+                word-break: keep-all;
+                border: none;
+              }
+  }
+.back{ cursor: pointer;}
+.perameterContainer{
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  .parameterSelect{
+    width: 70%;
+  }
+  .form-control {
+    width: 30%;
+  }
+}
+
+.btn.focus, .btn:focus {
+  box-shadow: none;
+  outline: 0;
+}
+.btnsecond{
+  background: linear-gradient(135deg,#3c3c3c,#1a1902);
+  border: #000;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
+  color: #fff!important;
+  font-family: Ubuntu,Helvetica,Arial,sans-serif;
+  padding: 8px 20px;
+}
+@media (max-width: 1367px){
+  .tonav{
+    .navbar {   
+      .logo{
+        width: 110px;
+      } 
+  }
+  .username {
+    font-size: 14px;
+}
+  }
+  .dash-top {  
+    padding-top: 51px;}
+
+    
+.cycloneView {
+  height: calc(100vh - 59px) !important;
+  .containerforEff{
+    height: 70px;
+    .h6, h6 {
+      font-size: .7rem;
+  }
+  }
+  .efficiency-C-odd, .efficiency-K-odd {
+    left: 225px;
+    top: 30px;
+ 
+}
+.efficiency-C-even, .efficiency-K-even {
+  left: -70px;
+  top: 30px;
+  
+}
+  .Cyclone-image{     width: 180px;  }
+  .C1, .K1 {
+    transform: translate(-196px, 6px);
+  }
+  .C2, .K2 {
+    transform: translate(175px, 70px);
+  }
+  .C3, .K3 {
+    transform: translate(-193px, 135px);
+  }
+  .C4, .K4 {
+    transform: translate(175px, 202px);
+  }
+  .C5, .K5 {
+    transform: translate(-193px, 268px);
+  }
+  .C6, .K6 {
+    transform: translate(175px, 333px);
+  }
+}
+
+
+}
+
+@media (max-width: 1365px){
+  .btnsecond {
+    font-size: 12px;
+    padding: 3px 10px;
+}
+}
+@media (max-width: 767px){
+  .tonav{
+    .navbar {   
+      .logo{
+        width: 80px;
+      }  
+  }
+  .navhead{
+    font-size: 12px; 
+  }
+  .username {
+    font-size: 12px;
+}
+  }
+}
+

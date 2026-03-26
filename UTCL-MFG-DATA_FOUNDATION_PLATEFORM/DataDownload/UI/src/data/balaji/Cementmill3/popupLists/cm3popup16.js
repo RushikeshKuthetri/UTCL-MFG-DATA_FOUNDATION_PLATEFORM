@@ -1,0 +1,103 @@
+export const cm3popup161 = [
+  {
+    cgrnTxt: "Cylinder Position 1",
+    blackTextLabel: "563HT1_ZT01",
+    textClass: "text-white mt-1",
+    blackTextClass: "greenTxt mt-01",
+    unit: "mm",
+  },
+  {
+    cgrnTxt: "Cylinder Position 2",
+    blackTextLabel: "563HT1_ZT02",
+    textClass: "text-white mt-1",
+    blackTextClass: "greenTxt mt-01",
+    unit: "mm",
+  },
+  {
+    cgrnTxt: "Cylinder Position 3",
+    blackTextLabel: "563HT1_ZT03",
+    textClass: "text-white mt-1",
+    blackTextClass: "greenTxt mt-01",
+    unit: "mm",
+  },
+  {
+    cgrnTxt: "Cylinder Position 4",
+    blackTextLabel: "563HT1_ZT04",
+    textClass: "text-white mt-1",
+    blackTextClass: "greenTxt mt-01",
+    unit: "mm",
+  },
+  {
+    cgrnTxt: "Cylinder Position Average",
+    blackTextLabel: "563HT1_ZT_AVG",
+    textClass: "text-white mt-1",
+    blackTextClass: "greenTxt mt-01",
+    unit: "mm",
+  },
+];
+
+export const cm3popup162 = [
+  {
+    cgrnTxt: "Operation Pressure - Tensioning 1&3",
+    blackTextLabel: "563HT1_PT01",
+    textClass: "text-white mt-1",
+    blackTextClass: "greenTxt mt-01",
+    unit: "bar",
+  },
+  {
+    cgrnTxt: "Operation Pressure - Tensioning 2&4",
+    blackTextLabel: "563HT1_PT02",
+    textClass: "text-white mt-1",
+    blackTextClass: "greenTxt mt-01",
+    unit: "bar",
+  },
+  {
+    cgrnTxt: "Oil Pressure - Lifting Roller1",
+    blackTextLabel: "563HT1_PT03",
+    textClass: "text-white mt-1",
+    blackTextClass: "greenTxt mt-01",
+    unit: "bar",
+  },
+  {
+    cgrnTxt: "Oil Pressure - Lifting Roller2",
+    blackTextLabel: "563HT1_PT04",
+    textClass: "text-white mt-1",
+    blackTextClass: "greenTxt mt-01",
+    unit: "bar",
+  },
+  {
+    cgrnTxt: "Oil Pressure - Lifting Roller3",
+    blackTextLabel: "563HT1_PT05",
+    textClass: "text-white mt-1",
+    blackTextClass: "greenTxt mt-01",
+    unit: "bar",
+  },
+  {
+    cgrnTxt: "Oil Pressure - Lifting Roller4",
+    blackTextLabel: "563HT1_PT06",
+    textClass: "text-white mt-1",
+    blackTextClass: "greenTxt mt-01",
+    unit: "bar",
+  },
+  {
+    cgrnTxt: "Tens. Oper. Press. SP",
+    blackTextLabel: "563HT1_SP02",
+    textClass: "text-white mt-1",
+    blackTextClass: "greenTxt mt-01",
+    unit: "bar",
+  },
+  {
+    cgrnTxt: "Cylinder Position SP",
+    blackTextLabel: "563HT1_SP03",
+    textClass: "text-white mt-1",
+    blackTextClass: "greenTxt mt-01",
+    unit: "mm",
+  },
+  {
+    cgrnTxt: "Pre Press SP",
+    blackTextLabel: "563HT1_SP01",
+    textClass: "text-white mt-1",
+    blackTextClass: "greenTxt mt-01",
+    unit: "bar",
+  },
+];

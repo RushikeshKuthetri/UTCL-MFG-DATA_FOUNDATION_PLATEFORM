@@ -1,0 +1,176 @@
+.container {
+  --color-title: rgb(100, 139, 238);
+  position: relative;
+  top: 9vh;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.plant {
+  color: white;
+  padding: 0.5% 3%;
+  display: flex;
+  align-items: center;
+}
+
+.plant .form_select {
+  display: inline-block;
+  width: 50%;
+  background-color: black;
+  font-size: 0.8vw;
+  height: 1.4vw !important;
+}
+
+.form_select:focus {
+  border: none;
+  outline: none;
+}
+
+.date_picker {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.tab_buttons {
+  display: flex;
+  align-items: center;
+  padding: 0.5% 3%;
+  color: var(--color-title);
+  text-transform: capitalize;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.tab_buttons .tab {
+  /* padding: 0 0.8vw; */
+  margin-right: 5%;
+
+  position: relative;
+}
+
+.tab_buttons .active_tab_indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-title);
+}
+
+.headers_row {
+  background: #b5c10a;
+}
+
+.headers_row > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gauge_row {
+  overflow: hidden;
+}
+
+.gauge_col {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.gauge_col > div {
+  width: 50%;
+  height: 13vw !important;
+  text-align: center;
+}
+
+.gauge_col > div p {
+  margin: 0 auto;
+  color: var(--color-title);
+}
+
+.production_pills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.production_pills > div {
+  padding: 0;
+  margin: 0;
+  width: 47%;
+  text-align: center;
+  color: var(--color-title);
+}
+
+.production_pills .pill_data {
+  color: white;
+  margin: 1vw auto;
+  background: gray;
+  width: 90%;
+
+  border-radius: 1.5vw;
+  font-size: 35px;
+}
+
+.production_pills .pill_data > div {
+  margin-top: -0.5vw;
+  font-size: 20px;
+}
+
+/* table1 */
+.table_row1 tr {
+  border: none;
+}
+
+.table_row1 tr:hover {
+  background-color: transparent;
+
+  color: white;
+}
+
+.table_row {
+  border-top: 2px solid rgb(165, 108, 42);
+
+  border-bottom: 2px solid rgb(165, 108, 42);
+
+  padding: 0.2rem 0;
+}
+
+.table_row1 thead th,
+.table_row1 tbody td {
+  background-color: transparent;
+
+  color: #fff;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  text-align: center;
+
+  border: none;
+}
+
+.primary_color,
+.primary_color thead th,
+.primary_color tbody td,
+.primary_color tr:hover {
+  color: #06f1f5;
+}
+
+.secondary_color,
+.secondary_color thead th,
+.secondary_color tbody td,
+.secondary_color tr:hover {
+  color: #ff6712;
+}
+
+.column_chart_row {
+  height: 23vh;
+}
+
+.column_chart_row > div {
+  padding: 0 5px;
+  height: 100%;
+}

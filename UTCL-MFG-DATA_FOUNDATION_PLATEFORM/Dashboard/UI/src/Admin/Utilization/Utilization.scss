@@ -1,0 +1,63 @@
+.utldashboard{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 12px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    border: 1px solid #eaedf1;
+    cursor: pointer;
+    box-shadow: 0 0.15rem 1.75rem #c4cde033;
+//     overflow-y: scroll;
+//   scrollbar-width: none; /* Firefox */
+//   -ms-overflow-style: none; /* IE and Edge */
+}
+// .utldashboard::-webkit-scrollbar {
+//     width: 0 !important; /* WebKit */
+//     display: none; /* Safari */
+//   }
+
+.nav-link.active{
+    background-color: yellow !important;
+}
+.nav-item{
+    width: 16% !important;
+    font-weight: 600 !important;
+    font-size: 1.14rem;
+    color: black !important;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px !important;
+}
+.nav-link{
+    width: 100% !important;
+    color: black !important;
+}
+.nav-tabs{
+    height: 4rem !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-content: center !important;
+    justify-content: center !important;
+    align-items: center !important  ;
+    gap: 11px !important;
+}
+// ::-webkit-scrollbar {
+//     width: 20px;
+//   }
+  
+//   /* Track */
+//   ::-webkit-scrollbar-track {
+//     box-shadow: inset 0 0 5px grey; 
+//     border-radius: 10px;
+//   }
+   
+//   /* Handle */
+//   ::-webkit-scrollbar-thumb {
+//     background: red; 
+//     border-radius: 10px;
+//   }
+  
+//   /* Handle on hover */
+//   ::-webkit-scrollbar-thumb:hover {
+//     background: #b30000; 
+//   }

@@ -1,0 +1,16 @@
+.Overviewvikramwhrs {
+    .single-item-1 {
+        transform: translate(0.2vw, 1vh);
+        .upArrow {
+            height: 23px;
+            transform: rotate(45deg) translate(-10px, -19px);
+        }
+    }
+}
+
+//mobile responsiveness
+@media (max-width: 1366px) {
+    .single-item-1 {
+        transform: translate(5px, 6px);
+    }
+}

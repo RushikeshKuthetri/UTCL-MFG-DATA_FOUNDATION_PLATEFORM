@@ -1,0 +1,213 @@
+.PH3cBoileroperation {
+  .single-text-8 {
+    font-size: 19px;
+    transform: translate(2vw, 13vh) rotate(0deg) !important;
+  }
+  .single-text-13 {
+    transform: translate(15vw, 61vh) !important;
+  }
+  .single-text-20 {
+    transform: translate(76vw, 73vh) !important;
+  }
+  .single-text-54 {
+    transform: translate(78vw, 10.5vh) !important;
+  }
+  .single-text-56 {
+    transform: translate(81vw, 52.5vh) !important;
+  }
+  .single-text-57 {
+    transform: translate(80.5vw, 74.5vh) !important;
+  }
+  .single-text-78 {
+    transform: translate(21vw, 15vh);
+  }
+  .single-text-79 {
+    transform: translate(43vw, 17.5vh);
+  }
+  .single-text-80 {
+    transform: translate(39vw, 62.5vh);
+  }
+  .single-text-81 {
+    transform: translate(90vw, 3.5vh);
+    width: 130px;
+  }
+  .single-text-82 {
+    transform: translate(86vw, 19.7vh);
+  }
+  .single-text-83 {
+    transform: translate(90vw, 42vh);
+  }
+  .single-text-84 {
+    transform: translate(90vw, 48vh);
+    width: 125px;
+  }
+  .single-text-85 {
+    transform: translate(91vw, 68.2vh);
+  }
+  .single-text-86 {
+    transform: translate(91vw, 71.2vh);
+  }
+  .single-text-87 {
+    transform: translate(91vw, 82.2vh);
+  }
+  .line-42 {
+    transform: translate(85.7vw, 60vh) !important;
+  }
+  .line-85,
+  .line-86 {
+    transform: translate(88vw, 5.5vh);
+  }
+  .line-85 {
+    width: 40px;
+  }
+  .line-86 {
+    height: 60px;
+  }
+  .line-87,
+  .line-88 {
+    transform: translate(82vw, 21.5vh);
+  }
+  .line-87 {
+    width: 100px;
+  }
+  .line-88 {
+    height: 24px;
+  }
+  .line-89 {
+    transform: translate(86vw, 43vh);
+    width: 100px;
+  }
+  .line-90 {
+    transform: translate(86vw, 38vh);
+    height: 47px;
+  }
+  .line-91,
+  .line-92 {
+    transform: translate(87.5vw, 49.5vh);
+  }
+  .line-91 {
+    width: 70px;
+  }
+  .line-92 {
+    height: 42px;
+  }
+  .line-93,
+  .line-94 {
+    transform: translate(87.5vw, 72.5vh);
+  }
+  .line-93 {
+    width: 70px;
+  }
+  .line-94,
+  .line-96 {
+    height: 35px;
+  }
+  .line-95,
+  .line-96 {
+    transform: translate(87.5vw, 84.5vh);
+  }
+  .line-95 {
+    width: 70px;
+  }
+  .line-97 {
+    transform: translate(85.7vw, 70vh);
+    width: 100px;
+  }
+}
+
+// mobile responsiveness and 1366px
+@media (max-width: 1366px) {
+  .PH3cBoileroperation {
+    .single-text-8 {
+      font-size: 14px;
+      transform: translate(23px, 91px) rotate(0deg) !important;
+    }
+    .single-text-20 {
+      transform: translate(1051px, 453px) !important;
+    }
+    .single-text-54 {
+      transform: translate(1061px, 62px) !important;
+    }
+    .single-text-56 {
+      transform: translate(1112px, 321px) !important;
+    }
+    .single-text-57 {
+      transform: translate(1085px, 461px) rotate(180deg) !important;
+    }
+    .single-text-78 {
+      transform: translate(289px, 74px);
+    }
+    .single-text-79 {
+      transform: translate(586px, 104px);
+    }
+    .single-text-80 {
+      transform: translate(518px, 380px);
+    }
+    .single-text-81 {
+      transform: translate(1226px, 18px);
+    }
+    .single-text-82 {
+      transform: translate(1198px, 117px);
+    }
+    .single-text-83 {
+      transform: translate(1198px, 260px);
+    }
+    .single-text-84 {
+      transform: translate(1220px, 285px);
+    }
+    .single-text-85 {
+      transform: translate(1220px, 412px);
+    }
+    .single-text-86 {
+      transform: translate(1237px, 431px);
+    }
+    .single-text-87 {
+      transform: translate(1237px, 499px);
+    }
+    .line-42 {
+      transform: translate(1171px, 366px) !important;
+      width: 70px;
+    }
+    .line-85,
+    .line-86 {
+      transform: translate(1190px, 35px);
+    }
+    .line-86 {
+      height: 39px;
+    }
+    .line-87,
+    .line-88 {
+      transform: translate(1137px, 126px);
+    }
+    .line-88 {
+      height: 24px;
+    }
+    .line-89 {
+      transform: translate(1137px, 273px);
+    }
+    .line-90 {
+      transform: translate(1137px, 233px);
+      height: 42px;
+    }
+    .line-91,
+    .line-92 {
+      transform: translate(1189px, 301px);
+    }
+    .line-92,
+    .line-94 {
+      height: 30px;
+    }
+    .line-93,
+    .line-94 {
+      transform: translate(1189px, 441px);
+    }
+    .line-95,
+    .line-96 {
+      transform: translate(1189px, 511px);
+    }
+    .line-97 {
+      transform: translate(1172px, 421px);
+      width: 60px;
+    }
+  }
+}

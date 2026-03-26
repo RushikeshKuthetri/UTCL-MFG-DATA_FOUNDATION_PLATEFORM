@@ -1,0 +1,23 @@
+
+.sl-spinner2 .sl-loader-items {
+    width: 100% !important;
+    height: 100%  !important;
+    position: relative;
+}
+
+.sl-spinner2 {
+    justify-content: initial !important ;
+    position: relative;
+    left: 0;
+}
+
+.sl-spinner2 .sl-loader {
+width: 100%;
+}
+.sl-spinner2 .sl-loader-title {
+    display: none !important;
+}
+
+.tableContainer{
+    overflow-y: scroll;
+}

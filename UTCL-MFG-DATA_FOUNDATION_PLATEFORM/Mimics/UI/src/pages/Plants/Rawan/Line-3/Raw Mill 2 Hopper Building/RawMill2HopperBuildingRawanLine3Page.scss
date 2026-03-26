@@ -1,0 +1,48 @@
+.RawMill2HBRawanl3 {
+  .line-35 {
+    transform: translate(58vw, 56.5vh);
+  }
+  .line-36 {
+    transform: translate(72vw, 56.5vh);
+  }
+  .line-50 {
+    transform: translate(18vw, 70vh);
+    height: 20px;
+  }
+  .single-text-61 {
+    width: 94px;
+  }
+  .single-text-78 {
+    transform: translate(29.5vw, 48vh);
+  }
+  .single-text-79 {
+    transform: translate(43.5vw, 48vh);
+  }
+  .single-text-80 {
+    transform: translate(58.5vw, 48vh);
+  }
+}
+
+//mobile responsiveness
+@media (max-width: 1366px) {
+  .RawMill2HBRawanl3 {
+    .line-35 {
+      transform: translate(792px, 339px);
+    }
+    .line-36 {
+      transform: translate(984px, 339px);
+    }
+    .line-50 {
+      transform: translate(246px, 420px);
+    }
+    .single-text-78 {
+      transform: translate(403px, 288px);
+    }
+    .single-text-79 {
+      transform: translate(594px, 288px);
+    }
+    .single-text-80 {
+      transform: translate(799px, 288px);
+    }
+  }
+}

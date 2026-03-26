@@ -1,0 +1,9 @@
+export { Kiln1GujaratLine1Page } from "./Kiln-1/Kiln1GujaratLine1Page";
+export { RawMill1FeedGujaratLine1Page } from "./RawMill1Feed/RawMill1FeedGujaratLine1Page";
+export { RawMill1GujaratLine1Page } from "./RawMill-1/RawMill1GujaratLine1Page";
+export { Packer1and2GujaratLine1Page } from "./packer1And2/Packer1and2GujaratLine1Page";
+export { Packer3and4GujaratLine1Page } from "./packer3And4/Packer3and4GujaratLine1Page";
+export { AFRGujaratLine1Page } from "./AFR/AFRGujaratLine1Page";
+export { CoalMill1GujaratLine1Page } from "./CoalMill-1/CoalMill1GujaratLine1Page";
+export { CoalMill1FeedGujaratLine1Page } from "./CoalMill-1Feed/CoalMill1FeedGujaratLine1Page";
+export { Cooler1GujaratLine1Page } from "./Cooler1/Cooler1GujaratLine1Page";

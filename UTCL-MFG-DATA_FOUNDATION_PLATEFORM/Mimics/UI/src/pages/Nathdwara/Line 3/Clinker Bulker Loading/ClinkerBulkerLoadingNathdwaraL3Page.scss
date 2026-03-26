@@ -1,0 +1,381 @@
+.ClinkerBulkLNathdwaraL3 {
+  .pipe-1 {
+    transform: translate(27vw, 16vh);
+    width: 720px;
+  }
+  .single-text-1 {
+    transform: translate(19vw, 21vh);
+    gap: 247px;
+    .containerImage {
+      width: 366px;
+      height: 132px;
+      background-position: right;
+    }
+  }
+  .single-text-2,
+  .single-text-3,
+  .single-text-4,
+  .single-text-5,
+  .single-text-6,
+  .single-text-7 {
+    .dot-square-line {
+      transform: rotate(-90deg);
+    }
+    .gap-1 {
+      gap: 12px;
+    }
+    .triangle-with-squares {
+      height: 33px;
+      width: 75px;
+    }
+  }
+  .single-text-2 {
+    transform: translate(19vw, 34vh);
+  }
+  .single-text-3 {
+    transform: translate(26.5vw, 34vh);
+  }
+  .single-text-4 {
+    transform: translate(34vw, 34vh);
+  }
+  .single-text-5 {
+    transform: translate(50vw, 34vh);
+  }
+  .single-text-6 {
+    transform: translate(58vw, 34vh);
+  }
+  .single-text-7 {
+    transform: translate(66vw, 34vh);
+  }
+  .single-text-8 {
+    transform: translate(18.4vw, 36vh);
+    gap: 80px;
+  }
+  .single-text-9 {
+    transform: translate(25.7vw, 36vh);
+    gap: 80px;
+  }
+  .single-text-10 {
+    transform: translate(33.7vw, 36vh);
+    gap: 72px;
+  }
+  .single-text-11 {
+    transform: translate(49.5vw, 36vh);
+    gap: 72px;
+  }
+  .single-text-12 {
+    transform: translate(57.5vw, 36vh);
+    gap: 72px;
+  }
+  .single-text-13 {
+    transform: translate(65.8vw, 36vh);
+    gap: 72px;
+  }
+  .single-text-14 {
+    transform: translate(16vw, 41vh);
+    gap: 124px;
+  }
+  .single-text-15 {
+    transform: translate(47.4vw, 41vh);
+    gap: 124px;
+  }
+  .single-text-16 {
+    transform: translate(20vw, 21.5vh);
+    gap: 52px;
+  }
+  .single-text-17 {
+    transform: translate(52.4vw, 21.5vh);
+    gap: 52px;
+  }
+  .single-text-18 {
+    transform: translate(19.4vw, 63.5vh);
+    width: 338px;
+    height: 178px;
+    background-size: cover;
+  }
+  .single-text-19 {
+    transform: translate(51.4vw, 63.5vh);
+    width: 338px;
+    height: 178px;
+    background-size: cover;
+  }
+  .single-text-20 {
+    transform: translate(19.4vw, 83.5vh);
+    width: 340px;
+    height: 20px;
+  }
+  .single-text-21 {
+    transform: translate(51.4vw, 83.5vh);
+    width: 340px;
+    height: 20px;
+  }
+  .single-text-22 {
+    transform: translate(23.4vw, 83.5vh);
+  }
+  .single-text-23 {
+    transform: translate(57vw, 83.5vh);
+  }
+  .single-text-24 {
+    transform: translate(43vw, 16vh);
+    z-index: 1;
+  }
+  .single-text-25 {
+    transform: translate(23.1vw, 47vh);
+    gap: 125px;
+    .connector-icon {
+      transform: scale(-1.1, 1.1) rotate(-86deg);
+      height: 23px;
+      width: 28px;
+      .dot {
+        transform: scale(-1.1, 1.1) rotate(-86deg);
+      }
+    }
+  }
+  .single-text-26 {
+    transform: translate(54.3vw, 48vh);
+    gap: 132px;
+    .connector-icon {
+      transform: scale(-1.1, 1.1) rotate(-86deg);
+      height: 23px;
+      width: 28px;
+      .dot {
+        transform: scale(-1.1, 1.1) rotate(-86deg);
+      }
+    }
+  }
+  .single-text-27 {
+    transform: translate(80.3vw, 22vh);
+    gap: 29px;
+  }
+  .single-text-28 {
+    transform: translate(19.6vw, 35vh);
+    gap: 82px;
+    z-index: -1;
+    .bg-secondary {
+      background-color: #989898 !important;
+      width: 63px;
+      height: 205px;
+    }
+  }
+  .single-text-29 {
+    transform: translate(50.6vw, 35vh);
+    gap: 92px;
+    z-index: -1;
+    .bg-secondary {
+      background-color: #989898 !important;
+      width: 63px;
+      height: 205px;
+    }
+  }
+
+  .line-1 {
+    transform: translate(27.4vw, 17.5vh);
+    height: 28px;
+  }
+  .line-2 {
+    transform: translate(64.2vw, 17.5vh);
+    height: 28px;
+  }
+  .line-3 {
+    transform: translate(21vw, 61.2vh);
+    height: 38px;
+  }
+  .line-4 {
+    transform: translate(28.3vw, 61.2vh);
+    height: 38px;
+  }
+  .line-5 {
+    transform: translate(36vw, 61.2vh);
+    height: 38px;
+  }
+  .line-6 {
+    transform: translate(52vw, 61.2vh);
+    height: 38px;
+  }
+  .line-7 {
+    transform: translate(60vw, 61.2vh);
+    height: 38px;
+  }
+  .line-8 {
+    transform: translate(68vw, 61.2vh);
+    height: 38px;
+  }
+}
+//moble resposive
+@media (max-width: 1366px) {
+  .ClinkerBulkLNathdwaraL3 {
+    .pipe-1 {
+      transform: translate(406px, 96px);
+      width: 466px;
+    }
+    .single-text-24 {
+      transform: translate(622px, 96px);
+      z-index: 1;
+    }
+    .single-text-1 {
+      transform: translate(280px, 121px);
+      gap: 116px;
+      .containerImage {
+        width: 299px;
+        height: 90px;
+        background-position: right;
+      }
+    }
+    .single-text-2 {
+      transform: translate(253px, 203px);
+    }
+    .single-text-3 {
+      transform: translate(394px, 203px);
+    }
+    .single-text-4 {
+      transform: translate(535px, 203px);
+    }
+    .single-text-5 {
+      transform: translate(681px, 203px);
+    }
+    .single-text-6 {
+      transform: translate(814px, 203px);
+    }
+    .single-text-15 {
+      transform: translate(651.4px, 244px);
+      gap: 106px;
+    }
+    .single-text-7 {
+      transform: translate(944px, 203px);
+    }
+    .single-text-8 {
+      transform: translate(254.4px, 214px);
+      gap: 52px;
+    }
+    .single-text-9 {
+      transform: translate(391.4px, 214px);
+      gap: 52px;
+    }
+    .single-text-10 {
+      transform: translate(531.4px, 214px);
+      gap: 52px;
+    }
+    .single-text-14 {
+      transform: translate(211px, 246px);
+      gap: 114px;
+    }
+    .single-text-25 {
+      transform: translate(318.1px, 285px);
+      gap: 118px;
+      .connector-icon {
+        height: 19px;
+        width: 24px;
+      }
+    }
+    .single-text-26 {
+      transform: translate(746.3px, 284px);
+      gap: 109px;
+      .connector-icon {
+        height: 19px;
+        width: 24px;
+      }
+    }
+    .single-text-11 {
+      transform: translate(684.5px, 216px);
+      gap: 47px;
+    }
+    .single-text-12 {
+      transform: translate(816.5px, 216px);
+      gap: 47px;
+    }
+    .single-text-13 {
+      transform: translate(944.5px, 216px);
+      gap: 47px;
+    }
+    .single-text-16 {
+      transform: translate(307px, 126.5px);
+      gap: 38px;
+    }
+    .single-text-17 {
+      transform: translate(732px, 126.5px);
+      gap: 38px;
+    }
+    .single-text-18 {
+      transform: translate(310.4px, 366.5px);
+      width: 261px;
+      height: 136px;
+      background-size: cover;
+    }
+    .single-text-19 {
+      transform: translate(730.4px, 366.5px);
+      width: 261px;
+      height: 136px;
+      background-size: cover;
+    }
+    .single-text-20 {
+      transform: translate(282.4px, 496.5px);
+      width: 316px;
+      height: 17px;
+    }
+    .single-text-21 {
+      transform: translate(690.4px, 496.5px);
+      width: 316px;
+      height: 17px;
+    }
+    .single-text-22 {
+      transform: translate(376.4px, 498.5px);
+    }
+    .single-text-23 {
+      transform: translate(803.4px, 498.5px);
+    }
+    .single-text-27 {
+      transform: translate(1145.3px, 122px);
+      gap: 29px;
+    }
+    .single-text-28 {
+      transform: translate(268.6px, 211px);
+      gap: 90px;
+      z-index: -1;
+      .bg-secondary {
+        width: 48px;
+        height: 146px;
+      }
+    }
+    .single-text-29 {
+      transform: translate(694.6px, 211px);
+      gap: 82px;
+      z-index: -1;
+      .bg-secondary {
+        width: 48px;
+        height: 146px;
+      }
+    }
+    .line-1 {
+      transform: translate(412.4px, 106.5px);
+      height: 13px;
+    }
+    .line-2 {
+      transform: translate(863.4px, 106.5px);
+      height: 13px;
+    }
+    .line-3 {
+      transform: translate(290px, 388.2px);
+      height: 20px;
+    }
+    .line-4 {
+      transform: translate(427px, 388.2px);
+      height: 20px;
+    }
+    .line-5 {
+      transform: translate(572px, 388.2px);
+      height: 20px;
+    }
+    .line-6 {
+      transform: translate(717px, 388.2px);
+      height: 20px;
+    }
+    .line-7 {
+      transform: translate(848px, 388.2px);
+      height: 20px;
+    }
+    .line-8 {
+      transform: translate(986px, 388.2px);
+      height: 20px;
+    }
+  }
+}

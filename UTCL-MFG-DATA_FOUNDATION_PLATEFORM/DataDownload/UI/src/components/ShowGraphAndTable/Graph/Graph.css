@@ -1,0 +1,59 @@
+.highcharts-scrollbar-thumb:hover {
+  background-color: #346667 !important;
+}
+
+.highcharts-title {
+  display: none;
+}
+
+.highcharts-legend {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.graph-div {
+  position: relative;
+  /* height: calc(100vh - 167px); */
+}
+.x-axis {
+  border-top: 2px solid grey;
+  position: absolute;
+  bottom: -26px;
+  left: 6%;
+  width: 91%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#graph-id {
+  margin-left: 7rem;
+  position: relative;
+}
+.accordion-button{
+  font-weight: 600;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;  
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion-button.collapsed .fa-angle-down{
+  transform: rotate(0deg);
+  transition: 0ms;
+}
+.accordion-button .fa-angle-down{
+  transform: rotate(180deg);
+  transition: 0ms;
+}
+
+.accordion-button:focus-visible, .accordion-button:focus{ outline: 0;}
+
+
+@media (max-width: 1026px) {
+  /* .graph-div {
+    height: calc(100vh - 240px);
+} */
+  }

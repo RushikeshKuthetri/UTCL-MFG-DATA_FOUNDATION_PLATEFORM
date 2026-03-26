@@ -1,0 +1,28 @@
+.Whrsdashboarddharl1 {
+  .table {
+    .th:nth-child(even),
+    td:nth-child(even) {
+      border-right: 1px solid black;
+    }
+
+    tr:has(> td:first-child[colspan="2"]) {
+      .th:nth-child(odd),
+      td:nth-child(odd) {
+        border-right: 1px solid black;
+      }
+
+      .th:nth-child(even),
+      td:nth-child(even) {
+        border-right: none; // cancel default
+      }
+    }
+  }
+
+  .greenTxt {
+    color: #06ff06 !important;
+
+    .unitColor {
+      color: #d2dc94 !important;
+    }
+  }
+}

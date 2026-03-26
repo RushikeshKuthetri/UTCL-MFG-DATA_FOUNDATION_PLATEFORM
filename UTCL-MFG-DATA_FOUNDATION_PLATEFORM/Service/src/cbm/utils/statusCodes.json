@@ -1,0 +1,89 @@
+{ 
+  "codes":[
+    {
+      "statusCode": 200,
+      "status": "OK"
+    },
+    {
+      "statusCode": 201,
+      "status": "Created"
+    },
+    {
+      "statusCode": 202,
+      "status": "Accepted"
+    },
+    {
+      "statusCode": 203,
+      "status": "Non_Authoritative Information"
+    },
+    {
+      "statusCode": 204,
+      "status": "No Content"
+    },
+    {
+      "statusCode": 205,
+      "status": "Reset Content"
+    },
+    {
+      "statusCode": 206,
+      "status": "Partial Content"
+    },
+    {
+      "statusCode": 208,
+      "status": "Already Reported"
+    },
+    {
+      "statusCode": 300,
+      "status": "Multiple Choice"
+    },
+    {
+      "statusCode": 301,
+      "status": "Moved Permanently"
+    },
+    {
+      "statusCode": 302,
+      "status": "Found"
+    },
+    {
+      "statusCode": 400,
+      "status": "Bad Request"
+    },
+    {
+      "statusCode": 401,
+      "status": "Unauthorized"
+    },
+    {
+      "statusCode": 403,
+      "status": "Forbidden"
+    },
+    {
+      "statusCode": 404,
+      "status": "Not Found"
+    },
+    {
+      "statusCode": 405,
+      "status": "Method Not Allowed"
+    },
+    {
+      "statusCode": 408,
+      "status": "Request Timeout"
+    },
+    {
+      "statusCode": 500,
+      "status": "Internal Server Error"
+    },
+    {
+      "statusCode": 502,
+      "status": "Bad Gateway"
+    },
+    {
+      "statusCode": 503,
+      "status": "Service Unavailable"
+    },
+    {
+      "statusCode": 504,
+      "status": "Gateway Timeout"
+    }
+  ]
+  
+}

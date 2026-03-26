@@ -1,0 +1,13 @@
+export { KilnMainPageJafrabad } from "./KilnMainPage/KilnMainPageJafrabad";
+export { CementMillPageJafrabad } from "./Cementmill/CementMillJafrabad";
+export { CoolerJafrabad } from "./Cooler/CoolerJafrabad";
+export { RawMillJafrabad } from "./RawMill/RawMillJafrabad";
+export { CrusherJafrabad } from "./Crusher/CrusherJafrabad";
+export { CoalMillJafrabad } from "./CoalMill/CoalMillJafrabad";
+export { CoalMillFeedingJafrabad } from "./CoalMillFeeding/CoalMillFeedingJafrabad";
+export { UtilityJafrabad } from "./Utility/UtilityJafrabad";
+export { ClinkerTransportJafrabad } from "./ClinkerTransport/ClinkerTransportJafrabad";
+export { AFSJafrabad } from "./Alternatefuelsystem/AFSJafrabad";
+export { ReclaimerJafrabad } from "./Reclaimer/ReclaimerJafrabad";
+export { BagHouseJafrabad } from "./Bag House/BagHouseJafrabad";
+export { JettyJafrabad } from "./Jetty/JettyJafrabad";

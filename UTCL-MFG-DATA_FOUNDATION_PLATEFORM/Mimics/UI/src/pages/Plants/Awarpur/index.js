@@ -1,0 +1,1 @@
+export { AwarpurCBAMinesPage } from "./AwarpurCBAMines/AwarpurCBAMinesPage";

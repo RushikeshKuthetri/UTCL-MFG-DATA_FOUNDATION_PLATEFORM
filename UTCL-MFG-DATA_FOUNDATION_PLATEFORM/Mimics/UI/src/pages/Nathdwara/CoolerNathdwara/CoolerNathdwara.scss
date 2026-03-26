@@ -1,0 +1,222 @@
+.CoolerNathdwara {
+  .h-11 {
+    height: 11%;
+  }
+  .single-text-1 {
+    transform: translate(4vw, 1vh);
+  }
+  .single-text-2 {
+    transform: translate(28vw, 1vh);
+  }
+  .single-text-3 {
+    transform: translate(21vw, 9vh);
+  }
+  .single-text-4 {
+    transform: translate(42vw, 9vh);
+  }
+  .single-text-5 {
+    transform: translate(61vw, 6vh);
+  }
+  .single-text-6 {
+    transform: translate(12vw, 2vh);
+    width: 150px;
+  }
+  .single-text-7 {
+    transform: translate(36vw, 2vh);
+    width: 150px;
+  }
+  .single-text-8 {
+    transform: translate(30vw, 10vh);
+  }
+  .single-text-9 {
+    transform: translate(33vw, 16vh);
+  }
+  .single-text-10 {
+    transform: translate(60vw, 3vh);
+  }
+  .single-text-11 {
+    transform: translate(60vw, 6vh);
+  }
+  .single-text-12 {
+    transform: translate(46vw, 5vh);
+  }
+  .single-text-14 {
+    transform: translate(34vw, 13vh);
+  }
+  .single-text-15 {
+    transform: translate(61vw, 15vh);
+  }
+  .single-text-16 {
+    transform: translate(49vw, 10vh);
+  }
+  .single-text-17,
+  .single-text-18 {
+    font-size: 20px;
+  }
+  .single-text-17 {
+    transform: translate(57vw, 3vh);
+    color: #01ff00;
+  }
+  .single-text-18 {
+    transform: translate(57vw, 6vh);
+    color: #04fefd;
+  }
+  .single-text-13 {
+    transform: translate(52vw, 2vh);
+    width: 80px;
+    height: 70px;
+  }
+
+  .pipe-1 {
+    transform: translate(52vw, 14vh);
+    width: 78px;
+  }
+  .pipe-2 {
+    transform: translate(54vw, 9vh);
+    height: 50px;
+  }
+  .pipe-3 {
+    transform: translate(52vw, 14vh);
+    height: 100px;
+  }
+  .pipe-4 {
+    transform: translate(56vw, 14vh);
+    height: 100px;
+  }
+  .pipe-5 {
+    transform: translate(5vw, 6vh);
+    height: 119px;
+  }
+  .pipe-6 {
+    transform: translate(132px, 135px);
+    height: 50px;
+  }
+  .pipe-7 {
+    transform: translate(117px, 60px);
+    height: 50px;
+  }
+  .pipe-8 {
+    transform: translate(105px, 118px);
+    height: 120px;
+  }
+  .gear {
+    font-size: 20px;
+    color: #a79c9c;
+    text-shadow: 3px -2px 2px #898989, 4px -5px 2px #898989,
+      8px -7px 2px #898989;
+  }
+
+  .single-text-21 {
+    transform: translate(5vw, 12vh);
+  }
+  .single-text-22 {
+    transform: translate(7vw, 8vh);
+  }
+  .single-text-23 {
+    transform: translate(8vw, 11vh);
+  }
+  .single-text-24 {
+    transform: translate(7vw, 16vh);
+  }
+  .single-text-25 {
+    transform: translate(3vw, 21vh);
+  }
+  .single-text-26 {
+    transform: translate(92vw, 3vh);
+  }
+  .single-text-27 {
+    transform: translate(30vw, 0vh);
+  }
+  .single-text-28 {
+    transform: translate(40vw, 3vh);
+  }
+  .single-text-29 {
+    transform: translate(40vw, 6vh);
+  }
+  .single-text-30 {
+    transform: translate(36vw, 1vh);
+  }
+  .single-text-35 {
+    transform: translate(76vw, 10vh);
+  }
+
+}
+
+@media (max-width: 1367px) {
+  .CoolerNathdwara {
+    .h-11 {
+      height: 8%;
+    }
+    .single-text-13 {
+      width: 59px;
+      height: 50px;
+    }
+    .pipe-5 {
+      height: 86px;
+    }
+    .pipe-2 {
+      height: 33px;
+    }
+    .pipe-1 {
+      width: 56px;
+    }
+    .pipe-7 {
+      transform: translate(82px, 35px);
+      height: 40px;
+    }
+    .pipe-8 {
+      transform: translate(72px, 90px);
+      height: 73px;
+    }
+    .pipe-6 {
+      transform: translate(92px, 89px);
+      height: 33px;
+    }
+    .single-text-33 {
+      transform: translate(180px, -16px);
+    }
+  }
+}
+
+// mobile responsive
+@media (max-width: 1365px) {
+  .CoolerNathdwara {
+    min-height: 560px;
+    max-height: 560px;
+    .single-text-1 {transform: translate(39px, 6px); }
+    .single-text-2 {transform: translate(395px, 1vh);}
+    .single-text-3 {transform: translate(240px, 70px);}
+    .single-text-4 {transform: translate(575px, 70px);}
+    .single-text-5 {transform: translate(820px, 34px);}
+    .single-text-6 {transform: translate(150px, 5px); }
+    .single-text-7 {transform: translate(485px, 15px); }
+    .single-text-8 {transform: translate(400px, 64px);}
+    .single-text-9 {transform: translate(440px, 100px);}
+    .single-text-10 {transform: translate(817px, 27px);}
+    .single-text-11 {transform: translate(817px, 46px);}
+    .single-text-12 {transform: translate(624px, 30px);}
+    .single-text-13 {transform: translate(706px, 10px);}
+    .single-text-14 {transform: translate(450px, 76px);}
+    .single-text-15 {transform: translate(836px, 100px);}
+    .single-text-16 {transform: translate(660px, 64px);}
+    .single-text-17 {transform: translate(773px, 18px);}
+    .single-text-18 {transform: translate(773px, 38px);}
+    .single-text-21 {transform: translate(67px, 76px);}
+    .single-text-22 {transform: translate(99px, 47px);}
+    .single-text-23 {transform: translate(99px, 71px);}
+    .single-text-24 {transform: translate(97px, 95px);}
+    .single-text-25 {transform: translate(42px, 138px);}
+    .single-text-26 {transform: translate(1250px, 28px);}
+    .single-text-27 {transform: translate(408px, 8px);}
+    .single-text-28 {transform: translate(555px, 20px);}
+    .single-text-29 {transform: translate(555px, 37px);}
+    .single-text-30 {transform: translate(555px, 37px);}
+    .single-text-35 {
+      transform: translate(1038px, 60px);
+    }
+    .pipe-1, .pipe-3 {transform: translate(707px, 86px); }
+    .pipe-2 {transform: translate(733px, 54px);}
+    .pipe-4 {transform: translate(762px, 86px);}
+    .pipe-5 {transform: translate(72px, 32px);}
+  }
+}

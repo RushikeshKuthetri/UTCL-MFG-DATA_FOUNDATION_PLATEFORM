@@ -1,0 +1,331 @@
+/* Main page container */
+
+.react-datepicker-wrapper input {
+  background-color: var(--input-enable-bg) !important;
+  border: none !important;
+  /* 🔥 remove inner border */
+  height: 100% !important;
+  /* 🔥 match parent height */
+  width: 100% !important;
+  border-radius: 0 !important;
+  /* 🔥 let parent handle radius */
+  padding: 6px 12px !important;
+}
+
+.react-datepicker-wrapper input:focus {
+  outline: none !important;
+  border-color: var(--picker-accent) !important;
+  box-shadow: 0 0 0 1px var(--picker-accent) !important;
+}
+
+.react-datepicker {
+  background-color: var(--input-enable-bg) !important;
+  border: 1px solid var(--form-border) !important;
+  color: var(--text-color) !important;
+}
+
+.react-datepicker__header {
+  background-color: var(--picker-bg) !important;
+  border-bottom: 1px solid var(--form-border) !important;
+}
+
+.react-datepicker__current-month,
+.react-datepicker-time__header,
+.react-datepicker-year-header {
+  color: var(--text-color) !important;
+}
+
+.react-datepicker__day,
+.react-datepicker__day-name {
+  color: var(--text-color) !important;
+}
+
+.react-datepicker__day:hover {
+  background-color: var(--picker-hover) !important;
+  border-radius: 4px;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background-color: var(--picker-accent) !important;
+  color: #fff !important;
+  border-radius: 4px;
+}
+
+.react-datepicker__day--today {
+  border: 1px solid var(--picker-accent);
+}
+
+/* Time panel */
+
+.react-datepicker__time-container {
+  border-left: 1px solid var(--form-border) !important;
+}
+
+.react-datepicker__time,
+.react-datepicker__time-box,
+.react-datepicker__time-list {
+  background-color: var(--input-enable-bg) !important;
+}
+
+.react-datepicker__time-list-item {
+  color: var(--text-color) !important;
+}
+
+.react-datepicker__time-list-item:hover {
+  background-color: var(--picker-hover) !important;
+}
+
+.react-datepicker__time-list-item--selected {
+  background-color: var(--picker-accent) !important;
+  color: #fff !important;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box .react-datepicker__time-list .react-datepicker__time-list-item--selected,
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box .react-datepicker__time-list .react-datepicker__time-list-item--keyboard-selected {
+  background-color: var(--picker-accent) !important;
+  color: #fff !important;
+}
+
+/* Ensure base items don’t override */
+.react-datepicker__time-list-item {
+  background-color: transparent !important;
+}
+
+
+.react-datepicker-wrapper {
+  width: 100% !important;
+}
+
+.react-datepicker__input-container {
+  width: 100% !important;
+}
+
+/* ============================= */
+/* SELECTION                    */
+/* ============================= */
+
+::selection {
+  background: var(--picker-accent);
+  color: white;
+}
+
+.filters-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* Filters container */
+.filters-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Root Card */
+.filter-card.root-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn-content {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Row with 3 columns (Plant/Line/Section & Start/End/Interval) */
+.row.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+/* Full width row (tags) */
+.row.full-width {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.input-validation-text {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Column wrapper */
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-inline-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  gap: 4px;
+  /* adds clean spacing between input & error */
+}
+
+/* React-select control */
+.select-inline-wrapper .basic-single,
+.select-inline-wrapper .select__control {
+  flex: 1;
+  min-width: 0;
+  width: 100% !important;
+  min-height: 45px !important;
+  border-radius: 6px !important;
+  border: 1px solid #bfbfbf !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+
+/* Scrollable multi-value tags */
+.select__value-container {
+  max-height: 70px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+/* Scrollbar styling */
+.select__value-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.select__value-container::-webkit-scrollbar-thumb {
+  background: #bfbfbf;
+  border-radius: 4px;
+}
+
+/* Tag chips */
+.select__multi-value {
+  background: #e8f0ff !important;
+  border-radius: 4px !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Remove (x) button inside tags */
+.select__multi-value__remove {
+  color: #000 !important;
+}
+
+.select__multi-value__remove:hover {
+  background: #ccc !important;
+  color: #000 !important;
+}
+
+/* Custom remove button on right side */
+.cutomremove,
+.cutomremoveindi {
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.cutomremove button,
+.cutomremoveindi button {
+  border: none;
+  background: #e0e0e0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cutomremove button:hover,
+.cutomremoveindi button:hover {
+  background: #ccc;
+}
+
+/* Date picker inputs */
+.react-datepicker-wrapper,
+.react-datepicker__input-container input {
+  width: 100%;
+  min-height: 45px;
+  border-radius: 6px;
+  /* border: px solid #bfbfbf; */
+  /* padding: 6px 12px; */
+  box-sizing: border-box;
+}
+
+/* Buttons row */
+.buttons-card {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Download buttons */
+.buttons-card .btnfrst {
+  font-weight: 600;
+  color: #000;
+  background-color: #ffd700;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s ease;
+}
+
+.buttons-card .btnfrst:hover {
+  background-color: #ffc107;
+  transform: translateY(-2px);
+}
+
+
+/* Tags full-width block spacing */
+.row.full-width.tags-row {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Scrollable selected tags inside the multi-select */
+.row.full-width.tags-row .select__value-container {
+  max-height: 80px;
+  /* Adjust height as needed */
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+/* Scrollbar styling for selected tags */
+.row.full-width.tags-row .select__value-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.row.full-width.tags-row .select__value-container::-webkit-scrollbar-thumb {
+  background: #bfbfbf;
+  border-radius: 4px;
+}
+
+/* Validation text */
+.error-input {
+  border-color: red !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .row.grid-3 {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}

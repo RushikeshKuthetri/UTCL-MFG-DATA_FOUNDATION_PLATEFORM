@@ -1,0 +1,258 @@
+<!-- <app-header></app-header> -->
+<!-- <app-sidebr [isExpanded]="sidebarExpanded" (toggleSidebar)="sidebarExpanded = !sidebarExpanded"></app-sidebr> -->
+<div class="custom-scrollbar mx-3">
+  <div class="title-font font-medium flex text-[18px] text-[var(--title)] mb-2 -mt-0.5">
+    <span>Dashboard</span>
+  </div>
+
+  <div
+    class="w-full rounded-lg border border-[var(--form-border)] overflow-hidden pb-3"
+  >
+    <app-filters
+      [filtersData]="payload"
+      [filtersDate]="recommendationDate"
+      type="datepicker"
+      (filterData)="onChangeFilter($event)"
+    ></app-filters>
+    <!-- <div [hidden]="!flags.showLoader">
+    <app-apploader></app-apploader>
+  </div> -->
+    <div
+      class="main"
+      [hidden]="true && cardflag && linechart && barcharflag && pieChartflag"
+    >
+      <!-- <div> -->
+      <!-- <div class="row p-4 d-none">
+                <div class="col-8 leftHeading">
+                    <h5 class="heading">Performance Dashboard</h5>
+                </div>
+                <div class="col-4 d-flex justify-content-end pr-4">
+                    <div class="download-button dropdown">
+                        <i class="bi bi-download" style="font-size: 29px;" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><p class="dropdown-item" (click)="openModalAlert(Modeltemplate1)">Alert Report</p></li>
+                          <li><p class="dropdown-item" (click)="openModalRawData(Modeltemplate2)">Raw Data</p></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btnSubmit d-none" (click)="openModal(Modeltemplate)">View SEC</button>
+                    </div>
+                </div>
+            </div> -->
+      <!-- </div> -->
+
+      <div class="flex gap-2 mx-3 my-2">
+        <!-- Card 1: Dashboard -->
+        <div class="flex-1 min-w-0">
+          <div
+            class="bg-[var(--dashboard-graph-bg)] rounded-xl px-3 py-3 h-full flex items-center justify-center"
+          >
+            <div
+              *ngIf="!cardflag"
+              class="flex flex-col items-center justify-center gap-0.5"
+            >
+              <span class="text-[var(--text-color)] text-[16px]"
+                >Total Recommendation</span
+              >
+              <span
+                class="text-[var(--card-subtle)] text-2xl font-bold cursor-pointer"
+                (click)="onClickCard('recommendationsList')"
+              >
+                {{
+                  cardData.Total_Recommendation
+                    ? cardData.Total_Recommendation
+                    : 0
+                }}
+              </span>
+            </div>
+            <div *ngIf="cardflag">
+              <p class="text-[var(--success-text)]">No Record Found</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Throughput Chart -->
+        <div class="flex-1 min-w-0">
+          <div
+            class="bg-[var(--dashboard-graph-bg)] rounded-xl px-3 py-2 h-full flex flex-col gap-2"
+          >
+            <!-- Title -->
+            <span class="text-[var(--text-color)] text-[16px] mb-2"
+              >Daily Basis</span
+            >
+
+            <!-- Min / Max / Avg stat pills -->
+            <div class="flex items-stretch gap-2">
+              <!-- Min -->
+              <div
+                class="flex-1 flex flex-col items-center justify-center gap-0.5 rounded-lg border border-[var(--chart-card-border)] py-2 px-2"
+              >
+                <span class="text-md text-[var(--text-color)] text-[15px]"
+                  >Min</span
+                >
+                <span class="text-xl font-bold text-[var(--card-subtle)]">{{
+                  throughputValues.minValue.toFixed(2)
+                }}</span>
+                <div
+                  class="w-5 h-0.5 rounded-full bg-blue-400 opacity-70"
+                ></div>
+              </div>
+              <!-- Max -->
+              <div
+                class="flex-1 flex flex-col items-center justify-center gap-0.5 rounded-lg border border-[var(--chart-card-border)] py-2 px-2"
+              >
+                <span class="text-md text-[var(--text-color)] text-[15px]"
+                  >Max</span
+                >
+                <span class="text-xl font-bold text-[var(--card-subtle)]">{{
+                  throughputValues.maxValue.toFixed(2)
+                }}</span>
+                <div
+                  class="w-5 h-0.5 rounded-full bg-orange-400 opacity-70"
+                ></div>
+              </div>
+              <!-- Avg -->
+              <div
+                class="flex-1 flex flex-col items-center justify-center gap-0.5 rounded-lg border-2 border-[var(--chart-card-border)] py-2 px-2"
+              >
+                <span class="text-md text-[var(--text-color)] text-[15px]"
+                  >Avg</span
+                >
+                <span class="text-xl font-bold text-[var(--card-subtle)]">{{
+                  throughputValues.avgValue
+                }}</span>
+                <div
+                  class="w-5 h-0.5 rounded-full bg-emerald-400 opacity-70"
+                ></div>
+              </div>
+            </div>
+
+            <!-- Chart / loader / no-data -->
+            <div class="flex-1 flex items-center justify-center">
+              <div
+                [hidden]="!throughputFlags.showThroughPutLoader"
+                class="w-full flex justify-center"
+              >
+                <app-loader2></app-loader2>
+              </div>
+              <div
+                class="w-full p-2 rounded"
+                [hidden]="!throughputFlags.showThroughPutData"
+              >
+                <div class="line" [chart]="chart"></div>
+              </div>
+
+              <div
+                class="m-3 flex flex-row gap-2 items-center justify-center py-3 px-6 text-center border border-dashed border-[var(--form-border)] rounded-xl transition-all duration-300 animate-fadeIn"
+              >
+                <!-- Icon with animation -->
+                <div class="text-md mb-2 zoom-animation">🔍</div>
+
+                <!-- Title -->
+                <h2
+                  class="text-lg font-semibold text-[var(--leftdrawer-text)] mb-2"
+                >
+                  No Data Found
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="card card_apply mb-4" *ngIf="linechart">
+          <div class="row">
+            <div class="col-md-12 d-flex justify-content-center align-items-center">
+              <span class="text-center">No Record Found for ThroughPut</span>
+            </div>
+          </div>
+        </div> -->
+
+      <div class="flex gap-2 mx-3">
+        <!-- Weekly Alarm Counts -->
+        <div
+          class="flex-1 bg-[var(--dashboard-graph-bg)] rounded-xl px-4 py-3 w-full"
+        >
+          <div class="text-[var(--text-color)] text-[16px]">
+            Weekly Alarm Counts
+          </div>
+          <div
+            class="loader"
+            [hidden]="!wklyAlmCountFlags.showWklyAlmCountLoader"
+          >
+            <app-loader2></app-loader2>
+          </div>
+          <div
+            id="chart-container"
+            [hidden]="!wklyAlmCountFlags.showWklyAlmCountData"
+          >
+            <div class="pie-container" [chart]="chart1"></div>
+          </div>
+          <div
+            id="chart-container"
+            [hidden]="!wklyAlmCountFlags.WklyAlmCountNoData"
+          >
+            <div
+              class="m-3 flex flex-row items-center justify-center gap-4 py-3 px-6 text-center border border-dashed border-[var(--form-border)] rounded-xl transition-all duration-300 animate-fadeIn"
+              [hidden]="recommendationDate.length !== 0"
+            >
+              <!-- Icon -->
+              <div class="text-lg zoom-animation">🔍</div>
+
+              <!-- Title -->
+              <h2 class="text-lg font-semibold text-[var(--leftdrawer-text)]">
+                No Record Found
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Monthly Basis Average Throughput -->
+        <div
+          class="flex-1 bg-[var(--dashboard-graph-bg)] rounded-xl px-4 py-3 w-full"
+        >
+          <div class="text-[var(--text-color)] text-[16px] mb-2">
+            Monthly Basis Average Throughput
+          </div>
+          <div
+            class="loader"
+            [hidden]="!monthlyAvgThroughputFlags.showMonthlyAvgThroughputLoader"
+          >
+            <app-loader2></app-loader2>
+          </div>
+          <div
+            [hidden]="!monthlyAvgThroughputFlags.showMonthlyAvgThroughputData"
+          >
+            <div
+              class="w-full mt-2 text-[var(text-color)]"
+              [chart]="chart2"
+            ></div>
+          </div>
+          <div [hidden]="!monthlyAvgThroughputFlags.monthlyAvgThroughputNoData">
+            <div
+              class="barChart-container text-[var(--text-color)] text-xs mt-1"
+            >
+              No Record Found
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--<div class="col-12" *ngIf="linechart && pieChartflag && barcharflag && cardflag">
+      <div class="noDataBox">
+        <span class="text-center">No Data Found</span>
+      </div>
+    </div> -->
+  </div>
+</div>
+
+<!-- <ng-template #Modeltemplate>
+    <app-sec-popup [modalRef]="modalRef"></app-sec-popup>
+</ng-template>
+
+<ng-template #Modeltemplate1>
+    <app-alert-popup [modalRef]="modalRef1"></app-alert-popup>
+</ng-template>
+<ng-template #Modeltemplate2>
+    <app-raw-data-popup [modalRef]="modalRef2"></app-raw-data-popup>
+</ng-template> -->

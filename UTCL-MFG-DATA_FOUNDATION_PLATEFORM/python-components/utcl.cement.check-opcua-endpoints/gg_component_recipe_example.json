@@ -1,0 +1,39 @@
+{
+  "RecipeFormatVersion": "2020-01-25",
+  "ComponentName": "utcl.cement.check-opcua-endpoints",
+  "ComponentVersion": "1.0.3",
+  "ComponentType": "aws.greengrass.generic",
+  "ComponentDescription": "Check Endpoints",
+  "ComponentPublisher": "UTCL",
+  "ComponentConfiguration": {
+    "DefaultConfiguration": {
+      "configs": {
+        "plant_code": ""
+      }
+    }
+  },
+  "Manifests": [
+    {
+      "Platform": {
+        "os": "linux"
+      },
+      "Lifecycle": {
+        "Install": "pip install stream-manager asyncua boto3",
+        "Run": "python3 {artifacts:decompressedPath}/utcl.cement.check-opcua-endpoints/check-endpoints.py '{configuration:/configs}'"
+      },
+      "Artifacts": [
+        {
+          "Uri": "s3://utcl-greengrass-artifacts/utcl.cement.check-opcua-endpoints/1.0.3/utcl.cement.check-opcua-endpoints.zip",
+          "Digest": "3vkZeuwRDeWg4MycRiyHUnshQJ0R4bE5qFuPa6++DBU=",
+          "Algorithm": "SHA-256",
+          "Unarchive": "ZIP",
+          "Permission": {
+            "Read": "OWNER",
+            "Execute": "NONE"
+          }
+        }
+      ]
+    }
+  ],
+  "Lifecycle": {}
+}

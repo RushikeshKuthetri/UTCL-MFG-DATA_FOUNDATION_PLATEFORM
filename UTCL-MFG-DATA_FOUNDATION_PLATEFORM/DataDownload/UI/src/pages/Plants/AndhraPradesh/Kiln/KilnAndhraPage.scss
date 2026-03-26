@@ -1,0 +1,122 @@
+.KilnAndhra {
+  .dot {
+    width: 20px;
+    height: 20px;
+  }
+  .line-57 {
+    transform: translate(41.2vw, 10vh);
+    height: 135px;
+  }
+  .line-109 {
+    transform: translate(41.2vw, 10vh);
+    width: 44px;
+  }
+  .single-item-11 {
+    transform: translate(68vw, 73vh);
+  }
+  .single-item-12 {
+    transform: translate(77.5vw, 73vh);
+  }
+  .single-item-13 {
+    min-width: 270px;
+    .d-flex.align-self-center.justify-content-between {
+      margin-left: 31px;
+    }
+  }
+  .single-item-46 {
+    .yellowline-Vr {
+      height: 40px;
+      transform: translate(16px, -5px) rotate(45deg);
+      z-index: 1;
+    }
+  }
+  .single-item-51 {
+    .rightarrow {
+      height: 3px;
+    }
+  }
+  .single-item-56 {
+    transform: translate(61.5vw, 21vh);
+  }
+  .single-item-57 {
+    transform: translate(43.5vw, 0.5vh);
+    height: 138px;
+    width: 753px;
+  }
+  .single-item-58{
+    transform: translate(74.8vw, 34.5vh);
+  }
+}
+@media (max-width: 1440px) {
+  .KilnAndhra {
+    .line-109 {
+      width: 32px;
+  }
+  .line-57 {
+    height: 114px;
+}
+    .dot {
+      width: 15px;
+      height: 15px;
+    }
+    .single-item-8 {
+      gap: 22px;
+  }
+    .single-item-13 {
+      min-width: 197px;
+  }
+  .single-item-28 {
+    gap: 33px;
+}
+  .single-item-57 {
+    height: 109px;
+    width: 533px;
+}
+  }
+}
+@media (max-width: 1366px) {
+  .KilnAndhra {
+    .line-57 {
+      transform: translate(564px, 60px);
+      height: 88px;
+    }
+    .line-109 {
+      transform: translate(564px, 60px);
+      width: 31px;
+    }
+    .single-item-11 {
+      transform: translate(958px, 444px);
+    }
+    .single-item-12 {
+      transform: translate(1079px, 439px);
+    }
+    .single-item-13 {
+      min-width: 190px;
+      .d-flex.align-self-center.justify-content-between {
+        margin-left: 21px;
+      }
+    }
+    .single-item-46 {
+      .yellowline-Vr {
+        height: 24px;
+        transform: translate(11px, -1px) rotate(45deg);
+      }
+    }
+    .single-item-51 {
+      transform: translate(516px, 155px);
+    }
+
+    .single-item-56 {
+      transform: translate(850px, 123px);
+    }
+    .single-item-57 {
+      transform: translate(594px, 2px);
+      height: 92px;
+      width: 470px;
+    }
+    
+  .single-item-58{
+    transform: translate(1023px, 209px);
+  }
+  }
+}

@@ -1,0 +1,24 @@
+.RawMill2RPAndhra {
+  .single-text-31, .single-text-32, .single-text-37, .single-text-43, .single-text-44, .single-text-47{
+    .square {
+      width: 30px;
+  }
+  }
+  .single-text-45, .single-text-46{
+    width: 30px;
+  }
+}
+//mobile responsiveness
+@media (max-width: 1367px) {
+  .RawMill2RPAndhra {
+    .single-text-31, .single-text-32, .single-text-37, .single-text-43, .single-text-44, .single-text-47{
+      .square {
+        width: 20px;
+    }
+    }
+    .single-text-45, .single-text-46{
+      width: 20px;
+    }
+  }
+}
+

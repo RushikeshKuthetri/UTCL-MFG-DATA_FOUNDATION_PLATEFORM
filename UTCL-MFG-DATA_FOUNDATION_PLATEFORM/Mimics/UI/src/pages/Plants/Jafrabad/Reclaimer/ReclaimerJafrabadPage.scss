@@ -1,0 +1,235 @@
+ .ReclaimerJafrabad{
+    .single-text-1{
+        transform: translate(6.6vw, 8vh);
+    .fiveside-shape {
+        width: 146px;
+        height: 60px;
+      
+    }
+    .shape-1{
+        transform: scale(-1.0, 1.0);
+    }
+    }
+    .single-text-2 {
+        transform: translate(31.1vw, 8vh);
+        gap: 58px;
+    }
+    .single-text-3 {
+        transform: translate(13.1vw, 22vh);
+       width: 120px;
+    }
+    .single-text-4 {
+        transform: translate(7vw, 31vh);
+        .hpipecircle{
+       width: 120px;
+        }
+        .text-1{
+            transform: translate(102.1px, -4px);
+        }
+    }
+    // .single-text-5{
+    //     transform: translate(18.1vw, 42vh);
+    //     width: 500px;
+    // }
+    .single-text-6{
+        transform: translate(18.1vw, 42vh);
+        width: 500px;
+    }
+    .single-text-7{
+        transform: translate(43.1vw, 47vh);
+        width: 672px;
+    }
+    .single-text-8{
+        transform: translate(10.1vw, 51vh);}
+        .single-text-9{
+            transform: translate(12.1vw, 70vh);}
+            .single-text-10 {
+                transform: translate(43.1vw, 57vh);
+                gap: 49px;
+            }
+            .single-text-11 {
+                transform: translate(62.1vw, 27vh);
+                .squareplustri {
+                    width: 32px;
+                    height: 47px;
+                }
+                .line-1 {
+                    transform: translate(10.3px, -5px);
+                    height: 60px;
+                    z-index: -1;
+                }
+                .line-2 {
+                    transform: translate(27.3px, -31px);
+                    width: 53px;
+                    height: 2px;
+                    z-index: -1;
+                }
+                .line-3 {
+                    transform: translate(78px, -46px);
+                    height: 16px;
+                    width: 2px;
+                }
+            }
+            .single-text-12 {
+                transform: translate(64.1vw, 31.6vh);
+               .line-circle{
+                transform: rotate(90deg);
+               }
+            }
+            
+            .single-text-13 {
+                transform: translate(66.1vw, 39.6vh);}
+                .single-text-14 {
+                    transform: translate(29.1vw, 38.6vh);}
+                    .single-text-15 {
+                        transform: translate(60vw, 50.6vh);
+                      .hpipecircle{
+                        width: 60px;
+                      }
+                    }
+                .line-1{
+                    transform: translate(14.1vw, 12.6vh);
+                    height: 81px;
+                }
+                .line-2{
+                    transform: translate(12.8vw, 36vh);
+    height: 24px;             
+                }
+                .line-3{
+                    transform: translate(18.1vw, 40.6vh);
+                    height: 20px;           
+                }
+                .line-4{
+                    transform: translate(19.1vw, 23.6vh);
+                    height: 172px;        
+                }
+                .line-5{
+                    transform: translate(43.5vw, 43.6vh);
+    height: 36px;      
+                }
+                .line-6{
+                    transform: translate(43.5vw, 48.6vh);
+                    height: 75px;    
+                }
+                .line-7{
+                    transform: translate(51.5vw, 48.6vh);
+                    height: 75px;    
+                }
+                .line-8{
+                    transform: translate(58.5vw, 48.6vh);
+                    height: 75px;    
+                }
+                .line-9{
+                    transform: translate(64.5vw, 48.6vh);
+                    height: 75px;    
+                }
+                .line-10{
+                    transform: translate(71.5vw, 48.6vh);
+                    height: 75px;    
+                }
+                .line-11{
+                    transform: translate(77.5vw, 48.6vh);
+                    height: 75px;    
+                }
+ }
+  //mobile responsiveness
+@media (max-width: 1366px) {
+    .ReclaimerJafrabad {
+        .single-text-1 {
+            transform:translate(76.1px, 33px);
+            .fiveside-shape {
+                width: 110px;
+                height: 41px;
+            }
+        }
+        .line-1 {
+            transform: translate(185.1px, 83.6px);
+            height: 44px;
+        }
+        .single-text-2 {
+            transform: translate(427.1px, 35px);
+            gap: 47px;
+        }
+        .single-text-3 {
+            transform: translate(162.1px, 129px);
+            width: 120px;
+        }
+        .single-text-4 {
+            transform: translate(30.1px, 168px);
+        }
+        .line-2 {
+            transform: translate(141.1px, 206.6px);
+            height: 18px;
+        }
+        .line-4 {
+            transform: translate(274.1px, 131.6px);
+            height: 123px;
+        }
+        .line-3 {
+            transform: translate(245.1px, 240.6px);
+            height: 17px;
+        }
+        .single-text-8 {
+            transform: translate(100.1px, 274px);
+        }
+        .single-text-9 {
+            transform: translate(135.1px, 416px);
+        }
+        .single-text-6 {
+            transform: translate(236.1px, 252px);
+            width: 375px;
+        }
+        .single-text-11 {
+            transform: translate(793.1px, 108px);
+        }
+        .single-text-12 {
+            transform: translate(842.1px, 151.6px);
+        }
+        .single-text-13 {
+            transform: translate(867.1px, 227.6px);
+        }
+        .single-text-7 {
+            transform: translate(583.1px, 281px);
+            width: 501px;
+        }
+        .single-text-10 {
+            transform: translate(566.1px, 365px);
+            gap: 20px;
+        }
+        .line-6 {
+            transform: translate(590.5px, 300.6px);
+            height: 65px;
+        }
+        .line-7 {
+            transform: translate(690.5px, 300.6px);
+            height: 65px;
+        }
+        .line-8{
+            transform: translate(790.5px, 300.6px);
+            height: 65px;
+        }
+        .line-9{
+            transform: translate(890.5px, 300.6px);
+            height: 65px;
+        }
+        .line-10{
+            transform: translate(990.5px, 300.6px);
+            height: 65px;
+        }
+        .line-11{
+            transform: translate(1077.5px, 300.6px);
+            height: 65px;
+        }
+        .single-text-15 {
+            transform: translate(808px, 314.6px);
+        }
+        .single-text-14 {
+            transform: translate(409.1px, 236.6px);
+        }
+        .line-5 {
+            transform: translate(603.5px, 265.6px);
+            height: 22px;
+        }
+        
+    }
+}

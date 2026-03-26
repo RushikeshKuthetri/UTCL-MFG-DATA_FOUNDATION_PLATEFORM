@@ -1,0 +1,43 @@
+.cba-h1 {
+    font-size: 22px;
+    font-weight: 600;
+
+    .greenTxt {
+        background-color: #0000;
+        color: #6d8eff !important;
+        font-size: 22px;
+        font-weight: 600;
+    }
+}
+
+.CBA_kukurdih {
+
+    td {
+        color: white !important;
+        padding: 10px 15px !important;
+        font-size: 20px;
+        text-align: center;
+
+        .greenTxt {
+            display: contents;
+        }
+    }
+}
+
+@media (max-width: 1367px) {
+    .cba-h1 {
+        font-size: 17px;
+
+        .greenTxt {
+            font-size: 17px;
+        }
+    }
+
+    .CBA_kukurdih {
+        td {
+            font-size: 14px;
+            padding: 7px 15px !important;
+            ;
+        }
+    }
+}

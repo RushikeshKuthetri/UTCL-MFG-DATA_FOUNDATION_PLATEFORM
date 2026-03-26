@@ -1,0 +1,55 @@
+/* ================================
+   ORANGE THEME – FORCE APPLY
+================================ */
+
+/* Primary orange button */
+.btn-orange {
+    background-color: #FE8F12 !important;
+    border-color: #FE8F12 !important;
+    color: #000 !important;
+}
+
+.btn-orange:hover,
+.btn-orange:focus {
+    background-color: #e67f10 !important;
+    border-color: #e67f10 !important;
+    color: #000 !important;
+}
+
+/* Outline version */
+.btn-orange-outline {
+    background-color: transparent !important;
+    border: 1px solid #FE8F12 !important;
+    color: #000 !important;
+}
+
+.btn-orange-outline:hover {
+    background-color: #FE8F12 !important;
+}
+
+/* Axis buttons */
+.btn-axis-active {
+    background-color: #FE8F12 !important;
+    border: 1px solid #FE8F12 !important;
+    color: #000 !important;
+    font-weight: 600;
+}
+
+.btn-axis-inactive {
+    background-color: transparent !important;
+    border: 1px solid transparent !important;
+    color: #000 !important;
+}
+
+.btn-axis-inactive:hover {
+    border-color: #FE8F12 !important;
+}
+
+.chart-container {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 10px 10px;
+    flex-wrap: nowrap;
+    z-index: 99;
+}

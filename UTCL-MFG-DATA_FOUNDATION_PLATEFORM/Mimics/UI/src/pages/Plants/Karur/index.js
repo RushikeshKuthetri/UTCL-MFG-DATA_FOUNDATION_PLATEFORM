@@ -1,0 +1,12 @@
+export { ClinkerTransportandStorageKarurPage } from "./ClinkerTransportandStorage/ClinkerTransportandStorageKarurPage";
+export { PackingPlant1and2KarurPage } from "./PackingPlant1and2/PackingPlant1and2KarurPage";
+export { RollerPressCircuit1KarurPage } from "./RollerPressCircuit1/RollerPressCircuit1KarurPage";
+export { RollerPressCircuitKarurPage } from "./RollerPressCircuitKarur/RollerPressCircuitKarurPage";
+export { PackingPlant3and4KarurPage } from "./PackingPlant3and4/PackingPlant3and4KarurPage";
+export { FlyashSiloKarurPage } from "./FlyashSilo/FlyashSiloKarurPage";
+export { CementSiloExtractionKarurPage } from "./CementSiloExtractionKarur/CementSiloExtractionKarurPage";
+export { CementSiloKarurPage } from "./CementSilo/CementSiloKarurPage";
+export { CementSilo3KarurPage } from "./CementSilo3/CementSilo3KarurPage";
+export { CementSilo4KarurPage } from "./CementSilo4/CementSilo4KarurPage";
+export { CementSilo1KarurPage } from "./CementSilo1/CementSilo1KarurPage";
+export { CementSilo2KarurPage } from "./CementSilo2/CementSilo2KarurPage";

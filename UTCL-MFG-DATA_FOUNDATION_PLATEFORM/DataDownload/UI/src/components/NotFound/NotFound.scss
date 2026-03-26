@@ -1,0 +1,27 @@
+.notfound-card {
+  margin: 2rem;
+  text-align: center;
+  padding: 4rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: rgb(9 30 66 / 25%) 0px 4px 8px -2px,
+    rgb(9 30 66 / 8%) 0px 0px 0px 1px;
+
+  h1 {
+    font-size: 2rem;
+  }
+  .goback-btn{
+    background-color: #777777;
+    color: #fff;
+    border-radius: 0;
+    box-shadow: rgb(0 0 0 / 16%) 0px 10px 36px 0px, rgb(0 0 0 / 6%) 0px 0px 0px 1px;
+    padding: 10px 30px;
+    font-weight: 600;
+  }
+.txt{
+  color: #b5b5b5;
+  font-weight: 400;
+  max-width: 800px;
+  margin: auto;
+}
+}

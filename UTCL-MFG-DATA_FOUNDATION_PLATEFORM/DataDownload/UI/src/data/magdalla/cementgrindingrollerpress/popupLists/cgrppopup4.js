@@ -1,0 +1,118 @@
+export const cgrppopup41 = [
+  {
+    cgrnTxt: "BRG TEMP.NDE",
+    blackTextLabel: "CM_561MD1_BTE2",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: "BRG TEMP.DE",
+    blackTextLabel: "CM_561MD1_BTE1",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+];
+export const cgrppopup42 = [
+  {
+    cgrnTxt: " TEMP-1",
+    blackTextLabel: "CM_561MD1_WTE2",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: " TEMP-2",
+    blackTextLabel: "CM_561MD1_WTE1",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: " TEMP-3",
+    blackTextLabel: "CM_561MD1_WTE3",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: " TEMP-4",
+    blackTextLabel: "CM_561MD1_WTE4",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: " TEMP-5",
+    blackTextLabel: "CM_561MD1_WTE5",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: " TEMP-6",
+    blackTextLabel: "CM_561MD1_WTE6",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: " TEMP-7",
+    blackTextLabel: "CM_561MD1_WTE7",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: " TEMP-8",
+    blackTextLabel: "CM_561MD1_WTE8",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: " TEMP-9",
+    blackTextLabel: "CM_561MD1_WTE9",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: " TEMP-10",
+    blackTextLabel: "CM_561MD1_WTE10",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: " TEMP-11",
+    blackTextLabel: "CM_561MD1_WTE11",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: " TEMP-12",
+    blackTextLabel: "CM_561MD1_WTE12",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+];
+export const cgrppopup43 = [
+  {
+    cgrnTxt: "RP-BRG.MR-L",
+    blackTextLabel: "R_INP_RP1_T01",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+  {
+    cgrnTxt: "RP-BRG.MR-R",
+    blackTextLabel: "R_INP_RP1_T02",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+  },
+];

@@ -1,0 +1,97 @@
+/* ===== Utilities ===== */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* ===== Card Grid Wrapper (Bootstrap compatible) ===== */
+.col-xl-3,
+.col-md-4,
+.col-sm-6,
+.col-12 {
+    position: relative;
+}
+
+/* ===== Dashboard Card ===== */
+.card {
+    height: 300px;
+    padding: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    background: #ffffff;
+    font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    overflow: hidden;
+    position: relative;
+}
+
+/* ===== Hover Effect ===== */
+.card:hover {
+    transform: translateY(-4px);
+    /* 🔥 replaced top:-4px */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border: 1px solid #cccccc;
+}
+
+/* ===== Card Heading ===== */
+.card .head {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 24px;
+    z-index: 10;
+    position: relative;
+}
+
+/* ===== Description ===== */
+.card p.mt-3 {
+    font-size: 1rem;
+    color: #999999;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    line-height: 30px;
+    border-top: 1px solid #ededed;
+    padding-top: 1rem;
+    z-index: 10;
+    position: relative;
+}
+
+/* ===== Description hover ===== */
+.card:hover p.mt-3 {
+    color: #000000;
+    border-top: 1px solid #000000;
+}
+
+/* ===== Yellow Corner ===== */
+.go-corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    background-color: #fff500;
+    border-radius: 0 10px 0 110px;
+    transition: all 0.5s ease-out;
+    z-index: 1;
+}
+
+/* ===== Expand Corner on Hover ===== */
+.card:hover .go-corner {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1365px) {
+    .card .head {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .card {
+        height: auto;
+    }
+}

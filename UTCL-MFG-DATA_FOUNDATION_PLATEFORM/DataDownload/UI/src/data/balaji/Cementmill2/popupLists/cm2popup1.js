@@ -1,0 +1,68 @@
+export const cm2popup11 = [
+  {
+    cgrnTxt: "562SR1_TW01",
+    blackTextLabel: "562SR1_TW01",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+    hhValue: 100,
+    hhTime: 0,
+  },
+  {
+    cgrnTxt: "562SR1_TW02",
+    blackTextLabel: "562SR1_TW02",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+    hhValue: 100,
+    hhTime: 0,
+  },
+  {
+    cgrnTxt: "562SR1_TW03",
+    blackTextLabel: "562SR1_TW03",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+    hhValue: 100,
+    hhTime: 0,
+  },
+];
+
+export const cm2popup12 = [
+  {
+    cgrnTxt: "562SR1_TB01",
+    blackTextLabel: "562SR1_TB01",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+    hhValue: 75,
+    hhTime: 0,
+  },
+  {
+    cgrnTxt: "562SR1_TB02",
+    blackTextLabel: "562SR1_TB02",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+    hhValue: 75,
+    hhTime: 0,
+  },
+  {
+    cgrnTxt: "562SR1_TB03",
+    blackTextLabel: "562SR1_TB03",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+    hhValue: 75,
+    hhTime: 0,
+  },
+  {
+    cgrnTxt: "562SR1_TB04",
+    blackTextLabel: "562SR1_TB04",
+    textClass: "cgreentext",
+    blackTextClass: "greenTxt",
+    unit: "°C",
+    hhValue: 75,
+    hhTime: 0,
+  },
+];

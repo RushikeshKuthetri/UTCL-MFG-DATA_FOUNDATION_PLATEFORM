@@ -1,0 +1,255 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var app = require("../app");
+var debug = require("debug")("myexpressapp:server");
+var http = require("http");
+const WebSocket = require("ws");
+const EventHubReader = require("../utils/event-hub-reader");
+const fs = require("fs");
+const socketAuth = require("../middleware/socketAuth");
+const cron = require("node-cron");
+/**
+ * Get port from environment and store in Express.
+ */
+
+var port = normalizePort(process.env.PORT || "8080");
+app.set("port", port);
+
+/**
+ * Create HTTP server.
+ */
+
+var server = http.createServer(app);
+
+const wss = new WebSocket.Server({ noServer: true });
+const BlaineWss = new WebSocket.Server({ noServer: true });
+const CementWss = new WebSocket.Server({ noServer: true });
+const CementLiveWss = new WebSocket.Server({ noServer: true });
+const CbmWss = new WebSocket.Server({ noServer: true });
+const KilnWss = new WebSocket.Server({ noServer: true });
+module.exports = { BlaineWss, CementWss };
+
+const blaineRooms = {};
+const blaineClients = {};
+const cbmRooms = {};
+const cbmClients = {};
+const cementRooms = {};
+const cementClients = {};
+const cementLiveRooms = {};
+const cementLiveClients = {};
+const kilnRooms = {};
+const kilnClients = {};
+
+wss.on("connection", async function (ws) {
+  console.log("started client interval");
+
+  // console.log(ws._protocol);
+
+  const verifySocket = await socketAuth(ws._protocol);
+
+  // console.log("verifySocket", verifySocket);
+
+  if (!verifySocket) {
+    console.log("TERMINATE");
+    ws.terminate();
+  } else {
+    ws.verified = true;
+  }
+
+  ws.on("message", function message(data) {
+    ws.plants = JSON.parse(data.toString());
+  });
+
+  ws.send("Connected");
+  ws.on("close", function () {
+  });
+});
+
+
+server.on("upgrade", function upgrade(request, socket, head) {
+  // console.log(request.url);
+  const pathname = request.url;
+  if (pathname === "/uat/opt/blaine") {
+    BlaineWss.handleUpgrade(request, socket, head, function done(ws) {
+      BlaineWss.emit("connection", ws, request);
+    });
+  } else if (pathname === "/uat/opt/cement") {
+    CementWss.handleUpgrade(request, socket, head, function done(ws) {
+      CementWss.emit("connection", ws, request);
+    });
+  } else if (pathname === "/uat/cbm") {
+    CbmWss.handleUpgrade(request, socket, head, function done(ws) {
+      CbmWss.emit("connection", ws, request);
+    });
+  } else if (pathname === "/uat/opt/kiln") {
+    KilnWss.handleUpgrade(request, socket, head, function done(ws) {
+      KilnWss.emit("connection", ws, request);
+    });
+  } else if (pathname === "/uat/opt/cementLiveData") {
+    CementLiveWss.handleUpgrade(request, socket, head, function done(ws) {
+      CementLiveWss.emit("connection", ws, request);
+    });
+  } else {
+    wss.handleUpgrade(request, socket, head, function done(ws) {
+      wss.emit("connection", ws, request);
+    });
+  }
+});
+
+wss.broadcast = (data) => {
+  wss.clients.forEach((client) => {
+    if (client.readyState === WebSocket.OPEN && client.verified === true) {
+      // console.log("SEnd data from event");
+      try {
+        // console.log(`Broadcasting data ${data}`);
+        // client.send(JSON.stringify(data));
+
+        var dataToSend = {};
+        client?.plants?.map((plantName) => {
+          if (data[plantName] !== undefined) {
+            dataToSend[plantName] = data[plantName];
+          } else {
+            dataToSend[plantName] = [];
+          }
+        });
+
+        if (Object.keys(dataToSend).length !== 0) {
+          // console.log("dataToSend", dataToSend);
+          client.send(JSON.stringify(dataToSend));
+        }
+      } catch (e) {
+        console.error(e);
+      }
+    }
+  });
+};
+
+/**
+ * Listen on provided port, on all network interfaces.
+ */
+
+server.listen(port);
+server.on("error", onError);
+server.on("listening", onListening);
+
+/**
+ * Normalize a port into a number, string, or false.
+ */
+
+function normalizePort(val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
+
+/**
+ * Event listener for HTTP server "error" event.
+ */
+
+function onError(error) {
+  if (error.syscall !== "listen") {
+    throw error;
+  }
+
+  var bind = typeof port === "string" ? "Pipe " + port : "Port " + port;
+
+  // handle specific listen errors with friendly messages
+  switch (error.code) {
+    case "EACCES":
+      console.error(bind + " requires elevated privileges");
+      process.exit(1);
+      break;
+    case "EADDRINUSE":
+      console.error(bind + " is already in use");
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+}
+
+/**
+ * Event listener for HTTP server "listening" event.
+ */
+
+function onListening() {
+  var addr = server.address();
+  var bind = typeof addr === "string" ? "pipe " + addr : "port " + addr.port;
+  debug("Listening on " + bind);
+}
+
+iotHubConnectionString = process.env.NODE_ENV_iotHubConnectionString;
+
+eventHubConsumerGroup =  process.env.NODE_ENV_eventHubConsumerGroup;
+
+const eventHubReader = new EventHubReader(iotHubConnectionString, eventHubConsumerGroup);
+
+let flag = 0;
+
+(async () => {
+  await eventHubReader.startReadMessage((message, date, deviceId) => {
+    try {
+      // console.log(message.constructor === Array);
+      if (message.constructor === Array) {
+        // console.log(message.length);
+
+        const plantDist = {};
+        let modifiedMessage = [];
+        // let modifiedMessage2 = [];
+        if (message[0].DisplayName) {
+          modifiedMessage = message.map((data) => {
+            const str = JSON.parse(JSON.stringify(data));
+            if (data.DisplayName) {
+              const splittedData = data.DisplayName?.split("-");
+              let temp;
+              if (splittedData.length === 6) {
+                temp = splittedData[5];
+              }
+              if (splittedData.length === 7) {
+                temp = splittedData[5] + "-" + splittedData[6];
+              }
+
+              let plantName = splittedData[1]?.match(/[\d\.]+|\D+/g)[0];
+              if (!plantDist[plantName]) {
+                plantDist[plantName] = [];
+              }
+              plantDist[plantName].push({
+                plant: plantName,
+                key: temp,
+                value: str.Value.Value,
+              });
+            }
+
+            // return {
+            //   // key: data.NodeId.split("->")[2].split(":")[0],
+            //   // key: data.DisplayName?.split("-", 6)[5],
+            //   plant: data.DisplayName?.split("-")[1].match(/[\d\.]+|\D+/g)[0],
+            //   key: temp,
+            //   value: str.Value.Value,
+            // };
+          });
+        }
+
+        if (Object.keys(plantDist).length !== 0) {
+          wss.broadcast(plantDist);
+        }
+      }
+    } catch (err) {
+      console.error("Error broadcasting: [%s] from [%s].", err, message);
+    }
+  });
+})().catch();

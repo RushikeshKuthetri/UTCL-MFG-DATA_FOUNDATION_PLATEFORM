@@ -1,0 +1,466 @@
+.CoolerMainkotputliLine1 {
+    .pipe-1 {
+        border-radius: 0px 15px 0px 0px;
+        width: 145px;
+        height: 225px;
+        transform: translate(0.5vw, 35vh);
+    }
+    .pipe-2 {
+        width: 1145px;
+        height: 215px;
+        transform: translate(8vw, 36vh);
+    }
+    .pipe-3 {
+        border-top-right-radius: 30px;
+        width: 390px;
+        height: 225px;
+        transform: translate(67.5vw, 35vh);
+        z-index: 9;
+    }
+    .pipe-4 {
+        transform: translate(2vw, 56vh);
+        .w {
+            width: 155px;
+        }
+    }
+    .pipe-5 {
+        width: 175px;
+        transform: translate(72vw, 62.5vh);
+    }
+    .pipe-6 {
+        width: 95px;
+        transform: translate(80vw, 75vh);
+    }
+    .pipe-7 {
+        height: 180px;
+        transform: translate(67.5vw, 18vh);
+    }
+    .pipe-8 {
+        width: 35px;
+        transform: translate(67.7vw, 18vh);
+    }
+    .pipe-9 {
+        width: 105px;
+        transform: translate(71vw, 12vh);
+    }
+    .pipe-10 {
+        height: 230px;
+        transform: translate(75.9vw, 12.4vh);
+    }
+    .pipe-11 {
+        width: 95px;
+        transform: translate(76.3vw, 22vh);
+    }
+    .pipe-12 {
+        height: 38px;
+        transform: translate(73vw, 58vh);
+    }
+    .pipe-13 {
+        height: 107px;
+        transform: translate(80.7vw, 63vh);
+    }
+    .pipe-14 {
+        height: 132px;
+        width: 55px;
+        transform: translate(68.7vw, 12vh);
+    }
+    .pipe-15 {
+        z-index: 9;
+        width: 50px;
+        height: 60px;
+        transform: translate(53vw, 17.5vh);
+    }
+    .pipe-16 {
+        height: 130px;
+        transform: translate(53.3vw, 5vh);
+    }
+    .pipe-17 {
+        width: 130px;
+        transform: translate(53.3vw, 5vh);
+    }
+    .pipe-18 {
+        width: 100px;
+        transform: translate(62vw, 5.5vh);
+    }
+    .pipe-19 {
+        height: 25px;
+        transform: translate(62vw, 5.5vh);
+    }
+    .pipe-20 {
+        width: 100px;
+        transform: translate(62vw, 8vh);
+    }
+    .pipe-21 {
+        width: 100px;
+        transform: translate(62vw, 13.5vh);
+    }
+    .pipe-22 {
+        height: 25px;
+        transform: translate(62vw, 13.5vh);
+    }
+    .pipe-23 {
+        width: 100px;
+        transform: translate(62vw, 16vh);
+    }
+    .pipe-24 {
+        width: 79px;
+        transform: translate(58vw, 6.8vh);
+    }
+    .pipe-25 {
+        height: 75px;
+        transform: translate(58vw, 6.8vh);
+    }
+    .pipe-26 {
+        width: 79px;
+        transform: translate(58vw, 14.8vh);
+    }
+    .pipe-27 {
+        height: 18px;
+        transform: translate(60vw, 5vh);
+    }
+    .pipe-28 {
+        height: 30px;
+        transform: translate(60vw, 15vh);
+    }
+    .pipe-29 {
+        width: 98px;
+        transform: translate(55vw, 18.1vh);
+    }
+
+    .single-text-1 {
+        gap: 33px;
+        transform: translate(4vw, 59.3vh);
+        .connector-icon {
+            transform: rotate(-90deg);
+        }
+        .line-circle {
+            margin: 0px 10px 1px 0px;
+            transform: rotate(90deg);
+        }
+    }
+    .single-text-2 {
+        transform: translate(2.5vw, 77vh);
+        gap: 12px;
+    }
+    .single-text-3 {
+        transform: translate(23vw, 16vh);
+    }
+    .single-text-4 {
+        transform: translate(80vw, 20.5vh);
+        .connector-both-side-2 {
+            transform: scaleX(-1);
+            height: 43px;
+            width: 86px;
+        }
+        .line-circle {
+            transform: rotate(-90deg);
+        }
+    }
+    .single-text-5 {
+        transform: translate(83.7vw, 5.8vh);
+    }
+    .single-text-6 {
+        gap: 32px;
+        transform: translate(75vw, 60.5vh);
+    }
+    .single-text-7 {
+        transform: translate(83vw, 62.5vh);
+    }
+    .single-text-8 {
+        gap: 155px;
+        transform: translate(67vw, 8.5vh);
+    }
+    .single-text-9 {
+        gap: 40px;
+        transform: translate(62vw, 4vh);
+    }
+    .single-text-10 {
+        gap: 66px;
+        transform: translate(56vw, 7.5vh);
+    }
+    .single-text-11 {
+        transform: translate(35vw, 31.5vh);
+    }
+    .single-text-12 {
+        gap: 25px;
+        transform: translate(1vw, 67.5vh);
+    }
+    .single-text-13 {
+        transform: translate(79vw, 13.5vh);
+    }
+}
+@media (max-width: 1440px) {
+    .CoolerMainkotputliLine1 {
+        .pipe-1 {
+            width: 145px;
+            height: 205px;
+            transform: translate(0.5vw, 35vh);
+        }
+        .pipe-2 {
+            width: 825px;
+            height: 195px;
+            transform: translate(10.5vw, 36.1vh);
+        }
+        .pipe-3 {
+            width: 335px;
+            height: 205px;
+        }
+        .pipe-4 .w {
+            width: 117px;
+        }
+        .pipe-5 {
+            width: 135px;
+        }
+        .pipe-6 {
+            width: 85px;
+        }
+        .pipe-9 {
+            width: 78px;
+        }
+        .pipe-12 {
+            height: 35px;
+        }
+        .pipe-13 {
+            height: 98px;
+        }
+        .pipe-15 {
+            width: 40px;
+            height: 60px;
+        }
+        .pipe-17 {
+            width: 97px;
+        }
+
+        .pipe-19,
+        .pipe-22 {
+            height: 22px;
+        }
+        .pipe-18,
+        .pipe-20,
+        .pipe-21,
+        .pipe-23,
+        .pipe-24,
+        .pipe-26 {
+            width: 60px;
+        }
+        .pipe-25 {
+            height: 68px;
+        }
+        .pipe-27 {
+            height: 16px;
+        }
+        .pipe-28 {
+            height: 27px;
+        }
+        .pipe-29 {
+            width: 74px;
+        }
+        .single-text-1 {
+            gap: 15px;
+        }
+        .single-text-2 {
+            transform: translate(3vw, 78vh);
+            gap: 15px;
+        }
+        .single-text-4 .connector-both-side-2 {
+            transform: scaleX(-1);
+            height: 36px;
+            width: 74px;
+        }
+        .single-text-5 {
+            transform: translate(84.2vw, 6vh);
+            height: 135px;
+            width: 50px;
+        }
+        .single-text-8 {
+            gap: 95px;
+        }
+        .single-text-10 {
+            gap: 55px;
+            transform: translate(56.5vw, 8.5vh);
+        }
+    }
+}
+@media (max-width: 1366px) {
+    .CoolerMainkotputliLine1 {
+        .pipe-1 {
+            width: 105px;
+            height: 150px;
+            transform: translate(7px, 210px);
+        }
+        .pipe-2 {
+            width: 815px;
+            height: 145px;
+            transform: translate(109px, 215px);
+        }
+        .pipe-3 {
+            width: 295px;
+            height: 149px;
+            transform: translate(920px, 210px);
+        }
+        .pipe-4 {
+            transform: translate(30px, 335px);
+            .w {
+                width: 111px;
+            }
+        }
+        .pipe-5 {
+            width: 120px;
+            transform: translate(990px, 375px);
+        }
+        .pipe-6 {
+            width: 75px;
+            transform: translate(1096px, 450px);
+        }
+        .pipe-7 {
+            height: 130px;
+            transform: translate(922px, 108px);
+        }
+        .pipe-8 {
+            width: 40px;
+            transform: translate(925px, 107px);
+        }
+        .pipe-9 {
+            width: 54px;
+            transform: translate(990px, 72px);
+        }
+        .pipe-10 {
+            height: 195px;
+            transform: translate(1037px, 75px);
+        }
+        .pipe-11 {
+            width: 59px;
+            transform: translate(1042px, 132px);
+        }
+        .pipe-12 {
+            height: 25px;
+            transform: translate(995px, 348px);
+        }
+        .pipe-13 {
+            height: 67px;
+            transform: translate(1102px, 381px);
+        }
+        .pipe-14 {
+            height: 110px;
+            width: 44px;
+            transform: translate(960px, 67px);
+        }
+        .pipe-15 {
+            z-index: 9;
+            width: 45px;
+            height: 60px;
+            transform: translate(710px, 125px);
+        }
+        .pipe-16 {
+            height: 115px;
+            transform: translate(727px, 42px);
+        }
+        .pipe-17 {
+            width: 94px;
+            transform: translate(727px, 41px);
+        }
+        .pipe-18 {
+            width: 65px;
+            transform: translate(847px, 44px);
+        }
+        .pipe-19 {
+            height: 20px;
+            transform: translate(847px, 46px);
+        }
+        .pipe-20 {
+            width: 65px;
+            transform: translate(847px, 65px);
+        }
+        .pipe-21 {
+            width: 65px;
+            transform: translate(847px, 111px);
+        }
+        .pipe-22 {
+            height: 20px;
+            transform: translate(847px, 112px);
+        }
+        .pipe-23 {
+            width: 65px;
+            transform: translate(847px, 131px);
+        }
+        .pipe-24 {
+            width: 57px;
+            transform: translate(792px, 55px);
+        }
+        .pipe-25 {
+            height: 70px;
+            transform: translate(792px, 55px);
+        }
+        .pipe-26 {
+            width: 57px;
+            transform: translate(792px, 123px);
+        }
+        .pipe-27 {
+            height: 15px;
+            transform: translate(820px, 42px);
+        }
+        .pipe-28 {
+            height: 28px;
+            transform: translate(820px, 124px);
+        }
+        .pipe-29 {
+            width: 75px;
+            transform: translate(747px, 151px);
+        }
+
+        .single-text-1 {
+            gap: 30px;
+            transform: translate(55px, 359px);
+
+            .connector-icon {
+                transform: rotate(-90deg);
+            }
+            .line-circle {
+                margin: 0px 6px 1px 0px;
+                transform: rotate(90deg);
+            }
+        }
+        .single-text-2 {
+            transform: translate(40px, 460px);
+            gap: 9px;
+        }
+        .single-text-3 {
+            transform: translate(310px, 90px);
+        }
+        .single-text-4 {
+            transform: translate(1095px, 123px);
+            .connector-both-side-2 {
+                transform: scaleX(-1);
+                height: 30px;
+                width: 60px;
+            }
+        }
+        .single-text-5 {
+            height: 99px;
+            transform: translate(1144px, 36px);
+            width: 40px;
+        }
+        .single-text-6 {
+            gap: 20px;
+            transform: translate(1026px, 362px);
+        }
+        .single-text-7 {
+            transform: translate(1140px, 362px);
+        }
+        .single-text-8 {
+            gap: 78px;
+            transform: translate(935px, 53px);
+        }
+        .single-text-9 {
+            gap: 43px;
+            transform: translate(844px, 34px);
+        }
+        .single-text-10 {
+            gap: 63px;
+            transform: translate(768px, 65px);
+        }
+        .single-text-11 {
+            transform: translate(500px, 185px);
+        }
+    }
+}

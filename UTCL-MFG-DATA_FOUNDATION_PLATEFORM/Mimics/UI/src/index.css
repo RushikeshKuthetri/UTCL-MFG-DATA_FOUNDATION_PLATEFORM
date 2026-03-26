@@ -1,0 +1,328 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-inter);
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/public/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/public/Poppins/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/public/Poppins/Poppins-Bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+:root {
+  /* ✅ Date & Time Picker */
+  --picker-bg: #EAEAEA;
+  --header-text-color:#29292B;
+  --picker-text: #111111;
+  --picker-border: #cbd5e1;
+  --picker-hover: #f1f5f9;
+  --picker-accent: #FD9F35;
+  --input-disable-bg: #EAEAEA;
+  --input-enable-bg: #FFFFFF;
+  --input-enable-border: rgba(136, 136, 136, 0.4);
+  --form-border: #CCCCCC;
+  --button-border: #FD6E41;
+  --button-hover-bg: #FFAE52;
+  --button-bg: #FFFFFF;
+  --status-active-bg: #C8D4A6;
+  --status-active-text: #47502F;
+  --status-inactive-bg: rgba(255, 0, 0, 0.3);
+  --status-inactive-text: #B40000;
+  --submit-button-bg: #FFA947;
+  --submit-button-hover-bg: #f5b367;
+  --text-color: #272626;
+  --title: #AF6A1C;
+  --bg-color: #F6F5F3;
+  --bg-header: #FE8F12;
+  --header-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  --bg-leftdrawer: #F2F2F2;
+  --bg-leftdrawer-footer: #eaeaea;
+  --left-drawer-active-tab: #FD9F35;
+  --left-drawer-footer-border: rgba(203, 219, 217, 0.7);
+  --left-drawer-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1), 2px 0 6px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.1);
+  --bg-main-container: #F1F0EE;
+  --card-bg: #FFF6F6;
+  --card-subtle: #776F6F;
+  --card-shadow: 0 0px 4px rgba(0, 0, 0, 0.08);
+  --mimic-line: rgba(119, 136, 134, 0.50);
+  --card-border: #FD9F35;
+  --card-shadow-onhover: 0 0px 8px rgba(0, 0, 0, 0.25);
+  --search-bg: rgba(255, 255, 255, 0.18);
+  --search-placeholder: #888888;
+  --search-border: rgba(136, 136, 136, 0.3);
+  --card-top-border-color: radial-gradient(circle, #FFCD94, #FD9F35);
+
+
+  /* added for chart visulizaton charts */
+  --chart-bg: #ffffff;
+  --chart-text: #1a1a1a;
+  --chart-grid: #e5e7eb;
+
+  --chart-line: #3b82f6;
+  --chart-bar: #10b981;
+  --chart-area: #6366f1;
+  --chart-scatter: #f59e0b;
+  --chart-gauge: #ef4444;
+  --chart-border: #e5e7eb;
+  --chart-tooltip-bg: #ffffff;
+  --chart-tooltip-text: #111111;
+}
+
+.dark {
+
+  /* ✅ Date & Time Picker */
+  --picker-bg: #1f2937;
+  --header-text-color:#FA9E37;
+  --leftdrawer-text: #B7C5C5;
+  --picker-text: #f3f4f6;
+  --picker-border: #374151;
+  --picker-hover: #2b3646;
+  --picker-accent: #FD9F35;
+  --input-disable-bg: #1F2021;
+  --input-enable-bg: #2B2C2D;
+  --input-enable-border: #393A3C;
+  --form-border: #353838;
+  --button-border: #393A3C;
+  --button-bg: #282829;
+  --button-hover-bg: #424345;
+  --leftdrawer-text: #404242;
+  --text-color: #F0F0F0;
+  --title: #FFC07A;
+  --bg-color: #1E1E1F;
+  --bg-header: #181919;
+  --header-shadow: 0 2px 6px rgba(255, 255, 255, 0.25);
+  --bg-leftdrawer: #181919;
+  --bg-leftdrawer-footer: #2B2C2D;
+  --left-drawer-active-tab: #FD9F35;
+  --left-drawer-footer-border: #393A3C;
+  --left-drawer-shadow: 0 -2px 6px rgba(255, 255, 255, 0.12), 2px 0 6px rgba(255, 255, 255, 0.12), 0 2px 6px rgba(255, 255, 255, 0.12);
+  ;
+  --bg-main-container: #181919;
+  --card-bg: #2F3232;
+  --card-subtle: #B4A3A3;
+  --mimic-line: rgba(119, 136, 134, 0.50);
+  --search-bg: rgba(47, 43, 43, 0.25);
+  --search-placeholder: #888888;
+  ;
+  --search-border: rgba(255, 255, 255, 0.18);
+
+  /* added for the chart visulizations chart */
+  --chart-bg: #1f2937;
+  --chart-text: #f9fafb;
+  --chart-grid: #374151;
+
+  --chart-line: #60a5fa;
+  --chart-bar: #34d399;
+  --chart-area: #818cf8;
+  --chart-scatter: #fbbf24;
+  --chart-gauge: #f87171;
+  --chart-border: #374151;
+  --chart-tooltip-bg: #111827;
+  --chart-tooltip-text: #f9fafb;
+}
+
+
+
+.title-font {
+  font-family: var(--font-poppins);
+}
+
+
+/* Hide the scrollbar */
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(120, 120, 120, 0.4);
+  border-radius: 999px;
+
+  /* THIS makes it look smaller */
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(120, 120, 120, 0.7);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Graph card theme */
+.graph-types {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+}
+
+.graph-container {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+}
+
+/* No data text */
+.no-data-found-text {
+  color: var(--text-color) !important;
+}
+
+/* Chart type header */
+.chart-type-container {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+  border-bottom: 1px solid var(--input-enable-border) !important;
+}
+
+.chart-type-container p {
+  color: var(--text-color) !important;
+}
+
+/* Drag target */
+.drag-target {
+  color: var(--card-subtle) !important;
+  border-color: var(--input-enable-border) !important;
+}
+
+
+/* ============================= */
+/* REACT DATEPICKER THEME       */
+/* ============================= */
+
+.react-datepicker-wrapper {
+  width: 100% !important;
+}
+
+.react-datepicker__input-container {
+  width: 100% !important;
+}
+
+.react-datepicker-wrapper input {
+  background-color: var(--input-enable-bg) !important;
+  border: 1px solid var(--form-border) !important;
+  color: var(--text-color) !important;
+  min-height: 35px !important;
+  height: 35px;
+  width: 150px;
+  border-radius: 6px !important;
+  padding: 6px 12px !important;
+  transition: all 0.2s ease;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px !important;
+}
+
+.react-datepicker-wrapper input:focus {
+  outline: none !important;
+  border-color: var(--input-enable-border) !important;
+  box-shadow: 0 0 0 1px var(--picker-accent) !important;
+}
+
+.react-datepicker {
+  background-color: var(--input-enable-bg) !important;
+  border: 1px solid var(--input-enable-border) !important;
+  color: var(--text-color) !important;
+}
+
+.react-datepicker__header {
+  background-color: var(--picker-bg) !important;
+  border-bottom: 1px solid var(--form-border) !important;
+}
+
+.react-datepicker__current-month,
+.react-datepicker-time__header,
+.react-datepicker-year-header {
+  color: var(--text-color) !important;
+  font-size: 13px !important;
+}
+
+.react-datepicker__day,
+.react-datepicker__day-name {
+  color: var(--text-color) !important;
+  font-size: 13px !important;
+}
+
+.react-datepicker__day:hover {
+  background-color: var(--picker-hover) !important;
+  border-radius: 4px;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background-color: var(--picker-accent) !important;
+  color: #fff !important;
+  border-radius: 4px;
+}
+
+.react-datepicker__day--today {
+  border: 1px solid var(--picker-accent);
+}
+
+/* Time panel */
+
+.react-datepicker__time-container {
+  border-left: 1px solid var(--form-border) !important;
+}
+
+.react-datepicker__time,
+.react-datepicker__time-box,
+.react-datepicker__time-list {
+  background-color: var(--input-enable-bg) !important;
+  font-size: 13px !important;
+}
+
+.react-datepicker__time-list-item {
+  color: var(--text-color) !important;
+  background-color: transparent !important;
+}
+
+.react-datepicker__time-list-item:hover {
+  background-color: var(--picker-hover) !important;
+}
+
+.react-datepicker__time-list-item--selected,
+.react-datepicker__time-container
+  .react-datepicker__time
+  .react-datepicker__time-box
+  .react-datepicker__time-list
+  .react-datepicker__time-list-item--keyboard-selected {
+  background-color: var(--picker-accent) !important;
+  color: #fff !important;
+}
+
+/* Triangle */
+
+.react-datepicker__triangle::before,
+.react-datepicker__triangle::after {
+  border-bottom-color: var(--picker-accent) !important;
+}

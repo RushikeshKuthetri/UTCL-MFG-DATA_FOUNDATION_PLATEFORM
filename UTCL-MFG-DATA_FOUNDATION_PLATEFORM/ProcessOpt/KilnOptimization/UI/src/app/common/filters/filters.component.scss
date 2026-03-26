@@ -1,0 +1,53 @@
+// /* ===== OWL DATETIME INPUT STYLING ===== */
+
+// input.date-input {
+//   width: 100%;
+//   padding: 5px 10px;
+//   font-size: 13px;
+//   border-radius: 8px;
+//   border: 1px solid var(--input-enable-border);
+//   background-color: var(--input-enable-bg);
+//   color: var(--select-input-value);
+//   outline: none;
+//   transition: all 0.2s ease;
+//   min-height: 34px;        /* matches mat-select height */
+//   box-sizing: border-box;
+//   cursor: pointer;
+//   line-height: 1.4;
+// }
+
+// input.date-input::placeholder {
+//   color: #9ca3af;
+//   font-size: 13px;
+// }
+
+// input.date-input:focus {
+//   border-color: #888888;
+//   box-shadow: 0 0 0 1px #88888820;
+// }
+
+// input.date-input:hover {
+//   border-color: #888888;
+// }
+
+// /* Webkit calendar icon tweaks */
+// input.date-input::-webkit-calendar-picker-indicator {
+//   opacity: 0.5;
+//   cursor: pointer;
+//   filter: var(--calendar-icon-filter, none);
+//   width: 14px;
+//   height: 14px;
+// }
+
+// input.date-input::-webkit-calendar-picker-indicator:hover {
+//   opacity: 1;
+// }
+
+// input.date-input::-webkit-datetime-edit {
+//   color: var(--select-input-value);
+//   font-size: 13px;
+// }
+
+// input.date-input::-webkit-datetime-edit-fields-wrapper {
+//   padding: 0;
+// }

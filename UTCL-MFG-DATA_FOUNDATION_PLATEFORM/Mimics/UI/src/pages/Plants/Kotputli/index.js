@@ -1,0 +1,31 @@
+export { CM1ControlSheetkotputliL1Page } from "./Line1/CementMill1ControlSheet/CM1ControlSheetkotputliL1Page";
+
+export { CrusherandMaterialHandlingkotputliPage } from "./CrusherandMaterialHandling/CrusherandMaterialHandlingkotputliPage";
+export { KilnAuxilaieskotputliPage } from "./KilnAuxilaies/KilnAuxilaieskotputliPage";
+export { RawMillHopperHandlingPage } from "./RawMillHopperHandling/RawMillHopperHandlingPage";
+export { CoalMillkotputliPage } from "./CoalMill/CoalMillkotputliPage";
+export { RawMillGrindingKotputliPage } from "./RawMillGrindingKotputli/RawMillGrindingKotputliPage";
+export { RollerPressCircuitkotputliPage } from "./RollerPressCircuitkotputli/RollerPressCircuitkotputliPage";
+export { PreHeaterkotputliPage } from "./PreHeater/PreHeaterkotputliPage";
+export { CoolerkotputliPage } from "./Cooler/CoolerkotputliPage";
+export { WaterandSteamsystemPage } from "./WaterandSteamsystem/WaterandSteamsystemPage";
+export { CementSiloKotputliPage } from "./CementSiloKotputli/CementSiloKotputliPage";
+export { RABHandDustTransportkotputliPage } from "./RABHandDUSTTransport/RABHandDustTransportkotputliPage";
+export { BallmillAreakotputliPage } from "./BallmillArea/BallmillAreakotputliPage";
+export { TurbineTripLogickotputliPage } from "./TurbineTripLogic/TurbineTripLogicputliPage";
+export { BlendingSiloKotputliPage } from "./BlendingSiloKotputli/BlendingSiloKotputliPage";
+export { GoverningOillSystemKotputliPage } from "./GoverningOillSystemKotputli/GoverningOillSystemKotputliPage";
+export { ClinkerTransportKotputliPage } from "./ClinkerTransportKotputli/ClinkerTransportKotputliPage";
+export { CementSiloExtractionKotputliPage } from "./CementSiloExtractionKotputli/CementSiloExtractionKotputliPage";
+export { WaterAndSteamKotputliPage } from "./WaterAndSteamKotputli/WaterAndSteamKotputliPage";
+export { KilnMainkotputliLine1Page } from "./Line-1/KilnMain/KilnMainkotputliLine1Page";
+export { RMHKotputliLine1Page } from "./Line-1/RawMaterialHandling/RMHKotputliLine1Page";
+export { CoalMillControlSheetkotputliLine1Page } from "./Line-1/CoalMillControlSheet/CoalMillControlSheetkotputliLine1Page";
+export { ClinkerStorageAndTransportKotputliLine1Page } from "./Line-1/ClinkerStorageandTransport/ClinkerStorageAndTransportKotputliLine1Page";
+export { KilnKotputliLine1Page } from "./Line-1/Kiln/KilnKotputliLine1Page";
+export { CM1BagHouseKotputliLine1Page } from "./Line-1/CM1BagHouse/CM1BagHouseKotputliLine1Page";
+export { CM2BagHouseKotputliLine1Page } from "./Line-1/CM2BagHouse/CM2BagHouseKotputliLine1Page";
+export { CoolerMainkotputliLine1Page } from "./Line-1/CoolerMain/CoolerMainkotputliLine1Page";
+export { CM2ControlSheetkotputliL1Page } from "./CementMill2ControlSheet/CM2ControlSheetkotputliL1Page";
+// export { CBAKotputliLine1Pages } from "./Line-1/CBA/CBAKotputliLine1Pages";
+export { CBAKotputliLine1Pages} from "./Line-1/CBA/CBAKotputliLine1Pages"

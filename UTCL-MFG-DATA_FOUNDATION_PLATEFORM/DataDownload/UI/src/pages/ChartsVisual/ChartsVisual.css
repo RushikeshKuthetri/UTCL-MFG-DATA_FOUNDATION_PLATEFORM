@@ -1,0 +1,910 @@
+
+
+.charts-dashboard{
+  /* padding-top: 5rem; */
+  padding-bottom: 0;
+  position: relative;
+}
+
+.flex-container {
+  display: flex;
+  align-items: start;
+  padding: 1%;
+  gap: 10px;
+  height: 100%;
+  /* height:calc(100% - 78px); */
+}
+.tags-panel {
+  height: 100%;
+  width: 20%;
+  background-color: rgb(255, 255, 255);
+  position: sticky;
+  top: 0;
+ 
+}
+
+
+
+.dash-actions{
+  /* max-width:30%; */
+  gap:5px;
+
+
+}
+
+.tag-list-main-container{
+  /* height: 60%;
+  border: 2px solid #EAEAF9; */
+  /* overflow: auto; */
+  margin: 6px 0px;
+}
+
+.tag-list-main-container ul{
+  height:calc(100% - 50px);
+  overflow: auto;
+  min-height: 400px;
+
+}
+.tag-list-main-container ul::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.tag-list-main-container ul::-webkit-scrollbar-track {
+  background: rgba(255, 255, 0, 0.309);
+  border-radius: 10px;
+}
+.tag-list-main-container ul::-webkit-scrollbar-thumb{
+  background-color: rgb(255, 200, 0);
+  /* background-color: #fff500; */
+  border-radius: 10px;
+}
+
+.tag-list-main-container div{
+  height: calc(100% - 1.5rem);
+}
+
+.tags-panel .mycard{
+  border: 2px solid #EAEAF9;
+  height: calc(100% - 16px);
+}
+
+.graph-panel {
+  /* height: 500px; */
+  height: 100%;
+  width: 80%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.graph-tags-panel {
+  /* height: 100px; */
+  min-height: 32px;
+  /* width: 85%; */
+  /* border-bottom: solid #d0d0ea 3px; */
+  display: flex;
+  align-items: center;
+  overflow: auto;
+  padding:5px;
+  flex:1;
+}
+
+.graph-tags-panel::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.graph-tags-panel::-webkit-scrollbar-track {
+  background: rgba(255, 255, 0, 0.309);
+  border-radius: 10px;
+}
+.graph-tags-panel::-webkit-scrollbar-thumb{
+  background-color: rgb(255, 200, 0);
+  /* background-color: #fff500; */
+  border-radius: 10px;
+}
+
+
+.graph-tags-panel p {
+  margin-bottom:0;
+}
+
+.dash-top-bar{
+  gap: 15px;
+    display: flex ;
+    justify-content:space-around;
+    align-items:center;
+}
+
+hr {
+  width: 100%;
+  border-bottom: solid #d0d0ea 3px;
+}
+
+.graph-tags-panel::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
+}
+.graph-tags-panel::-webkit-scrollbar-track {
+  background: rgba(255, 255, 0, 0.309);
+  border-radius: 10px;
+}
+.graph-tags-panel::-webkit-scrollbar-thumb{
+  background-color: rgb(255, 200, 0);
+  /* background-color: #fff500; */
+  border-radius: 10px;
+}
+
+.graph-display-panel {
+  height: 400px;
+  width: 100%;
+}
+.accordian-content {
+  height: 250px;
+  overflow: scroll;
+}
+
+.chipTag{
+  align-items: center;
+  border-radius: 11px;
+  color: #fff;
+  display: inline-flex;
+  font-size: 10px;
+  line-height: 19px;
+  /* margin-bottom: 5px; */
+  margin-right: 5px;
+  padding: 4px 10px;
+  cursor: pointer;
+  white-space:nowrap;
+}
+
+.line-chip-color {
+  background: #fbe200b8;
+}
+.column-chip-color {
+  background: #fb1100b8;
+}
+.scatter-chip-color {
+  background: #00a8e0b8;
+}
+.gauge-chip-color {
+  background: #000000b8;
+}
+.vertical-gauge-chip-color {
+  background-color: #5671d0b8;
+}
+.horizontal-gauge-chip-color {
+  background-color: #800000b8;
+}
+.table-chart-chip-color {
+  background: #fe7e05b8;
+}
+
+.details-chip-color{
+  background: #69ffb4b8;
+}
+
+.line-chip {
+  align-items: center;
+  border-radius: 11px;
+  color: #fff;
+  display: inline-flex;
+  font-size: 10px;
+  line-height: 19px;
+  /* margin-bottom: 5px; */
+  margin-right: 5px;
+  padding: 4px 10px;
+}
+.column-chip {
+  align-items: center;
+  border-radius: 11px;
+  color: #fff;
+  display: inline-flex;
+  font-size: 10px;
+  line-height: 19px;
+  /* margin-bottom: 5px; */
+  margin-right: 5px;
+  padding: 4px 10px;
+}
+.scatter-chip {
+  align-items: center;
+  border-radius: 11px;
+  color: #fff;
+  display: inline-flex;
+  font-size: 10px;
+  line-height: 19px;
+  /* margin-bottom: 5px; */
+  margin-right: 5px;
+  padding: 4px 10px;
+}
+.gauge-chip {
+  align-items: center;
+  border-radius: 11px;
+  color: #fff;
+  display: inline-flex;
+  font-size: 10px;
+  line-height: 19px;
+  /* margin-bottom: 5px; */
+  margin-right: 5px;
+  padding: 4px 10px;
+}
+.table-chip {
+  align-items: center;
+  border-radius: 11px;
+  color: #fff;
+  display: inline-flex;
+  font-size: 10px;
+  line-height: 19px;
+  /* margin-bottom: 5px; */
+  margin-right: 5px;
+  padding: 4px 10px;
+}
+
+.no-data-found-text {
+  color: rgb(169, 168, 168);
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+
+}
+
+.graph-div-container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: relative;
+}
+.graph-types {  
+  border: solid #EAEAF9 3px;
+  /* box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1); */
+  /* min-width: calc(50% - 10px); */
+  /* min-height: 300px;
+  max-height:75vh; */
+  /* max-width:100%; */
+  /* resize: both; */
+  height:100%;
+  width:100%;
+  overflow: hidden;
+  padding:5px
+}
+
+.graph-group-types{
+  border-radius: 7px;
+}
+
+
+.graph-container{
+  /* width: 100%;
+  */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  background-color: white;
+}
+
+.graph-container .chartCloseBtn{
+  font-size: 1.5rem;
+  line-height: 0;
+  padding: 0px 2px;
+  color: #cacafc;
+  cursor: pointer;
+}
+.graph-container .chartCloseBtn:hover{
+  color: #b5b5f8;
+}
+
+.gauge-marker{
+  animation:all 1s ease ;
+  transition: all 1s,
+}
+
+.vertical-text {
+  writing-mode: vertical-lr;
+}
+
+.scale-item{
+  position: relative;
+}
+.scale-item::after{
+  /* create a vertical line  on each item using sudo element*/
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0%;
+  width: 1px;
+  height: 10px;
+  background: #b6b6b6;
+  z-index: 0;
+}
+
+.scale-item-vertical{
+  position: relative;
+}
+
+.scale-item-vertical::after{
+  /* create a vertical line  on each item using sudo element*/
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  right: -15px;
+  width: 10px;
+  height: 1px;
+  background: #b6b6b6;
+  z-index: 0;
+}
+
+.drag-target,.chart-add-target{
+  position: absolute;
+  width: 100%;
+  height:100%;
+  display: none;
+  font-size:30px;
+  color:rgb(169, 168, 168);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.chart-add-target{
+  height: 95%;
+}
+
+.highlight{
+  display: flex!important;
+}
+
+.marker {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+
+.close-btn {
+  background-color: #fff;
+  color: red;
+  margin-left: 10px;
+  /* padding: 2px; */
+  width: 17px;
+  height: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.table-chart{
+  width: 100% !important;
+  height: 100% !important;
+  /* min-height: 200px; */
+  resize: none;
+}
+
+.table-chart-wrapper{
+  overflow: auto;
+  position: relative;
+  height:100%;
+}
+
+table{
+  pointer-events: auto;
+}
+
+table td {
+  font-weight: 400 !important;
+  vertical-align: middle !important;
+}
+
+table th{
+  background-color: #5671D0;
+  color: #fff;
+}
+
+table tr:hover{
+  background-color: #eaeaf9 ;
+}
+
+.chart-loader,.chart-api-loader{
+  position: absolute;
+  width: 100%;
+  height:100%;
+  display: none;
+  font-size:1.2rem;
+  color:rgb(169, 168, 168);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  background: rgb(245, 245, 245);
+/* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+/* backdrop-filter: blur(5px); */
+/* -webkit-backdrop-filter: blur(5px); */
+top:0;
+bottom:0
+
+}
+
+.initial-loader{
+  display: flex;
+}
+
+.active-chart-loader{
+  display:flex;
+}
+
+.inner-loader {
+  border: 6px solid rgba(0, 0, 0, 0.1);
+  border-top-color: yellow;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  animation: spin 1s ease-in-out infinite;
+  margin: 0 auto;
+}
+
+.tag-remove-loader{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-top-color: yellow;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  animation: spin 1s ease-in-out infinite;
+  margin-left:5px;
+}
+
+
+.chart-layout{
+  /* width:100%; */
+  /* height:100% !important; */
+  position:relative;
+  /* overflow:auto; */
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.chart-types-selector{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.chart-types-selector__item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: white;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  font-weight:500;
+  font-size: 1.5em;
+  padding: 12% 0;
+}
+
+.chart-types-selector__item.selected{
+  background-color: yellow;
+}
+
+.grid-layout-wrapper{
+  width: 100%;
+  height: calc(100% - 45px);
+  overflow: auto;
+  position:relative;
+}
+
+.grid-layout-wrapper::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.grid-layout-wrapper::-webkit-scrollbar-track {
+  background: rgba(255, 255, 0, 0.309);
+  border-radius: 10px;
+}
+.grid-layout-wrapper::-webkit-scrollbar-thumb{
+  background-color: rgb(255, 200, 0);
+  /* background-color: #fff500; */
+  border-radius: 10px;
+}
+
+/* react grid transition */
+
+.react-grid-layout {
+  width:100%;
+  position: relative;
+  transition: height 200ms ease;
+  /* border:solid red; */
+}
+.react-grid-item {
+  transition: all 200ms ease;
+  transition-property: left, top;
+}
+.react-grid-item img {
+  pointer-events: none;
+  user-select: none;  
+}
+.react-grid-item.cssTransforms {
+  transition-property: transform;
+}
+.react-grid-item.resizing {
+  z-index: 1;
+  will-change: width, height;
+}
+
+.react-grid-item.react-draggable-dragging {
+  transition: none;
+  z-index: 3;
+  will-change: transform;
+}
+
+.react-grid-item.dropping {
+  visibility: hidden;
+}
+
+.react-grid-item.react-grid-placeholder {
+  background: yellow;
+  opacity: 0.2;
+  transition-duration: 100ms;
+  z-index: 2;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.react-grid-item > .react-resizable-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+
+.react-grid-item > .react-resizable-handle::after {
+  content: "";
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  width: 5px;
+  height: 5px;
+  border-right: 2px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+.react-resizable-hide > .react-resizable-handle {
+  display: none;
+}
+
+.react-grid-item > .react-resizable-handle.react-resizable-handle-sw {
+  bottom: 0;
+  left: 0;
+  cursor: sw-resize;
+  transform: rotate(90deg);
+}
+.react-grid-item > .react-resizable-handle.react-resizable-handle-se {
+  bottom: 0;
+  right: 0;
+  cursor: se-resize;
+}
+.react-grid-item > .react-resizable-handle.react-resizable-handle-nw {
+  top: 0;
+  left: 0;
+  cursor: nw-resize;
+  transform: rotate(180deg);
+}
+.react-grid-item > .react-resizable-handle.react-resizable-handle-ne {
+  top: 0;
+  right: 0;
+  cursor: ne-resize;
+  transform: rotate(270deg);
+}
+.react-grid-item > .react-resizable-handle.react-resizable-handle-w,
+.react-grid-item > .react-resizable-handle.react-resizable-handle-e {
+  top: 50%;
+  margin-top: -10px;
+  cursor: ew-resize;
+}
+.react-grid-item > .react-resizable-handle.react-resizable-handle-w {
+  left: 0;
+  transform: rotate(135deg);
+}
+.react-grid-item > .react-resizable-handle.react-resizable-handle-e {
+  right: 0;
+  transform: rotate(315deg);
+}
+.react-grid-item > .react-resizable-handle.react-resizable-handle-n,
+.react-grid-item > .react-resizable-handle.react-resizable-handle-s {
+  left: 50%;
+  margin-left: -10px;
+  cursor: ns-resize;
+}
+.react-grid-item > .react-resizable-handle.react-resizable-handle-n {
+  top: 0;
+  transform: rotate(225deg);
+}
+.react-grid-item > .react-resizable-handle.react-resizable-handle-s {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+.sidecard {
+  overflow: hidden;;
+}
+
+.show-tags-container {
+  /* height: 60%; */
+  border: 2px solid #EAEAF9;
+}
+
+.sidecard::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.sidecard::-webkit-scrollbar-track {
+  background: rgba(255, 255, 0, 0.309);
+  border-radius: 10px;
+}
+
+.sidecard::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 200, 0);
+  /* background-color: #fff500; */
+  border-radius: 10px;
+}
+
+
+.nav-btns {
+  background-color: #fff500;
+}
+
+.nav-btns:hover{
+  background-color: #d8d100;
+}
+
+.cancelButton {
+  background-color: #e03e4b;
+  color: white;
+}
+
+.cancelButton:hover{
+  background-color: #e03e4b;
+  color: white;
+}
+
+.no-charts span{
+  font-size: 1.5rem;
+  color: #e1e1e1;
+}
+
+.chart-icon{
+  font-size: 3rem;
+  margin:3px;
+  color: #e1e1e1;
+}
+
+.details-chart{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.details-chart-legends{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-start;
+  align-items: center;
+  width:100%;
+  padding: 0.8rem 6em;
+  gap:10px;
+  
+}
+
+.details-chart-title{
+  font-size: 1.5rem;
+  color: #272727;
+}
+
+.details-chart-description{
+  font-size: 1rem;
+  color: #c6c6c6;
+  text-align: center;
+}
+
+.details-chart-value{
+  font-size: 3rem;
+  color: #232323;
+  margin-right: 5px;;
+}
+
+.details-chart-unit{
+  font-size: 1rem;
+  color: #a5a5a5;
+}
+
+.gauge-tag-name {
+  margin-bottom: 15px !important;
+}
+
+.hide-chart-name {
+  display: none !important;
+}
+
+.search-tags {
+  border: none;
+  outline: none;
+  /* border-bottom: 1px solid black; */
+  border-bottom: 1px solid hsl(0,0%,80%);
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  position: sticky;
+}
+
+.search-tags:active {
+  border: none;
+  border-bottom: 1px solid hsl(0,0%,80%);
+  outline: none;
+}
+
+#flush-collapseOne {
+  overflow: hidden;
+}
+
+.tag-search-match-key{
+  background-color: yellow;
+}
+
+.new-dashboard{
+  border:solid red 1px;
+}
+
+ /* .btnSubmit{
+background-color: yellow;
+} */
+
+/* Custom CSS to change the button variant color */
+.btnSubmit{
+  background-color: yellow;
+  border-color: yellow;
+  color: #ffffff;
+}
+
+.btnSubmit:hover,
+.btnSubmit:focus {
+  background-color: yellow;
+  border-color: yellow;
+  color: #ffffff;
+}
+
+.btnSubmit:active {
+  background-color: yellow;
+  border-color: yellow;
+  color: #ffffff;
+}
+
+
+.graph-inner-container{
+  height:100%;
+}
+
+.sidebar-options{
+  height:calc(100% - 130px);
+  overflow: auto;
+}
+
+.chart-type-wrapper{
+  margin-bottom:25px;
+
+}
+.sidebar-options::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.sidebar-options::-webkit-scrollbar-track {
+  background: rgba(255, 255, 0, 0.309);
+  border-radius: 10px;
+}
+.sidebar-options::-webkit-scrollbar-thumb{
+  background-color: rgb(255, 200, 0);
+  border-radius: 10px;
+}
+
+
+
+
+.tags-panel.active{
+ left:0;
+}
+
+.sideMenu{
+  display: none;
+}
+
+/* media query for dash-top*/
+@media screen and (max-width: 768px) {
+  .dash-top-bar{
+    display: block;
+  }
+
+  .dash-top-bar div:nth-child(2){
+    margin-top: 5px;;
+  }
+
+  .charts-dashboard{
+    padding-top: 85px;
+  }
+
+  .tags-panel{
+    /* display: none; */
+    position: absolute;
+    top: calc(80px);
+    left: -200px;
+    width:200px;
+    height:90%;
+    z-index:5;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .graph-panel{
+    width: 100%;
+  }
+
+  .sideMenu{
+    display: block;
+  }
+}
+
+/* /////////// */
+.charts-dashboard .startDate .react-datepicker-wrapper, .charts-dashboard .endDate .react-datepicker-wrapper{
+  width:140px;
+}
+  
+
+.charts-dashboard .startDate .react-datepicker-wrapper input, .charts-dashboard .endDate .react-datepicker-wrapper input{
+  padding:0 5px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.charts-dashboard .interval{
+  font-size: 11px;
+}
+
+.charts-dashboard .interval .Select__indicator.Select__clear-indicator, .charts-dashboard .interval .Select__indicator.Select__dropdown-indicator,.charts-dashboard .interval .Select__value-container{
+padding: 0;
+}
+
+.charts-dashboard .interval .Select__control{
+  min-height: 30.5px !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+@media (min-width:1360px) and (max-width: 1919px) {
+  .charts-dashboard .startDate .react-datepicker-wrapper, .charts-dashboard .endDate .react-datepicker-wrapper{
+    width: 135px;
+  }
+}

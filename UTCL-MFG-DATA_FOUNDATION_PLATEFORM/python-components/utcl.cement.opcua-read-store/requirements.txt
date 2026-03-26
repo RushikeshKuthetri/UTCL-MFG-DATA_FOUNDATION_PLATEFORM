@@ -1,0 +1,4 @@
+stream-manager
+asyncua
+boto3
+paho-mqtt

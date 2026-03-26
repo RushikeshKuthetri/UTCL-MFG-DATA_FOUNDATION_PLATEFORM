@@ -1,0 +1,334 @@
+.BagHouseJafrabad {
+  .single-text-1 {
+    transform: translate(13vw, 17vh);
+    .img-84 {
+      transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      width: 1080px;
+      height: 262px;
+    }
+  }
+  .single-text-3 {
+    transform: translate(24vw, 72vh);
+  }
+  .single-text-4 {
+    transform: translate(4vw, 2vh);
+  }
+  .single-text-5 {
+    transform: translate(6vw, 15vh);
+    gap: 85px;
+  }
+  .single-text-6 {
+    transform: translate(5vw, 26.5vh);
+  }
+  .single-text-7 {
+    transform: translate(17vw, 21vh);
+    gap: 275px;
+  }
+
+  .single-text-8 {
+    transform: translate(20vw, 9vh);
+  }
+
+  .single-text-9 {
+    transform: translate(55vw, 9vh);
+  }
+  .single-text-10 {
+    transform: translate(37.5vw, 13vh);
+    .line-circle {
+      transform: rotate(-90deg);
+    }
+    .text-dark {
+      margin-top: -8px;
+    }
+  }
+
+  .single-text-11 {
+    transform: translate(70vw, 13vh);
+    gap: 50px;
+  }
+
+  .single-text-12 {
+    transform: translate(75vw, 29vh);
+    gap: 100px;
+  }
+
+  .single-text-13 {
+    transform: translate(92vw, 11vh);
+    z-index: 1;
+  }
+
+  .single-text-14 {
+    transform: translate(78vw, 39vh);
+  }
+
+  .single-text-15 {
+    transform: translate(78vw, 70vh);
+  }
+
+  .single-text-16 {
+    transform: translate(13.2vw, 47.5vh);
+    z-index: 1;
+    & > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 102.6px;
+    }
+  }
+  .single-text-17 {
+    transform: translate(15.8vw, 51.9vh);
+    z-index: 1;
+    & > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 102.6px;
+    }
+  }
+  .single-text-18 {
+    transform: translate(10vw, 58.9vh);
+    .hpipecircle {
+      width: 1050px;
+    }
+  }
+  .single-text-19 {
+    transform: translate(15vw, 62.9vh);
+    gap: 447px;
+  }
+  .single-text-20 {
+    transform: translate(74vw, 22.9vh);
+    gap: 101px;
+    z-index: 1;
+    .line-circle {
+      transform: rotate(90deg);
+    }
+  }
+  .single-text-21 {
+    transform: translate(94.4vw, 9.9vh);
+    width: 32px;
+    height: 138px;
+  }
+  .single-text-22 {
+    transform: translate(61.3vw, 67.2vh);
+    gap: 10px;
+    z-index: 1;
+    .blue-container {
+      transform: rotate(90deg);
+    }
+  }
+  .single-text-23 {
+    transform: translate(64.8vw, 77.9vh);
+  }
+  .line-1 {
+    transform: translate(4vw, 25.5vh);
+    width: 173px;
+  }
+  .line-2 {
+    transform: translate(6.7vw, 19.5vh);
+    height: 52px;
+  }
+  .line-3 {
+    transform: translate(35vw, 14vh);
+    width: 125px;
+    z-index: -1;
+  }
+  .line-4 {
+    transform: translate(69.3vw, 24vh);
+    width: 484px;
+  }
+
+  .line-5 {
+    transform: translate(15.8vw, 45.7vh);
+    gap: 49.4px;
+    z-index: -1;
+    .yellowline-Vr {
+      height: 117px;
+    }
+  }
+  .line-25 {
+    transform: translate(67.6vw, 60vh);
+    height: 63px;
+  }
+
+  .line-26 {
+    transform: translate(68vw, 70vh);
+    height: 43px;
+  }
+  .line-27 {
+    transform: translate(67.4vw, 70vh);
+    height: 43px;
+  }
+  .line-28 {
+    transform: translate(64.4vw, 74.4vh);
+    width: 58px;
+  }
+  .line-29 {
+    transform: translate(68vw, 74.4vh);
+    width: 58px;
+  }
+  .line-30 {
+    transform: translate(64.4vw, 74.4vh);
+    height: 28px;
+  }
+  .line-31 {
+    transform: translate(71vw, 74.4vh);
+    height: 28px;
+  }
+}
+
+//mobile responsiveness
+@media (max-width: 1366px) {
+  .BagHouseJafrabad {
+    .single-text-1 {
+      transform: translate(177px, 131px);
+      .img-84 {
+        width: 769px;
+        height: 187px;
+      }
+    }
+    .single-text-3 {
+      transform: translate(328px, 430px);
+    }
+    .single-text-4 {
+      transform: translate(54px, 15px);
+    }
+    .single-text-5 {
+      transform: translate(82px, 115px);
+      gap: 42px;
+    }
+    .single-text-6 {
+      transform: translate(68px, 204px);
+    }
+    .single-text-7 {
+      transform: translate(232px, 161px);
+      gap: 194px;
+    }
+    .single-text-8 {
+      transform: translate(273px, 90px);
+    }
+    .single-text-9 {
+      transform: translate(751px, 69px);
+    }
+    .single-text-10 {
+      transform: translate(512px, 100px);
+      .line-circle {
+        transform: rotate(-90deg);
+      }
+      .text-dark {
+        margin-top: -8px;
+      }
+    }
+    .single-text-11 {
+      transform: translate(956px, 100px);
+      gap: 50px;
+    }
+    .single-text-12 {
+      transform: translate(1024px, 223px);
+      gap: 63px;
+    }
+    .single-text-13 {
+      transform: translate(1257px, 85px);
+      z-index: 1;
+    }
+    .single-text-14 {
+      transform: translate(1065px, 300px);
+    }
+    .single-text-15 {
+      transform: translate(1065px, 475px);
+    }
+    .single-text-16 {
+      transform: translate(180.3px, 323px);
+      & > div {
+        width: 72.7px;
+      }
+    }
+    .single-text-17 {
+      transform: translate(217px, 346px);
+      & > div {
+        width: 72.7px;
+      }
+    }
+    .single-text-18 {
+      transform: translate(119px, 393px);
+      .hpipecircle {
+        width: 747px;
+      }
+    }
+    .single-text-19 {
+      transform: translate(205px, 410px);
+      gap: 313px;
+    }
+    .single-text-20 {
+      transform: translate(1010px, 179px);
+      gap: 101px;
+    }
+    .single-text-21 {
+      transform: translate(1289px, 76px);
+      width: 32px;
+      height: 125px;
+    }
+    .single-text-22 {
+      transform: translate(840px, 442px);
+      gap: 8px;
+      .blue-container {
+        transform: rotate(90deg);
+      }
+    }
+    .single-text-23 {
+      transform: translate(887px, 500px);
+    }
+    .line-1 {
+      transform: translate(54px, 196px);
+      width: 122px;
+    }
+    .line-2 {
+      transform: translate(91px, 150px);
+      height: 44px;
+    }
+    .line-3 {
+      transform: translate(478px, 108px);
+      width: 125px;
+      z-index: -1;
+    }
+    .line-4 {
+      transform: translate(947px, 184px);
+      width: 342px;
+    }
+    .line-5 {
+      transform: translate(216px, 318px);
+      gap: 34.4px;
+      .yellowline-Vr {
+        height: 72px;
+      }
+    }
+    .line-25 {
+      transform: translate(927px, 407px);
+      height: 30px;
+    }
+    .line-26 {
+      transform: translate(935px, 459px);
+      height: 18px;
+    }
+    .line-27 {
+      transform: translate(919px, 459px);
+      height: 18px;
+    }
+    .line-28 {
+      transform: translate(890px, 477px);
+      width: 31px;
+    }
+    .line-29 {
+      transform: translate(935px, 477px);
+      width: 31px;
+    }
+    .line-30 {
+      transform: translate(890px, 479px);
+      height: 18px;
+    }
+    .line-31 {
+      transform: translate(964px, 479px);
+      height: 18px;
+    }
+  }
+}

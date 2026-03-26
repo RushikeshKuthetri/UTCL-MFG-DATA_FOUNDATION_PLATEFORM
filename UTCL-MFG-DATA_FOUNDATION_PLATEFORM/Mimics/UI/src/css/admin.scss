@@ -1,0 +1,498 @@
+.admin {
+  .admin-top{
+    padding-top: 78px;
+  }
+
+  .modal-body {
+    position: relative !important;
+    flex: 1 1 auto !important;
+    padding: 10px !important;
+    color: #000;
+
+    input.form-control {
+      width: 100%;
+      border: 1px solid #e2e8f0 !important;
+    }
+  }
+  .modal-content {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    color: #fff !important;
+    pointer-events: auto !important;
+    background-color: #fff !important;
+    background-clip: padding-box !important;
+    border: #fff solid #fff !important;
+    border-radius: #fff !important;
+    outline: 0 !important;
+  }
+  .modal-header {
+    display: flex !important;
+    flex-shrink: 0 !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 10px !important;
+    border-bottom: 1px solid #000 !important;
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+    .modal-title {
+      margin-bottom: 0;
+      line-height: 1.5 !important;
+      color: #000;
+      font-size: 1rem;
+    }
+  }
+  .btn-close {
+    // background-image: url(../Admin/assests/download.svg);
+    width: 15px;
+    height: 15px;
+    color: #000;
+    opacity: 0.6;
+  }
+  .modal-body {
+    position: relative !important;
+    flex: 1 1 auto !important;
+    padding: 10px !important;
+    label {
+      font-weight: normal;
+    }
+  }
+  .tonav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff500;
+    z-index: 99;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px,
+      rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-content: center;
+  }
+  .navbar {
+    padding: 0.3rem 1rem;
+  }
+  .navbar_container {
+    position: sticky;
+    z-index: 2;
+    margin-top: 70px;
+  }
+  .celebal__logo img {
+    width: 180px;
+    margin-left: 10px;
+  }
+  .material {
+    z-index: 1;
+    margin-top: 90px;
+    padding: 0 15px;
+    height: calc(100vh - 100px);
+  }
+  .error {
+    margin: 0;
+    color: red;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  table:first-child {
+    height: calc( 100vh - 195px);
+    overflow-y: scroll;
+  display: grid;
+  th {
+    background-color: #2b2b2b !important;
+    position: sticky;
+    top: 0;
+  }
+  }
+
+  
+  .MTableHeader-header-13 {
+    background-color: #2b2b2b !important;
+  }
+
+  .MuiTableCell-alignLeft {
+    text-align: center;
+  }
+  .plantBox {
+    border: 1px solid #000;
+    float: left;
+    padding: 5px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+  }
+  .add_button {
+    position: absolute;
+    top: 88px;
+    right: 450px;
+    font-size: 1.5rem;
+  }
+  .MuiTable-root {
+    overflow-y: auto;
+  }
+  .card_container {
+    background-color: grey;
+    border-radius: 5px;
+    display: grid;
+    align-content: space-between;
+    justify-content: center;
+    justify-items: end;
+  }
+  .card_body {
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+  }
+  .card_body > span {
+    font-family: "Times New Roman", Times, serif;
+    padding-left: 2px;
+    font-size: 14px;
+    font-weight: 900;
+  }
+
+  .dashboard_container span {
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+  .plant_name {
+    cursor: pointer;
+  }
+  .button {
+    width: 6rem;
+    padding-top: 10px;
+    background: linear-gradient(to right, #f3d574 35%, #e77556 100%);
+  }
+  .edit_card_details {
+    cursor: pointer;
+    font-size: 32px;
+  }
+  .data_input {
+    width: 14rem;
+  }
+  .user_button {
+    text-align: center;
+    margin-top: 25%;
+  }
+
+  .navbar {
+    padding: 0.3rem 1rem;
+  }
+  .navbar_container {
+    position: sticky;
+    z-index: 2;
+    margin-top: 70px;
+  }
+  .menu_bar {
+    font-size: 2rem;
+    background: none;
+  }
+  nav .menu_bar {
+    background-color: #fff500;
+    // width: 60px;
+    padding: 4px 4px;
+    // height: 60px;
+    border-radius: 8px;
+  }
+
+  .nav_menu_active {
+    position: fixed;
+    left: -100%;
+  }
+  .nav_menu {
+    left: 0;
+    transition: 850ms;
+    background: #2b2b2b;
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    transition: 450ms;
+  }
+  .nav_text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    list-style: none;
+    height: 60px;
+  }
+  .nav_text a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+  .nav_text svg {
+    color: white !important;
+    margin-right: 20px;
+  }
+  .navbar-content-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .nav_text a:hover {
+    background-color: #fff500;
+    color: #000;
+  }
+  .nav_text a:hover {
+    background-color: #fff500;
+    color: #000;
+  }
+  .nav_text_active a {
+    background-color: #fff500;
+    color: #000 !important;
+  }
+  .nav_text_active a svg {
+    background-color: #fff500;
+    color: #000 !important;
+  }
+  .nav_menu_items {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .navbar_toggle {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 12px 20px;
+  }
+
+  .logout {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .celebal__logo {
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  th{
+    padding: 9px 16px !important;
+    display: table-cell;
+    // padding: 16px !important;
+    font-size: 0.875rem;
+    text-align: left;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400 !important;
+    line-height: 1.43 !important;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    letter-spacing: 0.01071em;
+    vertical-align: inherit;
+  }
+  td {
+    display: table-cell;
+    padding: 16px;
+    font-size: 0.875rem;
+    text-align: left;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    letter-spacing: 0.01071em;
+    vertical-align: inherit;
+}
+  .sl-spinner2 {
+    align-items: flex-start !important;
+  }
+  .sl-loader-title {
+    display: none !important;
+  }
+  .form-control {
+    margin: 0.375rem 0rem;
+  }
+  .basic-multi-select {
+    margin: 0.375rem 0rem;
+  }
+  .MuiIconButton-root:hover {
+    background-color: transparent !important;
+  }
+  .MuiTableSortLabel-root:hover {
+    color: inherit !important;
+  }
+
+  .form-group {
+    position: relative;
+    .password__eye {
+      position: absolute;
+      cursor: pointer;
+      color: #757575;
+      right: 7px;
+      top: 58px;
+    }
+  }
+  .login__container {
+    display: grid;
+    grid-template-columns: 50% 40%;
+    gap: 10%;
+
+    height: calc(100vh - 100px);
+    overflow: auto;
+  }
+  .row {
+    display: flex;
+  }
+
+  h5 {
+    padding-bottom: 2px;
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+  .login__image {
+    overflow: hidden;
+    display: flex;
+  }
+  .login__image img {
+    width: 70%;
+    height: auto;
+    margin: auto;
+  }
+  .login__content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+  }
+  small {
+    color: #757575;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  input {
+    border: 1px solid transparent !important;
+    border-color: #757575;
+    box-sizing: border-box;
+    width: 20rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 12px;
+    background: #ffffff;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+  }
+
+  .form-group {
+    position: relative;
+  }
+  // .form-group .password__eye {
+  //   position: absolute;
+  //   cursor: pointer;
+  //   color: #757575;
+  //   right: 7px;
+  //   top: 14px;
+  // }
+  .login_form {
+    min-width: 250px;
+  }
+  .login__button {
+    text-decoration: none;
+    background-color: #000;
+    padding: 6px 15px;
+    color: #fff500 !important;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  .forget__password {
+    color: #8f8f8f;
+    font-size: 12px;
+  }
+  .main {
+    padding-top: 78px;
+    height: calc(100vh - 70px);
+    font-size: 16px;
+    color: #000;
+  }
+  .settingContainer{
+    display: flex;
+    width: 100%;padding: 50px;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+  }
+  .labelContainer{
+    width: 800px;
+    display: flex;
+    padding: 10px;
+    
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .inputError{
+    border: 1px solid red  !important;
+  }
+
+  .access-table{
+    max-height: calc( 100vh - 105px);
+    table{
+      display: table!important;
+    }
+  }
+
+}
+.btnsecond{
+  background: linear-gradient(135deg, #3c3c3c, #1a1902);
+  border: #000000;
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px 20px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
+  transition: box-shadow 0.5s ease, transform 0.2s ease;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+}
+.btnfrst:hover, .btnsecond:hover {
+  box-shadow: 0 5px 15px rgb(0 0 0 / 30%);
+  transition: box-shadow 0.5s ease, transform 0.2s ease;
+}
+.btnsecond:hover {
+  color: #fff;
+}
+
+
+
+
+@media (max-width: 1367px) {
+  .admin{ 
+.celebal__logo img {width: 110px;}
+.dash-top { font-size: 12px; }
+.add_button { top: 63px; }
+
+.btnsecond {
+  padding: 5px 15px;
+  font-size: 12px;
+}
+.admin-top {
+  padding-top: 45px;
+}
+
+
+table:first-child {
+  height: calc( 100vh - 215px);
+
+}
+
+  }
+  .btnsecond {
+    padding: 3px 10px;
+    font-size: 12px;
+  }
+}

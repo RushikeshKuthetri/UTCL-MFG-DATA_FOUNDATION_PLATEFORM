@@ -1,0 +1,1062 @@
+.RawMill2Baga {
+  .single-text-1 {
+    transform: translate(3vw, 8.3vh);
+  }
+  .single-text-2 {
+    transform: translate(2vw, 21.3vh);
+    width: 120px;
+    .line-1 {
+      transform: translate(109px, 0.3px) rotate(-145deg);
+      height: 42px;
+      z-index: -1;
+    }
+  }
+  .single-text-3 {
+    transform: translate(3.8vw, 26.1vh);
+  }
+  .single-text-4 {
+    transform: translate(5vw, 31.1vh);
+    width: 150px;
+  }
+  .single-text-5 {
+    transform: translate(8vw, 26vh);
+  }
+  .single-text-6 {
+    transform: translate(12vw, 40vh);
+    width: 450px;
+  }
+  .single-text-7 {
+    transform: translate(1vw, 39.3vh);
+  }
+  .single-text-8 {
+    transform: translate(1vw, 47.3vh);
+  }
+  .single-text-9 {
+    transform: translate(14vw, 16.3vh);
+    .connector-icon {
+      transform: scale(-1, -1) rotate(93deg);
+      height: 25px;
+      width: 33px;
+      .dot {
+        transform: rotate(86deg);
+      }
+      .line-1 {
+        transform: translate(25px, -6.7px) rotate(-93deg);
+        height: 21px;
+      }
+    }
+  }
+  .single-text-10 {
+    transform: translate(15.3vw, 24.8vh);
+    z-index: 1;
+  }
+  .single-text-11 {
+    transform: translate(24.3vw, 25.8vh);
+  }
+  .single-text-12 {
+    transform: translate(21.3vw, 33.8vh);
+    .dotted-pipe {
+      transform: scaleY(-1) rotate(180deg);
+      height: 470px;
+      &::after {
+        left: auto;
+      }
+    }
+  }
+  .single-text-13 {
+    transform: translate(32.3vw, 12.8vh);
+  }
+  .single-text-14 {
+    transform: translate(34vw, 47.2vh);
+  }
+  .single-text-15 {
+    transform: translate(29vw, 53.9vh);
+    height: 54px;
+    width: 63px;
+  }
+
+  .single-text-16 {
+    transform: translate(27vw, 63.5vh);
+    width: 163px;
+  }
+  .single-text-17 {
+    transform: translate(34.2vw, 69.6vh);
+  }
+  .single-text-18 {
+    transform: translate(22.5vw, 81.5vh);
+    width: 241px;
+  }
+  .single-text-19,
+  .single-text-40,
+  .single-text-53 {
+    .containerImage {
+      width: 61px;
+      height: 65px;
+    }
+    .connector-icon {
+      transform: scale(-1, -1) rotate(93deg);
+      height: 25px;
+      width: 33px;
+      .line-1 {
+        transform: translate(25px, -6.7px) rotate(-93deg);
+        height: 21px;
+      }
+      .line-circle {
+        transform: rotate(86deg);
+      }
+    }
+  }
+  .single-text-19 {
+    transform: translate(24vw, 69vh);
+  }
+  .single-text-20 {
+    transform: translate(25vw, 77.5vh);
+    z-index: 1;
+  }
+  .single-text-21 {
+    transform: translate(39vw, 49.9vh);
+    .bigContainer {
+      width: 182px;
+      height: 302px;
+    }
+  }
+  .single-text-22 {
+    transform: translate(35.6vw, 70vh);
+    .containerImage {
+      height: 54px;
+      width: 63px;
+    }
+  }
+  .single-text-23 {
+    transform: translate(47.2vw, 22vh);
+    z-index: 1;
+    .triangle-with-squares {
+      width: 91px;
+      height: 100px;
+    }
+  }
+  .single-text-24 {
+    transform: translate(46vw, 33vh);
+    z-index: 1;
+  }
+  .single-text-25 {
+    transform: translate(54vw, 32.3vh);
+    z-index: 1;
+  }
+  .single-text-26 {
+    transform: translate(59.5vw, 33.3vh);
+    z-index: 1;
+  }
+  .single-text-27 {
+    transform: translate(64.5vw, 33.3vh);
+    z-index: 1;
+  }
+  .single-text-28 {
+    transform: translate(49vw, 41.9vh) rotate(11deg);
+    width: 136px;
+  }
+  .single-text-29 {
+    transform: translate(59.6vw, 42vh) rotate(11deg);
+    width: 136px;
+  }
+  .single-text-30 {
+    transform: translate(53.6vw, 50.4vh) rotate(6deg);
+    width: 536px;
+  }
+  .single-text-31,
+  .single-text-32,
+  .single-text-33,
+  .single-text-42,
+  .single-text-45,
+  .single-text-47 {
+    .connector-icon {
+      transform: scale(-1, -1) rotate(93deg);
+      height: 25px;
+      width: 33px;
+      .line-1 {
+        transform: translate(21px, -7.7px) rotate(-93deg);
+        height: 11px;
+      }
+      .line-circle {
+        transform: rotate(86deg);
+      }
+    }
+  }
+  .single-text-31 {
+    transform: translate(47.4vw, 44.6vh);
+  }
+  .single-text-32 {
+    transform: translate(58.4vw, 43.6vh);
+  }
+  .single-text-33 {
+    transform: translate(58.4vw, 53.6vh);
+    .connector-icon {
+      transform: scale(1, -1) rotate(93deg);
+    }
+  }
+  .single-text-34 {
+    transform: translate(74vw, 15.6vh);
+    .connector-both-side-2 {
+      transform: scale(-1.1, 1);
+      width: 64px;
+      height: 31px;
+      .line-circle {
+        transform: rotate(278deg);
+      }
+    }
+  }
+  .single-text-35 {
+    transform: translate(81.4vw, 14.6vh);
+    z-index: 1;
+  }
+  .single-text-36 {
+    transform: translate(93vw, 15.6vh) scale(-1.1, 1);
+    width: 64px;
+    height: 31px;
+    .line-circle {
+      transform: rotate(3deg);
+    }
+  }
+  .single-text-37 {
+    transform: translate(96.8vw, 1.6vh);
+  }
+  .single-text-38 {
+    transform: translate(81.8vw, 5.6vh);
+  }
+  .single-text-39 {
+    transform: translate(72.4vw, 22.6vh);
+  }
+  .single-text-40 {
+    transform: translate(70vw, 39vh);
+  }
+  .single-text-41 {
+    transform: translate(48vw, 54vh);
+  }
+  .single-text-42 {
+    transform: translate(49.4vw, 69.6vh) rotate(268deg);
+    .connector-icon {
+      transform: scale(1, -1) rotate(93deg);
+    }
+  }
+  .single-text-43 {
+    transform: translate(36vw, 35vh);
+  }
+  .single-text-44 {
+    transform: translate(78.5vw, 59vh) rotate(5deg);
+    width: 243px;
+  }
+  .single-text-45 {
+    transform: translate(77.5vw, 62.6vh) rotate(5deg);
+    z-index: 1;
+    .connector-icon {
+      transform: scale(1, -1) rotate(93deg);
+    }
+  }
+  .single-text-46 {
+    transform: translate(80.5vw, 74vh) rotate(5deg);
+    width: 149px;
+  }
+  .single-text-47 {
+    transform: translate(80.5vw, 77.6vh) rotate(5deg);
+    z-index: 1;
+    .connector-icon {
+      transform: scale(1, -1) rotate(93deg);
+    }
+  }
+  .single-text-48 {
+    transform: translate(94.3vw, 43.8vh);
+    .dotted-pipe {
+      transform: scaleY(-1) rotate(180deg);
+      height: 320px;
+    }
+  }
+  .single-text-49 {
+    transform: translate(90vw, 69.7vh);
+    .dashedHr-Pipe {
+      width: 76px;
+    }
+  }
+  .single-text-50 {
+    transform: translate(91vw, 51.7vh);
+  }
+  .single-text-51 {
+    transform: translate(95.5vw, 77.7vh);
+  }
+  .single-text-52 {
+    transform: translate(93.5vw, 87.7vh);
+  }
+  .single-text-53 {
+    transform: translate(84vw, 34vh);
+    .connector-icon {
+      .dot {
+        transform: rotate(86deg);
+      }
+    }
+  }
+  .single-text-54 {
+    transform: translate(81.5vw, 46vh);
+  }
+  .single-text-55 {
+    transform: translate(87.5vw, 46vh);
+  }
+  .single-text-56 {
+    transform: translate(95vw, 54vh);
+  }
+  .single-text-57 {
+    transform: translate(36.5vw, 81vh);
+    z-index: 1;
+  }
+  .single-text-58 {
+    transform: translate(37vw, 51vh);
+    z-index: 1;
+  }
+  .single-text-59 {
+    transform: translate(43.3vw, 48.3vh);
+    z-index: 1;
+  }
+  .single-text-60 {
+    transform: translate(85.3vw, 44vh);
+    z-index: 1;
+  }
+  .single-text-61 {
+    transform: translate(73.3vw, 80vh);
+  }
+  .single-text-62 {
+    transform: translate(49vw, 79.3vh);
+    width: 53px;
+    z-index: 1;
+  }
+  .single-text-63 {
+    transform: translate(52.5vw, 79.3vh);
+    width: 53px;
+    z-index: 1;
+  }
+  .single-text-64 {
+    transform: translate(86.7vw, 80.3vh);
+  }
+  .single-text-65 {
+    transform: translate(95vw, 61.3vh);
+  }
+
+  .line-2 {
+    transform: translate(4.9vw, 17.5vh);
+    height: 30px;
+  }
+  .line-3 {
+    transform: translate(4.9vw, 22.5vh);
+    height: 30px;
+  }
+  .line-4 {
+    transform: translate(5.6vw, 28.5vh);
+    height: 46px;
+  }
+  .line-5 {
+    transform: translate(4vw, 28.5vh);
+    height: 94px;
+  }
+  .line-6 {
+    transform: translate(12.5vw, 35.5vh);
+    height: 36px;
+  }
+  .line-7 {
+    transform: translate(15.9vw, 25.5vh);
+    height: 128px;
+  }
+  .line-8 {
+    transform: translate(17.9vw, 17.5vh);
+    width: 29px;
+  }
+  .line-9 {
+    transform: translate(22.3vw, 36.5vh);
+    height: 27px;
+  }
+  .line-10 {
+    transform: translate(22.3vw, 36.5vh);
+    height: 27px;
+  }
+  .line-11 {
+    transform: translate(35vw, 41.7vh);
+    height: 47px;
+  }
+  .line-12 {
+    transform: translate(32.6vw, 47.7vh) rotate(55deg);
+    height: 66px;
+  }
+  .line-13 {
+    transform: translate(37.7vw, 48vh) rotate(-54deg);
+    height: 82px;
+  }
+  .line-14 {
+    transform: translate(30.9vw, 60vh);
+    height: 29px;
+  }
+  .line-15 {
+    transform: translate(35.2vw, 65vh);
+    height: 40px;
+  }
+  .line-16 {
+    transform: translate(27.2vw, 73vh);
+    width: 29px;
+  }
+  .line-17 {
+    transform: translate(34.5vw, 72vh);
+    height: 83px;
+  }
+  .line-18 {
+    transform: translate(25.5vw, 78.5vh);
+    height: 25px;
+  }
+  .line-19 {
+    transform: translate(36vw, 72vh);
+    height: 10px;
+  }
+  .line-20 {
+    transform: translate(35vw, 82.3vh);
+    width: 83px;
+  }
+  .line-21 {
+    transform: translate(49.7vw, 35vh);
+    height: 50px;
+  }
+  .line-22 {
+    transform: translate(54.7vw, 35vh);
+    height: 100px;
+  }
+  .line-23 {
+    transform: translate(60.1vw, 35vh);
+    height: 50px;
+  }
+  .line-24 {
+    transform: translate(65.1vw, 35vh);
+    height: 123px;
+  }
+  .line-25 {
+    transform: translate(55.6vw, 43.8vh);
+    height: 23px;
+  }
+  .line-26 {
+    transform: translate(66vw, 44.8vh);
+    height: 36px;
+  }
+  .line-27 {
+    transform: translate(89vw, 17vh);
+    width: 74px;
+  }
+  .line-28 {
+    transform: translate(96.3vw, 16.3vh);
+    width: 22px;
+  }
+  .line-29 {
+    transform: translate(71.6vw, 48.5vh);
+    height: 22px;
+  }
+  .line-30 {
+    transform: translate(73.2vw, 42.5vh);
+    width: 28px;
+  }
+  .line-31 {
+    transform: translate(80.9vw, 54.5vh);
+    height: 29px;
+  }
+  .line-32 {
+    transform: translate(83.9vw, 60.5vh);
+    height: 117px;
+  }
+  .line-33 {
+    transform: translate(87.9vw, 75.5vh);
+    height: 32px;
+  }
+  .line-34 {
+    transform: translate(90.9vw, 61.5vh);
+    height: 69px;
+  }
+  .line-35 {
+    transform: translate(93.6vw, 70.5vh);
+    height: 126px;
+  }
+  .line-36 {
+    transform: translate(87.2vw, 37.5vh);
+    width: 28px;
+  }
+  .line-37 {
+    transform: translate(86.4vw, 48.5vh);
+    height: 91px;
+  }
+  .line-38 {
+    transform: translate(85vw, 48.5vh);
+    height: 63px;
+  }
+  .line-39 {
+    transform: translate(22.5vw, 83.5vh);
+    height: 21px;
+  }
+  .line-40 {
+    transform: translate(95.5vw, 51.5vh);
+    height: 81px;
+  }
+  .pipe-1 {
+    transform: translate(43.4vw, 25.3vh);
+    height: 224px;
+  }
+
+  .pipe-2 {
+    transform: translate(43.4vw, 25.3vh);
+    width: 392px;
+  }
+  .pipe-3 {
+    transform: translate(49.4vw, 16.3vh);
+    height: 65px;
+  }
+  .pipe-4 {
+    transform: translate(54.3vw, 16.3vh);
+    height: 65px;
+  }
+  .pipe-5 {
+    transform: translate(59.9vw, 16.3vh);
+    height: 71px;
+  }
+  .pipe-6 {
+    transform: translate(64.9vw, 16.3vh);
+    height: 71px;
+  }
+  .pipe-7 {
+    transform: translate(49.4vw, 16.3vh);
+    width: 471px;
+  }
+  .pipe-8 {
+    transform: translate(47.4vw, 67.3vh);
+    width: 587px;
+  }
+  .pipe-9 {
+    transform: translate(77.4vw, 16vh);
+    height: 469px;
+  }
+  .pipe-10 {
+    transform: translate(79.5vw, 16vh);
+    height: 551px;
+  }
+  .pipe-11 {
+    transform: translate(67.5vw, 68.5vh);
+    height: 78px;
+  }
+  .pipe-12 {
+    transform: translate(67.5vw, 76.5vh);
+    width: 242px;
+  }
+  .pipe-13 {
+    transform: translate(77.5vw, 16vh);
+    width: 80px;
+  }
+  .pipe-14 {
+    transform: translate(48vw, 80.2vh);
+    width: 104px;
+  }
+  .pipe-15 {
+    transform: translate(58vw, 68.6vh);
+    height: 54px;
+  }
+  .pipe-16 {
+    transform: translate(69vw, 77.6vh);
+    height: 54px;
+  }
+}
+// mobile responsive
+@media (max-width: 1366px) {
+  .RawMill2Baga {
+    .single-text-1 {
+      transform: translate(36px, 33.3px);
+      width: 63px;
+      height: 72px;
+    }
+    .line-2 {
+      transform: translate(66.9px, 104.5px);
+      height: 20px;
+    }
+    .single-text-2 {
+      transform: translate(35px, 125.3px);
+      width: 101px;
+      .line-1 {
+        transform: translate(91px, 0.3px) rotate(-145deg);
+        height: 30px;
+      }
+    }
+    .line-3 {
+      transform: translate(70.9px, 129.5px);
+      height: 24px;
+    }
+    .hexa-gray-green-red-img {
+      width: 15px;
+      height: 16px;
+    }
+    .single-text-3 {
+      transform: translate(52.8px, 155.1px);
+    }
+    .line-5 {
+      transform: translate(56px, 170.5px);
+      height: 62px;
+    }
+    .line-4 {
+      transform: translate(78px, 170.5px);
+      height: 34px;
+    }
+    .single-text-4 {
+      transform: translate(76px, 184.1px);
+      width: 103px;
+    }
+    .single-text-8 {
+      transform: translate(14px, 290.3px);
+    }
+    .single-text-7 {
+      transform: translate(12px, 244.3px);
+    }
+    .line-6 {
+      transform: translate(176.5px, 218.5px);
+      height: 19px;
+    }
+    .line-7 {
+      transform: translate(215.9px, 154.5px);
+      height: 83px;
+    }
+    .single-text-6 {
+      transform: translate(163px, 242px);
+      width: 326px;
+    }
+    .single-text-12 {
+      transform: translate(288.3px, 191.8px);
+      .dotted-pipe {
+        height: 321px;
+      }
+    }
+    .single-text-59 {
+      transform: translate(589.3px, 289.3px);
+      z-index: 1;
+    }
+    .pipe-2 {
+      transform: translate(595.4px, 155.3px);
+      width: 287px;
+    }
+    .pipe-3 {
+      transform: translate(674.4px, 100.3px);
+      height: 65px;
+    }
+    .pipe-4 {
+      transform: translate(739.4px, 100.3px);
+      height: 65px;
+    }
+    .pipe-5 {
+      transform: translate(820.4px, 100.3px);
+      height: 65px;
+    }
+    .pipe-6 {
+      transform: translate(890.4px, 100.3px);
+      height: 65px;
+    }
+    .single-text-24 {
+      transform: translate(624px, 203px);
+    }
+    .single-text-25 {
+      transform: translate(734px, 203px);
+    }
+    .single-text-26 {
+      transform: translate(814px, 209px);
+    }
+    .single-text-27 {
+      transform: translate(885px, 204px);
+    }
+    .line-22 {
+      transform: translate(741.7px, 173px);
+      height: 100px;
+    }
+    .single-text-31 {
+      transform: translate(672.4px, 269.6px);
+    }
+    .single-text-41 {
+      transform: translate(627px, 294px);
+    }
+    .line-25 {
+      transform: translate(760.6px, 258.8px);
+      height: 16px;
+    }
+    .single-text-33 {
+      transform: translate(777.4px, 329.6px) rotate(9deg);
+    }
+    .single-text-30 {
+      transform: translate(728.6px, 305.4px) rotate(7deg);
+      width: 384px;
+    }
+    .single-text-44 {
+      transform: translate(1077.5px, 359px) rotate(5deg);
+      width: 189px;
+    }
+    .single-text-45 {
+      transform: translate(1050.5px, 386.6px) rotate(5deg);
+      z-index: 1;
+    }
+    .line-31 {
+      transform: translate(1104.9px, 330.5px);
+      height: 21px;
+    }
+    .single-text-47 {
+      transform: translate(1094.5px, 500.6px) rotate(5deg);
+      z-index: 1;
+    }
+    .single-text-46 {
+      transform: translate(1095.5px, 474px) rotate(5deg);
+      width: 130px;
+    }
+    .single-text-55 {
+      transform: translate(1201.5px, 246px);
+    }
+    .single-text-48 {
+      transform: translate(1289.3px, 248.8px);
+      .dotted-pipe {
+        height: 219px;
+      }
+    }
+    .single-text-56 {
+      transform: translate(1297px, 300px);
+      z-index: 1;
+    }
+    .single-text-64 {
+      transform: translate(1204.7px, 514.3px);
+    }
+    .single-text-52 {
+      transform: translate(1281.5px, 526.7px);
+    }
+    .line-34 {
+      transform: translate(1263.9px, 368.5px);
+      height: 69px;
+    }
+    .line-33 {
+      transform: translate(1214.9px, 480.5px);
+      height: 32px;
+    }
+    .line-39 {
+      transform: translate(308.5px, 500.5px);
+      height: 21px;
+    }
+    .single-text-14 {
+      transform: translate(464px, 282.2px);
+    }
+
+    .line-26 {
+      transform: translate(906px, 264.8px);
+      height: 36px;
+    }
+    .line-10,
+    .line-9 {
+      transform: translate(304.3px, 212.5px);
+      height: 24px;
+    }
+
+    .single-text-61 {
+      transform: translate(1016.3px, 480px);
+    }
+
+    .single-text-51 {
+      transform: translate(1303.5px, 477.7px);
+    }
+    .line-40 {
+      transform: translate(1305.5px, 309.5px);
+      height: 31px;
+    }
+    .line-35 {
+      transform: translate(1278.6px, 453.5px);
+      height: 55px;
+    }
+    .single-text-49 {
+      transform: translate(1247px, 443.7px);
+      .dashedHr-Pipe {
+        width: 43px;
+      }
+    }
+    .single-text-65 {
+      transform: translate(1301px, 347.3px);
+    }
+    .single-text-50 {
+      transform: translate(1246px, 322.7px);
+    }
+    .line-32 {
+      transform: translate(1145.9px, 360.5px);
+      height: 107px;
+    }
+    .single-text-32 {
+      transform: translate(787.4px, 263.6px);
+      z-index: 1;
+    }
+    .single-text-40 {
+      transform: translate(956px, 224px);
+    }
+    .line-29 {
+      transform: translate(976.6px, 291.5px);
+      height: 22px;
+    }
+    .line-30 {
+      transform: translate(999.2px, 253.5px);
+      width: 28px;
+    }
+    .pipe-7 {
+      transform: translate(675.4px, 99.3px);
+      width: 333px;
+    }
+    .single-text-42 {
+      transform: translate(666.4px, 423.6px) rotate(268deg);
+    }
+    .pipe-14 {
+      transform: translate(654px, 499.2px);
+      width: 104px;
+    }
+    .single-text-62 {
+      transform: translate(662px, 491.3px);
+      width: 41px;
+      z-index: 1;
+    }
+    .pipe-8 {
+      transform: translate(645.4px, 408.3px);
+      width: 420px;
+    }
+    .pipe-9 {
+      transform: translate(1059.4px, 104px);
+      height: 312px;
+    }
+    .pipe-15 {
+      transform: translate(789px, 415.6px);
+      height: 34px;
+    }
+    .pipe-11 {
+      transform: translate(921px, 415.6px);
+      height: 49px;
+    }
+    .single-text-34 {
+      transform: translate(1010px, 93.6px);
+      .connector-both-side-2 {
+        width: 48px;
+        height: 24px;
+      }
+    }
+
+    .single-text-63 {
+      transform: translate(717px, 491.3px);
+      width: 41px;
+      z-index: 1;
+    }
+    .single-text-39 {
+      transform: translate(990.4px, 150.6px);
+    }
+    .pipe-12 {
+      transform: translate(921.5px, 457.5px);
+      width: 166px;
+    }
+    .single-text-38 {
+      transform: translate(1120.8px, 36.6px);
+    }
+    .single-text-36 {
+      transform: translate(1249px, 95.6px) scale(-1.1, 1);
+      width: 54px;
+      height: 27px;
+    }
+    .single-text-53 {
+      transform: translate(1146px, 170px);
+    }
+    .single-text-54 {
+      transform: translate(1108.5px, 251px);
+    }
+    .line-38 {
+      transform: translate(1158px, 265.5px);
+      height: 63px;
+    }
+    .line-37 {
+      transform: translate(1178px, 265.5px);
+      height: 84px;
+    }
+    .line-36 {
+      transform: translate(1190.2px, 197.5px);
+      width: 28px;
+    }
+    .single-text-60 {
+      transform: translate(1161.3px, 238px);
+      z-index: 1;
+    }
+    .single-text-37 {
+      transform: translate(1318.8px, 46.6px);
+      width: 19px;
+      height: 73px;
+    }
+    .pipe-13 {
+      transform: translate(1059.5px, 96px);
+      width: 80px;
+    }
+    .line-28 {
+      transform: translate(1304.3px, 101.3px);
+      width: 22px;
+    }
+    .line-27 {
+      transform: translate(1231px, 107px);
+      width: 46px;
+      z-index: -1;
+    }
+    .single-text-35 {
+      width: 98px;
+      transform: translate(1137.4px, 88.6px);
+      height: 40px;
+    }
+    .pipe-10 {
+      transform: translate(1085.5px, 98px);
+      height: 367px;
+    }
+    .pipe-16 {
+      transform: translate(953px, 465.6px);
+      height: 37px;
+    }
+    .line-23 {
+      transform: translate(822.1px, 187px);
+      height: 50px;
+    }
+    .line-24 {
+      transform: translate(889.1px, 201px);
+      height: 97px;
+    }
+    .single-text-29 {
+      transform: translate(809.6px, 247px) rotate(11deg);
+      width: 104px;
+    }
+    .single-text-28 {
+      transform: translate(668px, 244.9px) rotate(11deg);
+      width: 99px;
+    }
+    .line-21 {
+      transform: translate(675.7px, 186px);
+      height: 50px;
+    }
+    .single-text-23 {
+      transform: translate(642.2px, 144px);
+      z-index: 1;
+      .triangle-with-squares {
+        width: 64px;
+        height: 56px;
+      }
+    }
+    .pipe-1 {
+      transform: translate(592.4px, 155.3px);
+      height: 149px;
+    }
+    .single-text-43 {
+      transform: translate(485px, 206px);
+    }
+    .single-text-57 {
+      transform: translate(505.5px, 487px);
+      z-index: 1;
+    }
+    .line-20 {
+      transform: translate(478px, 496.3px);
+      width: 61px;
+    }
+    .single-text-21 {
+      transform: translate(531px, 304.9px);
+    }
+    .single-text-18 {
+      transform: translate(308px, 491.5px);
+      width: 170px;
+    }
+    .single-text-22 {
+      transform: translate(487.6px, 411px);
+      .containerImage {
+        height: 38px;
+        width: 45px;
+      }
+    }
+
+    .line-17 {
+      transform: translate(476.5px, 424px);
+      height: 62px;
+    }
+    .line-19 {
+      transform: translate(498px, 425px);
+      height: 10px;
+    }
+    .single-text-17 {
+      transform: translate(473.2px, 409.6px);
+    }
+    .line-15 {
+      transform: translate(486.2px, 388px);
+      height: 20px;
+    }
+    .line-18 {
+      transform: translate(354.5px, 461.5px);
+      height: 25px;
+    }
+    .single-text-20 {
+      transform: translate(347px, 461.5px);
+      z-index: 1;
+    }
+    .line-16 {
+      transform: translate(376.2px, 433px);
+      width: 29px;
+    }
+    .single-text-19 {
+      transform: translate(334px, 404px);
+    }
+    .single-text-19,
+    .single-text-40,
+    .single-text-53 {
+      .containerImage {
+        width: 43px;
+        height: 51px;
+      }
+    }
+    .single-text-16 {
+      transform: translate(362px, 376.5px);
+      width: 127px;
+    }
+    .line-14 {
+      transform: translate(425.9px, 363px);
+      height: 13px;
+    }
+    .line-13 {
+      transform: translate(512.7px, 286px) rotate(-54deg);
+      height: 58px;
+    }
+    .single-text-58 {
+      transform: translate(505px, 307px);
+      z-index: 1;
+    }
+    .single-text-10 {
+      transform: translate(206.3px, 155.8px);
+      z-index: 1;
+    }
+
+    .line-12 {
+      transform: translate(449.6px, 288.7px) rotate(55deg);
+      height: 38px;
+    }
+    .single-text-15 {
+      transform: translate(403px, 322.9px);
+      height: 40px;
+      width: 46px;
+    }
+    .line-11 {
+      transform: translate(480px, 254.7px);
+      height: 26px;
+    }
+    .line-8 {
+      transform: translate(244.9px, 101.5px);
+      width: 29px;
+    }
+    .single-text-13 {
+      transform: translate(408.3px, 75.8px);
+    }
+    .single-text-5 {
+      transform: translate(122px, 150px);
+    }
+    .single-text-11 {
+      transform: translate(303.3px, 160.8px);
+    }
+    .single-text-9 {
+      transform: translate(182px, 86.3px);
+      .containerImage {
+        width: 63px;
+        height: 72px;
+      }
+    }
+  }
+}

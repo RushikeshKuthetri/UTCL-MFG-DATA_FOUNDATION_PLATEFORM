@@ -1,0 +1,115 @@
+// .admin {
+//   .tonav {
+//     position: fixed;
+//     top: 0;
+//     height: 70px;
+//     width: 100%;
+//     background: #fff500;
+//     z-index: 99;
+//     box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px,
+//       rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+//     display: flex;
+//     justify-content: space-between;
+//     flex-wrap: nowrap;
+//     align-content: center;
+//   }
+//   .navbar {
+//     padding: 0.3rem 1rem;
+//   }
+//   .navbar_container {
+//     position: sticky;
+//     z-index: 2;
+//     margin-top: 70px;
+//   }
+//   .menu_bar {
+//     margin-left: 2rem;
+//     font-size: 2rem;
+//     background: none;
+//   }
+//   nav .menu_bar {
+//     background-color: #fff500;
+//     width: 60px;
+//     padding: 4px 12px;
+//     height: 60px;
+//     border-radius: 8px;
+//   }
+
+//   .nav_menu_active {
+//     position: fixed;
+//     left: -100%;
+//   }
+//   .nav_menu {
+//     left: 0;
+//     transition: 850ms;
+//     background: #2b2b2b;
+//     width: 300px;
+//     height: 100vh;
+//     display: flex;
+//     justify-content: center;
+//     position: fixed;
+//     top: 0;
+//     transition: 450ms;
+//   }
+//   .nav_text {
+//     display: flex;
+//     justify-content: start;
+//     align-items: center;
+//     padding: 8px 0px 8px 16px;
+//     list-style: none;
+//     height: 60px;
+//   }
+//   .nav_text a {
+//     text-decoration: none;
+//     color: white;
+//     font-size: 16px;
+//     width: 95%;
+//     height: 100%;
+//     display: flex;
+//     align-items: center;
+//     padding: 0 16px;
+//     border-radius: 4px;
+//     font-weight: 600;
+//   }
+//   .nav_text svg {
+//     color: white !important;
+//   }
+
+//   .nav_text a:hover {
+//     background-color: #fff500;
+//     color: #000;
+//   }
+//   .nav_text a:hover {
+//     background-color: #fff500;
+//     color: #000;
+//   }
+//   .nav_menu_items {
+//     width: 100%;
+//     padding-left: 0px;
+//   }
+//   .navbar_toggle {
+//     width: 100%;
+//     height: 100px;
+//     display: flex;
+//     justify-content: end;
+//     align-items: center;
+//     padding: 12px 20px;
+//   }
+
+//   .logout {
+//     cursor: pointer;
+//     font-size: 26px;
+//     background: none;
+//     padding-right: 30px;
+//     font-weight: 800;
+//   }
+
+//   .celebal__logo {
+//     display: inline-block;
+//     margin-left: 20px;
+//     cursor: pointer;
+//   }
+//   .celebal__logo img {
+//     height: 55px;
+//     width: 100px;
+//   }
+// }

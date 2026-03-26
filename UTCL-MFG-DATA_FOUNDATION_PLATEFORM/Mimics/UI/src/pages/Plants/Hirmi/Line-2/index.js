@@ -1,0 +1,11 @@
+export { PreheaterKilnHirmiL2Page } from "./PreheaterKiln/PreheaterKilnHirmiL2Page";
+export { CoolerHirmiL2Page } from "./Cooler/CoolerHirmiL2Page";
+export { RollerPress1HirmiL2Page } from "./RollerPress-1/RollerPress1HirmiL2Page";
+export { RollerPress2HirmiL2Page } from "./RollerPress-2/RollerPress2HirmiL2Page";
+export { CoalMillHirmiL2Page } from "./CoalMill/CoalMillHirmiL2Page";
+export { BlendingSiloHirmiL2Page } from "./BlendingSilo/BlendingSiloHirmiL2Page";
+export { ClinkerTransport492HirmiL2Page } from "./ClinkerTransport492/ClinkerTransport492HirmiL2Page";
+export { RawMillRollerPress1HirmiL2Page } from "./RawMillRollerPress1/RawMillRollerPress1HirmiL2Page";
+export { RawMillRollerPress2HirmiL2Page } from "./RawMillRollerPress2/RawMillRollerPress2HirmiL2Page";
+export { BagHouseHirmiL2Page } from "./BagHouse/BagHouseHirmiL2Page";
+export { KilnFiringHirmiL2Page } from "./KilnFiring/KilnFiringHirmiL2Page";

@@ -1,0 +1,34 @@
+@import "../../../css/main.scss";
+.CoalMill2Balaji {
+    .single-text-1 { transform: translate(34vw, 52vh);}
+    .single-text-22 { transform: translate(33.5vw, 76vh); }
+    .single-text-42 { transform: translate(54.5vw, 74vh); }
+    .single-text-43 { transform: translate(56vw, 69vh); }
+    .single-text-45 { transform: translate(19.5vw, 39vh); }
+    .single-text-53 { transform: translate(13vw, 18vh); }
+    .single-text-54 { transform: translate(58vw, 62vh) rotate(180deg); }
+    .single-text-57{transform: translate(22vw, 69vh); }
+    .single-text-58{transform: translate(28vw, 78vh);}
+    .single-text-59 { transform: translate(84vw, 20vh);}
+    .single-text-60 { transform: translate(73vw, 10vh);}  
+   .single-text-61 { transform: translate(73vw, 43vh); .redlineshape1 { transform: rotate(0deg);}}   
+   .single-text-62 {transform: translate(87vw, 41vh);}  
+}
+
+// mobile responsive 
+@media (max-width: 1365px) {
+.CoalMill2Balaji {
+    .single-text-42 {transform: translate(743px, 465px);}
+    .single-text-43 { transform: translate(776px, 427px);}
+    .single-text-45 {transform: translate(252px, 239px); }
+    .single-text-53 { transform: translate(175px, 110px);}
+    .single-text-54 { transform: translate(780px, 370px) rotate(180deg);}
+    .single-text-57 { transform: translate(301px, 431px);}
+    .single-text-58 { transform: translate(370px, 475px);}
+    .single-text-59 { transform: translate(1129px, 131px);}
+    .single-text-60 { transform: translate(1004px, 60px);}
+    .single-text-61 { transform: translate(1004px, 265px);}
+    .single-text-62 { transform: translate(1149px, 257px);}
+
+}
+}

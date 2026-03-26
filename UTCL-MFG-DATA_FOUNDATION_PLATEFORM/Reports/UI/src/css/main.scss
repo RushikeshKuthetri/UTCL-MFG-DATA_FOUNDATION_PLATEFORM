@@ -1,0 +1,3348 @@
+$black-color: #000;
+$yellow-color: rgb(236, 180, 57);
+$yellow-font-size: 12px;
+$black-font-size: 12px;
+$whiteUnit: #fff;
+$greenValue: #64cb00;
+$greenDot: rgb(100, 203, 0);
+$grayDot: rgb(81 84 78);
+$blackBdr: 1px solid #222222;
+$lightGray: #c2c0c0;
+$pinkColor: #a71ca0;
+$blueColor: blue;
+$cgreen: #acddd9;
+$lightyellow: #f6e1c3;
+$red: #cf1414;
+$orange: #fe7e05;
+$yellowbg: #feff01;
+$lightblue: #5eb9ff;
+
+.body {
+  font-size: 14px;
+}
+
+.firealarm-maihar {
+  h1 {
+    font-size: 25px;
+  }
+
+  .text-white {
+    font-size: 20px;
+  }
+
+  .w-20 {
+    width: 20% !important;
+  }
+
+  .w-50 {
+    position: relative;
+  }
+
+  .w-50::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 150%;
+    top: -25%;
+    left: 15%;
+    z-index: -1;
+    background-color: var(--before-bg);
+  }
+}
+
+.rotate-0 {
+  transform: rotate(0deg) !important;
+}
+
+.text-white {
+  font-weight: 400;
+}
+
+.text-dark {
+  color: #000000 !important;
+}
+
+.container-fluid {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.greenTxt {
+  padding: 0 4px;
+  width: 100%;
+  display: inherit;
+  background-color: #000;
+  color: $greenValue;
+}
+
+.unitColor {
+  color: $whiteUnit !important;
+}
+
+.text-center {
+  text-align: -webkit-center !important;
+}
+
+label {
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  padding-left: 0.3rem;
+}
+
+.middle-sqr-container {
+  background-image: url(../img/Asset21.png);
+  height: 121px;
+  width: 110px;
+  background-size: cover;
+}
+
+.topImage {
+  background-image: url(../img/Asset4.png);
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+}
+
+.triangle-with-squares {
+  background-image: url(../img/Asset3.png);
+  height: 85px;
+  width: 75px;
+  background-size: cover;
+}
+
+.mBox {
+  background-image: url(../img/Asset5.png);
+  height: 33px;
+  width: 43px;
+  background-size: cover;
+}
+
+.bagHouse {
+  background-image: url(../img/Asset9.png);
+  height: 77px;
+  width: 180px;
+  background-size: cover;
+}
+
+.blendingSilo {
+  background-image: url(../img/Asset11.png);
+  height: 178px;
+  width: 109px;
+}
+
+.c-grn-pipes {
+  background-image: url(../img/Asset14.png);
+  height: 25px;
+  width: 168px;
+}
+
+.blue-pipe {
+  background-image: url(../img/Asset17.png);
+  height: 69px;
+  width: 170px;
+  background-size: cover;
+}
+
+.connector-container {
+  background-image: url(../img/Asset16.png);
+  height: 60px;
+  width: 170px;
+
+  .greenDot {
+    padding: 16px;
+    margin-left: 123px;
+    margin-top: 10px;
+  }
+}
+
+.squareplustri {
+  background-image: url(../img/Asset46.png);
+  width: 37px;
+  height: 63px;
+  background-size: cover;
+}
+
+.pipeVr {
+  background-image: linear-gradient(270deg, #7a7a7a, #d1d1d1, #838282);
+  width: 12px;
+}
+
+.pipeHr {
+  background-image: linear-gradient(#7a7a7a, #d1d1d1, #838282);
+  height: 12px;
+}
+
+.downArrow {
+  background: #f1a626;
+}
+
+.downArrow:before {
+  border: solid #f1a626;
+  border-width: 0 3px 3px 0;
+  bottom: 0;
+  content: "";
+  display: inline-block;
+  padding: 3px;
+  position: absolute;
+  right: -2.5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.pipe {
+  background: #bfc0be;
+  height: 100px;
+  padding-top: 10px;
+  position: absolute;
+  width: 10px;
+  z-index: 3;
+}
+
+.pipe:after,
+.pipe:before {
+  background: #bfc0be;
+  content: "";
+  height: 10px;
+  position: absolute;
+  width: 25px;
+  z-index: -1;
+}
+
+.dotted-pipe::before {
+  right: 0;
+  border-bottom-left-radius: 32px;
+}
+
+.dotted-pipe::after {
+  left: 0;
+  border-bottom-right-radius: 32px;
+}
+
+.pipe:after {
+  border-bottom-left-radius: 32px;
+  bottom: 0;
+  right: 0;
+}
+
+.pipe:before {
+  border-bottom-right-radius: 32px;
+  top: 0;
+}
+
+.circle-img {
+  background-size: cover;
+  height: 21px;
+  width: 21px;
+}
+
+.reject-bin {
+  background-image: url(data:image/png;base64,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);
+  background-size: cover;
+  height: 68px;
+  width: 46px;
+}
+
+.mt-01 {
+  margin-top: 0.1rem;
+}
+
+.hpipecircle {
+  align-items: center;
+  background: #bfc0be;
+  border: 1px solid #222;
+  border-radius: 3px;
+  display: flex;
+  height: 16px;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.boxContainer {
+  background-color: #51544e;
+  border: 1px solid #222;
+  padding: 5px;
+  width: -webkit-max-content;
+  width: max-content;
+}
+
+//-----------------------------------------Digital tags functionality classes starts------------------------
+.gray-green-red-img {
+  height: 21px;
+  width: 40px;
+  background-size: cover;
+}
+
+.red-img {
+  background-image: url(../img/Asset103.png) !important;
+}
+
+.green-img {
+  background-image: url(../img/Asset35.png) !important;
+}
+
+.gray-img {
+  background-image: url(../img/Asset33.png) !important;
+}
+
+.hexa-gray-green-red-img {
+  height: 23px;
+  width: 21px;
+  background-size: cover;
+}
+
+.hexa-r-left {
+  background-image: url(../img/hexa-r-left.png) !important;
+}
+
+.hexa-g-left {
+  background-image: url(../img/hexa-g-left.png) !important;
+}
+
+.hexa-grey-left {
+  background-image: url(../img/hexa-grey-left.png) !important;
+}
+
+.hexa-r-right {
+  background-image: url(../img/hexa-r-right.png) !important;
+}
+
+.hexa-g-right {
+  background-image: url(../img/hexa-g-right.png) !important;
+}
+
+.hexa-grey-right {
+  background-image: url(../img/hexa-grey-right.png) !important;
+}
+
+.pipe-gray-green-red {
+  width: 5px;
+  height: 100px;
+}
+
+.pipe-gray-green-red::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  bottom: 0;
+  right: -1.5px;
+}
+
+.arrow-pipe-red {
+  background: $red;
+}
+
+.p-3 {
+  padding: 0.85rem !important;
+}
+
+.arrow-pipe-green {
+  background: $greenValue;
+}
+
+.arrow-pipe-gray {
+  background: #757575;
+}
+
+.arrow-pipe-gray.pipe-gray-green-red::before {
+  border: solid #757575;
+  border-width: 0 4px 4px 0;
+}
+
+.arrow-pipe-red.pipe-gray-green-red::before {
+  border: solid $red;
+  border-width: 0 4px 4px 0;
+}
+
+.arrow-pipe-green.pipe-gray-green-red::before {
+  border: solid $greenValue;
+  border-width: 0 4px 4px 0;
+}
+
+.dot-square-line {
+  .square {
+    height: 25px !important;
+    width: 13px !important;
+  }
+
+  .yellowline-Vr {
+    height: 10px;
+  }
+}
+
+.dot-square-line-Hr {
+  .square {
+    height: 13px !important;
+    width: 25px !important;
+  }
+
+  .yellowline-Hr {
+    width: 10px;
+  }
+}
+
+.digital-tag {
+  pointer-events: auto !important;
+  cursor: pointer;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  padding: 6px 6px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-circle {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 20px;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+.line-circle::after,
+.line-circle:after {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 1px;
+  transform: rotate(-65deg);
+  top: 41%;
+  left: -15%;
+  background-color: $black-color;
+}
+
+.line-circle::before,
+.line-circle:before {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 1px;
+  transform: rotate(65deg);
+  top: 41%;
+  right: -15%;
+  background-color: $black-color;
+}
+
+.square {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bar {
+  width: 25px;
+  height: 6px;
+  // background-color: $greenValue;
+  position: relative;
+}
+
+.bar::before,
+.bar::after {
+  position: absolute;
+  content: " ";
+  background-color: inherit;
+  width: 25px;
+  height: 2px;
+}
+
+.bar::before {
+  top: -7px;
+}
+
+.bar::after {
+  bottom: -7px;
+}
+
+.m-lines {
+
+  .m-line-left,
+  .m-line-right {
+    height: 18px;
+    width: 1px;
+  }
+
+  .m-line-left {
+    transform: rotate(-45deg);
+  }
+
+  .m-line-right {
+    transform: rotate(45deg);
+  }
+}
+
+.rpfinishedtransport,
+.DryFlyashsikandra,
+.Packermachine,
+.KilnAuxilaieskotputli,
+.PreHeater-kotputli,
+.cmh-kotputli,
+.RABHandDustTransport-kotputli,
+.TurbineTripLogic-kotputli,
+.CementSiloExtractionKotputli,
+.CementSilo1ExtractionRajpura,
+.CementSilo2ExtractionRajpura,
+.PackingPlant1and2Karur,
+.CementMillSikandrabad,
+.cm_1_maihar,
+.kiln1Maihar,
+.SiloExtractionsikandra,
+.RollerPressMaihar,
+.PackingPlant3and4Karur,
+.HotAirGenerator1WanakboriPage,
+.CoalMillWanakbori,
+.FlyashSiloKarur,
+.SiloFeedMaiharL3,
+.CementSilo1Kukurdih,
+.FlyAshSiloRajpuraPage,
+.KilnMaiharL3,
+.BlendingSiloKukurdih,
+.BagHouseandGCTMaihar,
+.FlyAshSystemMaihar,
+.RawMill1RPAndra,
+.KilnHirmiL1,
+.kilnbag-house-hirmi-l1,
+.Cooler2GujaratLine2,
+.khd-roller-press,
+.Magdalla-flyash-handling,
+.CGRollerPressHirmiL1,
+.hirmi-kiln-feed,
+.MParawhrsAndhra,
+.CMBaghousePanipat,
+.CSandBLPanipat,
+.WRCSiloPanipat,
+.PreheaterKilnHirmil2,
+.GrindingSectionMagdalla,
+.BlendingSiloHirmil2,
+.RawMillRollerPress1Hirmil2,
+.KilnFiringHirmil2,
+.SiloFeedPackingMagdalla,
+.BaghouseRawanL2,
+.RawMill1RawanL2,
+.UtilityRawanL2,
+.AQCBoilerHPSystemKukurdih,
+.KilnCoalFiringMaiharL4,
+.AQCBoilerWASSystemAndhra,
+.CementMillRPDhuleL2,
+.Kiln2VCMVishnupuramL2,
+.PreheterRawanl3,
+.PreheaterChilmakurL1,
+.PoldosSCMalkpurL1,
+.RMGNathdwara {
+  .tringle-item {
+
+    .fa-caret-up,
+    .fa-caret-down,
+    .fa-caret-left,
+    .fa-caret-right {
+      line-height: 0.5;
+      font-size: 30px;
+    }
+  }
+}
+
+.green-color {
+  background: $greenDot;
+}
+
+.grey-color {
+  background: rgb(117 117 117);
+}
+
+.red-color {
+  background: $red;
+}
+
+.green-color-caret {
+  color: $greenDot;
+}
+
+.grey-color-caret {
+  color: rgb(117 117 117);
+}
+
+.red-color-caret {
+  color: $red;
+}
+
+.circle-img {
+  height: 25px;
+  width: 25px;
+  background-repeat: no-repeat;
+}
+
+.c-green-img-1 {
+  background-image: url(../img/Asset37.png) !important;
+}
+
+.c-grey-img-2 {
+  background-image: url(../img/Asset38.png) !important;
+}
+
+.c-red-img-3 {
+  background-image: url(../img/Asset36.png) !important;
+}
+
+.grey-border {
+  border: 2px solid rgb(117 117 117);
+}
+
+.green-border {
+  border: 1px solid $greenDot;
+}
+
+.red-border {
+  border: 1px solid $red;
+}
+
+.blue-container {
+  width: 30px;
+  height: 15px;
+  background-color: #2a2a54;
+}
+
+// -------------------------------------------------Ends here---------------------------------------------------
+// maincss.css  css here
+.react-flow__attribution.right {
+  display: none;
+}
+
+.react-flow__node {
+  pointer-events: none !important;
+}
+
+.react-flow__pane,
+.react-flow__pane.dragging {
+  cursor: default;
+}
+
+.form-control,
+.multi-select,
+.dropdown-container,
+.chakra-select {
+  background: #fff;
+  border-top: 1px solid #e5e5e5;
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px,
+    rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+}
+
+.css-k7r2wc:focus,
+.css-k7r2wc[data-focus],
+.dropdown-container:focus-within {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px !important;
+}
+
+.dropdown-container .css-1pahdxg-control {
+  border-color: #80bdff;
+  box-shadow: none;
+  outline: 0;
+}
+
+.dropdown-container .css-1s2u09g-control:hover {
+  border-color: #ced4da;
+  border: 1px solid #ced4da;
+}
+
+.form-control:focus,
+.dropdown-container .css-1pahdxg-control:focus {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px !important;
+}
+
+.dropdown-container .css-1pahdxg-control:hover,
+.dropdown-container .css-1pahdxg-control:focus,
+.dropdown-container .css-1pahdxg-control:visited,
+.dropdown-container .css-1pahdxg-control.dropdown-container:focus-within {
+  border-color: #80bdff;
+  outline: 0;
+}
+
+.multi-select .dropdown-heading {
+  border-radius: 8px;
+  padding: 0.375rem 0.75rem;
+}
+
+.table .thead-dark th {
+  background-color: #2b2b2b;
+  border-color: #2b2b2b;
+  border: none;
+}
+
+.table-bordered td,
+.table-bordered th {
+  border: none;
+}
+
+.bagatabelscroll,
+.CBA_pali {
+  height: calc(100vh - 106px);
+
+  thead>tr>th {
+    position: sticky;
+    top: -1px;
+    z-index: 9;
+  }
+
+}
+
+.bagatabelscroll::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+// maincss.css end
+
+.bg1 {
+  background-color: #346667;
+  padding-top: 69px;
+  height: 100vh;
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
+}
+
+.bg-theme-green {
+  background-color: #346667;
+}
+
+.id-1 {
+  transform: translate(-22.5vw, -26.5vh) !important;
+  width: 100%;
+  height: 100%;
+  transform-origin: unset;
+}
+
+.gate-box-bg,
+.gate-box-border {
+  width: 30px !important;
+  height: 25px;
+
+  .square {
+    height: 25px;
+    transform: translate(11px, 0px) rotate(45deg);
+  }
+}
+
+.gate-box-bg {
+  .square {
+    width: 7px;
+  }
+}
+
+.gate-box-border {
+  .square {
+    width: 2px;
+  }
+}
+
+.reject-bin {
+  background-image: url(../img/Asset39.png);
+  height: 68px;
+  width: 46px;
+  background-size: cover;
+}
+
+.containerImage {
+  background-image: url(../img/Asset2.png);
+  height: 85px;
+  width: 75px;
+  background-size: cover;
+}
+
+.bigContainer {
+  background-image: url(../img/Asset6.png);
+  height: 283px;
+  width: 171px;
+  background-size: cover;
+}
+
+.lightBox {
+  background-image: url(../img/Asset7.png);
+  height: 107px;
+  width: 36px;
+  background-size: cover;
+}
+
+.popup-14-img {
+  background-image: url(../img/Asset63.png);
+  height: 360px;
+  width: 350px;
+  background-size: cover;
+}
+
+.img-41 {
+  background-image: url(../img/Asset41.png);
+  height: 27px;
+  width: 53px;
+  background-size: cover;
+}
+
+.img-64 {
+  background-image: url(../img/Asset64.png);
+  height: 180px;
+  width: 272px;
+  background-size: cover;
+}
+
+.vtext {
+  text-orientation: mixed;
+  writing-mode: vertical-lr;
+  letter-spacing: -2px;
+}
+
+.img-65 {
+  background-image: url(../img/Asset65.png);
+  height: 300px;
+  width: 120px;
+  background-size: cover;
+}
+
+.img-66 {
+  background-image: url(../img/Asset66.png);
+  height: 70px;
+  width: 51px;
+  background-size: cover;
+}
+
+.asset-67 {
+  background-image: url(../img/Asset67.png);
+  width: 420px;
+  height: 154px;
+  background-size: cover;
+}
+
+.asset-68 {
+  background-image: url(../img/Asset68.png);
+  width: 120px;
+  height: 210px;
+  background-size: cover;
+}
+
+.asset-71 {
+  background-image: url(../img/Asset71.png);
+  width: 330px;
+  height: 200px;
+  background-size: cover;
+}
+
+.asset-72 {
+  background-image: url(../img/Asset72.png);
+  width: 267px;
+  height: 107px;
+  background-size: cover;
+}
+
+.img-73 {
+  background-image: url(../img/Asset73.png);
+  height: 250px;
+  width: 250px;
+  background-size: cover;
+}
+
+.img-74 {
+  background-image: url(../img/Asset74.png);
+  height: 150px;
+  width: 275px;
+  background-size: cover;
+}
+
+.bluegrey-big-img {
+  background-image: url(../img/Asset51.png);
+  width: 900px;
+  height: 137px;
+  background-size: cover;
+}
+
+.img-75 {
+  background-image: url(../img/Asset75.png);
+  height: 150px;
+  width: 252px;
+  background-size: cover;
+}
+
+.img-76 {
+  background-image: url(../img/Asset76.png);
+  height: 16px;
+  width: 16px;
+  background-size: cover;
+}
+
+.img-77 {
+  background-image: url(../img/Asset77.png);
+  height: 25px;
+  width: 25px;
+  background-size: cover;
+}
+
+.img-78 {
+  background-image: url(../img/Asset78.png);
+  height: 30px;
+  width: 30px;
+  background-size: cover;
+}
+
+.img-79 {
+  background-image: url(../img/Asset79.png);
+  height: 60px;
+  width: 25px;
+  background-size: cover;
+}
+
+.img-80 {
+  background-image: url(../img/Asset80.png);
+  height: 43px;
+  width: 20px;
+  background-size: cover;
+}
+
+.img-81 {
+  background-image: url(../img/Asset81.png);
+  height: 15px;
+  width: 15px;
+  background-size: cover;
+}
+
+.img-82 {
+  background-image: url(../img/Asset82.png);
+  height: 30px;
+  width: 13px;
+  background-size: cover;
+}
+
+.img-83 {
+  background-image: url(../img/Asset83.png);
+  height: 30px;
+  width: 13px;
+  background-size: cover;
+}
+
+.img-84 {
+  background-image: url(../img/Asset84.png);
+  height: 135px;
+  width: 549px;
+  background-size: cover;
+}
+
+.img-85 {
+  background-image: url(../img/Asset85.png);
+  height: 38px;
+  width: 72px;
+  background-size: cover;
+}
+
+.img-86 {
+  background-image: url(../img/Asset86.png);
+  height: 100px;
+  width: 164px;
+  background-size: cover;
+}
+
+.img-87 {
+  background-image: url(../img/Asset87.png);
+  height: 78px;
+  width: 180px;
+  background-size: cover;
+}
+
+.img-88 {
+  background-image: url(../img/Asset88.png);
+  height: 155px;
+  width: 247px;
+  background-size: cover;
+}
+
+.img-89 {
+  background-image: url(../img/Asset89.png);
+  height: 32px;
+  width: 115px;
+  background-size: cover;
+}
+
+.img-90 {
+  background-image: url(../img/Asset90.png);
+  height: 95px;
+  width: 117px;
+  background-size: cover;
+}
+
+.img-91 {
+  background-image: url(../img/Asset91.png);
+  height: 192px;
+  width: 165px;
+  background-size: cover;
+}
+
+.img-92 {
+  background-image: url(../img/Asset92.png);
+  height: 116px;
+  width: 122px;
+  background-size: cover;
+}
+
+.img-93 {
+  background-image: url(../img/Asset93.png);
+  height: 295px;
+  width: 221px;
+  background-size: cover;
+}
+
+.img-94 {
+  background-image: url(../img/Asset94.png);
+  height: 280px;
+  width: 1700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-95 {
+  background-image: url(../img/Asset95.png);
+  height: 144px;
+  width: 859px;
+  background-size: cover;
+}
+
+.img-96 {
+  background-image: url(../img/Asset96.png);
+  background-size: cover;
+}
+
+.img-97 {
+  background-image: url(../img/Asset97.png);
+  background-size: cover;
+  width: 70px;
+  height: 98px;
+}
+
+.img-98 {
+  background-image: url(../img/Asset98.png);
+  background-size: cover;
+  width: 114px;
+  height: 116px;
+}
+
+.icon6block {
+  background-image: url(../img/Asset1.png);
+  width: 35px;
+  height: 28px;
+  background-size: cover;
+}
+
+.img-99 {
+  background-image: url(../img/Asset99.png);
+  background-size: cover;
+  width: 70px;
+  height: 98px;
+}
+
+.img-100 {
+  background-image: url(../img/Asset100.png);
+  height: 89px;
+  width: 141px;
+  background-size: cover;
+}
+
+.img-101 {
+  background-image: url(../img/Asset101.png);
+  background-size: cover;
+  width: 282px;
+  height: 655px;
+}
+
+.img-102 {
+  background-image: url(../img/Asset102.png);
+  height: 102px;
+  width: 696px;
+  background-size: cover;
+}
+
+.img-104 {
+  background-image: url(../img/Asset104.png);
+  height: 76px;
+  width: 78px;
+  background-size: cover;
+}
+
+.img-105 {
+  background-image: url(../img/Asset105.png);
+  height: 82px;
+  width: 83px;
+  background-size: cover;
+}
+
+.img-106 {
+  background-image: url(../img/Asset106.png);
+  height: 63px;
+  width: 46px;
+  background-size: cover;
+}
+
+.img-107 {
+  background-image: url(../img/Asset107.png);
+  width: 1354px;
+  height: 279px;
+  background-size: cover;
+}
+
+//new
+.img-108 {
+  background-image: url(../img/Asset108.png);
+  width: 30px;
+  height: 80px;
+  background-size: cover;
+}
+
+.img-109 {
+  background-image: url(../img/Asset109.png);
+  width: 105px;
+  height: 79px;
+  background-size: cover;
+}
+
+.img-110 {
+  background-image: url(../img/Asset110.png);
+  width: 66px;
+  height: 93px;
+  background-size: cover;
+}
+
+.roller-jcb {
+  background-image: url(../img/Asset40.png);
+  // width: 60px;
+  // height: 24px;
+  height: 29px;
+  width: 70px;
+  background-size: cover;
+}
+
+.img-112 {
+  background-image: url(../img/Asset112.png);
+  width: 88px;
+  height: 92px;
+  background-size: cover;
+}
+
+.img-113 {
+  background-image: url(../img/Asset113.png);
+  // width: 88px;
+  // height: 71px;
+  width: 36px;
+  height: 103px;
+  background-size: cover;
+}
+
+.img-114 {
+  background-image: url(../img/Asset114.png);
+  width: 139px;
+  height: 97px;
+  background-size: cover;
+}
+
+.loadingtruck {
+  background-image: url(../img/loadingtruck.png);
+  height: 80px;
+  width: 147px;
+  background-size: cover;
+}
+
+.truck {
+  background-image: url(../img/truck.png);
+  height: 35px;
+  width: 70px;
+  background-size: cover;
+}
+
+.connector-icon {
+  background-image: url(../img/Asset10.png);
+  height: 33px;
+  width: 44px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bars {
+  // width: 25px;
+  width: 20px;
+  height: 6px;
+  background-color: $greenValue;
+  position: relative;
+}
+
+.bars::before,
+.bars::after {
+  position: absolute;
+  content: " ";
+  background-color: $greenValue;
+  // width: 25px;
+  width: 20px;
+  height: 2px;
+}
+
+.bars::before {
+  top: -6px;
+}
+
+.bars::after {
+  bottom: -6px;
+}
+
+.bt-1 {
+  border-top: 1px solid #acddd9;
+}
+
+.bb-1 {
+  border-bottom: 1px solid #acddd9;
+}
+
+.bl-1 {
+  border-left: 1px solid #acddd9;
+}
+
+.orangesquare {
+  width: 19px;
+  height: 19px;
+  display: inline-block;
+  background-color: $orange;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  line-height: 1;
+}
+
+.mainContainer {
+  height: 100% !important;
+  width: 100% !important;
+  margin-left: 0px !important;
+  border: 5px solid #fff !important;
+}
+
+.long-width-container-2 {
+  background-image: url(../img/Asset28.png);
+  height: 162px;
+  width: 892px;
+  background-size: cover;
+}
+
+.Asset34 {
+  background-image: url(../img/Asset34.png);
+  height: 162px;
+  width: 892px;
+  background-size: cover;
+}
+
+.react-datepicker__header {
+  background-color: #fff500;
+}
+
+.react-datepicker__header--time {
+  padding-bottom: 16px;
+  padding-top: 24px;
+}
+
+// div,
+// span {
+//   pointer-events: auto !important;
+//   cursor: pointer;
+// }
+
+.coalmillbg {
+  background-image: url(../img/coalmillbg.png);
+  background-repeat: no-repeat;
+  background-size: 1915px 845px;
+}
+
+.coalmillbg2 {
+  background-image: url(../img/coalmillbg2.png);
+  background-repeat: no-repeat;
+  background-size: 1915px 845px;
+}
+
+.scalemeasure {
+  background-image: url(../img/Asset58.png);
+  height: 130px;
+  width: 62px;
+  background-size: cover;
+}
+
+.thinContainer {
+  background-image: url(../img/Asset42.png);
+  width: 146px;
+  height: 160px;
+  background-size: cover;
+}
+
+.yellowline-Hr,
+.yellowline-Vr {
+  background-color: #ecb439;
+}
+
+.yellowline-Hr {
+  height: 2px;
+}
+
+.yellowline-Vr {
+  width: 2px;
+}
+
+.rightarrow::before {
+  position: absolute;
+  content: "";
+  border: solid $yellow-color;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-39deg);
+  -webkit-transform: rotate(-39deg);
+  bottom: -3px;
+  right: 0;
+}
+
+.leftarrow::after {
+  position: absolute;
+  content: "";
+  border: solid $yellow-color;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(132deg);
+  -webkit-transform: rotate(132deg);
+  bottom: -4px;
+  left: 0;
+}
+
+.upArrow:before {
+  position: absolute;
+  content: "";
+  border: solid #f1a626;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-136deg);
+  -webkit-transform: rotate(-136deg);
+  top: 0;
+  right: -2.5px;
+}
+
+.Cooler1Nathdwara,
+.PreHeaterSlc1,
+.CementMill3Baikunth,
+.kilnburnershree,
+.rawmill1rajshree,
+.CementMill4Baikunth,
+.bsf_rajshree,
+.PH3cBoileroperation {
+  .tringle-item {
+    height: 16px;
+
+    .fa-caret-right,
+    .fa-caret-left {
+      font-size: 35px;
+      color: #d2d2d2;
+    }
+  }
+}
+
+.CementMill3Baikunth,
+.Kilnrajshree,
+.kilnburnershree,
+.rawmill1rajshree,
+.CementMill4Baikunth,
+.CementMill1dhar,
+.bsf_rajshree,
+.PH3cBoileroperation {
+  .tringle-item {
+
+    .fa-caret-up,
+    .fa-caret-down,
+    .fa-caret-left,
+    .fa-caret-right {
+      line-height: 0.5;
+      font-size: 30px;
+      color: #d2d2d2;
+    }
+  }
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 86px solid transparent;
+  border-right: 29px solid transparent;
+  border-top: 57px solid #bfc0be;
+}
+
+.big-back-img {
+  background-image: url(../img/Asset52.png);
+  width: 1621px;
+  height: 191px;
+  background-size: cover;
+}
+
+.brick-cooler-img {
+  background-image: url(../img/Asset54.png);
+  width: 41px;
+  height: 188px;
+  background-size: cover;
+}
+
+.chamber-img {
+  background-image: url(../img/Asset53.png);
+  width: 700px;
+  height: 122px;
+  background-size: cover;
+}
+
+.coolermiddle-2-img {
+  background-image: url(../img/Asset57.png);
+  background-size: cover;
+  height: 42px;
+  width: 100%;
+}
+
+.fiveside-shape {
+  background-image: url(../img/Asset45.png);
+  width: 42px;
+  height: 42px;
+  background-size: cover;
+}
+
+.greenbtn {
+  background-color: #64cb00;
+  color: $black-color;
+  border-radius: 0;
+  padding: 0px 5px;
+}
+
+.long-width-container {
+  background-image: url(../img/Asset20.png);
+  height: 88px;
+  width: 862px;
+  background-size: cover;
+}
+
+.connector-both-side {
+  background-image: url(../img/Asset25.png);
+  height: 50px;
+  width: 90px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+.grn-gry-img {
+  background-image: url(../img/Asset33.png);
+  height: 21px;
+  width: 40px;
+  background-size: cover;
+}
+
+.long-width-container {
+  background-image: url(../img/Asset20.png);
+  height: 88px;
+  width: 862px;
+  background-size: cover;
+}
+
+.greenTxt,
+button {
+  pointer-events: auto !important;
+  cursor: pointer;
+}
+
+.text-dark,
+.text-white,
+.yellowTxt {
+  width: fit-content;
+}
+
+.greenTxt,
+.text-dark,
+.text-white,
+.yellowTxt {
+  line-height: 1;
+  height: max-content;
+  font-size: 14px;
+}
+
+.greenTxt {
+  width: max-content;
+}
+
+.RawMill2Balaji,
+.CoalMill1Balaji,
+.RawMill1Balaji,
+.CementMill1wankbori {
+  .tringle-item {
+    font-size: 20px;
+    color: $greenDot;
+    line-height: 0;
+
+    i {
+      height: 15px;
+    }
+  }
+}
+
+.tringle-item-width {
+  width: 30px;
+  height: 24px;
+}
+
+.Crusher,
+.Cooler1Nathdwara,
+.CementMill3Balaji,
+.RawMill2Balaji,
+.CoalMill1Balaji,
+.Cementmill2balaji,
+.RawMill1Balaji {
+  .greenDot {
+    width: 21px;
+    height: 21px;
+  }
+
+  .grayDot {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+.RawMill2Balaji,
+.Cementmill2balaji,
+.RawMill1Balaji,
+.CementMill1wankbori {
+
+  .pipe:before,
+  .pipe:after {
+    height: 17px;
+    width: 45px;
+  }
+}
+
+.pipeHr-grn {
+  background-image: linear-gradient(#c3e9ca, #2ed56a, #33d730);
+}
+
+.Packermachine,
+.SiloExtractionsikandra {
+  .hpipecircle {
+    z-index: -1;
+  }
+}
+
+.stone2 {
+  background-image: url(../img/stone2.png);
+  height: 136px;
+  width: 156px;
+  background-size: cover;
+}
+
+.stone1 {
+  background-image: url(../img/stone1.png);
+  height: 128px;
+  width: 164px;
+  background-size: cover;
+}
+
+.drumContainer {
+  background-image: url(../img/Asset43.png);
+  width: 490px;
+  height: 98px;
+  background-size: cover;
+}
+
+.dotted-pipe {
+  background-image: url(../img/Asset47.png);
+  background-size: contain;
+}
+
+.chimni-red {
+  background-image: url(../img/Asset55.png);
+  background-size: cover;
+  height: 150px;
+  width: 70px;
+}
+
+.cemetmill4cone {
+  background-image: url(../img/Asset56.png);
+  background-size: cover;
+  height: 90px;
+  width: 194px;
+}
+
+.grn-gry-img-2 {
+  background-image: url(../img/Asset35.png) !important;
+}
+
+.gry-img {
+  background-image: url(../img/Asset59.png) !important;
+  height: 26px;
+  width: 65px;
+  background-size: cover;
+}
+
+.img-60 {
+  background-image: url(../img/Asset60.png) !important;
+  height: 100px;
+  width: 156px;
+  background-size: cover;
+}
+
+.trapezoid {
+  border-bottom: 45px solid #ffd19e;
+  border-left: 66px solid transparent;
+  border-right: 66px solid transparent;
+  width: 237px;
+}
+
+.grid-container-5,
+.grid-container-4,
+.grid-container-3,
+.grid-container-2,
+.grid-container-6,
+.grid-container-1,
+.grid-container-13,
+.grid-container-8,
+.grid-container-9 {
+  display: grid;
+  gap: 3px;
+
+  .greenTxt {
+    display: block;
+  }
+}
+
+.grid-container-13 {
+  grid-template-columns: repeat(13, 1fr);
+}
+
+.grid-container-8 {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.grid-container-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-container-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-container-9 {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.grid-container-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-container-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.grid-container-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-container-1 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 5px;
+  row-gap: 11px;
+}
+
+.dotted-pipe::before {
+  right: 0;
+  border-bottom-left-radius: 32px;
+}
+
+.dotted-pipe::after {
+  left: 0;
+  border-bottom-right-radius: 32px;
+}
+
+/*  CSS FOR SELECT DROP DOWN  CHANGES */
+.searchSection {
+  padding: 5px !important;
+
+  small {
+    font-size: 0.6rem;
+  }
+
+  .outer {
+    font-size: 12px;
+    gap: 1px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    input.form-control,
+    .css-1s2u09g-control {
+      font-size: 12px;
+      font-weight: 600;
+      min-height: 38px;
+      max-height: 77px;
+      box-shadow: none;
+    }
+
+    .css-tlfecz-indicatorContainer,
+    .css-1gtu0rj-indicatorContainer {
+      color: #000 !important;
+      padding: 2px;
+    }
+
+    label {
+      font-weight: 600;
+      font-size: 12px;
+    }
+
+    .pl-2 {
+      padding-left: 0.1rem !important;
+    }
+
+    .pr-2 {
+      padding-right: 0.1rem !important;
+    }
+
+    .colcustom-13 {
+      flex: 0 0 13%;
+      max-width: 13%;
+    }
+
+    .colcustom-11 {
+      flex: 0 0 11%;
+      max-width: 11%;
+    }
+
+    .colcustom-7 {
+      flex: 0 0 7.103333%;
+      max-width: 7.103333%;
+    }
+
+    .colcustom-9 {
+      flex: 0 0 9.103333%;
+      max-width: 9.103333%;
+    }
+
+    .colcustom-5 {
+      flex: 0 0 5.103333%;
+      max-width: 5.103333%;
+    }
+
+    .colcustom-26 {
+      flex: 0 0 26.103333%;
+      max-width: 26.103333%;
+    }
+
+    ::-webkit-scrollbar {
+      width: 3px !important;
+    }
+
+    .basic-single {
+      .select__control {
+        .select__indicators {
+          .select__indicator {
+            padding: 2px;
+          }
+        }
+      }
+    }
+
+    .select__menu {
+      font-weight: 600;
+    }
+
+    .multiTagSelection {
+      .select__value-container {
+        padding: 2px 2px;
+        max-height: 70px;
+        overflow-y: auto !important;
+      }
+
+      small {
+        bottom: -18px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.error-input {
+  border: 2px solid tomato;
+  border-radius: 0.5rem;
+}
+
+.mycard {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.mycard label {
+  font-weight: 600;
+}
+
+.linebottel {
+  background-image: url(../img/Asset44.png);
+  width: 53px;
+  height: 87px;
+  background-size: cover;
+}
+
+.react-datepicker__header {
+  background-color: #fff500;
+}
+
+.react-datepicker__header--time {
+  padding-top: 24px;
+  padding-bottom: 16px;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::before,
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::after {
+  border-bottom-color: #fff500;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--selected:hover,
+li.react-datepicker__time-list-item--selected {
+  background-color: #fff500 !important;
+  color: #000 !important;
+}
+
+// date 16-sep
+
+.RawMill2,
+.CoalMill1,
+.CoalMill2 {
+  .progress {
+    position: static;
+    width: 62px;
+
+    .progress-bar {
+      width: 20%;
+    }
+  }
+}
+
+.CoalMill1,
+.CoalMill2 {
+  .bagHouse {
+    height: 143px;
+    width: 382px;
+  }
+}
+
+.Cementmill1,
+.Cementmill2,
+.CoalMill1,
+.CementMill1wankbori {
+
+  .pipeHr,
+  .pipeVr {
+    background: #fed39c;
+
+    i.fa-long-arrow-alt-right,
+    i.fa-long-arrow-alt-up,
+    i.fa-long-arrow-alt-left,
+    i.fa-long-arrow-alt-down {
+      transform: translate(0px, -7px);
+      color: $blueColor;
+      font-size: 20px;
+    }
+  }
+}
+
+.bg-orange {
+  background-color: $orange;
+}
+
+.text-orange {
+  color: $orange !important;
+}
+
+.width-fit-content {
+  width: fit-content;
+  height: fit-content;
+}
+
+.min-hight-130 {
+  min-height: 130px;
+}
+
+.cgreentext {
+  color: $cgreen;
+}
+
+.grnbar {
+  min-height: 100%;
+  width: 1px;
+  background-color: $greenValue;
+}
+
+.lightgrey-box {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background: $lightGray;
+  border: 1px solid $black-color;
+}
+
+.grey-line-circle {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: $lightGray;
+  display: inline-block;
+  border-radius: 20px;
+  border: 1px solid #000;
+}
+
+.green-line-circle {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: $greenDot;
+  display: inline-block;
+  border-radius: 20px;
+  border: 1px solid #000;
+}
+
+.grey-line-circle::after,
+.green-line-circle:after {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 1px;
+  transform: rotate(-65deg);
+  top: 41%;
+  left: -15%;
+  background-color: $black-color;
+}
+
+.grey-line-circle::before,
+.green-line-circle:before {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 1px;
+  transform: rotate(65deg);
+  top: 41%;
+  right: -15%;
+  background-color: $black-color;
+}
+
+.circle-group {
+  position: relative;
+  width: fit-content;
+  line-height: 0;
+}
+
+.polygon-shape {
+  background-image: url(../img/Asset27.png);
+  height: 173px;
+  width: 150px;
+  background-size: cover;
+}
+
+.dashed-box {
+  font-size: 14px;
+  min-height: 90px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='2' stroke-dasharray='6%2c 14' stroke-dashoffset='31' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.progress {
+  transform: rotate(-90deg);
+  width: 100px;
+  height: 10px;
+  border-radius: 0;
+  background-color: #000000;
+  position: absolute;
+  left: -42px;
+  bottom: 46px;
+
+  .progress-bar {
+    background-color: #64cb00;
+  }
+}
+
+.img-60n {
+  background-image: url(../img/Cooler.png);
+  height: 122px;
+  width: 282px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -52px;
+  left: -168px;
+}
+
+.connector-both-side-2 {
+  background-image: url(../img/Asset30.png);
+  height: 44px;
+  width: 90px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+.connector-both-side-2n {
+  background-image: url(../img/Asset30a.png) !important;
+  height: 44px;
+  width: 90px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+.yellowpolygon {
+  background-image: url(../img/Asset62.png);
+  background-size: cover;
+  width: 22px;
+  height: 22px;
+}
+
+.PopupLQ1img1 {
+  background-image: url(../img/Asset61.png);
+  background-size: cover;
+  width: 32px;
+  height: 20px;
+}
+
+// new-dashboard ui
+
+.new-dash {
+  padding-top: 78px;
+  height: 100vh;
+  background-color: #f5fdfb;
+  background-image: url(../img/new-dash.png);
+  background-size: cover;
+  overflow: auto;
+  overflow: auto;
+  display: flex;
+  justify-content: space-around;
+
+  .card {
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    height: 300px;
+    border: none;
+    font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+    transition: all 0.2s ease-out;
+    overflow: hidden;
+    flex: 0 0 25%;
+    max-width: 25%;
+    position: relative;
+
+    .go-corner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      overflow: hidden;
+      top: 0;
+      right: 0;
+      background-color: #fff500;
+      border-radius: 0 10px 0 110px;
+      font-size: 20px;
+      transition: all 0.5s ease-out;
+      padding: 10px;
+    }
+
+    .head {
+      font-size: 2rem;
+      border-radius: 10px;
+      z-index: 10;
+    }
+
+    p.mt-3 {
+      z-index: 10;
+      font-size: 1rem;
+      color: #999999;
+      line-height: 22px;
+      font-weight: 500;
+      letter-spacing: 0.1rem;
+      line-height: 30px;
+      border-top: 1px solid #ededed;
+    }
+  }
+
+  .card:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    top: -4px;
+    border: 1px solid #cccccc;
+
+    .go-corner {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      border-radius: 0;
+      transition: all 0.5s ease-out;
+      align-items: flex-end;
+    }
+
+    p.mt-3 {
+      color: #000000;
+      border-top: 1px solid #000000;
+    }
+  }
+}
+
+.react-flow__controls-button:focus {
+  outline: none !important;
+}
+
+.css-1rhbuit-multiValue {
+  max-width: 90%;
+}
+
+.nav_menu_active {
+  position: fixed;
+  left: -100%;
+}
+
+.nav_menu {
+  left: 0;
+  transition: 850ms;
+  background: #2b2b2b;
+  width: 300px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  transition: 450ms;
+  z-index: 99999;
+}
+
+.nav_text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+
+.nav_text a {
+  text-decoration: none !important;
+  color: white !important;
+  font-size: 16px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.nav_text svg {
+  color: white !important;
+}
+
+.nav_text a:hover {
+  background-color: #fff500;
+  color: #000 !important;
+}
+
+.nav_text a:hover svg {
+  background-color: #fff500;
+  color: #000 !important;
+}
+
+.nav_text_active a {
+  background-color: #fff500;
+  color: #000 !important;
+}
+
+.nav_text_active a svg {
+  background-color: #fff500;
+  color: #000 !important;
+}
+
+.nav_text_active_list {
+  color: #fff500 !important;
+}
+
+.nav_menu_items {
+  width: 100%;
+  padding-left: 0px;
+}
+
+.navbar_toggle {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.btnsecond {
+  background: linear-gradient(135deg, #3c3c3c, #1a1902);
+  border: #000;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
+  color: #fff !important;
+  font-family: Ubuntu, Helvetica, Arial, sans-serif;
+  padding: 8px 20px;
+}
+
+.dropdownContainer {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  overflow-y: scroll;
+  color: #fff;
+  padding-left: 30px;
+}
+
+.dropdown-collepsed {
+  display: none !important;
+}
+
+.dropdownContainer ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #fafafa;
+}
+
+.dropdownContainer::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+.dropdownContainer::-webkit-scrollbar-thumb {
+  background-color: #fff500;
+  border-radius: 10px;
+}
+
+.menu_bar {
+  margin-right: 1rem;
+  font-size: 2rem;
+  background-color: #fff500;
+  background: none;
+
+  .bar {
+    height: 30px;
+  }
+}
+
+.menu_bar_open {
+  font-size: 2rem;
+  background-color: #fff500 !important;
+  border-radius: 10px;
+}
+
+.rpfinishedtransport,
+.CementMillSikandrabad,
+.DryFlyashsikandra,
+.Packermachine,
+.SiloExtractionsikandra,
+.cementmillbaga {
+  .connector-icon {
+    height: 29px;
+    width: 38px;
+    transform: rotate(91deg) scaleX(-1);
+    text-align: start;
+  }
+}
+
+.CoolerNathdwara,
+.CoolerDhar {
+  .coolermiddle-2 {
+    padding-right: 110px;
+
+    .connector-both-side-2 {
+      transform: rotate(90deg);
+      height: 28px;
+      width: 46px;
+    }
+
+    .upArrow {
+      position: absolute;
+      height: 87px;
+      transform: translate(30px, -30px);
+    }
+  }
+}
+
+.outlinediv {
+  width: 396px;
+  height: 136px;
+  border: 1px solid #ecb439;
+  z-index: -1;
+}
+
+.pole-shape {
+  width: 20px;
+  height: 50px;
+  background: #cdcdcd;
+  position: relative;
+}
+
+.pole-shape::before,
+.pole-shape::after {
+  position: absolute;
+  content: "";
+  background: #cdcdcd;
+}
+
+.pole-shape::before {
+  width: 40px;
+  height: 20px;
+  left: -10px;
+  top: 6px;
+  z-index: -1;
+}
+
+.pole-shape::after {
+  width: 40px;
+  height: 8px;
+  bottom: 0;
+  left: -10px;
+  border-radius: 3px;
+}
+
+@media (max-width: 1440px) {
+  .firealarm-maihar {
+    .text-white {
+      font-size: 14px;
+      width: 200px !important;
+      height: 41px !important;
+    }
+
+    .my-4 {
+      margin-bottom: 1rem !important;
+    }
+
+    .w-50 {
+      height: 60px;
+    }
+
+    h1 {
+      font-size: 18px;
+    }
+  }
+
+  .btn {
+    font-size: 0.8rem;
+  }
+
+  .p-3 {
+    padding: 0.6rem !important;
+  }
+
+  .PopupLQ1img1 {
+    width: 24px;
+    height: 15px;
+  }
+
+  .tonav {
+    .navbar {
+      padding: 0.2rem 1rem;
+    }
+  }
+
+  .logo {
+    width: 144px;
+  }
+
+  .body {
+    font-size: 12px;
+  }
+
+  .bg1 {
+    font-size: 12px;
+    padding-top: 61px;
+  }
+
+  .mainContainer {
+    border: 4px solid #fff !important;
+  }
+
+  .RawMill2Balaji,
+  .Cementmill2balaji,
+  .RawMill1Balaji,
+  .CementMill1wankbori {
+
+    .pipe:before,
+    .pipe:after {
+      height: 13px;
+      width: 30px;
+    }
+  }
+
+  .circle-img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .line-circle {
+    width: 18px;
+    height: 18px;
+    padding: 4px;
+  }
+
+  .greenTxt,
+  .text-dark,
+  .text-white,
+  .yellowTxt {
+    font-size: 12px;
+  }
+
+  .img-84 {
+    height: 100px;
+    width: 408px;
+  }
+
+  .pole-shape {
+    width: 16px;
+    height: 41px;
+  }
+
+  .pole-shape::before {
+    width: 36px;
+    height: 15px;
+  }
+
+  .pole-shape::after {
+    width: 35px;
+    height: 6px;
+  }
+
+  .hpipecircle {
+    height: 12px;
+  }
+
+  .gray-green-red-img {
+    height: 20px;
+    width: 35px;
+    background-size: cover;
+  }
+
+  .pipeHr {
+    height: 8px;
+  }
+
+  .pipeVr {
+    width: 8px;
+  }
+
+  .dot-square-line {
+    .square {
+      height: 20px !important;
+      width: 10px !important;
+    }
+  }
+
+  .dot-square-line-Hr {
+    .square {
+      height: 10px !important;
+      width: 20px !important;
+    }
+  }
+
+  .dot {
+    width: 13px;
+    height: 13px;
+  }
+
+  .square {
+    width: 13px;
+    height: 13px;
+  }
+
+  .CementMill3Baikunth,
+  .rpfinishedtransport,
+  .CementMillSikandrabad,
+  .Kilnrajshree,
+  .kilnburnershree,
+  .rawmill1rajshree,
+  .CementMill4Baikunth,
+  .DryFlyashsikandra,
+  .Packermachine,
+  .SiloExtractionsikandra,
+  .CoalMillWanakbori,
+  .bsf_rajshree,
+  .FlyAshSystemMaihar,
+  .kiln1Maihar,
+  .PH3cBoileroperation,
+  .KilnAuxilaieskotputli,
+  .PreHeater-kotputli,
+  .cmh-kotputli,
+  .RABHandDustTransport-kotputli,
+  .TurbineTripLogic-kotputli,
+  .CementSiloExtractionKotputli,
+  .CementSilo1ExtractionRajpura,
+  .CementSilo2ExtractionRajpura,
+  .PackingPlant1and2Karur,
+  .PackingPlant3and4Karur,
+  .FlyashSiloKarur,
+  .CementSilo1Kukurdih,
+  .FlyAshSiloRajpuraPage,
+  .KilnMaiharL3,
+  .BagHouseandGCTMaihar,
+  .RawMill1RPAndra,
+  .Cooler2GujaratLine2,
+  .khd-roller-press,
+  .Magdalla-flyash-handling,
+  .hirmi-kiln-feed,
+  .MParawhrsAndhra,
+  .CMBaghousePanipat,
+  .CSandBLPanipat,
+  .WRCSiloPanipat,
+  .PreheaterKilnHirmil2,
+  .GrindingSectionMagdalla,
+  .BlendingSiloHirmil2,
+  .RawMillRollerPress1Hirmil2,
+  .KilnFiringHirmil2,
+  .SiloFeedPackingMagdalla,
+  .BaghouseRawanL2,
+  .RawMill1RawanL2,
+  .UtilityRawanL2,
+  .AQCBoilerHPSystemKukurdih,
+  .KilnCoalFiringMaiharL4,
+  .AQCBoilerWASSystemAndhra,
+  .RMGNathdwara {
+    .tringle-item {
+
+      .fa-caret-up,
+      .fa-caret-down,
+      .fa-caret-left,
+      .fa-caret-right {
+        // font-size: 22px;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1367px) {
+  //-----------------------------------------Digital tags functionality classes responsive starts------------------------
+
+  .firealarm-maihar {
+    .text-white {
+      font-size: 12px;
+      width: 160px !important;
+      height: 30px !important;
+    }
+
+    .my-4 {
+      margin-bottom: 0.8rem !important;
+    }
+
+    h1 {
+      font-size: 17px;
+    }
+  }
+
+  .rpfinishedtransport,
+  .DryFlyashsikandra,
+  .Packermachine,
+  .KilnAuxilaieskotputli,
+  .PreHeater-kotputli,
+  .cmh-kotputli,
+  .RABHandDustTransport-kotputli,
+  .TurbineTripLogic-kotputli,
+  .CementSiloExtractionKotputli,
+  .CementSilo1ExtractionRajpura,
+  .CementSilo2ExtractionRajpura,
+  .PackingPlant1and2Karur,
+  .CementMillSikandrabad,
+  .cm_1_maihar,
+  .kiln1Maihar,
+  .SiloExtractionsikandra,
+  .RollerPressMaihar,
+  .PackingPlant3and4Karur,
+  .HotAirGenerator1WanakboriPage,
+  .CoalMillWanakbori,
+  .FlyashSiloKarur,
+  .SiloFeedMaiharL3,
+  .CementSilo1Kukurdih,
+  .FlyAshSiloRajpuraPage,
+  .KilnMaiharL3,
+  .BlendingSiloKukurdih,
+  .BagHouseandGCTMaihar,
+  .FlyAshSystemMaihar,
+  .RawMill1RPAndra,
+  .KilnHirmiL1,
+  .kilnbag-house-hirmi-l1,
+  .Cooler2GujaratLine2,
+  .khd-roller-press,
+  .Magdalla-flyash-handling,
+  .CGRollerPressHirmiL1,
+  .MParawhrsAndhra,
+  .CMBaghousePanipat,
+  .CSandBLPanipat,
+  .WRCSiloPanipat,
+  .PreheaterKilnHirmil2,
+  .GrindingSectionMagdalla,
+  .BlendingSiloHirmil2,
+  .RawMillRollerPress1Hirmil2,
+  .KilnFiringHirmil2,
+  .SiloFeedPackingMagdalla,
+  .BaghouseRawanL2,
+  .RawMill1RawanL2,
+  .UtilityRawanL2,
+  .AQCBoilerHPSystemKukurdih,
+  .KilnCoalFiringMaiharL4,
+  .AQCBoilerWASSystemAndhra,
+  .CementMillRPDhuleL2,
+  .Kiln2VCMVishnupuramL2,
+  .PreheterRawanl3,
+  .PreheaterChilmakurL1,
+  .PoldosSCMalkpurL1,
+  .RMGNathdwara {
+    .tringle-item {
+
+      .fa-caret-up,
+      .fa-caret-down,
+      .fa-caret-left,
+      .fa-caret-right {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .bagatabelscroll,
+  .CBA_pali {
+    height: calc(100vh - 62px);
+  }
+
+  .pole-shape {
+    width: 13px;
+    // height: 35px;
+    height: 30px;
+  }
+
+  .pole-shape::before {
+    width: 33px;
+    height: 11px;
+  }
+
+  .pole-shape::after {
+    width: 33px;
+    height: 4px;
+  }
+
+  .CGRnBox {
+    padding: 1px 2px !important;
+  }
+
+  .dot-square-line {
+    .square {
+      height: 17px !important;
+      width: 8px !important;
+    }
+
+    .yellowline-Vr {
+      height: 5px;
+    }
+  }
+
+  .dot-square-line-Hr {
+    .square {
+      height: 8px !important;
+      width: 17px !important;
+    }
+
+    .yellowline-Hr {
+      width: 5px;
+    }
+  }
+
+  .dot {
+    width: 13px;
+    height: 13px;
+    padding: 3px 3px;
+  }
+
+  .square {
+    width: 11px;
+    height: 11px;
+  }
+
+  .blue-container {
+    width: 22px;
+    height: 10px;
+  }
+
+  .hexa-gray-green-red-img {
+    height: 16px;
+    width: 14px;
+  }
+
+  .gray-green-red-img {
+    height: 16px;
+    width: 28px;
+  }
+
+  .line-circle {
+    width: 15px;
+    height: 15px;
+  }
+
+  .circle-img {
+    height: 16px;
+    width: 16px;
+  }
+
+  //-----------------------------------------Digital tags functionality classes responsive end------------------------
+  .gate-box-bg,
+  .gate-box-border {
+    width: 18px !important;
+    height: 17px;
+
+    .square {
+      height: 16px;
+      transform: translate(7px, 0px) rotate(45deg);
+    }
+  }
+
+  .gate-box-bg {
+    .square {
+      width: 3px;
+    }
+  }
+
+  .gate-box-border {
+    .square {
+      width: 1px;
+    }
+  }
+
+  .m-lines {
+
+    .m-line-left,
+    .m-line-right {
+      height: 10px;
+    }
+
+    .ml-4 {
+      margin-left: 1rem !important;
+    }
+  }
+
+  .thinContainer {
+    width: 99px;
+    height: 109px;
+  }
+
+  .bars {
+    // width: 16px;
+    width: 12px;
+    height: 5px;
+  }
+
+  .bars::before,
+  .bars::after {
+    // width: 16px;
+    width: 12px;
+    height: 2px;
+  }
+
+  .CoolerNathdwara,
+  .CoolerDhar {
+    .coolermiddle-2 {
+      padding-right: 90px;
+
+      .mt-4 {
+        margin-top: 0.7rem !important;
+      }
+
+      .connector-both-side-2 {
+        height: 23px;
+        width: 36px;
+      }
+
+      .upArrow {
+        height: 46px;
+        transform: translate(23px, -20px);
+      }
+    }
+  }
+
+  .triangle-down {
+    border-left: 47px solid transparent;
+    border-right: 28px solid transparent;
+    border-top: 38px solid #bfc0be;
+  }
+
+  .tringle-item-width {
+    width: 20px;
+    height: 14px;
+  }
+
+  .yellowpolygon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .rpfinishedtransport,
+  .CementMillSikandrabad,
+  .DryFlyashsikandra,
+  .Packermachine,
+  .SiloExtractionsikandra {
+    .connector-icon {
+      height: 21px;
+      width: 28px;
+    }
+  }
+
+  .CementMill3Baikunth,
+  .rpfinishedtransport,
+  .CementMillSikandrabad,
+  .Kilnrajshree,
+  .kilnburnershree,
+  .rawmill1rajshree,
+  .CementMill4Baikunth,
+  .DryFlyashsikandra,
+  .Packermachine,
+  .SiloExtractionsikandra,
+  .CoalMillWanakbori,
+  .bsf_rajshree,
+  .FlyAshSystemMaihar,
+  .kiln1Maihar,
+  .PH3cBoileroperation,
+  .KilnAuxilaieskotputli,
+  .PreHeater-kotputli,
+  .cmh-kotputli,
+  .RABHandDustTransport-kotputli,
+  .TurbineTripLogic-kotputli,
+  .CementSiloExtractionKotputli,
+  .CementSilo1ExtractionRajpura,
+  .CementSilo2ExtractionRajpura,
+  .PackingPlant1and2Karur,
+  .PackingPlant3and4Karur,
+  .FlyashSiloKarur,
+  .CementSilo1Kukurdih,
+  .FlyAshSiloRajpuraPage,
+  .KilnMaiharL3,
+  .BlendingSiloKukurdih,
+  .BagHouseandGCTMaihar,
+  .RawMill1RPAndra,
+  .KilnHirmiL1,
+  .kilnbag-house-hirmi-l1,
+  .Cooler2GujaratLine2,
+  .khd-roller-press,
+  .Magdalla-flyash-handling,
+  .hirmi-kiln-feed,
+  .KilnCoalFiringMaiharL4,
+  .AQCBoilerWASSystemAndhra,
+  .RMGNathdwara {
+    .tringle-item {
+
+      .fa-caret-up,
+      .fa-caret-down,
+      .fa-caret-left,
+      .fa-caret-right {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .menu_bar {
+    .bar {
+      height: 20px;
+    }
+  }
+
+  .bluegrey-big-img {
+    width: 639px;
+    height: 97px;
+  }
+
+  $yellow-font-size: 10px;
+  $black-font-size: 10px;
+
+  .body {
+    font-size: 10px;
+  }
+
+  .logo {
+    width: 90px;
+  }
+
+  .img-41 {
+    height: 20px;
+    width: 38px;
+  }
+
+  .img-66 {
+    height: 43px;
+    width: 31px;
+  }
+
+  .img-90 {
+    height: 69px;
+    width: 85px;
+  }
+
+  .img-91 {
+    height: 125px;
+    width: 111px;
+  }
+
+  .roller-drum {
+    height: 25px;
+    width: 50px;
+  }
+
+  .img-88 {
+    height: 99px;
+    width: 158px;
+  }
+
+  .img-89 {
+    height: 22px;
+    width: 74px;
+  }
+
+  .connector-icon {
+    height: 22px;
+    width: 30px;
+
+    .greenDot {
+      margin: 5px;
+    }
+  }
+
+  .greenTxt,
+  .text-dark,
+  .text-white,
+  .yellowTxt {
+    font-size: 10px;
+  }
+
+  .CementMill3Balaji,
+  .RawMill1Balaji,
+  .RawMill2Balaji,
+  .CoolerBalaji {
+    min-height: 557px;
+    max-height: 557px;
+  }
+
+  .Crusher,
+  .Cooler1Nathdwara,
+  .CementMill3Balaji,
+  .RawMill2Balaji,
+  .CoalMill1Balaji,
+  .Cementmill2balaji,
+  .RawMill1Balaji,
+  .CementMill1wankbori {
+    .greenDot {
+      width: 15px;
+      height: 15px;
+    }
+
+    .grayDot {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .RawMill2Balaji,
+  .Cementmill2balaji,
+  .RawMill1Balaji,
+  .CementMill1wankbori {
+
+    .pipe:before,
+    .pipe:after {
+      height: 10px;
+      width: 27px;
+    }
+  }
+
+  .RawMill2Balaji,
+  .CoalMill1Balaji,
+  .RawMill1Balaji {
+    .tringle-item {
+      font-size: 10px;
+      color: $greenDot;
+      line-height: 0;
+
+      i {
+        height: 10px;
+      }
+    }
+  }
+
+  .RawMill2Balaji,
+  .Cementmill2balaji,
+  .RawMill1Balaji {
+
+    .pipe:before,
+    .pipe:after {
+      height: 10px;
+      width: 32px;
+    }
+  }
+
+  .PopupLQ1img1 {
+    width: 17px;
+    height: 11px;
+  }
+
+  .gry-img {
+    height: 19px;
+    width: 48px;
+  }
+
+  .grn-gry-img {
+    height: 16px;
+    width: 28px;
+  }
+
+  .img-60 {
+    height: 71px;
+    width: 112px;
+  }
+
+  .mBox {
+    height: 26px;
+    width: 35px;
+  }
+
+  .mainContainer {
+    border: 2px solid #fff !important;
+  }
+
+  .grey-line-circle {
+    width: 16px;
+    height: 16px;
+  }
+
+  .trapezoid {
+    border-bottom: 39px solid #ffd19e;
+    border-left: 55px solid transparent;
+    border-right: 55px solid transparent;
+    width: 170px;
+  }
+
+  .long-width-container-2 {
+    height: 105px;
+    width: 623px;
+  }
+
+  .bg1 {
+    padding-top: 40px;
+  }
+
+  .id-1 {
+    transform: translate(-22.1vw, -26.5vh) !important;
+    font-size: 9px;
+  }
+
+  .coolermiddle-2-img {
+    height: 30px;
+  }
+
+  // date 16-sep
+  .bigContainer {
+    width: 117px;
+    height: 194px;
+  }
+
+  //==================== dashboard css ====================
+  .mycard label {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .form-control,
+  .multi-select,
+  .dropdown-container,
+  .chakra-select {
+    font-size: 12px;
+  }
+
+  .dash-top {
+    padding-top: 44px;
+    font-size: 12px;
+  }
+
+  .dash-top .data-card .link-text {
+    font-size: 0.75rem;
+  }
+
+  .btnfrst {
+    padding: 5px 15px;
+    font-size: 12px;
+  }
+
+  .css-tlfecz-indicatorContainer {
+    padding: 4px !important;
+  }
+
+  .css-1insrsq-control,
+  .select__control {
+    min-height: 30px !important;
+  }
+
+  .form-control,
+  .multi-select,
+  .dropdown-container,
+  .chakra-select,
+  .css-1insrsq-control,
+  .select__control,
+  select {
+    min-height: 32px !important;
+    font-size: 0.75rem !important;
+    // min-height: unset !important;
+  }
+
+  .css-1s2u09g-control {
+    min-height: 32px !important;
+    font-size: 0.75rem !important;
+    height: unset !important;
+  }
+
+  select,
+  .select__control {
+    svg {
+      height: 15px !important;
+    }
+  }
+
+  svg.css-tj5bde-Svg {
+    height: 15px !important;
+  }
+
+  .tonav {
+    .dropdown-menu.show {
+      .dropdown-item {
+        font-weight: 600;
+        font-size: 0.75rem;
+      }
+    }
+  }
+
+  .tonav .nav-link {
+    font-size: 0.75rem;
+  }
+
+  .orangesquare {
+    width: 14px;
+    height: 14px;
+  }
+
+  .green-line-circle,
+  .line-circle {
+    width: 15px;
+    height: 15px;
+  }
+
+  .greenbtn {
+    font-size: 10px;
+  }
+
+  .greenTxt,
+  .text-dark,
+  .text-white {
+    font-size: 10px;
+  }
+
+  .fiveside-shape {
+    width: 30px;
+    height: 30px;
+  }
+
+  .img-87 {
+    height: 65px;
+    width: 150px;
+  }
+}
+
+// mobile responsive
+@media (max-width: 1365px) {
+  .dashed-box {
+    font-size: 12px;
+    min-height: 70px;
+  }
+
+  .CoalMill1,
+  .CoalMill2 {
+    .bagHouse {
+      height: 100px;
+      width: 275px;
+    }
+  }
+
+  .bg1 {
+    padding-top: 45px;
+    overflow: auto !important;
+
+    .mainContainer {
+      border: 2px solid #fff;
+      min-width: 1366px !important;
+      // min-height: 660px;
+      // max-height: 716px;
+    }
+  }
+
+  .trend-popup-box {
+    .box {
+      overflow: auto;
+    }
+
+    .box::-webkit-scrollbar {
+      display: none;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 9;
+    }
+  }
+
+  .searchSection {
+    .outer {
+      .multiTagSelection {
+        .select__value-container {
+          max-height: 70px;
+        }
+      }
+    }
+
+    .css-1pahdxg-control {
+      height: auto !important;
+    }
+  }
+}
+
+@media (max-width: 1025px) {
+  .searchSection {
+    .outer {
+      flex-wrap: wrap;
+
+      .colcustom-13,
+      .colcustom-26,
+      .colcustom-11,
+      .colcustom-9,
+      .colcustom-5 {
+        flex: 0 0 49%;
+        max-width: 49%;
+        margin-top: 20px;
+      }
+
+      .colcustom-7 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 20px;
+      }
+    }
+
+    .css-1pahdxg-control {
+      height: auto !important;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .bagatabelscroll {
+    height: calc(100vh - 90px);
+
+    tr>td:first-child div {
+      // width: 100px;
+      // display: block;
+      // white-space: nowrap;
+      // overflow: hidden;
+      // text-overflow: ellipsis;
+      word-break: break-all;
+      white-space: normal;
+    }
+  }
+
+  .dash-top {
+    padding-top: 74px;
+  }
+
+  .bg1 {
+    padding-top: 64px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .btnfrst {
+    padding: 8px 10px;
+  }
+
+  .navbar-plant-heading {
+    font-size: 12px;
+  }
+
+  .new-dash {
+    padding-top: 135px;
+  }
+
+  .bar {
+    height: 20px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .searchSection {
+    .outer {
+      flex-wrap: wrap;
+
+      .colcustom-13,
+      .colcustom-26,
+      .colcustom-7,
+      .colcustom-11,
+      .colcustom-5,
+      .colcustom-9 {
+        flex: 0 0 100%;
+        max-width: 100%;
+
+        .mb-2,
+        .my-2 {
+          margin-bottom: 0.1rem !important;
+        }
+      }
+
+      .multiTagSelection {
+        .select__value-container {
+          max-height: 70px;
+        }
+      }
+    }
+
+    .css-1pahdxg-control {
+      height: auto !important;
+    }
+  }
+}

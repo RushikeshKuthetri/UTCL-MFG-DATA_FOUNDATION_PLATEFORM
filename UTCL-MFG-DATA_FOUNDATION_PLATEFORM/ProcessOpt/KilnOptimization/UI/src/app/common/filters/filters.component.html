@@ -1,0 +1,96 @@
+<form #myForm="ngForm" class="w-full rounded-[18px] px-2.5">
+<div class="grid grid-cols-[1fr_1fr_1fr_0.1fr_auto] gap-x-6 justify-center items-end">
+    <div class="flex flex-col mb-2">
+      <label class=" text-[13px] font-semibold uppercase tracking-[0.02em] text-[var(--text-color)]">
+        PLANT <span class="text-[#ff4d4f]">*</span>
+      </label>
+      <select class="w-full min-h-[29px] px-2 text-[13px] rounded-lg 
+         bg-[var(--input-enable-bg)] 
+         border border-[var(--input-enable-border)]
+         text-[var(--select-input-value)]
+         outline-none 
+         focus:border-[#888888]
+         cursor-pointer
+         transition-all duration-200" name="filtersData.Plant_Code" [(ngModel)]="filtersData.Plant_Code"
+        (change)="getMillsBasesPlant();getPlantname(filtersData.Plant_Code)" required>
+        <option value="null" disabled>Select Plant</option>
+
+        <option *ngFor="let item of plantData" [value]="item.value">
+          {{item.viewValue}}
+        </option>
+      </select>
+    </div>
+
+    <div class="flex flex-col mb-2">
+      <label class=" text-[13px] font-semibold uppercase tracking-[0.02em] text-[var(--text-color)]">
+        KILN NO <span class="text-[#ff4d4f]">*</span>
+      </label>
+      <select class="w-full min-h-[29px] px-2 text-[13px] rounded-lg
+         bg-[var(--input-enable-bg)]
+         border border-[var(--input-enable-border)]
+         text-[var(--select-input-value)]
+         outline-none 
+         focus:border-[#888888]
+         transition-all duration-200
+         cursor-pointer" name="filtersData.Mill" [(ngModel)]="filtersData.Mill" (change)="getGradeBasesPlantMills()"
+        required>
+        <option value="null" disabled>Select Kiln no</option>
+
+        <option *ngFor="let item of millsData" [value]="item.value">
+          {{item.viewValue}}
+        </option>
+      </select>
+    </div>
+
+    <div class="flex flex-col">
+      <div *ngIf="type=='rangepicker'">
+        <label class="mb-2 text-[13px] font-semibold uppercase tracking-[0.02em] text-[var(--text-color)]">
+          DATE RANGE <span class="text-[#ff4d4f]">*</span>
+        </label>
+        <app-datetimepicker class="block w-full" [type]='type' *ngIf="filtersData"
+          [selectedRange]='filtersData.dateRange' (dateTimeRange)="onSelectDateRange($event)"></app-datetimepicker>
+      </div>
+
+      <div *ngIf="type=='datepicker'">
+        <label class="mb-2 text-[13px] font-semibold uppercase tracking-[0.02em] text-[#8791a0]">
+          DATE <span class="text-[#ff4d4f]">*</span>
+        </label>
+        <app-datetimepicker class="block w-full" [type]='type' *ngIf="filtersData" [date_time]='filtersData.dateTime'
+          (dateTime)="onSelectDatetime($event)"></app-datetimepicker>
+      </div>
+
+      <div *ngIf="type=='datepicker1'">
+        <label class="mb-2 text-[13px] font-semibold uppercase tracking-[0.02em] text-[#8791a0]">
+          DATE <span class="text-[#ff4d4f]">*</span>
+        </label>
+        <app-datetimepicker class="block w-full" [type]='type' *ngIf="filtersData" [date_times]='filtersData.dateTime'
+          (dateTimes)="onSelectDatetimes($event)"></app-datetimepicker>
+      </div>
+    </div>
+
+    <div class=" flex justify-start pb-[4px]">
+      <button type="button"
+        class="px-4 py-1 rounded-md border border-[var(--button-border)] bg-[var(--submit-button-bg)] hover:bg-[var(--submit-button-hover-bg)] text-[#111111] font-medium transition-all duration-200 disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed active:scale-95"
+        [disabled]="!myForm.valid || filtersData.Plant_Code==='null' || filtersData.Mill==='null'" (click)="onSubmit()">
+        Submit
+      </button>
+    </div>
+  </div>
+</form>
+
+<div class="card card_apply filtersBox mb-2" *ngIf="showRange">
+  <div class="row">
+    <div class="col-5">
+      <div class="d-flex flex-column h-100">
+        <label class="mb-2">Select Desired Blaine Range</label>
+        <mat-radio-group [(ngModel)]="selectedBlaineRange">
+          <mat-radio-button *ngFor="let item of rangeData" [value]="item"
+            [checked]="item.Active">{{item.BLAIN_MIN}}-{{item.BLAIN_MAX}}</mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </div>
+    <div class="col-6 px-2 content-center">
+      <button type="button" class="btn btnSubmit" (click)="updateBlaineRange()">Update</button>
+    </div>
+  </div>
+</div>

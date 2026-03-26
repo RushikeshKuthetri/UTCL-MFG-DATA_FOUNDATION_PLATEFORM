@@ -1,0 +1,242 @@
+service: utcl-service
+frameworkVersion: "4.4.18"
+plugins:
+  - serverless-offline
+  - serverless-websockets-plugin
+  - serverless-prune-plugin
+provider:
+  name: aws
+  versionFunctions: true
+  runtime: nodejs20.x
+  endpointType: Regional
+  stackTags:
+    map-migrated: migBUVKJ1ONSK
+  region: ap-south-1
+  apiGateway:
+    timeoutInMillis: 60000
+    binaryMediaTypes:
+      - application/json
+      - application/octet-stream
+      - application/gzip
+      - text/html
+  environment:
+    REGION: ap-south-1
+    STAGE: ${opt:stage, 'dev'}
+  timeout: 300
+  iam:
+    role:
+      statements:
+       - Effect: "Allow"
+         Action:
+          - lambda:InvokeFunction
+          - lambda:InvokeAsync
+         Resource: "*"
+       - Effect: "Allow"
+         Action:
+          - secretsmanager:GetSecretValue
+         Resource: "*"
+       - Effect: "Allow"
+         Action:
+          - iotsitewise:DescribeAsset
+          - iotsitewise:DescribeAssetModel
+          - iotsitewise:CreateAsset
+          - iotsitewise:CreateAssetModel
+          - iotsitewise:DeleteAsset
+          - iotsitewise:DeleteAssetModel
+          - iotsitewise:UpdateAsset
+          - iotsitewise:UpdateAssetModel
+          - iotsitewise:TagResource
+          - iotsitewise:UpdateAssetProperty
+          - iotsitewise:DescribeGatewayCapabilityConfiguration
+          - iotsitewise:UpdateGatewayCapabilityConfiguration
+          - iotsitewise:CreateAssetModelCompositeModel
+          - iotsitewise:UpdateAssetModelCompositeModel
+          - iotsitewise:DeleteAssetModelCompositeModel
+          - iotsitewise:ListAssetModelCompositeModels
+          - iotsitewise:DescribeAssetModelCompositeModel
+          - iotsitewise:DeleteTimeSeries
+          - iotsitewise:UpdateAssetModelPropertyRouting
+          - iotsitewise:BatchGetAssetPropertyValueHistory
+          - iotsitewise:BatchGetAssetPropertyValue
+          - iotsitewise:ExecuteQuery
+          - iotsitewise:GetAssetPropertyValue
+          - iotsitewise:BatchGetAssetPropertyAggregates
+         Resource: "*"
+       - Effect: "Allow"
+         Action:
+          - iot:CreateTopicRule
+          - iot:DeleteTopicRule
+          - iot:GetTopicRule
+          - iot:TagResource
+          - iot:ReplaceTopicRule
+         Resource: "*"
+       - Effect: "Allow"
+         Action:
+          - events:PutEvents
+          - events:PutTargets
+          - events:DescribeRule
+          - events:PutRule
+          - events:DisableRule
+          - events:EnableRule
+          - events:TagResource
+         Resource: "*"
+       - Effect: "Allow"
+         Action: "iam:PassRole"
+         Resource: "arn:aws:iam::*:role/*"
+         Condition:
+          StringLike: 
+           iam:PassedToService: 
+            - "iotsitewise.amazonaws.com"
+            - "iotevents.amazonaws.com"
+            - "iot.amazonaws.com"
+            - "events.amazonaws.com"
+       - Effect: "Allow"
+         Action:
+          - dynamodb:PutItem
+          - dynamodb:CreateTable
+          - dynamodb:UpdateTable
+          - dynamodb:DeleteTable
+          - dynamodb:TagResource
+          - dynamodb:Query
+          - dynamodb:DescribeTable
+          - dynamodb:Scan
+          - dynamodb:DeleteItem
+          - dynamodb:UpdateItem
+          - dynamodb:GetItem
+          - dynamodb:TransactWriteItems
+         Resource: "*"
+       - Effect: "Allow"
+         Action: 
+          - ec2:DescribeNetworkInterfaces
+          - ec2:CreateNetworkInterface
+          - ec2:DeleteNetworkInterface
+          - ec2:DescribeInstances
+          - ec2:AttachNetworkInterface
+          - ec2:DescribeSecurityGroups
+         Resource: "*"
+       - Effect: "Allow"
+         Action: 
+          - sns:Publish
+         Resource: "*"
+functions:
+  Service:
+    handler: lambda.handler
+    environment: ${file(env.${opt:stage, self:provider.stage}.json)}
+    timeout: 900
+    events:
+      - http:
+          path: /
+          method: any
+      - http:
+          path: /{proxy+}
+          method: any
+    vpc:
+      securityGroupIds: sg-00fccb4f6a18972eb
+      subnetIds:
+        - subnet-0e17516f443eed89b
+  ConnectionHandler:
+    handler: handler.ConnectionHandler
+    environment: ${file(env.${opt:stage, self:provider.stage}.json)}
+    events:
+      - websocket:
+          route: $connect
+          routeKey: $connect
+      - websocket:
+          route: $disconnect
+          routeKey: $disconnect
+      - websocket:
+          route: $default
+          routeKey: $default
+  SendSitewiseHandler:
+    handler: handler.SendSitewiseHandler
+    environment: ${file(env.${opt:stage, self:provider.stage}.json)}
+    events:
+      - websocket:
+          route: sendSitewise # will trigger if $request.body.action === "sendSitewise"
+          routeKey: sendSitewise
+  CreateAssetandModelHandler:
+    handler: handler.CreateAssetandModelHandler
+    environment: ${file(env.${opt:stage, self:provider.stage}.json)}
+    # timeout: 300
+  DownloadLambdaTwo:
+    handler: handler.DownloadLambdaTwo
+    environment: ${file(env.${opt:stage, self:provider.stage}.json)}
+    timeout: 900
+    memorySize: 8192
+    # events:
+    #   - http:
+    #       path: downloadLambdaTwo
+    #       method: post
+  DownloadLambdaThree:
+    handler: handler.DownloadLambdaThree
+    environment: ${file(env.${opt:stage, self:provider.stage}.json)}
+    timeout: 900
+  FetchTagMasterHandler:
+    handler: fetchTagMasterHandler.fetchTagMasterHandler
+    environment: ${file(env.${opt:stage, self:provider.stage}.json)}
+    timeout: 900
+    # events:
+    #   - http:
+    #       path: fetchTagMasterHandler
+    #       method: post
+  CycloneViewHandler:
+    handler: cycloneViewHandler.CycloneViewHandler
+    environment: ${file(env.${opt:stage, self:provider.stage}.json)}
+    events:
+      - websocket:
+          route: fetchCycloneView # will trigger if $request.body.action === "fetchCycloneView"
+          routeKey: fetchCycloneView
+  BlaineWss:
+    handler: optWebsocketHandler.Blain
+    environment: ${file(env.${opt:stage, self:provider.stage}.json)}
+    events:
+      - websocket:
+          route: blainOpt # will trigger if $request.body.action === "blainOpt"
+          routeKey: blainOpt
+    vpc:
+      securityGroupIds: sg-00fccb4f6a18972eb
+      subnetIds:
+        - subnet-0e17516f443eed89b
+  KilnWss:
+    handler: optWebsocketHandler.Kiln
+    environment: ${file(env.${opt:stage, self:provider.stage}.json)}
+    events:
+      - websocket:
+          route: kilnOpt # will trigger if $request.body.action === "kilnOpt"
+          routeKey: kilnOpt
+    vpc:
+      securityGroupIds: sg-00fccb4f6a18972eb
+      subnetIds:
+        - subnet-0e17516f443eed89b
+  CementWss:
+    handler: optWebsocketHandler.CementRecommended
+    environment: ${file(env.${opt:stage, self:provider.stage}.json)}
+    events:
+      - websocket:
+          route: cementOpt # will trigger if $request.body.action === "cementOpt"
+          routeKey: cementOpt
+    vpc:
+      securityGroupIds: sg-00fccb4f6a18972eb
+      subnetIds:
+        - subnet-0e17516f443eed89b
+  CementLiveWss:
+    handler: optWebsocketHandler.Cement
+    environment: ${file(env.${opt:stage, self:provider.stage}.json)}
+    events:
+      - websocket:
+          route: cementLiveOpt # will trigger if $request.body.action === "cementLiveOpt"
+          routeKey: cementLiveOpt
+    vpc:
+      securityGroupIds: sg-00fccb4f6a18972eb
+      subnetIds:
+        - subnet-0e17516f443eed89b
+custom:
+  serverless-offline:
+    websocketApi: true
+  prune:
+    automatic: true
+    number: 1
+package:
+  excludeDevDependencies: true
+  # exclude:
+  #   - node_modules/**

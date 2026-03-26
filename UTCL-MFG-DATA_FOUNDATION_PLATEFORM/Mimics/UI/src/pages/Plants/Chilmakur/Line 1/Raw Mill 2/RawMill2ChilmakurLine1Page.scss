@@ -1,0 +1,104 @@
+.Chilmakur-L1-Raw-Mill2 {
+  .single-text-81 {
+    transform: translate(51vw, 38vh);
+  }
+  .single-text-82 {
+    transform: translate(69vw, 48vh) scaleY(-1) rotate(90deg);
+    gap: 50px;
+    .dot {
+      rotate: 90deg;
+    }
+  }
+  .single-text-83 {
+    transform: translate(56vw, 84vh);
+  }
+  .single-text-84 {
+    transform: translate(47.4vw, 78vh);
+  }
+  .single-text-85 {
+    transform: translate(70vw, 37vh);
+    z-index: 1;
+  }
+  .single-text-86 {
+    transform: translate(90.4vw, 50vh);
+    gap: 21px;
+    z-index: 1;
+    .line-circle {
+      rotate: 90deg;
+    }
+  }
+  .single-text-87 {
+    transform: translate(26.4vw, 28vh);
+  }
+  .single-text-88 {
+    transform: translate(29.7vw, 35vh);
+    .tringle-item {
+      rotate: 90deg;
+    }
+  }
+  .single-text-89 {
+    transform: translate(91vw, 57vh);
+  }
+  .single-text-90 {
+    transform: translate(51vw, 69.7vh);
+    gap: 16px;
+  }
+
+  .line-36 {
+    transform: translate(92.2vw, 53.1vh);
+    width: 55px;
+  }
+  .line-37 {
+    transform: translate(95vw, 50.1vh);
+    height: 29px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .Chilmakur-L1-Raw-Mill2 {
+    .single-text-81 {
+      transform: translate(690px, 226px);
+    }
+    .single-text-82 {
+      transform: translate(929px, 300px) scaleY(-1) rotate(90deg);
+      gap: 26px;
+    }
+    .single-text-83 {
+      transform: translate(750px, 503px);
+    }
+    .single-text-84 {
+      transform: translate(683px, 469px);
+    }
+    .single-text-85 {
+      transform: translate(931px, 216px);
+      z-index: 1;
+    }
+    .single-text-86 {
+      transform: translate(1231px, 281px);
+      gap: 15px;
+      z-index: 1;
+    }
+    .single-text-87 {
+      transform: translate(354px, 164px);
+    }
+    .single-text-88 {
+      transform: translate(402px, 207px);
+    }
+    .single-text-89 {
+      transform: translate(1243px, 342px);
+    }
+    .single-text-90 {
+      transform: translate(685px, 420px);
+      gap: 7px;
+    }
+
+    .line-36 {
+      transform: translate(1265px, 310px);
+      width: 43px;
+    }
+    .line-37 {
+      transform: translate(1308px, 292px);
+      height: 20px;
+    }
+  }
+}

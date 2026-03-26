@@ -1,0 +1,1063 @@
+.HotAirGenerator1WanakboriPage {
+  table,
+  th,
+  td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    cursor: default;
+  }
+  table tr:hover {
+    background-color: transparent;
+  }
+  .rightarrow::before {
+    bottom: -2.5px;
+  }
+  .leftarrow::after {
+    bottom: -2px;
+  }
+  .gap {
+    gap: 1rem;
+  }
+  .yellowline-Vr {
+    width: 3px;
+  }
+  .yellowline-Hr {
+    height: 3px;
+  }
+  .pipe-1 {
+    height: 123px;
+    transform: translate(27vw, 13vh);
+  }
+  .pipe-2 {
+    width: 95px;
+    transform: translate(27vw, 13vh);
+  }
+  .pipe-3 {
+    height: 33px;
+    transform: translate(31.8vw, 13vh);
+  }
+  .pipe-4 {
+    width: 329px;
+    transform: translate(3vw, 41vh);
+  }
+  .pipe-5 {
+    height: 33px;
+    transform: translate(3vw, 41vh);
+  }
+  .pipe-6 {
+    width: 10px;
+    height: 105px;
+    transform: translate(10vw, 46vh);
+    background-color: gray;
+    border: 1px solid white;
+  }
+  .pipe-7 {
+    width: 635px;
+    transform: translate(8vw, 58vh);
+  }
+  .pipe-8 {
+    width: 508px;
+    transform: translate(18vw, 62vh);
+  }
+  .pipe-9 {
+    width: 60px;
+    transform: translate(15vw, 70vh);
+  }
+  .pipe-10 {
+    width: 381px;
+    transform: translate(69vw, 62vh);
+  }
+  .pipe-11 {
+    width: 213px;
+    transform: translate(51.5vw, 43vh);
+  }
+  .pipe-12 {
+    width: 165px;
+    transform: translate(42vw, 41.6vh);
+  }
+  .pipe-13 {
+    width: 165px;
+    transform: translate(54vw, 38vh);
+  }
+  .pipe-14 {
+    width: 45px;
+    transform: translate(42vw, 59vh);
+  }
+  .pipe-15 {
+    width: 70px;
+    transform: translate(47vw, 33vh);
+  }
+  .pipe-16 {
+    height: 161px;
+    transform: translate(42vw, 41.6vh);
+  }
+  .pipe-17 {
+    height: 80px;
+    transform: translate(50.5vw, 33.1vh);
+  }
+  .pipe-18 {
+    height: 75px;
+    transform: translate(51.5vw, 43.1vh);
+  }
+  .pipe-19 {
+    height: 47px;
+    transform: translate(50.9vw, 46vh);
+  }
+  .pipe-20 {
+    height: 76px;
+    transform: translate(18vw, 62vh);
+  }
+  .pipe-21 {
+    height: 26px;
+    transform: translate(41vw, 58vh);
+  }
+  .pipe-22 {
+    height: 110px;
+    transform: translate(75vw, 50vh);
+  }
+  .pipe-23 {
+    height: 113px;
+    transform: translate(80vw, 50vh);
+  }
+  .pipe-24 {
+    height: 49px;
+    transform: translate(62.5vw, 38vh);
+  }
+  .pipe-25 {
+    width: 65px;
+    transform: translate(41vw, 60.5vh);
+  }
+  .pipe-26 {
+    width: 114px;
+    transform: translate(45vw, 46vh);
+  }
+  .pipe-27 {
+    height: 63px;
+    transform: translate(47vw, 17vh);
+  }
+  .pipe-28 {
+    height: 45px;
+    transform: translate(74vw, 62vh);
+  }
+  .pipe-29 {
+    width: 288px;
+    transform: translate(12vw, 26vh);
+  }
+  .single-text-1 {
+    height: 164px;
+    width: 199px;
+    transform: translate(9vw, 8vh);
+  }
+  .single-text-2 {
+    border: 2px solid white;
+    transform: translate(1.7vw, 45vh);
+    background-color: gray;
+    width: 150px;
+    height: 135px;
+  }
+  .single-text-3 {
+    border: 2px solid white;
+    transform: translate(10vw, 63vh);
+    background-color: gray;
+    width: 119px;
+    height: 85px;
+    border-radius: 20px;
+  }
+  .single-text-4 {
+    width: 505px;
+    height: 180px;
+    transform: translate(43vw, 50vh);
+  }
+  .single-text-5 {
+    height: 100px;
+    width: 70px;
+    transform: translate(45.4vw, 24vh);
+  }
+  .single-text-6 {
+    width: 337px;
+    transform: translate(30vw, 17vh);
+  }
+  .single-text-7 {
+    width: 181px;
+    transform: translate(3vw, 25.5vh);
+  }
+  .single-text-8 {
+    transform: translate(16.5vw, 57.5vh);
+  }
+  .single-text-9 {
+    transform: translate(71.6vw, 55vh);
+  }
+  .single-text-10 {
+    transform: translate(79.3vw, 54vh);
+  }
+  .single-text-11 {
+    transform: translate(83vw, 59.2vh);
+  }
+  .single-text-12 {
+    transform: translate(59vw, 37.2vh);
+  }
+  .single-text-13 {
+    transform: translate(47.5vw, 43.5vh);
+    .blue-container {
+      transform: rotate(90deg);
+    }
+  }
+  .single-text-11,
+  .single-text-12,
+  .single-text-13 {
+    .blue-container {
+      transform: rotate(90deg);
+    }
+  }
+  .single-text-14 {
+    transform: translate(46.5vw, 20vh);
+  }
+  .single-text-15 {
+    transform: translate(36.5vw, 55.5vh);
+  }
+  .single-text-16 {
+    transform: translate(70.5vw, 63.6vh);
+  }
+  .single-text-17 {
+    transform: translate(36.3vw, 61.35vh);
+  }
+  .single-text-18 {
+    transform: translate(20.3vw, 57vh);
+  }
+  .single-text-19 {
+    transform: translate(13.3vw, 57vh);
+  }
+  .single-text-20 {
+    transform: translate(14.3vw, 40vh);
+  }
+  .single-text-21 {
+    transform: translate(5.3vw, 40vh);
+  }
+  .single-text-22 {
+    transform: translate(24.3vw, 57vh);
+    .line-circle {
+      transform: rotate(-90deg);
+    }
+  }
+  .single-text-23 {
+    transform: translate(44.3vw, 44.9vh);
+  }
+  .single-text-23,
+  .single-text-24,
+  .single-text-34 {
+    .line-circle {
+      transform: rotate(90deg);
+    }
+  }
+  .single-text-24 {
+    transform: translate(53.3vw, 37.1vh);
+  }
+  .single-text-25 {
+    border: 1px solid white;
+    transform: translate(45.8vw, 35.5vh);
+    padding: 3px;
+  }
+  .single-text-26 {
+    transform: translate(44vw, 33.1vh);
+  }
+  .single-text-27 {
+    transform: translate(9.5vw, 23.1vh);
+  }
+  .single-text-28 {
+    transform: translate(13vw, 23.1vh);
+  }
+  .single-text-29 {
+    transform: translate(14.6vw, 23.1vh);
+  }
+  .single-text-30 {
+    transform: translate(18vw, 23.1vh);
+  }
+  .single-text-31 {
+    transform: translate(80vw, 25.1vh);
+  }
+  .single-text-32 {
+    transform: translate(50vw, 70.1vh);
+  }
+  .single-text-33 {
+    transform: translate(66vw, 70.1vh);
+  }
+  .single-text-34 {
+    border: 1px solid white;
+    transform: translate(76vw, 10.1vh);
+    padding: 5px;
+  }
+  .single-text-35 {
+    transform: translate(34vw, 61.4vh);
+  }
+  .single-text-36 {
+    transform: translate(34vw, 57.4vh);
+  }
+  .single-text-37 {
+    transform: translate(6vw, 21.4vh);
+  }
+  .single-text-38 {
+    transform: translate(20vw, 21.4vh);
+  }
+  .single-text-39 {
+    transform: translate(12vw, 8.5vh);
+  }
+  .single-text-40 {
+    transform: translate(9vw, 33.4vh);
+  }
+  .single-text-41 {
+    transform: translate(11vw, 64.4vh);
+  }
+  .single-text-42 {
+    transform: translate(3vw, 51.4vh);
+  }
+  .single-text-43 {
+    transform: translate(24vw, 10.4vh);
+  }
+  .single-text-44 {
+    transform: translate(35vw, 31.4vh);
+  }
+  .single-text-45 {
+    transform: translate(71vw, 47.4vh);
+  }
+  .single-text-46 {
+    transform: translate(78vw, 45.4vh);
+  }
+  .single-text-47 {
+    transform: translate(76vw, 63.4vh);
+  }
+  .single-text-48 {
+    transform: translate(90vw, 60.4vh);
+  }
+  .single-text-49 {
+    transform: translate(40vw, 34vh);
+  }
+  .single-text-50 {
+    transform: translate(21vw, 40.4vh);
+  }
+  .single-text-52 {
+    transform: translate(49vw, 55.4vh);
+  }
+  .single-text-53 {
+    transform: translate(13vw, 13.6vh);
+  }
+  .single-text-54 {
+    transform: translate(10vw, 28.4vh);
+  }
+  .single-text-55 {
+    transform: translate(28vw, 55.4vh);
+  }
+  .single-text-56 {
+    transform: translate(37vw, 23.4vh);
+  }
+  .single-text-57 {
+    transform: translate(37vw, 36.4vh);
+  }
+  .single-text-58 {
+    transform: translate(50vw, 12.4vh);
+  }
+  .single-text-59 {
+    transform: translate(59vw, 12.4vh);
+  }
+  .single-text-60 {
+    transform: translate(59vw, 29.4vh);
+  }
+  .single-text-61 {
+    transform: translate(70vw, 49.4vh);
+  }
+  .single-text-62 {
+    transform: translate(84vw, 49.4vh);
+  }
+  .single-text-63 {
+    transform: translate(23vw, 55.4vh);
+  }
+  .single-text-64 {
+    transform: translate(47vw, 49.3vh);
+  }
+  .single-text-65 {
+    transform: translate(22vw, 34vh);
+  }
+}
+@media (max-width: 1440px) {
+  .HotAirGenerator1WanakboriPage {
+    .circle-img {
+      height: 20px;
+      width: 20px;
+    }
+    .yellowline-Vr {
+      width: 2px;
+    }
+    .yellowline-Hr {
+      height: 2px;
+    }
+    .greenTxt,
+    .text-dark,
+    .text-white,
+    .yellowTxt,
+    .text-black {
+      font-size: 12px;
+    }
+    .blue-container {
+      width: 25px;
+      height: 13px;
+    }
+    .line-circle {
+      width: 17px;
+      height: 17px;
+    }
+    .pipe-1 {
+      height: 97px;
+    }
+    .pipe-2 {
+      width: 70px;
+    }
+    .pipe-3 {
+      height: 26px;
+    }
+    .pipe-4 {
+      width: 250px;
+    }
+    .pipe-5 {
+      height: 26px;
+    }
+    .pipe-6 {
+      width: 7px;
+      height: 80px;
+    }
+    .pipe-7 {
+      width: 477px;
+    }
+    .pipe-8 {
+      width: 377px;
+    }
+    .pipe-9 {
+      width: 44px;
+    }
+    .pipe-10 {
+      width: 298px;
+    }
+    .pipe-11 {
+      width: 160px;
+    }
+    .pipe-12 {
+      width: 124px;
+    }
+    .pipe-13 {
+      width: 123px;
+    }
+    .pipe-14 {
+      width: 32px;
+    }
+    .pipe-15 {
+      width: 52px;
+    }
+    .pipe-16 {
+      height: 128px;
+    }
+    .pipe-17 {
+      height: 64px;
+    }
+    .pipe-18 {
+      height: 58px;
+    }
+    .pipe-19 {
+      height: 37px;
+    }
+    .pipe-20 {
+      height: 60px;
+    }
+    .pipe-21 {
+      height: 19px;
+    }
+    .pipe-22 {
+      height: 85px;
+    }
+    .pipe-23 {
+      height: 90px;
+    }
+    .pipe-24 {
+      height: 38px;
+    }
+    .pipe-25 {
+      width: 46px;
+    }
+    .pipe-26 {
+      width: 87px;
+    }
+    .pipe-27 {
+      height: 63px;
+      transform: translate(47vw, 17vh);
+    }
+    .pipe-28 {
+      height: 45px;
+      transform: translate(74vw, 62vh);
+    }
+    .pipe-29 {
+      width: 216px;
+    }
+    .single-text-1 {
+      height: 125px;
+      width: 150px;
+    }
+    .single-text-2 {
+      width: 115px;
+      height: 105px;
+    }
+    .single-text-3 {
+      width: 100px;
+      height: 75px;
+    }
+    .single-text-4 {
+      width: 406px;
+      height: 136px;
+      transform: translate(42.5vw, 49.5vh);
+    }
+    .single-text-5 {
+      height: 78px;
+      width: 58px;
+    }
+    .single-text-6 {
+      width: 254px;
+    }
+    .single-text-7 {
+      transform: translate(3vw, 25vh);
+
+      width: 136px;
+    }
+    .single-text-8 {
+      transform: translate(16.5vw, 57.3vh);
+    }
+    .single-text-9 {
+      transform: translate(71.1vw, 53vh);
+    }
+    .single-text-10 {
+      transform: translate(79.2vw, 54vh);
+    }
+    .single-text-11 {
+      transform: translate(83vw, 58.5vh);
+    }
+    .single-text-13 {
+      transform: translate(47.5vw, 42.4vh);
+    }
+    .single-text-14 {
+      transform: translate(46.4vw, 20vh);
+    }
+    .single-text-15 {
+      transform: translate(36.5vw, 55.1vh);
+    }
+    .single-text-16 {
+      transform: translate(70vw, 64.6vh);
+    }
+    .single-text-18 {
+      transform: translate(20.3vw, 56.7vh);
+    }
+    .single-text-19 {
+      transform: translate(13.3vw, 56.7vh);
+    }
+    .single-text-20 {
+      transform: translate(14.3vw, 39.7vh);
+    }
+    .single-text-21 {
+      transform: translate(5.3vw, 39.7vh);
+    }
+    .single-text-22 {
+      transform: translate(24.3vw, 57vh);
+  }
+    .single-text-23 {
+      transform: translate(43.9vw, 44.9vh);
+    }
+    .single-text-24 {
+      transform: translate(53.3vw, 37vh);
+    }
+    .single-text-27 {
+      transform: translate(9.3vw, 22.6vh);
+    }
+    .single-text-28 {
+      transform: translate(13vw, 22.6vh);
+    }
+    .single-text-29 {
+      transform: translate(14.5vw, 22.6vh);
+    }
+    .single-text-30 {
+      transform: translate(18.2vw, 22.6vh);
+    }
+    .single-text-32 {
+      font-size: 12px;
+      transform: translate(42vw, 68.4vh);
+    }
+    .single-text-33 {
+      font-size: 12px;
+      transform: translate(58.5vw, 68.4vh);
+    }
+    .single-text-34 {
+      transform: translate(77vw, 9.1vh);
+    }
+    .single-text-35 {
+      transform: translate(34vw, 61.1vh);
+    }
+    .single-text-36 {
+      transform: translate(34vw, 57.2vh);
+    }
+    .single-text-37 {
+      transform: translate(6vw, 20vh);
+    }
+    .single-text-38 {
+      transform: translate(20vw, 20vh);
+    }
+    .single-text-39 {
+      transform: translate(11.5vw, 8.5vh);
+    }
+
+    .single-text-52 {
+      font-size: 12px;
+      transform: translate(48vw, 54.5vh);
+    }
+    .single-text-53 {
+      transform: translate(12.5vw, 13.6vh);
+    }
+    .single-text-57 {
+      transform: translate(36.2vw, 36.4vh);
+    }
+    .single-text-58 {
+      transform: translate(50vw, 12vh);
+    }
+    .single-text-61 {
+      transform: translate(67vw, 49.4vh);
+    }
+    .single-text-62 {
+      transform: translate(86vw, 49.4vh);
+    }
+    .single-text-64 {
+      transform: translate(46vw, 49.9vh);
+    }
+    .single-text-65 {
+      transform: translate(21.5vw, 34vh);
+    }
+  }
+}
+@media (max-width: 1367px) {
+  .HotAirGenerator1WanakboriPage {
+    .tringle-item {
+      font-size: 21.9px;
+    }
+    .yellowline-Hr {
+      height: 2px;
+    }
+    .leftarrow::after {
+      bottom: -3px;
+    }
+    .yellowline-Vr {
+      width: 2px;
+    }
+    .single-text-1 {
+      height: 108px;
+      width: 131px;
+      transform: translate(9.5vw, 8vh);
+    }
+    .single-text-7 {
+      width: 132px;
+    }
+    .single-text-6 {
+      width: 240px;
+    }
+    .single-text-5 {
+      height: 82px;
+      width: 54px;
+    }
+    .single-text-2 {
+      width: 100px;
+      height: 100px;
+    }
+    .single-text-4 {
+      width: 382px;
+      height: 140px;
+      transform: translate(42.3vw, 50vh);
+    }
+    .single-text-13 {
+      transform: translate(47.5vw, 42vh);
+    }
+    .single-text-32 {
+      transform: translate(50vw, 75vh);
+    }
+    .single-text-34 {
+      transform: translate(74.5vw, 7.1vh);
+    }
+    .single-text-3 {
+      width: 90px;
+      height: 64px;
+    }
+    .single-text-52 {
+      transform: translate(49vw, 57.4vh);
+    }
+    .pipe-29 {
+      width: 196px;
+      transform: translate(15.5vw, 26vh);
+    }
+    .pipe-23 {
+      height: 76px;
+    }
+    .pipe-10 {
+      width: 280px;
+    }
+    .pipe-22 {
+      height: 76px;
+    }
+    .pipe-28 {
+      height: 35px;
+    }
+    .pipe-20 {
+      height: 51px;
+    }
+    .pipe-4 {
+      width: 241px;
+    }
+    .pipe-9 {
+      width: 42px;
+    }
+    .pipe-5 {
+      height: 20px;
+    }
+    .pipe-13 {
+      width: 117px;
+    }
+    .pipe-24 {
+      height: 33px;
+    }
+    .pipe-11 {
+      width: 151px;
+    }
+    .pipe-26 {
+      width: 81px;
+    }
+    .pipe-21 {
+      height: 16px;
+    }
+    .pipe-8 {
+      width: 351px;
+    }
+    .pipe-25 {
+      width: 34px;
+    }
+    .pipe-7 {
+      width: 453px;
+    }
+    .pipe-14 {
+      width: 13px;
+    }
+    .pipe-16 {
+      height: 109px;
+    }
+    .pipe-12 {
+      width: 117px;
+    }
+    .pipe-6 {
+      width: 7px;
+      height: 69px;
+      transform: translate(9.5vw, 46vh);
+    }
+
+    .pipe-17 {
+      height: 54px;
+    }
+    .pipe-15 {
+      width: 22px;
+    }
+    .pipe-1 {
+      height: 82px;
+    }
+    .pipe-2 {
+      width: 68px;
+    }
+    .pipe-3 {
+      height: 20px;
+      transform: translate(31.9vw, 13vh);
+    }
+  }
+}
+@media (max-width: 1360px) {
+  .HotAirGenerator1WanakboriPage {
+    .pipe-1 {
+      transform: translate(368px, 80px);
+    }
+    .pipe-2 {
+      transform: translate(369px, 80px);
+    }
+    .pipe-3 {
+      transform: translate(437px, 80px);
+    }
+    .pipe-4 {
+      transform: translate(41px, 253px);
+    }
+    .pipe-5 {
+      transform: translate(41px, 254px);
+    }
+    .pipe-6 {
+      transform: translate(129px, 284px);
+    }
+    .pipe-7 {
+      transform: translate(106px, 358px);
+    }
+    .pipe-8 {
+      transform: translate(245px, 382px);
+    }
+    .pipe-9 {
+      transform: translate(204px, 432px);
+    }
+    .pipe-10 {
+      transform: translate(940px, 382px);
+    }
+    .pipe-11 {
+      transform: translate(701px, 265px);
+    }
+    .pipe-12 {
+      transform: translate(572px, 256px);
+    }
+    .pipe-13 {
+      transform: translate(734px, 234px);
+    }
+    .pipe-14 {
+      transform: translate(571px, 364px);
+    }
+    .pipe-15 {
+      transform: translate(665px, 204px);
+    }
+    .pipe-16 {
+      transform: translate(571px, 256px);
+    }
+    .pipe-17 {
+      transform: translate(687px, 204px);
+    }
+    .pipe-18 {
+      height: 48px;
+      transform: translate(701px, 267px);
+    }
+    .pipe-19 {
+      height: 30px;
+      transform: translate(691px, 285px);
+    }
+    .pipe-20 {
+      transform: translate(245px, 383px);
+    }
+    .pipe-21 {
+      transform: translate(557px, 359px);
+    }
+    .pipe-22 {
+      transform: translate(1020px, 304px);
+    }
+    .pipe-23 {
+      transform: translate(1089px, 307px);
+    }
+    .pipe-24 {
+      transform: translate(851px, 234px);
+    }
+    .pipe-25 {
+      width: 30px;
+      transform: translate(557px, 375px);
+    }
+    .pipe-26 {
+      transform: translate(611px, 284px);
+    }
+    .pipe-27 {
+      height: 32px;
+      transform: translate(639px, 115px);
+    }
+    .pipe-28 {
+      transform: translate(1007px, 382px);
+    }
+    .pipe-29 {
+      width: 203px;
+      transform: translate(165px, 161px);
+    }
+    .single-text-1 {
+      transform: translate(128px, 50px);
+    }
+    .single-text-2 {
+      transform: translate(24px, 277px);
+    }
+    .single-text-3 {
+      transform: translate(133px, 383px);
+    }
+    .single-text-4 {
+      transform: translate(574px, 307px);
+    }
+    .single-text-5 {
+      transform: translate(617px, 148px);
+    }
+    .single-text-6 {
+      transform: translate(407px, 104px);
+    }
+    .single-text-7 {
+      transform: translate(39px, 158px);
+    }
+    .single-text-8 {
+      transform: translate(224px, 354px);
+    }
+    .single-text-9 {
+      transform: translate(972px, 345px);
+    }
+    .single-text-10 {
+      transform: translate(1079px, 345px);
+    }
+    .single-text-11 {
+      transform: translate(1124px, 361px);
+    }
+    .single-text-12 {
+      transform: translate(798px, 229px);
+    }
+    .single-text-13 {
+      transform: translate(652px, 262px);
+    }
+    .single-text-14 {
+      transform: translate(630px, 119px);
+    }
+    .single-text-15 {
+      transform: translate(498px, 336px);
+    }
+    .single-text-16 {
+      transform: translate(959px, 394px);
+    }
+    .single-text-17 {
+      transform: translate(498px, 376px);
+    }
+    .single-text-18 {
+      transform: translate(269px, 348px);
+    }
+    .single-text-19 {
+      transform: translate(176px, 349px);
+    }
+    .single-text-20 {
+      transform: translate(176px, 243px);
+    }
+    .single-text-21 {
+      transform: translate(84px, 243px);
+    }
+    .single-text-22 {
+      transform: translate(348px, 351px);
+    }
+    .single-text-23 {
+      transform: translate(598px, 278px);
+    }
+    .single-text-24 {
+      transform: translate(720px, 229px);
+    }
+    .single-text-25 {
+      transform: translate(585px, 216px);
+    }
+    .single-text-26 {
+      transform: translate(585px, 191px);
+    }
+    .single-text-27 {
+      transform: translate(130px, 141px);
+    }
+    .single-text-28 {
+      transform: translate(178px, 141px);
+    }
+    .single-text-29 {
+      transform: translate(196px, 141px);
+    }
+    .single-text-30 {
+      transform: translate(242px, 141px);
+    }
+    .single-text-31 {
+      transform: translate(1050px, 146px);
+    }
+    .single-text-32 {
+      transform: translate(565px, 440px);
+    }
+    .single-text-33 {
+      transform: translate(802px, 450px);
+    }
+    .single-text-34 {
+      transform: translate(1013px, 30px);
+    }
+    .single-text-35 {
+      transform: translate(463px, 377px);
+    }
+    .single-text-36 {
+      transform: translate(463px, 352px);
+    }
+    .single-text-37 {
+      transform: translate(72px, 122px);
+    }
+    .single-text-38 {
+      transform: translate(273px, 122px);
+    }
+    .single-text-39 {
+      transform: translate(163px, 66px);
+    }
+    .single-text-40 {
+      transform: translate(118px, 193px);
+    }
+    .single-text-41 {
+      transform: translate(147px, 394px);
+    }
+    .single-text-42 {
+      transform: translate(40px, 319px);
+    }
+    .single-text-43 {
+      transform: translate(371px, 60px);
+    }
+    .single-text-44 {
+      transform: translate(451px, 199px);
+    }
+    .single-text-45 {
+      transform: translate(963px, 286px);
+    }
+    .single-text-46 {
+      transform: translate(1053px, 279px);
+    }
+    .single-text-47 {
+      transform: translate(1033px, 388px);
+    }
+    .single-text-48 {
+      transform: translate(1222px, 371px);
+    }
+    .single-text-49 {
+      transform: translate(544px, 214px);
+    }
+    .single-text-50 {
+      transform: translate(286px, 248px);
+    }
+    .single-text-52 {
+      transform: translate(647px, 340px);
+    }
+    .single-text-53 {
+      transform: translate(154px, 108px);
+    }
+    .single-text-54 {
+      transform: translate(154px, 178px);
+    }
+    .single-text-55 {
+      transform: translate(401px, 336px);
+    }
+    .single-text-56 {
+      transform: translate(504px, 143px);
+    }
+    .single-text-57 {
+      transform: translate(490px, 210px);
+    }
+    .single-text-58 {
+      transform: translate(677px, 48px);
+    }
+    .single-text-59 {
+      transform: translate(816px, 75px);
+    }
+    .single-text-60 {
+      transform: translate(798px, 175px);
+    }
+    .single-text-61 {
+      transform: translate(963px, 308px);
+    }
+    .single-text-62 {
+      transform: translate(1163px, 308px);
+    }
+    .single-text-63 {
+      transform: translate(313px, 336px);
+    }
+    .single-text-64 {
+      transform: translate(638px, 300px);
+    }
+    .single-text-65 {
+      transform: translate(276px, 218px);
+    }
+  }
+}

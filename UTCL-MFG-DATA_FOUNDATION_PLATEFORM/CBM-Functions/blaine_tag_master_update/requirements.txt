@@ -1,0 +1,6 @@
+pyodbc
+pandas
+numpy
+boto3
+python-dotenv
+requests

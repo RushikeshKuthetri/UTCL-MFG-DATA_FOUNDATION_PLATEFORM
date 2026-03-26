@@ -1,0 +1,21 @@
+.PackingPlant3and4Kukurdih{  
+.text-dark {
+    font-size: 12px;
+}  
+.line-111 {
+    transform: translate(55vw, 10.2vh);
+    height: 78px;
+}
+}
+
+@media (max-width: 1367px) {
+    .PackingPlant3and4Kukurdih{  
+        .text-dark {
+            font-size: 10px;
+        } 
+        .line-111 {
+            transform: translate(750px, 71px);
+            height: 40px;
+        }
+  }
+}

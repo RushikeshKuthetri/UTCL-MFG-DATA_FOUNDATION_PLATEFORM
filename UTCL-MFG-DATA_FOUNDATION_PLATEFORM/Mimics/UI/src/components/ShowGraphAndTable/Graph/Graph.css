@@ -1,0 +1,176 @@
+.highcharts-scrollbar-thumb:hover {
+  background-color: #346667 !important;
+}
+
+.highcharts-title {
+  display: none;
+}
+
+.highcharts-legend {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*
+.graph-div {
+  position: relative;
+  height: calc(100vh - 200px);
+  overflow-y: scroll;
+}
+*/
+
+.graph-div {
+  position: relative;
+  height: auto;
+  overflow: visible;
+  /* ✅ allow page to scroll */
+}
+
+.graph-scroll {
+  max-height: calc(100vh - 260px);
+  /* navbar + filters + buffer */
+  overflow-y: auto;
+  padding-right: 6px;
+  /* avoid scrollbar overlap */
+}
+
+.x-axis {
+  border-top: 2px solid grey;
+  position: absolute;
+  bottom: -26px;
+  left: 6%;
+  width: 91%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#graph-id {
+  margin-left: 7rem;
+  position: relative;
+}
+
+.accordion-button {
+  font-weight: 600;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-button.collapsed .fa-angle-down {
+  transform: rotate(0deg);
+  transition: 0ms;
+}
+
+.accordion-button .fa-angle-down {
+  transform: rotate(180deg);
+  transition: 0ms;
+}
+
+.accordion-button:focus-visible,
+.accordion-button:focus {
+  outline: 0;
+}
+
+
+@media (max-width: 1026px) {
+  /* .graph-div {
+    height: calc(100vh - 240px);
+} */
+}
+
+
+
+/* Graph.css or Table.css */
+
+.table-select {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding-left: 4px;
+  padding-right: 18px;
+  /* keep arrow space */
+  font-size: 12px;
+}
+
+.table-select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.table-select option {
+  background-color: #ffffff;
+  /* dropdown list stays readable */
+  color: #000;
+}
+
+/* ===== ICON GROUP SPACING ===== */
+.action-icons {
+  gap: 18px;
+  /* 👁  🎨  🗑 clearly separated */
+  margin-right: 14px;
+}
+
+/* ===== COLOR PICKER ===== */
+.table-color-input {
+  width: 18px;
+  height: 18px;
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* ===== SELECT GROUP SPACING ===== */
+.action-selects {
+  gap: 8px;
+  /* tighter than icons */
+}
+
+/* ===== COMPACT SELECT ===== */
+.table-select {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  font-size: 12px;
+}
+
+/* 🔽 Reduce space between text and arrow */
+.compact-select {
+  padding-left: 4px !important;
+  padding-right: 14px !important;
+  /* arrow closer */
+  min-width: auto;
+  width: auto;
+}
+
+/* Remove focus glow */
+.table-select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Dropdown list stays readable */
+.table-select option {
+  background-color: #ffffff;
+  color: #000;
+}
+
+
+
+/* Force dark, visible icons */
+.js-plotly-plot .modebar-btn svg,
+.js-plotly-plot .modebar-btn path {
+  fill: #334155 !important;
+  /* dark slate */
+  opacity: 1 !important;
+}
+
+/* Light background so icons don’t blend */
+.js-plotly-plot .modebar-btn {
+  background-color: #e5e7eb !important;
+}

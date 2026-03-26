@@ -1,0 +1,53 @@
+.UHDashboardVikram {
+  height: 100% !important;
+  width: 100% !important;
+  margin-left: 0px !important;
+  border: 4px solid #fff !important;
+  td {
+    color: white !important;
+    font-weight: 600 !important;
+    border: 1px solid white;
+    padding: 0.1rem !important;
+    font-size: 17px !important;
+  }
+  table tr:hover {
+    background-color: #eaeaf900;
+  }
+  .greenTxt, .text-dark, .text-white {
+    font-size: 18px !important;
+}
+.cdate{
+  text-align: right;
+  font-size: 1.3rem;
+}
+}
+@media (max-width: 1440px) {
+  .UHDashboardVikram {
+    td {
+      padding: 0.02rem 0.25rem !important;
+      font-weight: 500 !important;
+      font-size: 15px !important;
+    }
+    .greenTxt,.text-dark,.text-white {
+      font-size: 16px !important;
+  }
+  .cdate{
+    text-align: right;
+    font-size: 1rem;
+  }
+  }
+
+
+}
+
+// mobile responsiveness plus 1366px
+@media (max-width: 1367px) {
+  .UHDashboardVikram {
+    td {
+      font-size: 13px !important;
+    }
+    .greenTxt,.text-dark,.text-white {
+      font-size: 14px !important;
+  }
+  }
+}
