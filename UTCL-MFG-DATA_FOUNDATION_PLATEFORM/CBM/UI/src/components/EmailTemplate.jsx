@@ -626,7 +626,7 @@ export const EmailTemplate = () => {
           </h2>
           <button
             onClick={() => navigate("/EmailTemplateList")}
-            className="border !border-[var(--button-border)] !bg-[var(--button-bg)] text-[14px] font-medium px-2 py-1 rounded-lg transition cursor-pointer hover:!bg-[var(--button-hover-bg)] inline-flex items-center gap-1 color text-[var(--text-color)]"
+            className="bg-[var(--submit-button-bg)] text-black focus:outline-none focus:ring-0 outline-none text-[14px] font-medium px-2 py-1 rounded-lg transition cursor-pointer  inline-flex items-center gap-1 color "
           >
             {/* <BiChevronLeft size={20} /> */}
             Back

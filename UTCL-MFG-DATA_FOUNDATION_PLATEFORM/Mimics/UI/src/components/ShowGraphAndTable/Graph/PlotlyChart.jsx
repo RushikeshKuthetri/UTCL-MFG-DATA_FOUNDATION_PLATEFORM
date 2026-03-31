@@ -526,7 +526,7 @@ export const PlotlyGraph = () => {
 
     if (!traces.length) return null;
 
-    const BASE_HEIGHT = 450;
+    const BASE_HEIGHT = 370;
 
     // const layout =
     //     layoutMode === "single"

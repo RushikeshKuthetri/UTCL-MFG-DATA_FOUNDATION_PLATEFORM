@@ -784,21 +784,20 @@ body {
 }
 
 :root {
-  --text-color: #272626;
-  --header-text-color:#29292B;
-  --leftdrawer-text: #404242;
+  --text-color: #4D5050;
+ --header-text-color :#29292B;
+ --leftdrawer-text: #4D5050;
   --title: #AF6A1C;
-  --bg-color: #F6F5F3;
+  --bg-color: #FFFFFF;
   --bg-header: #FE8F12;
   --header-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
-  --leftdrawer-text: #404242;
-  --bg-leftdrawer: #F2F2F2;
+  --bg-leftdrawer: #FFFFFF;
   --bg-leftdrawer-footer: #eaeaea;
   --left-drawer-active-tab: #FD9F35;
   --left-drawer-footer-border: rgba(203, 219, 217, 0.7);
   --left-drawer-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1), 2px 0 6px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.1);
-  --bg-main-container: #F1F0EE;
-  --card-bg: #FFF6F6;
+  --bg-main-container: #FFFFFF;
+  --card-bg: #F9FAFB;
   --card-subtle: #776F6F;
   --card-shadow: 0 0px 4px rgba(0, 0, 0, 0.08);
   --mimic-line: rgba(119, 136, 134, 0.50);
@@ -844,14 +843,13 @@ body {
 }
 
 .dark {
-  --text-color: #F0F0F0;
-  --header-text-color:#FA9E37;
+  --text-color: #B7C5C5;
+--header-text-color: #F0F0F0;
   --leftdrawer-text: #B7C5C5;
   --title: #FFC07A;
   --bg-color: #1E1E1F;
   --bg-header: #181919;
   --header-shadow: 0 2px 6px rgba(255, 255, 255, 0.25);
-  --leftdrawer-text: #B7C5C5;
   --bg-leftdrawer: #181919;
   --bg-leftdrawer-footer: #2B2C2D;
   --left-drawer-active-tab: #FD9F35;

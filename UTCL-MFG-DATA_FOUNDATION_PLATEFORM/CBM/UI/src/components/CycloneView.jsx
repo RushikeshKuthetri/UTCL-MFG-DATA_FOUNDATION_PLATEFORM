@@ -178,7 +178,7 @@ export const CycloneView = () => {
           getCycloneDataEffSocket();
         }
       }
-    },60000) // 1min
+    }, 60000) // 1min
     return () => {
       // webSocket.close();
       // console.log("closing");
@@ -220,9 +220,8 @@ export const CycloneView = () => {
     axios
       .post(config.BaseUrl + "/cbm/template/getCycloneDataEff", payload, {
         headers: {
-          Authorization: `Bearer ${
-            JSON.parse(localStorage.getItem("login"))?.token
-          }`,
+          Authorization: `Bearer ${JSON.parse(localStorage.getItem("login"))?.token
+            }`,
         },
       })
       .then((res) => {
@@ -485,7 +484,9 @@ export const CycloneView = () => {
 
   return (
     <AuthenticatedTemplate>
-      <div className="dash-top pb-2">
+      {/* <div className="dash-top pb-2"> */}
+      {/* // changed by trdiai to fit the cyclone view in the screen as per the requirement on 30-03-2026 */}
+      <div className="pb-2">
         <div className="mycard  cycloneView mt-2">
           <div className="d-flex align-items-center mb-3">
             <div className="back">
@@ -567,21 +568,21 @@ export const CycloneView = () => {
                               cycloneData?.Parameters?.Cyclone[val]?.T2TimeStamp
                             )
                               ? Number(
-                                  (1 -
-                                    (Number(
+                                (1 -
+                                  (Number(
+                                    cycloneData?.Parameters?.Cyclone[val]
+                                      ?.T1val
+                                  ) -
+                                    Number(
                                       cycloneData?.Parameters?.Cyclone[val]
-                                        ?.T1val
-                                    ) -
-                                      Number(
-                                        cycloneData?.Parameters?.Cyclone[val]
-                                          ?.T2val
-                                      )) /
-                                      Number(
-                                        cycloneData?.Parameters?.Cyclone[val]
-                                          ?.T1val
-                                      )) *
-                                    100
-                                ).toFixed(0) + "%"
+                                        ?.T2val
+                                    )) /
+                                  Number(
+                                    cycloneData?.Parameters?.Cyclone[val]
+                                      ?.T1val
+                                  )) *
+                                100
+                              ).toFixed(0) + "%"
                               : "N/A"}
                           </h6>
                         }
@@ -661,18 +662,18 @@ export const CycloneView = () => {
                             cycloneData?.Parameters?.Klin[val]?.T2TimeStamp
                           )
                             ? Number(
-                                (1 -
-                                  (Number(
-                                    cycloneData?.Parameters?.Klin[val]?.T1val
-                                  ) -
-                                    Number(
-                                      cycloneData?.Parameters?.Klin[val]?.T2val
-                                    )) /
-                                    Number(
-                                      cycloneData?.Parameters?.Klin[val]?.T1val
-                                    )) *
-                                  100
-                              ).toFixed(0) + "%"
+                              (1 -
+                                (Number(
+                                  cycloneData?.Parameters?.Klin[val]?.T1val
+                                ) -
+                                  Number(
+                                    cycloneData?.Parameters?.Klin[val]?.T2val
+                                  )) /
+                                Number(
+                                  cycloneData?.Parameters?.Klin[val]?.T1val
+                                )) *
+                              100
+                            ).toFixed(0) + "%"
                             : "N/A"}{" "}
                         </h6>
                       }

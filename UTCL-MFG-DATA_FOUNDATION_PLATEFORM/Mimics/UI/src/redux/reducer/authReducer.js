@@ -11,7 +11,8 @@ const initialState = {
   userIp: "",
   extraTagDetails: [],
   hoTagDetails: [],
-  tagAndLineCount: {}
+  tagAndLineCount: {},
+  documents: {}
 };
 
 export const authReducer = (state = initialState, action) => {
@@ -86,11 +87,17 @@ export const authReducer = (state = initialState, action) => {
         plants: [],
         error: "",
       };
-      // Added by TRIDAI for fetching tags and lines count (25-03)
+    // Added by TRIDAI for fetching tags and lines count (25-03)
     case "TAG_AND_LINE_COUNT":
       return {
         ...state,
         tagAndLineCount: action.payload,
+      };
+    // Added by TRIDAI for fetching documents from S3 (30-03)
+    case "SET_DOCUMENTS":
+      return {
+        ...state,
+        documents: action.payload, 
       };
     default:
       return state;

@@ -86,7 +86,7 @@ export const BarChart = () => {
                     plot_bgcolor: theme.bg,
                     font: { color: theme.text },
 
-                    height: 550,
+                    height: 450,
                     margin: { l: 70, r: 30, t: 60, b: 140 },
                     barmode: "group", // ✅ unchanged
 

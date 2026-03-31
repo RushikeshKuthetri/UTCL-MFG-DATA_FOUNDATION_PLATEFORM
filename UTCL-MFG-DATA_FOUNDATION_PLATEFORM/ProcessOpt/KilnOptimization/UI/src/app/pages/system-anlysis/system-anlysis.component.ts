@@ -3,7 +3,7 @@ import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { environment } from '../../../environments/environment';
 import { CementMillModel } from './systemAnlysis.model';
 import { ToasterService } from '../../services/toaster.service';
-import { Router,NavigationStart } from '@angular/router';
+import { Router, NavigationStart } from '@angular/router';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import * as moment from 'moment';
 import { SocketService } from '../../services/socket.service';
@@ -25,7 +25,7 @@ export class SystemAnlysisComponent {
     // 'addLog':environment.baseUrl+'addLog'
   };
   Cementurl = {
-    "addLog":`${environment.baseUrlApi}addLog`
+    "addLog": `${environment.baseUrlApi}addLog`
   };
   sidebarExpanded = true;
   modalRef?: BsModalRef;
@@ -69,11 +69,11 @@ export class SystemAnlysisComponent {
   setNewDate: any;
   urlLink: any;
   tagDetails: any = [];
-  checkToken:boolean=false
-  getKilnLatestData:boolean=false
-  checkNotification:boolean=false
-  private cancelRequest$:Subject<void>=new Subject<void>();
-  private routeChangeSubscription:Subscription=new Subscription
+  checkToken: boolean = false
+  getKilnLatestData: boolean = false
+  checkNotification: boolean = false
+  private cancelRequest$: Subject<void> = new Subject<void>();
+  private routeChangeSubscription: Subscription = new Subscription
   private intervalId: any;
   // count:number=1
   constructor(
@@ -83,11 +83,11 @@ export class SystemAnlysisComponent {
     private router: Router,
     private http: HttpClient,
     private socketService: SocketService
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.urlLink = window.location.href;
-    this.checkNotification=false
+    this.checkNotification = false
     this.flags = {
       showLoader: false,
     };
@@ -114,8 +114,8 @@ export class SystemAnlysisComponent {
 
     // },60000)
     this.no_recommendation = 0;
-    this.routeChangeSubscription=this.router.events.subscribe(event=>{
-      if(event instanceof NavigationStart){
+    this.routeChangeSubscription = this.router.events.subscribe(event => {
+      if (event instanceof NavigationStart) {
         this.cancelRequest$.next();
       }
     })
@@ -128,14 +128,14 @@ export class SystemAnlysisComponent {
     this.no_recommendation = 0;
     // this.no_equipment=0
     this.displayName = value.displayName;
-    this.checkNotification=false
+    this.checkNotification = false
 
     if (this.payload.dateTime && typeof this.payload.dateTime !== 'string') {
       this.payload.dateTime = moment(this.payload.dateTime).format('YYYY-MM-DD HH:mm:00');
     }
     // console.log(this.payload);
     localStorage.setItem('filtersState', JSON.stringify(this.payload));
-  
+
     this.connectSocket();
 
     this.getLatestData();
@@ -173,7 +173,7 @@ export class SystemAnlysisComponent {
 
     // console.log(payload)
 
-    this.cementMillModel.postCall(this.Cementurl.addLog, payload,this.cancelRequest$).subscribe({
+    this.cementMillModel.postCall(this.Cementurl.addLog, payload, this.cancelRequest$).subscribe({
       next: (res: any) => {
         console.log(res);
       },
@@ -225,12 +225,12 @@ export class SystemAnlysisComponent {
         if (eventData && eventData.LatestData && eventData.LatestData.result) {
           if (eventData.LatestData.result.Shutdown_Flag == 1) {
             this.shutMillFlag = true;
-            this.getKilnLatestData=true;
+            this.getKilnLatestData = true;
             let result = eventData.LatestData;
             this.payload.dateTime = result.result.date_time;
           } else {
             let result = eventData.LatestData;
-            this.getKilnLatestData=true;
+            this.getKilnLatestData = true;
             this.dataSource =
               this.cementMillModel.parseLatestFilterData(result);
             // console.log(this.dataSource);
@@ -299,7 +299,7 @@ export class SystemAnlysisComponent {
         localStorage.setItem('accessToken', result.data.token);
         localStorage.setItem('user', result.data.UserName);
         localStorage.setItem('userEmail', result.data.UserID);
-        this.checkToken=true;
+        this.checkToken = true;
 
         var index = result.data.Modules.findIndex((item: any) => {
           return item.Module === 'OPT';
@@ -348,11 +348,11 @@ export class SystemAnlysisComponent {
       dateTime: count
         ? moment.utc(this.payload.dateTime).format('YYYY-MM-DD HH:mm')
         : Object.keys(data).length
-        ? data.dateTime
-        : '',
+          ? data.dateTime
+          : '',
     };
-    
-    this.flags.showLoader=true
+
+    this.flags.showLoader = true
     // console.log(this.payload)
     if (Object.keys(data).length) {
       this.setNewDate = data.dateTime;
@@ -361,7 +361,7 @@ export class SystemAnlysisComponent {
     }
 
     this.cementMillModel
-      .postCall(this.CementUrlType.getLatestFilteredData, payload,this.cancelRequest$)
+      .postCall(this.CementUrlType.getLatestFilteredData, payload, this.cancelRequest$)
       .subscribe(
         (result: any) => {
           // console.log(result.result.result==='No Record Found');
@@ -370,13 +370,13 @@ export class SystemAnlysisComponent {
             // console.log(payload);
 
             this.flags.showLoader = false;
-            this.getKilnLatestData=false;
+            this.getKilnLatestData = false;
             // this.dataSource={Control_Tags_Data:[],Resultant_Tags_Data:[], filtersData:filtersData,timestamp:result.result.timestamp }
           } else {
             if (result.result.Shutdown_Flag == 1) {
               this.shutMillFlag = true;
-              this.flags.showLoader=false
-              this.getKilnLatestData=true
+              this.flags.showLoader = false
+              this.getKilnLatestData = true
               let filtersData = {
                 Plant_Code: result.result.plantCode,
                 Mill: result.result.mill,
@@ -395,7 +395,7 @@ export class SystemAnlysisComponent {
               // console.log(this.dataSource);
             } else {
               this.shutMillFlag = false;
-              this.getKilnLatestData=true
+              this.getKilnLatestData = true
               // console.log(result);
               this.dataSource =
                 this.cementMillModel.parseLatestFilterData(result);
@@ -429,19 +429,19 @@ export class SystemAnlysisComponent {
           }
         },
         (error: any) => {
-          this.flags.showLoader=false;
-          this.getKilnLatestData=false;
+          this.flags.showLoader = false;
+          this.getKilnLatestData = false;
           this.showErrorMessage();
         }
       );
   }
 
-  public bellClick(){
-    this.checkNotification=true;
+  public bellClick() {
+    this.checkNotification = true;
   }
-  public closeRecomPop(){
-    this.checkNotification=true
-    this.no_recommendation=0
+  public closeRecomPop() {
+    this.checkNotification = true
+    this.no_recommendation = 0
   }
 
   public showTextBox(item: any) {
@@ -449,18 +449,18 @@ export class SystemAnlysisComponent {
     item.showTextBox = !item.showTextBox;
   }
 
-  public checkBoxAck(event: any,data:any) {
+  public checkBoxAck(event: any, data: any) {
     // console.log(event.target.checked,data);
     this.isCheckBoxAcknowledge = event.target.checked;
-    data.isAcknowledged=this.isCheckBoxAcknowledge ? "Yes":"No"
+    data.isAcknowledged = this.isCheckBoxAcknowledge ? "Yes" : "No"
   }
 
   public updateRecommendation() {
     let userEmail = localStorage.getItem('userEmail');
 
     // console.log(this.recommendationDataSource);
-    let payloadArray=[]
-    payloadArray=this.recommendationDataSource.map((update_data:any,index:any)=>{
+    let payloadArray = []
+    payloadArray = this.recommendationDataSource.map((update_data: any, index: any) => {
       // console.log(update_data);
       let payload = {
         id: update_data.id,
@@ -477,13 +477,13 @@ export class SystemAnlysisComponent {
       };
 
       // console.log("update data",update_data,"update-payload",payload);
-      
+
       return payload
-      
+
     })
 
     this.cementMillModel
-      .postCall(this.CementUrlType.updateActions, payloadArray,this.cancelRequest$)
+      .postCall(this.CementUrlType.updateActions, payloadArray, this.cancelRequest$)
       .subscribe(
         (result: any) => {
           this.getRecommendationPopupData();
@@ -519,14 +519,14 @@ export class SystemAnlysisComponent {
           // console.log(this.recommendationDate);
         }
       },
-      (error: any) => {}
+      (error: any) => { }
     );
   }
 
   showSuccessMessage() {
     this.toaster.addSuccessToast();
   }
-  showSuccessUpdateMessage(updateMsg:any){
+  showSuccessUpdateMessage(updateMsg: any) {
     this.toaster.addUpdateSuccessToast(updateMsg)
   }
 
@@ -534,9 +534,19 @@ export class SystemAnlysisComponent {
     this.toaster.addErrorToast('Something Went Wrong, Please Try Again');
   }
 
+  // openModal(template: TemplateRef<any>) {
+  //   this.modalRef = this.modalService.show(template,{
+  //     class: 'recommendation-modal modal-xl'
+  //   });
+
+  //   // console.log(this.modalService.getModalsCount());
+  // }
+
   openModal(template: TemplateRef<any>) {
-    this.modalRef = this.modalService.show(template,{
-      class: 'recommendation-modal modal-xl'
+    this.modalRef = this.modalService.show(template, {
+      class: 'modal-dialog-centered !mt-4 !max-w-[90vw] !w-[90vw]',
+      backdrop: true,
+      ignoreBackdropClick: false
     });
 
     // console.log(this.modalService.getModalsCount());
@@ -557,16 +567,16 @@ export class SystemAnlysisComponent {
       dateTime: count
         ? moment.utc(this.payload.dateTime).format('YYYY-MM-DD HH:mm')
         : Object.keys(data).length
-        ? this.setNewDate
-        : '',
+          ? this.setNewDate
+          : '',
     };
     this.cementMillModel
-      .postCall(this.CementUrlType.getRecommedationData, payload,this.cancelRequest$)
+      .postCall(this.CementUrlType.getRecommedationData, payload, this.cancelRequest$)
       .subscribe(
         (result: any) => {
           if (result.result.result != 'No Record Found') {
             this.recommendationDataSource = result.result;
-            this.no_recommendation =this.checkNotification? 0: this.recommendationDataSource?.length;
+            this.no_recommendation = this.checkNotification ? 0 : this.recommendationDataSource?.length;
             // this.recommendationDate=moment(result.result[0].timestamp).toISOString();
             this.recommendationDate = moment
               .utc(result.result[0].timestamp)
@@ -603,13 +613,13 @@ export class SystemAnlysisComponent {
       dateTime: count
         ? moment.utc(this.payload.dateTime).format('YYYY-MM-DD HH:mm')
         : Object.keys(data).length
-        ? this.setNewDate
-        : '',
+          ? this.setNewDate
+          : '',
     };
     // console.log(payload);
 
     this.cementMillModel
-      .postCall(this.CementUrlType.getEquipmentFailureData, payload,this.cancelRequest$)
+      .postCall(this.CementUrlType.getEquipmentFailureData, payload, this.cancelRequest$)
       .subscribe(
         (result: any) => {
           // console.log(result);
@@ -645,7 +655,7 @@ export class SystemAnlysisComponent {
     this.modalRef?.hide();
     this.cancelRequest$.next();
     this.cancelRequest$.complete();
-    if(this.routeChangeSubscription){
+    if (this.routeChangeSubscription) {
       this.routeChangeSubscription.unsubscribe();
     }
     if (this.intervalId) {

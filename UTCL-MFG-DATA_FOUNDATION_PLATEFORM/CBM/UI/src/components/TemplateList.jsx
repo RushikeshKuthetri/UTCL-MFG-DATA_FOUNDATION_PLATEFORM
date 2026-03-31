@@ -471,7 +471,7 @@ export const TemplateList = () => {
     );
   };
 
-    return (
+  return (
     <AuthenticatedTemplate>
       <div className="w-full h-full">
         <div className="flex flex-col gap-3">
@@ -484,23 +484,20 @@ export const TemplateList = () => {
               <button
                 onClick={() => navigate("/createTemplate")}
                 className={`
-    border border-[var(--button-border)]
-    bg-[var(--button-bg)]
+    bg-[var(--submit-button-bg)] text-black focus:outline-none focus:ring-0 outline-none
     text-[14px]
     font-medium
     px-2 py-1
     rounded-lg
     transition
     cursor-pointer
-    hover:bg-[var(--button-hover-bg)]
-    text-[var(--text-color)]
   `}
               >
                 Create Template
               </button>
             </div>
           </div>
- 
+
           {/* TABLE */}
           <div
             className="
@@ -518,7 +515,7 @@ export const TemplateList = () => {
               {templateData.length > 0 && viewTable()}
             </table>
           </div>
- 
+
           {/* LOADER */}
           {tableLoader && (
             <div className="flex justify-center items-center py-6">
@@ -530,7 +527,7 @@ export const TemplateList = () => {
               />
             </div>
           )}
- 
+
           {/* EMPTY STATE */}
           {nodataFlag && (
             <div class="m-3 gap-3 flex flex-row items-center justify-center py-3 px-6 text-center transition-all duration-300 animate-fadeIn">
@@ -540,11 +537,11 @@ export const TemplateList = () => {
               </h2>
             </div>
           )}
- 
+
           {DeleteModal()}
         </div>
       </div>
     </AuthenticatedTemplate>
   );
- 
+
 };

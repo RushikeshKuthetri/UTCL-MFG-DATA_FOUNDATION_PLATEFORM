@@ -44,7 +44,7 @@ const menuItems = [
     {
         name: "Trends",
         icon: FaArrowTrendUp,
-        path: "https://dev.d24ohd8z0zwg7d.amplifyapp.com/mimics/viewtrends",
+        path: "/mimics/viewtrends",
         moduleKey: "Mimics",
         openInNewTab: false
     },
@@ -168,10 +168,10 @@ const menuItems = [
             },
         ],
     },
-       {
+    {
         name: "Help",
         icon: IoHelpCircleOutline,
-        path: "",
+        path: "/mimics/help",
         moduleKey: "Mimics",
         openInNewTab: false
     },
@@ -198,14 +198,14 @@ const menuItems = [
         ],
     }
 ];
- 
+
 // ── Tree connector dimensions ─────────────────────────────────────
 const SPINE_X = 8;    // x-position of the vertical part of the L
-const ITEM_H  = 32;   // height of each item row
-const LINE_W  = 1.5;
-const RADIUS  = 10;    // corner radius of the L-curve
-const SVG_W   = 20;   // width of the connector SVG
- 
+const ITEM_H = 32;   // height of each item row
+const LINE_W = 1.5;
+const RADIUS = 10;    // corner radius of the L-curve
+const SVG_W = 20;   // width of the connector SVG
+
 /**
  * TreeConnector
  *
@@ -213,9 +213,9 @@ const SVG_W   = 20;   // width of the connector SVG
  * isLast = false → T-junction (full vertical spine + horizontal branch at midY)
  */
 function TreeConnector({ lineColor, isLast }) {
-    const midY        = ITEM_H / 2;
+    const midY = ITEM_H / 2;
     const curveStartY = midY - RADIUS;
- 
+
     return (
         <svg
             width={SVG_W}
@@ -265,7 +265,7 @@ function TreeConnector({ lineColor, isLast }) {
         </svg>
     );
 }
- 
+
 export default function LeftDrawer({ open, setOpen, collapsed, setCollapsed }) {
     const [theme, setTheme] = useState("light");
     const [mounted, setMounted] = useState(false);
@@ -283,9 +283,9 @@ export default function LeftDrawer({ open, setOpen, collapsed, setCollapsed }) {
     const modules = JSON.parse(localStorage.getItem("modules")) || [];
     const pathname = useLocation();
     const navigate = useNavigate();
- 
+
     const lineColor = theme === "dark" ? "#7E8383" : "#9FACAC";
- 
+
     useEffect(() => {
         localStorage.setItem("openDropdowns", JSON.stringify(openDropdowns));
     }, [openDropdowns]);
@@ -394,7 +394,7 @@ export default function LeftDrawer({ open, setOpen, collapsed, setCollapsed }) {
                     onClick={() => setMobileOpen(false)}
                 />
             )}
- 
+
             {/* SIDEBAR */}
             <div className={`
                 fixed top-18 left-0 z-40 mt-2
@@ -410,29 +410,29 @@ export default function LeftDrawer({ open, setOpen, collapsed, setCollapsed }) {
                 ${mobileOpen ? "translate-x-0" : "-translate-x-full"}
                 lg:translate-x-0
             `}>
- 
+
                 {/* MOBILE CLOSE BUTTON */}
                 <div className="lg:hidden flex justify-end pt-3 pr-3 -mb-2">
                     <button onClick={() => setMobileOpen(false)}>
                         <FaTimes size={20} className="text-[var(--text-color)]" />
                     </button>
                 </div>
- 
+
                 {/* MENU */}
                 <div className={`flex-1 overflow-y-auto flex flex-col gap-1 mt-2 ${collapsed ? "px-1" : "px-3"}`}>
                     {filteredMenu.map((item, index) => {
                         const Icon = item.icon;
                         const hasChildren = item.hasDropdown && item.children?.length > 0;
                         const dropdownOpen = isDropdownOpen(item.name);
- 
+
                         return (
                             <div key={index}>
- 
+
                                 {/* ── PARENT ITEM ── */}
                                 <div
                                     className={`flex items-center py-2 px-3 rounded-xl cursor-pointer
                                         ${collapsed ? "justify-center" : "gap-4"}
-                                        text-[var(--text-color)]
+                                         text-[var(--leftdrawer-text)]
                                         hover:bg-[var(--left-drawer-active-tab)]
                                         hover:text-[#111111]`}
                                     onClick={() => {
@@ -452,7 +452,7 @@ export default function LeftDrawer({ open, setOpen, collapsed, setCollapsed }) {
                                         </>
                                     )}
                                 </div>
- 
+
                                 {/* ── LEVEL 1 CHILDREN ── */}
                                 {hasChildren && dropdownOpen && !collapsed && (
                                     <div className="ml-[34px] flex flex-col">
@@ -461,10 +461,10 @@ export default function LeftDrawer({ open, setOpen, collapsed, setCollapsed }) {
                                             const nestedKey = `${item.name}_${child.name}`;
                                             const nestedOpen = isDropdownOpen(nestedKey);
                                             const isLast = childIndex === item.children.length - 1;
- 
+
                                             return (
                                                 <div key={childIndex} className="flex flex-col">
- 
+
                                                     {/* CHILD ROW */}
                                                     <div
                                                         className="flex items-center cursor-pointer"
@@ -474,8 +474,8 @@ export default function LeftDrawer({ open, setOpen, collapsed, setCollapsed }) {
                                                             else handleNavigation(child);
                                                         }}
                                                     >
-                                                       <TreeConnector lineColor={lineColor} isLast={isLast} />
- 
+                                                        <TreeConnector lineColor={lineColor} isLast={isLast} />
+
                                                         <div className={`flex-1 flex items-center py-[6.4px] px-2 rounded-lg transition-all text-sm min-w-0 gap-1
                                                             text-[var(--text-color)]
                                                             hover:bg-[var(--left-drawer-active-tab)]
@@ -488,51 +488,51 @@ export default function LeftDrawer({ open, setOpen, collapsed, setCollapsed }) {
                                                             )}
                                                         </div>
                                                     </div>
- 
+
                                                     {/* ── LEVEL 2 CHILDREN ── */}
-                                                   {/* ── LEVEL 2 CHILDREN ── */}
-{hasNested && nestedOpen && (
-    <div className="flex flex-col relative" style={{ marginLeft: SVG_W }}>
-        {/* Connecting line sirf tab jab isLast FALSE ho */}
-        {!isLast && (
-            <div
-                style={{
-                    position: "absolute",
-                    left: -SVG_W + SPINE_X,
-                    top: 0,
-                    bottom: 0,
-                    width: LINE_W,
-                    backgroundColor: lineColor,
-                }}
-            />
-        )}
-        {child.children.map((grandchild, gcIndex) => {
-            const gcIsLast = gcIndex === child.children.length - 1;
-            return (
-                <div
-                    key={gcIndex}
-                    className="flex items-center cursor-pointer"
-                    style={{ height: ITEM_H }}
-                    onClick={() => handleNavigation(grandchild)}
-                >
-                    <TreeConnector lineColor={lineColor} isLast={gcIsLast} />
-                    <div className={`flex-1 py-[6.4px] px-2 rounded-lg transition-all text-sm truncate
+                                                    {/* ── LEVEL 2 CHILDREN ── */}
+                                                    {hasNested && nestedOpen && (
+                                                        <div className="flex flex-col relative" style={{ marginLeft: SVG_W }}>
+                                                            {/* Connecting line sirf tab jab isLast FALSE ho */}
+                                                            {!isLast && (
+                                                                <div
+                                                                    style={{
+                                                                        position: "absolute",
+                                                                        left: -SVG_W + SPINE_X,
+                                                                        top: 0,
+                                                                        bottom: 0,
+                                                                        width: LINE_W,
+                                                                        backgroundColor: lineColor,
+                                                                    }}
+                                                                />
+                                                            )}
+                                                            {child.children.map((grandchild, gcIndex) => {
+                                                                const gcIsLast = gcIndex === child.children.length - 1;
+                                                                return (
+                                                                    <div
+                                                                        key={gcIndex}
+                                                                        className="flex items-center cursor-pointer"
+                                                                        style={{ height: ITEM_H }}
+                                                                        onClick={() => handleNavigation(grandchild)}
+                                                                    >
+                                                                        <TreeConnector lineColor={lineColor} isLast={gcIsLast} />
+                                                                        <div className={`flex-1 py-[6.4px] px-2 rounded-lg transition-all text-sm truncate
                         text-[var(--text-color)]
                         hover:bg-[var(--left-drawer-active-tab)]
                         hover:text-[#111111]`}>
-                        {grandchild.name}
-                    </div>
-                </div>
-            );
-        })}
-    </div>
-)}
+                                                                            {grandchild.name}
+                                                                        </div>
+                                                                    </div>
+                                                                );
+                                                            })}
+                                                        </div>
+                                                    )}
                                                 </div>
                                             );
                                         })}
                                     </div>
                                 )}
- 
+
                             </div>
                         );
                     })}
@@ -565,7 +565,7 @@ export default function LeftDrawer({ open, setOpen, collapsed, setCollapsed }) {
               className="cursor-pointer text-[var(--text-color)] hidden lg:block"
             /> */}
                         <button
-                           onClick={() => setCollapsed(prev => !prev)}
+                            onClick={() => setCollapsed(prev => !prev)}
                             className="hidden lg:block cursor-pointer text-[var(--text-color)] outline-none focus:outline-none focus:ring-0"
                         >
                             {collapsed ? (

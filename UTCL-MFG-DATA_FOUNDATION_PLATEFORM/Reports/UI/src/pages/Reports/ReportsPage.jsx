@@ -1428,7 +1428,7 @@ export const ReportsPage = () => {
 
 
 
-return (
+  return (
     <AuthenticatedTemplate>
       <div className="w-full bg-[var(--bg-main-container)]">
         <div className="flex">
@@ -1436,7 +1436,8 @@ return (
             Report Template Configuration
           </h2>
           <button
-            className="text-[14px] px-3 py-1 mr-1 rounded-lg border border-[var(--button-border)] bg-[var(--button-bg)] text-[var(--text-color)] hover:bg-[var(--button-hover-bg)] transition ml-auto"
+            className="text-[14px] px-3 py-1 mr-1 rounded-lg border border-[var(--button-border)]  bg-[var(--submit-button-bg)] focus:outline-none focus:ring-0 outline-none:
+            text-black transition ml-auto"
             onClick={() => {
               navigate("/reportList");
             }}
@@ -1464,12 +1465,12 @@ return (
                 className="w-full px-2  h-[35px] rounded-lg  text-[13px] bg-[var(--input-enable-bg)] border border-[var(--input-enable-border)] text-[var(--text-color)] focus:outline-none focus:border-[var(--picker-accent)] disabled:bg-[var(--input-disable-bg)] disabled:cursor-not-allowed"
               />
             </div>
- 
+
             <div className="w-full">
               <label className="block mb-2 text-sm font-medium text-[var(--text-color)]">
                 PlantName <span className="text-red-500">*</span>
               </label>
- 
+
               {
                 <Select
                   value={
@@ -1492,7 +1493,7 @@ return (
               <div className="colcustom-2 pl-2 pr-2 cutomremoveindi">
                 {selectedPlant !== "" &&
                   !!!window.location.href.split("/").pop() ===
-                    "editReportPage" && (
+                  "editReportPage" && (
                     <button
                       onClick={() => setSelectedPlant("")}
                       className="p-2 btn btnfrst"
@@ -1502,12 +1503,12 @@ return (
                   )}
               </div>
             </div>
- 
+
             <div className="w-full">
               <label className="block mb-2 text-sm font-medium text-[var(--text-color)]">
                 Tags <span className="text-red-500">*</span>
               </label>
- 
+
               <Select
                 isMulti
                 value={selectedTags}
@@ -1519,11 +1520,11 @@ return (
                 styles={customStyles}
                 formatOptionLabel={formatOptionLabel}
               />
- 
+
               <div className="colcustom-2 pl-2 pr-2 cutomremoveindi">
                 {selectedTags !== [] &&
                   !!!window.location.href.split("/").pop() ===
-                    "editReportPage" && (
+                  "editReportPage" && (
                     <button
                       onClick={() => setSelectedTags([])}
                       className="p-2 btn btnfrst"
@@ -1576,7 +1577,7 @@ return (
               </div>
             </div>
           </div>
- 
+
           <div className="mt-6 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-end">
             {" "}
             <>
@@ -1584,7 +1585,7 @@ return (
                 <label className="block mb-2 text-sm font-medium text-[var(--text-color)]">
                   Period <span className="text-red-500">*</span>
                 </label>
- 
+
                 <Select
                   value={
                     selectedEmailFrequency !== "" && {
@@ -1602,27 +1603,27 @@ return (
               </div>
               {(selectedEmailFrequency === "Monthly" ||
                 selectedEmailFrequency === "Weekly") && (
-                <>
-                  <div className="w-full">
-                    <label className="block mb-2 text-sm font-medium text-[var(--text-color)] placeholder-[var(--search-placeholder)]">
-                      Start Date <span className="text-red-500">*</span>
-                    </label>
-                    <DatePicker
-                      selected={startDate}
-                      className="w-full px-3 py-[6px] text-[13px]  rounded-lg outline-none bg-[var(--report-field-bg-color)] border border-[#cccaca] focus:border-[#FD9F35] focus:ring-2 focus:ring-[#FD9F3530] transition-all"
-                      wrapperClassName="w-full"
-                      placeholderText="Click to select a date"
-                      onChange={(date) => {
-                        setStartDate(date);
-                      }}
-                      // showTimeSelect
-                      dateFormat="d/MM/yyyy"
-                      timeIntervals={1}
-                      calendarClassName="rasta-stripes"
-                    />
-                  </div>
-                </>
-              )}
+                  <>
+                    <div className="w-full">
+                      <label className="block mb-2 text-sm font-medium text-[var(--text-color)] placeholder-[var(--search-placeholder)]">
+                        Start Date <span className="text-red-500">*</span>
+                      </label>
+                      <DatePicker
+                        selected={startDate}
+                        className="w-full px-3 py-[6px] text-[13px]  rounded-lg outline-none bg-[var(--report-field-bg-color)] border border-[#cccaca] focus:border-[#FD9F35] focus:ring-2 focus:ring-[#FD9F3530] transition-all"
+                        wrapperClassName="w-full"
+                        placeholderText="Click to select a date"
+                        onChange={(date) => {
+                          setStartDate(date);
+                        }}
+                        // showTimeSelect
+                        dateFormat="d/MM/yyyy"
+                        timeIntervals={1}
+                        calendarClassName="rasta-stripes"
+                      />
+                    </div>
+                  </>
+                )}
               {selectedEmailFrequency === "Custom" && (
                 <>
                   <div className="w-full">
@@ -1678,59 +1679,59 @@ return (
               )}
               {(selectedEmailFrequency === "Yesterday" ||
                 selectedEmailFrequency === "Daily") && (
-                <>
-                  <div className="w-full">
-                    <label className="block mb-2 text-sm font-medium text-[var(--text-color)]">
-                      Start Time <span className="text-red-500">*</span>
-                    </label>
-                    <div className="relative">
-                      <DatePicker
-                        selected={endTime}
-                        placeholderText="Click to select a date"
-                        className="w-full h-[35px] px-2 text-[13px] border border-[var(--input-enable-border)] rounded-lg outline-none bg-[var(--input-enable-bg)] text-[var(--text-color)] focus:border-[var(--picker-accent)] transition-all"
-                        wrapperClassName="w-full"
-                        onChange={(date) => {
-                          setEndTime(date);
-                        }}
-                        filterTime={(time) => {
-                          let currentDate = new Date(startTime);
-                          let selectedDate = new Date(time);
-                          return currentDate.getTime() < selectedDate.getTime();
-                        }}
-                        showTimeSelect
-                        showTimeSelectOnly
-                        dateFormat="h:mm aa"
-                        timeIntervals={1}
-                        calendarClassName="rasta-stripes"
-                      />
+                  <>
+                    <div className="w-full">
+                      <label className="block mb-2 text-sm font-medium text-[var(--text-color)]">
+                        Start Time <span className="text-red-500">*</span>
+                      </label>
+                      <div className="relative">
+                        <DatePicker
+                          selected={endTime}
+                          placeholderText="Click to select a date"
+                          className="w-full h-[35px] px-2 text-[13px] border border-[var(--input-enable-border)] rounded-lg outline-none bg-[var(--input-enable-bg)] text-[var(--text-color)] focus:border-[var(--picker-accent)] transition-all"
+                          wrapperClassName="w-full"
+                          onChange={(date) => {
+                            setEndTime(date);
+                          }}
+                          filterTime={(time) => {
+                            let currentDate = new Date(startTime);
+                            let selectedDate = new Date(time);
+                            return currentDate.getTime() < selectedDate.getTime();
+                          }}
+                          showTimeSelect
+                          showTimeSelectOnly
+                          dateFormat="h:mm aa"
+                          timeIntervals={1}
+                          calendarClassName="rasta-stripes"
+                        />
+                      </div>
                     </div>
-                  </div>
-                  <div className="w-full">
-                    <label className="block mb-2 text-sm font-medium text-[var(--text-color)]">
-                      End Time <span className="text-red-500">*</span>
-                    </label>
-                    <div className="relative">
-                      <DatePicker
-                        selected={startTime}
-                        placeholderText="Click to select a date"
-                        className="w-full h-[35px] px-2 text-[13px] border border-[var(--input-enable-border)] rounded-lg outline-none bg-[var(--input-enable-bg)] text-[var(--text-color)] focus:border-[var(--picker-accent)] transition-all"
-                        wrapperClassName="w-full"
-                        onChange={(date) => {
-                          setStartTime(date);
-                        }}
-                        showTimeSelect
-                        showTimeSelectOnly
-                        dateFormat="h:mm aa"
-                        timeIntervals={1}
-                        calendarClassName="rasta-stripes"
-                      />
+                    <div className="w-full">
+                      <label className="block mb-2 text-sm font-medium text-[var(--text-color)]">
+                        End Time <span className="text-red-500">*</span>
+                      </label>
+                      <div className="relative">
+                        <DatePicker
+                          selected={startTime}
+                          placeholderText="Click to select a date"
+                          className="w-full h-[35px] px-2 text-[13px] border border-[var(--input-enable-border)] rounded-lg outline-none bg-[var(--input-enable-bg)] text-[var(--text-color)] focus:border-[var(--picker-accent)] transition-all"
+                          wrapperClassName="w-full"
+                          onChange={(date) => {
+                            setStartTime(date);
+                          }}
+                          showTimeSelect
+                          showTimeSelectOnly
+                          dateFormat="h:mm aa"
+                          timeIntervals={1}
+                          calendarClassName="rasta-stripes"
+                        />
+                      </div>
                     </div>
-                  </div>
-                </>
-              )}
+                  </>
+                )}
             </>
           </div>
- 
+
           {selectedEmailFrequency !== "Custom" && (
             <div className="mt-6 flex items-center gap-3">
               <input
@@ -1799,18 +1800,17 @@ return (
                     </div>
                   ))}
                 </div>
- 
+
                 <input
                   className={`
   w-full
   rounded-lg
   px-3 h-[35px] py-2
   border
-  ${
-    recipientError !== "" && recipientInput !== ""
-      ? "border-red-500 focus:ring-red-500"
-      : "border-[var(--form-border)] focus:ring-[var(--card-border)]"
-  }
+  ${recipientError !== "" && recipientInput !== ""
+                      ? "border-red-500 focus:ring-red-500"
+                      : "border-[var(--form-border)] focus:ring-[var(--card-border)]"
+                    }
   !bg-[var(--report-field-bg-color)]
   text-[var(--text-color)]
   placeholder-[var(--search-placeholder)]
@@ -1822,16 +1822,16 @@ return (
                   placeholder="Type email addresses and press `Enter`"
                   onKeyDown={(e) => handleKeyDownRecipient(e)}
                   onChange={(e) => handleChangeRecipientInput(e)}
-                  // onPaste={(e) => handlePasteRecipient()}
+                // onPaste={(e) => handlePasteRecipient()}
                 />
- 
+
                 {recipientError !== "" && recipientInput !== "" && (
                   <span className="text-red-500"> {recipientError}</span>
                 )}
               </div>
             </div>
           )}
- 
+
           {/* <div className="tagSelector"></div> */}
           <div className="mt-2 mb-2 flex justify-center">
             {submitLoader && loader}
@@ -1849,5 +1849,5 @@ return (
       </div>
     </AuthenticatedTemplate>
   );
- 
+
 };

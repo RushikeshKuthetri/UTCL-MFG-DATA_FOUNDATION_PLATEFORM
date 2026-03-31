@@ -96,13 +96,13 @@ export const MENU_ITEMS: MenuItem[] = [
       },
     ],
   },
-    {
+  {
     name: 'Help',
     icon: 'help',
-    path: '',
+    path: "https://dev.d24ohd8z0zwg7d.amplifyapp.com/mimics/help",
     moduleKey: 'Mimics',
     openInNewTab: false,
-},
+  },
   {
     name: 'Admin',
     icon: 'admin',
@@ -307,7 +307,7 @@ export class LeftDrawerComponent implements OnInit {
     }
   }
 
-getCurvedPath(): string {
+  getCurvedPath(): string {
     const spineX = VERTICAL_LINE_X;
     const radius = 10;
     const curveStartY = MID_Y - radius;
@@ -315,7 +315,7 @@ getCurvedPath(): string {
             L ${spineX} ${curveStartY}
             Q ${spineX} ${MID_Y} ${spineX + radius} ${MID_Y}
             L ${SVG_WIDTH} ${MID_Y}`;
-}
+  }
 
   isChildActive(children: MenuItem[] = [], currentPath: string): boolean {
     return children.some(
@@ -323,9 +323,9 @@ getCurvedPath(): string {
     );
   }
 
-getVerticalLineHeight(child: MenuItem, nestedOpen: boolean): string {
+  getVerticalLineHeight(child: MenuItem, nestedOpen: boolean): string {
     if (nestedOpen && child.hasDropdown && child.children?.length) {
-        return `${SVG_HEIGHT + (child.children.length - 1) * SVG_HEIGHT}px`;
+      return `${SVG_HEIGHT + (child.children.length - 1) * SVG_HEIGHT}px`;
     }
     return `${SVG_HEIGHT}px`;
   }

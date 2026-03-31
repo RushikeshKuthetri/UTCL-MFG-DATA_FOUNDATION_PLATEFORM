@@ -4,17 +4,21 @@ mwl-gauge {
   display: block;
   padding: 8px;
 }
-  mwl-gauge > .gauge > .dial {
+
+mwl-gauge>.gauge>.dial {
   stroke: #eee;
   stroke-width: 2;
   fill: transparent;
 }
- mwl-gauge > .gauge > .value {
-  stroke: #f97316; /* Tailwind orange-500 */
+
+mwl-gauge>.gauge>.value {
+  stroke: #f97316;
+  /* Tailwind orange-500 */
   stroke-width: 2;
   fill: transparent;
 }
- mwl-gauge > .gauge > .value-text {
+
+mwl-gauge>.gauge>.value-text {
   fill: #f97316;
   font-family: sans-serif;
   font-weight: bold;
@@ -22,7 +26,8 @@ mwl-gauge {
 }
 
 ::ng-deep mwl-gauge svg text {
-  fill: #d1d5db; /* light gray for dark theme */
+  fill: #d1d5db;
+  /* light gray for dark theme */
   font-size: 12px;
 }
 
@@ -30,86 +35,112 @@ mwl-gauge {
   fill: #e5e7eb;
 }
 
-  .chartRow{
-    margin-left:0px !important;
-    margin-right: 0px !important;
-  }
+.chartRow {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
 
-  .detail{
-    font-size:18px !important;
-    padding: 5px 5px 5px 5px;
+.detail {
+  font-size: 18px !important;
+  padding: 5px 5px 5px 5px;
 
 }
 
-.chart_card{
+.chart_card {
   min-height: 100%;
-    overflow: scroll;
+  overflow: scroll;
 }
 
-.value_span{
+// .value_span{
+//   align-items: center;
+//   justify-content: center;
+//   margin-top: 147px;
+//   font-size: 16px;
+//   font-weight: 800;
+//   span{
+//     width: 28px;
+//     height: 28px;
+//     // background: #fff500;
+//     text-align: center;
+//     border-radius: 16px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+
+// }
+
+.value_span {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 147px;
-  font-size: 16px;
-  font-weight: 800;
-  span{
-    width: 28px;
-    height: 28px;
-    // background: #fff500;
+
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-color);
+
+  width: 80%; // 🔥 important for truncation
+  max-width: 120px; // 👈 control karo kitna text dikhe
+
+  span {
+    display: block;
+    width: 100%;
+
+    overflow: hidden; // 🔥 required
+    white-space: nowrap; // 🔥 required
+    text-overflow: ellipsis; // 🔥 required
+
     text-align: center;
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
-
-}
-
-.noDataBox{
-  padding:10px;
-
-}
-
-.text-yellow{
-  color:#000;
-  font-size:20px;
 }
 
 
+.noDataBox {
+  padding: 10px;
+
+}
+
+.text-yellow {
+  color: #000;
+  font-size: 20px;
+}
 
 
 
 
-::ng-deep{
-  svg{
+
+
+::ng-deep {
+  svg {
     // width:100% !important;
     // height: 160px !important;
     // padding-left: 20px;
     // padding-top: 20px;
   }
+
   .svg-container2 {
     display: inline-block;
     width: 100%;
-    padding-bottom: 55%; /* aspect ratio */
+    padding-bottom: 55%;
+    /* aspect ratio */
     vertical-align: top;
     overflow: hidden;
   }
+
   .svg-content-responsive {
     display: inline-block;
     position: absolute;
     top: 44px;
     left: 0;
-    
+
   }
 
-  text:last-child{
+  text:last-child {
     transform: rotate(90) translate(256px, 2px) !important;
   }
 }
-
-
-
-
-
-
-  

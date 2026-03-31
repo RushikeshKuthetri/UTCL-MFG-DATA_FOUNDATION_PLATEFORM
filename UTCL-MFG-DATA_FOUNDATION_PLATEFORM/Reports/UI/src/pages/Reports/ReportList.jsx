@@ -813,12 +813,9 @@ export const ReportList = () => {
             text-[14px]
             rounded-lg
            !border !border-[var(--button-border)]
-          !bg-[var(--button-bg)]
-            text-[var(--text-color)]
-            transition-all
-            hover:bg-[var(--button-hover-bg)]
-          "
-          >
+           bg-[var(--submit-button-bg)]
+            text-black
+            transition-all focus:outline-none focus:ring-0 outline-none">
             Create Template
           </button>
         </div>

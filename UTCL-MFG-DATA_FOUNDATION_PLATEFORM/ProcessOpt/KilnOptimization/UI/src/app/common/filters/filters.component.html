@@ -52,7 +52,7 @@
       </div>
 
       <div *ngIf="type=='datepicker'">
-        <label class="mb-2 text-[13px] font-semibold uppercase tracking-[0.02em] text-[#8791a0]">
+        <label class="mb-2 text-[13px] font-semibold uppercase tracking-[0.02em] text-[var(--text-color)]">
           DATE <span class="text-[#ff4d4f]">*</span>
         </label>
         <app-datetimepicker class="block w-full" [type]='type' *ngIf="filtersData" [date_time]='filtersData.dateTime'
@@ -60,7 +60,7 @@
       </div>
 
       <div *ngIf="type=='datepicker1'">
-        <label class="mb-2 text-[13px] font-semibold uppercase tracking-[0.02em] text-[#8791a0]">
+        <label class="mb-2 text-[13px] font-semibold uppercase tracking-[0.02em] text-[var(--text-color)]">
           DATE <span class="text-[#ff4d4f]">*</span>
         </label>
         <app-datetimepicker class="block w-full" [type]='type' *ngIf="filtersData" [date_times]='filtersData.dateTime'

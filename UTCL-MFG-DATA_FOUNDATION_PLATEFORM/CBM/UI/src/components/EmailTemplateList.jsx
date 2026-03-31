@@ -649,22 +649,10 @@ export const EmailTemplateList = () => {
       <div className="w-full h-full">
         <div className="flex flex-col gap-3">
           <div className="flex justify-between -mt-1">
-           <h2 className="flex text-[18px] font-medium font-poppins text-[var(--title)] -mt-1 -ml-0.5">
+            <h2 className="flex text-[18px] font-medium font-poppins text-[var(--title)] -mt-1 -ml-0.5">
               Email Template List</h2>
             <button
-              className="
-    border
-    !border-[var(--button-border)]
-    bg-[var(--button-bg)]
-    text-[14px]
-    font-medium
-    px-2 py-1
-    rounded-lg
-    transition
-    cursor-pointer
-    hover:bg-[var(--button-hover-bg)]
-    text-[var(--text-color)]
-  "
+              className="bg-[var(--submit-button-bg)] text-black focus:outline-none focus:ring-0 outline-none text-[14px] font-medium px-2 py-1 rounded-lg transition cursor-pointer  inline-flex items-center gap-1 color "
               onClick={() => {
                 navigate("/EmailTemplate");
               }}

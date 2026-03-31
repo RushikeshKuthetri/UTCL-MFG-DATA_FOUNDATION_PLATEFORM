@@ -230,11 +230,13 @@ export const NavigationBar = () => {
   }
 
   const handleLogoutRedirect = () => {
-    let account = instance.getActiveAccount();
-    clearStorage(account);
+    const account = instance.getActiveAccount();
+
+    clearStorage(account); // clear before redirect
 
     instance.logoutRedirect({
-      account: instance.getActiveAccount(),
+      account: account,
+      postLogoutRedirectUri: "/", // redirect after logout
     });
   };
 
@@ -260,19 +262,21 @@ export const NavigationBar = () => {
     "/cyclonelist": "Cyclone View List",
   };
 
-  return (
-    <div className=" shadow-header-shadow-light dark:shadow-header-shadow-dark w-full h-14 bg-[var(--bg-header)] px-6 flex items-center justify-between">
+   return (
+     <div
+      className="w-full h-14 shadow-left-drawer-light dark:shadow-left-drawer-dark bg-[var(--bg-header)] px-6 flex items-center justify-between relative z-50"
+    >
 
       {/* Left Section */}
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-4 ">
         <Link to="/templates">
-          <img src={LOGO} className="h-[50px] w-auto object-contain" alt="logo" />
+           <img src={LOGO} className="h-[50px] w-[50px]" alt="logo" />
         </Link>
 
-        {/* <h1 className="text-sm sm:text-md md:text-lg font-semibold text-[var(--text-color)] tracking-tight">
+        {/* <h1 className="text-sm sm:text-md md:text-lg font-semibold text-[var(--header-text-color)] tracking-tight">
           {RouteHeadings[state.pathname]}
         </h1> */}
-        <h1 className="-ml-2 text-sm sm:text-md md:text-lg lg:text-lg xl:text-xl text-[var(--text-color)] font-medium font-poppins tracking-tight text-center">
+         <h1 className=" -ml-2 text-sm sm:text-md md:text-lg lg:text-lg xl:text-xl text-[var(--header-text-color)] font-medium font-poppins tracking-tight text-center">
           Prakriti: UltraTech's Unified OT Data Platform
         </h1>
       </div>
@@ -281,7 +285,7 @@ export const NavigationBar = () => {
       <AuthenticatedTemplate>
         <div className="flex items-center gap-4">
 
-          <span className="text-sm font-medium text-[var(--text-color)]">
+          <span className="text-sm font-medium text-[var(--header-text-color)]">
             Welcome{" "}
             <span className="font-semibold">
               {activeAccount ? activeAccount.name : ""}
@@ -294,7 +298,7 @@ export const NavigationBar = () => {
             flex items-center justify-center
             p-2 rounded-lg
             transition-all duration-200
-            text-[var(--text-color)]
+            text-[var(--header-text-color)]
             hover:bg-[var(--left-drawer-active-tab)]
             hover:text-[#111111]
           "

@@ -76,7 +76,7 @@ export const HistogramPlot = () => {
                     paper_bgcolor: theme.bg,
                     plot_bgcolor: theme.bg,
                     font: { color: theme.text },
-                    height: 450,
+                    height: 400,
                     margin: { l: 70, r: 30, t: 40, b: 70 },
                     barmode: "overlay", // 🔥 unchanged
                     xaxis: {

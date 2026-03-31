@@ -1491,7 +1491,8 @@ export const routes = [
   // HOP Routes
 
   {
-    path: "/hodashboardproject/millsrunningstatus",
+    // path: "/hodashboardproject/millsrunningstatus",
+    path: "/hoproject/millsrunningstatus",
     component: MimicPage.MillRunningHOPPage,
     description: "Mill Running Status of HOP",
   },
@@ -2456,5 +2457,12 @@ export const routes = [
     path: "/viewtrends",
     component: MimicPage.Trends,
     description: "Trends Visualization",
+  },
+
+  //Help section---------- View Docs
+  {
+    path: "/help",
+    component: MimicPage.ViewDocuments,
+    description: "Documentation In CDH",
   },
 ];

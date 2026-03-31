@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { Network } from "lucide-react";
 import { VscGraph } from "react-icons/vsc";
 import { FaArrowTrendUp } from "react-icons/fa6";
+import { IoHelpCircleOutline } from "react-icons/io5";
 
 const capitalizeFirst = (text = "") =>
     text.charAt(0).toUpperCase() + text.slice(1);
@@ -14,6 +15,9 @@ const BreadCrumb = ({ plantName, millName }) => {
 
     const isChartPage = location.pathname === "/chartspage";
     const isTrendPage = location.pathname === "/viewtrends";
+    const isHelpRoot = location.pathname === "/help";
+    const isFilesPage = location.pathname.startsWith("/help/files");
+    const isVideosPage = location.pathname.startsWith("/help/videos");
 
     const plantLink = plantName
         ?.replace(/[^a-zA-Z ]/g, "")
@@ -55,14 +59,49 @@ const BreadCrumb = ({ plantName, millName }) => {
                 <ol className="flex items-center gap-2 text-sm">
                     <span className="flex items-center gap-1 font-medium text-[var(--text-color)]">
                         <FaArrowTrendUp size={14} className="mr-1" />
-                         Trends
+                        Trends
                     </span>
                 </ol>
             </nav>
         );
     }
+    if (location.pathname.startsWith("/help")) {
+        return (
+            <nav aria-label="breadcrumb" className="mb-1">
+                <ol className="flex items-center gap-2 text-sm">
 
+                    {/* Help root */}
+                    <Link
+                        to="/help"
+                        className="flex items-center gap-1 font-medium text-[var(--text-color)] hover:text-[var(--card-border)] no-underline hover:no-underline focus:no-underline"
+                    >
+                        <IoHelpCircleOutline size={16} />
+                        Help
+                    </Link>
 
+                    {/* Docs */}
+                    {isFilesPage && (
+                        <>
+                            <span className="text-[var(--card-subtle)]">/</span>
+                            <span className="text-[var(--card-subtle)] font-medium">
+                                Files
+                            </span>
+                        </>
+                    )}
+
+                    {/* Videos */}
+                    {isVideosPage && (
+                        <>
+                            <span className="text-[var(--card-subtle)]">/</span>
+                            <span className="text-[var(--card-subtle)] font-medium">
+                                Videos
+                            </span>
+                        </>
+                    )}
+                </ol>
+            </nav>
+        );
+    }
 
     return (
         <nav aria-label="breadcrumb" className="mb-1">
@@ -107,4 +146,3 @@ const BreadCrumb = ({ plantName, millName }) => {
 };
 
 export default BreadCrumb;
- 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { colors } from "../../data/chartOpions/chatOptions";
 
-export const DetailsChart = ({ data, isGroupTags=false }) => {
+export const DetailsChart = ({ data, isGroupTags = false }) => {
   const { tagsUnit, tagsDescription } = data || {};
   const totalSeries = data.seriesData.length;
   const series = data.seriesData;
@@ -42,18 +42,18 @@ export const DetailsChart = ({ data, isGroupTags=false }) => {
           textAlign: "right",
           color: s.select ? "black" : "gray",
           display: "flex",
-          gap: "7px",
-          marginTop: "5px",
+          gap: "2px",
+          marginTop: "2px",
           cursor: "pointer",
-          fontSize: "12px",
+          fontSize: "10px",
         }}
         onClick={() => toggleSeries(i)}
       >
         <span
           style={{
-            height: "20px",
-            width: "20px",
-            borderRadius: "5px",
+            height: "12px",
+            width: "12px",
+            borderRadius: "3px",
             backgroundColor: colors[getColorIndex(i)].dark,
             display: "block",
           }}
@@ -66,7 +66,7 @@ export const DetailsChart = ({ data, isGroupTags=false }) => {
   return (
     <>
       {
-        isGroupTags  ? (
+        isGroupTags ? (
           <div className="details-chart">
             {/* <div className="details-chart-legends">{legends}</div> */}
             <div className="details-chart-body">
@@ -85,18 +85,36 @@ export const DetailsChart = ({ data, isGroupTags=false }) => {
         ) : (
           <div className="details-chart">
             <div className="details-chart-legends">{legends}</div>
+            {/* <div className="details-chart-body">
+              <span className="details-chart-value">{currentTagData.data[1]}</span>
+              <span className="details-chart-unit">{currentTagData.unit}</span>
+              <span className="details-chart-unit">{currentTagData.DateTime}</span>
+            </div>
             <div className="details-chart-head">
               <p className="details-chart-title">{currentTagData.name}</p>
               <p className="details-chart-description">{currentTagData.data[0]}</p>
               <p className="details-chart-description">
                 {currentTagData.description}
               </p>
+            </div> */}
+
+            <div className="flex items-center justify-center gap-2 mt-2 ">
+              <span className="text-[22px] font-bold text-[var(--text-color)]">{currentTagData.data[1]}</span>
+              <span className="text-[14px] text-[var(--text-color)]">{currentTagData.unit}</span>
+              <span className="text-[13px] text-[var(--text-color)]">{currentTagData.DateTime} </span>
             </div>
-            <div className="details-chart-body">
-              <span className="details-chart-value">{currentTagData.data[1]}</span>
-              <span className="details-chart-unit">{currentTagData.unit}</span>
-              <span className="details-chart-unit">{currentTagData.DateTime}</span>
+            <div className="flex items-center justify-center flex-col gap-1 mt-2">
+              <p className="text-base font-semibold text-[var(--text-color)]">
+                {currentTagData.name}
+              </p>
+              <p className="text-sm text-[var(--text-color)] opacity-70">
+                {currentTagData.data[0]}
+              </p>
+              <p className="text-sm text-[var(--text-color)] opacity-70">
+                {currentTagData.description}
+              </p>
             </div>
+
           </div>
         )
       }

@@ -1,7 +1,7 @@
 import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, Input, OnChanges, SimpleChanges, TemplateRef, ViewChild, ViewContainerRef, ɵExtraLocaleDataIndex } from '@angular/core';
 import * as d3 from "d3";
-import {blainModel,blainsUrlType} from '../../pages/home/blainModel.model';
-import {environment} from '../../../environments/environment';
+import { blainModel, blainsUrlType } from '../../pages/home/blainModel.model';
+import { environment } from '../../../environments/environment';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 import * as moment from 'moment';
 @Component({
@@ -15,193 +15,193 @@ export class GaugeComponents implements OnChanges {
   showChrts: any = false;
   @ViewChild("outlet", { read: ViewContainerRef })
   outletRef!: ViewContainerRef;
-  graphDateRange?: (Date | undefined)[]=[moment().subtract(10, 'day').toDate(), moment().toDate()]
-  @ViewChild("content", {read: TemplateRef}) contentRef!: TemplateRef<any>;
-  @Input() payload:any;
-  barData:any=[];
-  showBar=false;
-  showLine:boolean=false;
-  title!:string
-  blaineUrls:blainsUrlType={
-    'updateActualBlaineOneHour': environment.baseUrl+ 'updateActualBlaineOneHour',
-    'updateRecommadationForBlaine':environment.baseUrl+'updateRecommadationForBlaine',
-    'updateRemarksForBlaine':environment.baseUrl+'updateRemarksForBlaine',
-    'getLatestFilteredData':environment.baseUrl+'getLatestFilteredData',
-    'getLastTwoHrsData':environment.baseUrl+'getLastTwoHrsData',
-    'getBarChartData':environment.baseUrl+'getBlainePredictionChartData',
+  graphDateRange?: (Date | undefined)[] = [moment().subtract(10, 'day').toDate(), moment().toDate()]
+  @ViewChild("content", { read: TemplateRef }) contentRef!: TemplateRef<any>;
+  @Input() payload: any;
+  barData: any = [];
+  showBar = false;
+  showLine: boolean = false;
+  title!: string
+  blaineUrls: blainsUrlType = {
+    'updateActualBlaineOneHour': environment.baseUrl + 'updateActualBlaineOneHour',
+    'updateRecommadationForBlaine': environment.baseUrl + 'updateRecommadationForBlaine',
+    'updateRemarksForBlaine': environment.baseUrl + 'updateRemarksForBlaine',
+    'getLatestFilteredData': environment.baseUrl + 'getLatestFilteredData',
+    'getLastTwoHrsData': environment.baseUrl + 'getLastTwoHrsData',
+    'getBarChartData': environment.baseUrl + 'getBlainePredictionChartData',
   }
 
-  @ViewChild('myTestDiv') divElementRef?:ElementRef;
-  div2Element?:HTMLElement
-  @ViewChild('myTestDiv2') div2ElementRef?:ElementRef;
+  @ViewChild('myTestDiv') divElementRef?: ElementRef;
+  div2Element?: HTMLElement
+  @ViewChild('myTestDiv2') div2ElementRef?: ElementRef;
   divElement?: HTMLElement;
   hoursData!: number[];
-  historyHours:any="2";
+  historyHours: any = "2";
   modalRef?: BsModalRef;
-  token:any
-  constructor(private blainModel:blainModel,private cdr: ChangeDetectorRef,private modalService: BsModalService) {
-    
+  token: any
+  constructor(private blainModel: blainModel, private cdr: ChangeDetectorRef, private modalService: BsModalService) {
+
   }
-  ngOnInit():void{
-    this.token=localStorage.getItem('accessToken')
+  ngOnInit(): void {
+    this.token = localStorage.getItem('accessToken')
   }
 
   openModal(template: TemplateRef<any>) {
     this.modalRef = this.modalService.show(template);
   }
 
-  getDateRange(event:any){
-    this.graphDateRange=event;
+  getDateRange(event: any) {
+    this.graphDateRange = event;
     this.onSelectDateRange();
 
-    
+
   }
 
-  onSelectDateRange(){
-    this.showLine=false;
-    if(this.graphDateRange !=undefined){
-      this.payload.startDate= moment(this.graphDateRange[0]).format('YYYY-MM-DD 00:00:00');
-      this.payload.endDate= moment(this.graphDateRange[1]).format('YYYY-MM-DD 00:00:00');
+  onSelectDateRange() {
+    this.showLine = false;
+    if (this.graphDateRange != undefined) {
+      this.payload.startDate = moment(this.graphDateRange[0]).format('YYYY-MM-DD 00:00:00');
+      this.payload.endDate = moment(this.graphDateRange[1]).format('YYYY-MM-DD 00:00:00');
     }
-    this.payload.Hours=this.historyHours;
-      this.blainModel.postCall(this.blaineUrls.getBarChartData,this.payload,this.token).subscribe(
-        (result:any)=>{
-          if(result.result[0].result!="No Record Found"){
-            // console.log(result);
-            
-            this.barData=result.result;
-            this.barData.map((item:any)=>{
-            item.color=this.generateColor();
-            item.Date_Time= item.Date_Time.slice(11,16);
-            })
-            this.showLine=true;
-            // if(this.barData && this.barData.length>0){
-            //   this.outletRef.clear();
-            //   this.outletRef.createEmbeddedView(this.contentRef);
-            // }
-          }
-          else{
-            this.barData=[];
-            this.showLine=true;
-          }
-          
-          
-        },
-        (error:any)=>{
-          // console.log(error)
+    this.payload.Hours = this.historyHours;
+    this.blainModel.postCall(this.blaineUrls.getBarChartData, this.payload, this.token).subscribe(
+      (result: any) => {
+        if (result.result[0].result != "No Record Found") {
+          // console.log(result);
+
+          this.barData = result.result;
+          this.barData.map((item: any) => {
+            item.color = this.generateColor();
+            item.Date_Time = item.Date_Time.slice(11, 16);
+          })
+          this.showLine = true;
+          // if(this.barData && this.barData.length>0){
+          //   this.outletRef.clear();
+          //   this.outletRef.createEmbeddedView(this.contentRef);
+          // }
         }
-      )
-    
-  }  
+        else {
+          this.barData = [];
+          this.showLine = true;
+        }
 
 
-  getBarData(event:any, item:any, index:any){
-    if(this.graphDateRange !=undefined){
-      this.payload.startDate= this.graphDateRange[0];
-      this.payload.endDate= this.graphDateRange[1];
+      },
+      (error: any) => {
+        // console.log(error)
+      }
+    )
+
+  }
+
+
+  getBarData(event: any, item: any, index: any) {
+    if (this.graphDateRange != undefined) {
+      this.payload.startDate = this.graphDateRange[0];
+      this.payload.endDate = this.graphDateRange[1];
     }
 
     // delete this.payload.date;
     // delete this.payload.time;
-    this.title=item.Generic_Description;
-    this.payload.Tag_Id=item.IoT_Tag_Id;;
-      
-      this.blainModel.postCall(this.blaineUrls.getBarChartData,this.payload, this.token).subscribe(
-        (result:any)=>{
-          if(result.result[0].result!="No Record Found"){
-            this.barData=result.result;
-            // console.log(this.barData)
-            this.showLine=true;
-            this.barData.map((item:any)=>{
-            item.color=this.generateColor();
-            item.Date_Time= item.Date_Time.slice(11,16);
-            })
-            if(this.barData && this.barData.length>0){
-              this.outletRef?.clear();
-              this.outletRef?.createEmbeddedView(this.contentRef);
-            }
+    this.title = item.Generic_Description;
+    this.payload.Tag_Id = item.IoT_Tag_Id;;
 
-          
+    this.blainModel.postCall(this.blaineUrls.getBarChartData, this.payload, this.token).subscribe(
+      (result: any) => {
+        if (result.result[0].result != "No Record Found") {
+          this.barData = result.result;
+          // console.log(this.barData)
+          this.showLine = true;
+          this.barData.map((item: any) => {
+            item.color = this.generateColor();
+            item.Date_Time = item.Date_Time.slice(11, 16);
+          })
+          if (this.barData && this.barData.length > 0) {
+            this.outletRef?.clear();
+            this.outletRef?.createEmbeddedView(this.contentRef);
           }
-          else{
-            this.barData=[];
-          }
-          
-          
-        },
-        (error:any)=>{
-          // console.log(error)
+
+
         }
-      )
+        else {
+          this.barData = [];
+        }
+
+
+      },
+      (error: any) => {
+        // console.log(error)
+      }
+    )
   }
 
-  onHourChange(){
-    this.showLine=false;
-    this.payload.Hours=this.historyHours;
-      this.blainModel.postCall(this.blaineUrls.getBarChartData,this.payload,this.token).subscribe(
-        (result:any)=>{
-          if(result.result[0].result!="No Record Found"){
-            this.barData=result.result;
-            this.barData.map((item:any)=>{
-            item.color=this.generateColor();
-            item.Date_Time= item.Date_Time.slice(11,16);
-            })
-            this.showLine=true;
-            if(this.barData && this.barData.length>0){
-              this.outletRef.clear();
-              this.outletRef.createEmbeddedView(this.contentRef);
-            }
+  onHourChange() {
+    this.showLine = false;
+    this.payload.Hours = this.historyHours;
+    this.blainModel.postCall(this.blaineUrls.getBarChartData, this.payload, this.token).subscribe(
+      (result: any) => {
+        if (result.result[0].result != "No Record Found") {
+          this.barData = result.result;
+          this.barData.map((item: any) => {
+            item.color = this.generateColor();
+            item.Date_Time = item.Date_Time.slice(11, 16);
+          })
+          this.showLine = true;
+          if (this.barData && this.barData.length > 0) {
+            this.outletRef.clear();
+            this.outletRef.createEmbeddedView(this.contentRef);
           }
-          else{
-            this.barData=[];
-            this.showLine=true;
-          }
-          
-          
-        },
-        (error:any)=>{
-          // console.log(error)
         }
-      )
+        else {
+          this.barData = [];
+          this.showLine = true;
+        }
+
+
+      },
+      (error: any) => {
+        // console.log(error)
+      }
+    )
   }
 
-  generateColor = () =>  {
-    return "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0').toUpperCase();
-}
+  generateColor = () => {
+    return "#" + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0').toUpperCase();
+  }
 
   ngOnChanges(changes: SimpleChanges): void {
     if (Object.keys(this.datasource).length > 0) {
       setTimeout(() => {
-        this.datasource.Tags_Data.map((item: any,index:any) => {
-          item.showGuage=true;
-          this.draw(item.IoT_Tag_Id, item.Process_Values,index);
+        this.datasource.Tags_Data.map((item: any, index: any) => {
+          item.showGuage = true;
+          this.draw(item.IoT_Tag_Id, item.Process_Values, index);
         })
       }, 100);
 
       // this.outletRef.clear();
       // this.outletRef.createEmbeddedView(this.contentRef);
-      
-      
+
+
     }
 
-    this.hoursData=this.blainModel.generateArray()
+    this.hoursData = this.blainModel.generateArray()
   }
- 
 
 
-  draw(id: any, value: any,index:any) {
+
+  draw(id: any, value: any, index: any) {
     var self = this;
     // var majorTicks=Math.floor(Math.ceil(value)+50)/10;
-    var majorTicks=6;
-    
-    if(this.payload.Mill.includes('RAML') || this.payload.Grade.includes('45MIC')){
-      this.title="Residue";
-      var arcColor:String='#778899';
+    var majorTicks = 6;
+
+    if (this.payload.Mill.includes('RAML') || this.payload.Grade.includes('45MIC')) {
+      this.title = "Residue";
+      var arcColor: String = '#778899';
     }
-    else{
-      var arcColor:String='#fff500';
+    else {
+      var arcColor: String = '#FA9E37';;
     }
-    var maxValue=Math.ceil(value / 10) * 10 +100
+    var maxValue = Math.ceil(value / 10) * 10 + 100
 
     // if(value<500){
     //   arcColor='#2dc937'
@@ -215,7 +215,7 @@ export class GaugeComponents implements OnChanges {
     var gauge = function (container: any, configuration: any) {
 
       var config: any = {
-        size:1000,
+        size: 1000,
         // clipWidth: 200,
         // clipHeight: 110,
         ringInset: 20,
@@ -306,16 +306,26 @@ export class GaugeComponents implements OnChanges {
 
       function render(newValue: any) {
         svg = d3.select(container)
-        .classed("svg-container", true)
+          .classed("svg-container", true)
           .append('svg:svg')
           .attr('class', 'gauge gauge_meter')
           // .attr("preserveAspectRatio", "xMinYMin meet")
-   .attr("viewBox", "-10 -8 600 400")
-   //class to make it responsive
-   .classed("svg-content-responsive", true);
-         
+          .attr("viewBox", "-10 -8 600 400")
+          //class to make it responsive
+          .classed("svg-content-responsive", true);
+
 
         var centerTx = centerTranslation();
+        // 🔥 VALUE TEXT (CENTER ME)
+        svg.append("text")
+          .attr("class", "gauge-value")
+          .attr("text-anchor", "middle")
+          .attr("x", r)
+          .attr("y", r + 80) // position adjust kar sakte ho
+          .text(newValue)
+          .style("font-size", "28px")
+          .style("font-weight", "600")
+          .style("fill", "var(--text-color)");
 
         var arcs = svg.append('g')
           .attr('class', 'arc')
@@ -335,20 +345,23 @@ export class GaugeComponents implements OnChanges {
         lg.selectAll('text')
           .data(ticks)
           .enter().append('text')
-          .attr('transform', function (d: any, index:any) {
+          .attr('transform', function (d: any, index: any) {
             var ratio = scale(d);
             var newAngle = config.minAngle + (ratio * range);
             // return 'rotate(' + newAngle + ') translate(-8,' + (config.labelInset - r) + ')';
-            if(index%2==0 && index>6){
+            if (index % 2 == 0 && index > 6) {
               return 'rotate(' + 0 + ') translate(260,4' + ')';
             }
-            else{
+            else {
               return 'rotate(' + newAngle + ') translate(-8,' + (config.labelInset - r) + ')';
 
             }
-            
+
           })
-          .text(config.labelFormat);
+          .text(config.labelFormat)
+          .style("fill", "var(--text-color)")   //  YE ADD KARO
+          .style("font-size", "30px");          // optional
+
 
         var lineData = [[config.pointerWidth / 2, 0],
         [0, -pointerHeadLength],
@@ -363,11 +376,13 @@ export class GaugeComponents implements OnChanges {
         pointer = pg.append('path')
           .attr('d', pointerLine/*function(d) { return pointerLine(d) +'Z';}*/)
           .attr('transform', 'rotate(' + config.minAngle + ')')
+           .style("fill", "var(--text-color)");
 
         update(newValue === undefined ? 0 : newValue);
       }
       self.gaugemap.render = render;
       function update(newValue: any, newConfiguration?: any) {
+        svg.select(".gauge-value").text(newValue);
         if (newConfiguration !== undefined) {
           configure(newConfiguration);
         }
@@ -385,7 +400,7 @@ export class GaugeComponents implements OnChanges {
       return self.gaugemap;
     };
     // Math.floor(Math.random()*(999-100+1)+100)
-    var size=window.innerWidth
+    var size = window.innerWidth
     var powerGauge = gauge(`#g${index}`, {
       size: 550,
       clipWidth: 600,
@@ -453,3 +468,4 @@ export class GaugeComponents implements OnChanges {
 
   }
 }
+ 

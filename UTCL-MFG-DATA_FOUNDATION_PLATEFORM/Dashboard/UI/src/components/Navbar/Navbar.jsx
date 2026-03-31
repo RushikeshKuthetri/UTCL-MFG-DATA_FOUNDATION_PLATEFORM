@@ -108,20 +108,20 @@ export function Navbar() {
 
   return (
     <div className="w-full h-14 bg-[var(--bg-header)] px-6 flex items-center justify-between shadow-[var(--header-shadow)] scroll">
-      <div className="flex items-center gap-2">
+      <div className="flex items-center ">
 
         <button className="navbar-brand">
           <img src={adityabirlalogo} className="logo w-[50px] h-[50px]" alt="logo" />
         </button>
 
-        <h1 className="text-sm sm:text-md md:text-lg lg:text-lg xl:text-xl text-[var(--text-color)] tracking-tight text-center font-medium font-poppins">
+        <h1 className=" -ml-2 text-sm sm:text-md md:text-lg lg:text-lg xl:text-xl text-[var(--header-text-color)] font-medium font-poppins tracking-tight text-center">
           Prakriti: UltraTech's Unified OT Data Platform
         </h1>
 
       </div>
       {isAuth && (
         <div className="flex items-center gap-4">
-          <span className="text-sm font-medium text-[var(--text-color)]">
+          <span className="text-sm font-medium text-[var(--header-text-color)]">
             Welcome {authProvider?.username}
           </span>
 
@@ -134,10 +134,11 @@ export function Navbar() {
                  hover:bg-gray-200 dark:hover:bg-gray-700 
                  transition duration-200"
           >
-            <BiLogOutCircle size={20} className="text-[var(--text-color)] rotate-90" />
+            <BiLogOutCircle size={20} className="text-[var(--header-text-color)] rotate-90" />
           </button>
         </div>
       )}
     </div>
   );
 }
+ 

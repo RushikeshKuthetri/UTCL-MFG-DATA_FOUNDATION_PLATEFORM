@@ -6270,16 +6270,15 @@ export const TemplateFilter = () => {
           </h2>
           <button
             onClick={() => navigate("/templates")}
-            className="    border border-[var(--button-border)] mr-0.5
-    bg-[var(--button-bg)]
+            className=" mr-0.5
     text-[14px]
     font-medium
     px-2 py-1
     rounded-lg
     transition
     cursor-pointer
-    hover:bg-[var(--button-hover-bg)]
-    text-[var(--text-color)]"
+        bg-[var(--submit-button-bg)] text-black focus:outline-none focus:ring-0 outline-none
+"
           >
             {/* <BiChevronLeft size={22} /> */}
             Back

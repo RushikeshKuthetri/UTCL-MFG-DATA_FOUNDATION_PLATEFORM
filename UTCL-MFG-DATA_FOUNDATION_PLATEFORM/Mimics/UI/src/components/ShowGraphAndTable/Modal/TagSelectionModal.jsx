@@ -186,7 +186,7 @@ const TagSelectionModal = ({
                         {/* SEARCH */}
                         <input
                             type="text"
-                            placeholder="Search tags..."
+                            placeholder="Search tags or Use comma separated values to copy and paste multiple tags"
                             value={search}
                             onChange={(e) => {
                                 const value = e.target.value;
@@ -199,7 +199,8 @@ const TagSelectionModal = ({
                                     setSearch(""); // 🔥 clear input after selection
                                 }
                             }}
-                            className="w-full mb-3 px-3 py-2 border rounded-md 
+                            className="w-full mb-3 px-3 py-2 border rounded-md
+                            placeholder:text-[12px]
              bg-[var(--input-enable-bg)] 
              border-[var(--form-border)]
              text-[var(--text-color)]

@@ -2742,9 +2742,11 @@ export const plantDetails = [
   {
     id: "HOP",
     region: "HO",
-    name: "HO-Project",
+    name: "HO-Project", // Chaned by TRIDAI on (26-03-2026)
+    // name: "HO Dashboard-Project",
     category: "Plant",
-    path: "/hodashboardproject",
+    // path: "/hodashboardproject",
+    path: "/hoproject",
     sections: [
       {
         name: "Kiln/Mill Running Status",
@@ -3377,6 +3379,7 @@ export const plantDetails = [
   // Vishnupuram
   {
     id: "VSCW",
+    region: "South",
     name: "vishnupuram",
     category: "Plant",
     path: "/vishnupuram",
@@ -3513,6 +3516,7 @@ export const plantDetails = [
   // Chilamkur
   {
     id: "CKCW",
+    region: "South",
     name: "chilamkur",
     category: "Plant",
     path: "/chilamkur",

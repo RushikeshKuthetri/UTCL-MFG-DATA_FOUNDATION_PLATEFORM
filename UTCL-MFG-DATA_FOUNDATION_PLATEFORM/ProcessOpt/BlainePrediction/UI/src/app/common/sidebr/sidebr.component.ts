@@ -95,11 +95,11 @@ export const MENU_ITEMS: MenuItem[] = [
   {
     name: 'Help',
     icon: 'help',
-    path: '',
+    path: "https://dev.d24ohd8z0zwg7d.amplifyapp.com/mimics/help",
     moduleKey: 'Mimics',
     openInNewTab: false,
-},
- 
+  },
+
   {
     name: 'Admin',
     icon: 'admin',
@@ -119,9 +119,9 @@ export const MENU_ITEMS: MenuItem[] = [
       { name: 'Settings', icon: '', path: 'https://dev.d24ohd8z0zwg7d.amplifyapp.com/admin/Dashboard/settings', roles: ['admin', 'super_admin'] },
     ],
   },
- 
+
 ];
- 
+
 export const SVG_WIDTH = 20;
 export const SVG_HEIGHT = 32;
 export const VERTICAL_LINE_X = 8;
@@ -201,71 +201,71 @@ export class SidebrComponent implements OnInit {
 
   applyMenuFiltering(): void {
 
-  this.filteredMenu = this.menuItems
-    .filter((item) => {
+    this.filteredMenu = this.menuItems
+      .filter((item) => {
 
-      // Admin always visible
-      if (item.moduleKey === 'Admin') return true;
+        // Admin always visible
+        if (item.moduleKey === 'Admin') return true;
 
-      if (item.moduleKey && !this.modules?.includes(item.moduleKey)) {
-        return false;
-      }
+        if (item.moduleKey && !this.modules?.includes(item.moduleKey)) {
+          return false;
+        }
 
-      return true;
-    })
-    .map((item) => {
+        return true;
+      })
+      .map((item) => {
 
-      if (!item.children) return item;
+        if (!item.children) return item;
 
-      let filteredChildren = item.children;
+        let filteredChildren = item.children;
 
-      if (item.moduleKey === 'Admin') {
+        if (item.moduleKey === 'Admin') {
 
-        filteredChildren = item.children.filter(
-          child => !child.roles || child.roles.includes(this.role)
-        );
+          filteredChildren = item.children.filter(
+            child => !child.roles || child.roles.includes(this.role)
+          );
 
-      } else {
+        } else {
 
-        filteredChildren = item.children.filter(
-          child => !child.moduleKey || this.modules?.includes(child.moduleKey)
-        );
+          filteredChildren = item.children.filter(
+            child => !child.moduleKey || this.modules?.includes(child.moduleKey)
+          );
 
-      }
+        }
 
-      return { ...item, children: filteredChildren };
+        return { ...item, children: filteredChildren };
 
-    })
-    .filter((item) => {
+      })
+      .filter((item) => {
 
-      if (item.children && item.children.length === 0) return false;
+        if (item.children && item.children.length === 0) return false;
 
-      return true;
+        return true;
 
-    });
-}
-handleNavigation(item: MenuItem): void {
-
-  console.log("Clicked menu:", item);
-
-  if (!item.path) return;
-   if (item.name === 'Trends') {
-    localStorage.setItem('collapsed', 'true');
-    // this.collapsedChange.emit(true); // update parent state
+      });
   }
+  handleNavigation(item: MenuItem): void {
 
-  const fullUrl = item.path.startsWith('http')
-    ? item.path
-    : window.location.origin + item.path;
+    console.log("Clicked menu:", item);
 
-  console.log("Navigating to:", fullUrl);
+    if (!item.path) return;
+    if (item.name === 'Trends') {
+      localStorage.setItem('collapsed', 'true');
+      // this.collapsedChange.emit(true); // update parent state
+    }
 
-  if (item.openInNewTab) {
-    window.open(fullUrl, '_blank', 'noopener,noreferrer');
-  } else {
-    window.location.href = fullUrl;
+    const fullUrl = item.path.startsWith('http')
+      ? item.path
+      : window.location.origin + item.path;
+
+    console.log("Navigating to:", fullUrl);
+
+    if (item.openInNewTab) {
+      window.open(fullUrl, '_blank', 'noopener,noreferrer');
+    } else {
+      window.location.href = fullUrl;
+    }
   }
-}
 
 
   isActiveRoute(path: string): boolean {
@@ -306,8 +306,8 @@ handleNavigation(item: MenuItem): void {
       this.toggleDropdown(item.name);
     }
   }
- 
- getCurvedPath(): string {
+
+  getCurvedPath(): string {
     const spineX = VERTICAL_LINE_X;
     const radius = 10;
     const curveStartY = MID_Y - radius;
@@ -315,19 +315,19 @@ handleNavigation(item: MenuItem): void {
             L ${spineX} ${curveStartY}
             Q ${spineX} ${MID_Y} ${spineX + radius} ${MID_Y}
             L ${SVG_WIDTH} ${MID_Y}`;
-}
- 
+  }
+
   isChildActive(children: MenuItem[] = [], currentPath: string): boolean {
     return children.some(
       (c) => currentPath === c.path || this.isChildActive(c.children ?? [], currentPath)
     );
   }
- 
-getVerticalLineHeight(child: MenuItem, nestedOpen: boolean): string {
+
+  getVerticalLineHeight(child: MenuItem, nestedOpen: boolean): string {
     if (nestedOpen && child.hasDropdown && child.children?.length) {
-        // SVG_HEIGHT (child row) + grandchildren ki height
-        // Last grandchild tak nahi jaani chahiye isliye -1
-        return `${SVG_HEIGHT + (child.children.length - 1) * SVG_HEIGHT}px`;
+      // SVG_HEIGHT (child row) + grandchildren ki height
+      // Last grandchild tak nahi jaani chahiye isliye -1
+      return `${SVG_HEIGHT + (child.children.length - 1) * SVG_HEIGHT}px`;
     }
     return `${SVG_HEIGHT}px`;
   }

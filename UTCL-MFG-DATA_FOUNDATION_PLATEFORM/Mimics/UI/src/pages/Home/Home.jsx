@@ -94,7 +94,7 @@ export const Home = () => {
                       {/* Region Heading */}
                       <div className="flex items-center gap-3 mb-2">
                         <div className="flex-1 h-px bg-gray-300" />
-                        <span className="text-[17px] font-medium text-[var(--text-color)] whitespace-nowrap">
+                        <span className="text-[18px] font-semibold text-orange-500 whitespace-nowrap">
                           {region}
                         </span>
                         <div className="flex-1 h-px bg-gray-300" />

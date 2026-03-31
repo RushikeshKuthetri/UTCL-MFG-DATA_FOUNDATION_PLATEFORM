@@ -403,7 +403,7 @@ export function Navbar() {
         >
           <img src={ultraLogo} className="h-[50px] w-[50px]" alt="logo" />
         </Link>
-        <h1 className=" -ml-2 text-sm sm:text-md md:text-lg lg:text-lg xl:text-xl text-[var(--text-color)] font-medium font-poppins tracking-tight text-center">
+        <h1 className=" -ml-2 text-sm sm:text-md md:text-lg lg:text-lg xl:text-xl text-[var(--header-text-color)] font-medium font-poppins tracking-tight text-center">
           Prakriti: UltraTech's Unified OT Data Platform
         </h1>
       </div>
@@ -448,7 +448,7 @@ export function Navbar() {
             Go To Dashboard
           </button> */}
           <div className="flex items-center gap-3">
-            <span className="text-sm font-medium text-[var(--text-color)]">
+            <span className="text-sm font-medium text-[var(--header-text-color)]">
               Welcome{" "}
               <span className="font-semibold">{authProvider?.username}</span>
             </span>
@@ -459,7 +459,7 @@ export function Navbar() {
       flex items-center justify-center
       p-2 rounded-lg
       transition-all duration-200
-      text-[var(--text-color)]
+      text-[var(--header-text-color)]
       hover:bg-[var(--left-drawer-active-tab)]
       hover:text-[#111111]
     "

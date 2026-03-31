@@ -46,14 +46,14 @@ const menuItems = [
     {
         name: "Trends",
         icon: FaArrowTrendUp,
-        path: "https://dev.d24ohd8z0zwg7d.amplifyapp.com/mimics/viewtrends",
+        path: "/mimics/viewtrends",
         moduleKey: "Mimics",
         openInNewTab: false
     },
     {
         name: "Report",
         icon: ImFilesEmpty,
-        path: "/reports/reportList",
+        path: "/reports/reportList/",
         moduleKey: "Mimics",
         openInNewTab: false
     },
@@ -173,7 +173,7 @@ const menuItems = [
        {
         name: "Help",
         icon: IoHelpCircleOutline,
-        path: "",
+           path: "/mimics/help",
         moduleKey: "Mimics",
         openInNewTab: false
     },
@@ -435,7 +435,7 @@ export default function LeftDrawer({ open, setOpen, collapsed, setCollapsed }) {
                                 <div
                                     className={`flex items-center py-2 px-3 rounded-xl cursor-pointer
                                         ${collapsed ? "justify-center" : "gap-4"}
-                                        text-[var(--text-color)]
+                                         text-[var(--leftdrawer-text)]
                                         hover:bg-[var(--left-drawer-active-tab)]
                                         hover:text-[#111111]`}
                                     onClick={() => {

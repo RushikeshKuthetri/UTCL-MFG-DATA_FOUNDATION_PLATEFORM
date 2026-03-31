@@ -85,10 +85,11 @@ export const Card = ({ data, view, plantId, stats }) => {
   return (
     <div className="col-12 col-sm-6 mt-2 px-1"
       style={{ flex: "0 0 calc(20% )", maxWidth: "calc(20% )" }}>
-      <Link
-        to={data?.path}
-        onClick={handleClick}
-        className="
+      <div className="border border-[var(--card-border-main)] rounded-xl">
+        <Link
+          to={data?.path}
+          onClick={handleClick}
+          className="
 block
 rounded-xl
 no-underline hover:no-underline
@@ -104,24 +105,25 @@ transform-gpu
 hover:scale-[1.02]
 relative z-10 hover:z-20
 "
-      >
-        {/* Title */}
-        <h3 className="text-[16px] font-semibold mb-3 text-[var(--text-color)]">
-          {toTitleCase(data?.name)}
-        </h3>
+        >
+          {/* Title */}
+          <h3 className="text-[14px] font-medium mb-3 text-[var(--text-color)]">
+            {toTitleCase(data?.name)}
+          </h3>
 
-        {/* Bottom Section */}
-        <div className="flex justify-between items-center text-[var(--card-subtle)] text-[12px]">
-          {data?.category === "Plant" ? (
-            <>
-              <p>Tags: {stats?.tags ?? 0}</p>
-              <p>Lines: {stats?.lines ?? 0}</p>
-            </>
-          ) : (
-            <p>{data?.category}</p>
-          )}
-        </div>
-      </Link>
+          {/* Bottom Section */}
+          <div className="flex justify-between items-center text-[var(--card-subtle)] text-[12px]">
+            {data?.category === "Plant" ? (
+              <>
+                <p>Tags: {stats?.tags ?? 0}</p>
+                <p>Lines: {stats?.lines ?? 0}</p>
+              </>
+            ) : (
+              <p>{data?.category}</p>
+            )}
+          </div>
+        </Link>
+      </div>
     </div>
   );
 };

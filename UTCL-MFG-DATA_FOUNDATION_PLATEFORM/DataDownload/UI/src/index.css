@@ -18,7 +18,7 @@ code {
 @font-face {
   font-family: 'Poppins';
   src: url('/public/Poppins/Poppins-Regular.ttf') format('truetype');
-  font-weight: 400;  
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -26,7 +26,7 @@ code {
 @font-face {
   font-family: 'Poppins';
   src: url('/public/Poppins/Poppins-Medium.ttf') format('truetype');
-  font-weight: 500;  
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -34,7 +34,7 @@ code {
 @font-face {
   font-family: 'Poppins';
   src: url('/public/Poppins/Poppins-Bold.ttf') format('truetype');
-  font-weight: 600;  
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -49,7 +49,7 @@ body {
 :root {
   /* ✅ Date & Time Picker */
   --picker-bg: #EAEAEA;
-  --header-text-color:#29292B;
+  --header-text-color :#29292B;
   --picker-text: #111111;
   --picker-border: #cbd5e1;
   --picker-hover: #f1f5f9;
@@ -68,19 +68,18 @@ body {
   --status-inactive-text: #B40000;
   --submit-button-bg: #FFA947;
   --submit-button-hover-bg: #f5b367;
-   --text-color: #272626;
+  --text-color: #4D5050;
   --title: #AF6A1C;
-  --bg-color: #F6F5F3;
+  --bg-color: #FFFFFF;
   --bg-header: #FE8F12;
   --header-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
-  --leftdrawer-text: #404242;
-  --bg-leftdrawer: #F2F2F2;
+  --bg-leftdrawer: #FFFFFF;
   --bg-leftdrawer-footer: #eaeaea;
   --left-drawer-active-tab: #FD9F35;
   --left-drawer-footer-border: rgba(203, 219, 217, 0.7);
   --left-drawer-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1), 2px 0 6px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.1);
-  --bg-main-container: #F1F0EE;
-  --card-bg: #FFF6F6;
+  --bg-main-container: #FFFFFF;
+  --card-bg: #F9FAFB;
   --card-subtle: #776F6F;
   --card-shadow: 0 0px 4px rgba(0, 0, 0, 0.08);
   --mimic-line: rgba(119, 136, 134, 0.50);
@@ -89,14 +88,14 @@ body {
   --search-bg: rgba(255, 255, 255, 0.18);
   --search-placeholder: #888888;
   --search-border: rgba(136, 136, 136, 0.3);
-  --leftdrawer-text: #404242;
+  --leftdrawer-text: #4D5050;
 }
 
 .dark {
 
   /* ✅ Date & Time Picker */
   --picker-bg: #1f2937;
-  --header-text-color:#FA9E37;
+--header-text-color: #F0F0F0;
   --leftdrawer-text: #B7C5C5;
   --picker-text: #f3f4f6;
   --picker-border: #374151;
@@ -110,12 +109,11 @@ body {
   --button-bg: #282829;
   --button-hover-bg: #424345;
   --select-option-hover: rgba(255, 255, 255, 0.08);
-  --text-color: #F0F0F0;
+  --text-color: #B7C5C5;
   --title: #FFC07A;
   --bg-color: #1E1E1F;
   --bg-header: #181919;
   --header-shadow: 0 2px 6px rgba(255, 255, 255, 0.25);
-  --leftdrawer-text: #B7C5C5;
   --bg-leftdrawer: #181919;
   --bg-leftdrawer-footer: #2B2C2D;
   --left-drawer-active-tab: #FD9F35;

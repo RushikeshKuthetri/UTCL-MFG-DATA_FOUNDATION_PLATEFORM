@@ -110,7 +110,7 @@ export const XYPlot = () => {
                     paper_bgcolor: theme.bg,
                     plot_bgcolor: theme.bg,
                     font: { color: theme.text },
-                    height: 450,
+                    height: 400,
                     margin: { l: 80, r: 40, t: 40, b: 80 },
                     xaxis: {
                         title: {

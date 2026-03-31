@@ -65,7 +65,8 @@ export function PopUp({ children, heading, dispatchType }) {
           heading === "Trends"
             ? showPopup.minimise
               ? "minimise"
-              : "box"
+              // : "box"  // removed to show bg based on theme
+               : "bg-[var(--bg-main-container)] w-full"
             : getPopupClassName(showPopup.popupName)
         }
       >

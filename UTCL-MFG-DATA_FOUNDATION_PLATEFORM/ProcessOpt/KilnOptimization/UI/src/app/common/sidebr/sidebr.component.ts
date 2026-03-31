@@ -95,7 +95,7 @@ export const MENU_ITEMS: MenuItem[] = [
   {
     name: 'Help',
     icon: 'help',
-    path: '',
+    path: "https://dev.d24ohd8z0zwg7d.amplifyapp.com/mimics/help",
     moduleKey: 'Mimics',
     openInNewTab: false,
 },

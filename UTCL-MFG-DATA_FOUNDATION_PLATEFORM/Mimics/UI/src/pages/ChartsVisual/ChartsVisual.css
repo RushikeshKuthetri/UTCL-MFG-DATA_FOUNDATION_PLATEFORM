@@ -449,8 +449,8 @@ table td {
 }
 
 table th {
-  background: orange;
-  color: black;
+  /* background: orange; */
+  /* color: black; */
   padding: 8px 12px;
   font-size: 13px;
   font-weight: 600;
@@ -791,7 +791,7 @@ table tbody tr:nth-child(even):hover {
   justify-content: space-start;
   align-items: center;
   width: 100%;
-  padding: 0.8rem 6em;
+  padding: 0em 1em;
   gap: 10px;
 }
 

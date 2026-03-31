@@ -93,4 +93,4 @@ export { Graph } from "./../components/ShowGraphAndTable/Graph/Graph"
 export { TrendFilterCard } from './../components/ShowGraphAndTable/FilterCard/TrendFilterCard'
 
 export { Trends } from "./../components/Trends/Trends/Trends"
-
+export { ViewDocuments } from "../components/ViewDocuments/ViewDocuments"

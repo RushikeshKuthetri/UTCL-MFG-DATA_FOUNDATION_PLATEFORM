@@ -1,3 +1,13 @@
+// 
+
+
+
+
+
+
+
+
+
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
@@ -26,7 +36,7 @@ export const MillRunningPage = () => {
 
   useEffect(() => {
     (async () => {
-      dispatch({type: "START_LOADER"});
+      dispatch({ type: "START_LOADER" });
       try {
         dispatch({ type: "HO_DASHBOARD_LOADING_TRUE" });
         const response = await getCentralisedTableData();
@@ -41,10 +51,10 @@ export const MillRunningPage = () => {
           type: "SOCKET_DATA",
           payload: latesDataResponse,
         });
-        
+
         const id = setInterval(async () => {
           const latesDataResponse =
-          await getLatestDataForCentralisedDashboardTable();
+            await getLatestDataForCentralisedDashboardTable();
           dispatch({
             type: "SOCKET_DATA",
             payload: latesDataResponse,
@@ -55,13 +65,13 @@ export const MillRunningPage = () => {
       } catch (error) {
         console.error(error);
       }
-      dispatch({type: "STOP_LOADER"});
+      dispatch({ type: "STOP_LOADER" });
     })();
   }, [dispatch]);
-  
+
   useEffect(() => {
     (async () => {
-      dispatch({type: "START_LOADER"});
+      dispatch({ type: "START_LOADER" });
       try {
         const kilnResponse = await getKilnShutDownStatus();
         dispatch({
@@ -85,11 +95,11 @@ export const MillRunningPage = () => {
       } catch (error) {
         console.error(error);
       }
-      dispatch({type: "STOP_LOADER"});
+      dispatch({ type: "STOP_LOADER" });
     })();
   }, []);
 
-  useEffect(() => { 
+  useEffect(() => {
     return () => {
       dispatch({
         type: "HO_TAGS_DETAILS",
@@ -101,11 +111,11 @@ export const MillRunningPage = () => {
         clearInterval(intervalId);
       }
     };
-  },[])
+  }, [])
   // console.log(centralisedDashboardData.centralisedDashboardPlants)
   // useSocketConnection(centralisedDashboardData.centralisedDashboardPlants);
   return (
-    <section className="mill-running cd_table_bg px-2">
+    <section className=" px-2 overflow-x-scroll">
       {centralisedDashboardData.loader ? (
         <ScreenLoader />
       ) : (
@@ -121,7 +131,7 @@ export const MillRunningPage = () => {
             />
           </div>
 
-          <div className="table-responsive table-scroll border border-secondary text-nowrap">
+          <div className="">
             <CentralTable />
           </div>
           <CentralTableLegend />

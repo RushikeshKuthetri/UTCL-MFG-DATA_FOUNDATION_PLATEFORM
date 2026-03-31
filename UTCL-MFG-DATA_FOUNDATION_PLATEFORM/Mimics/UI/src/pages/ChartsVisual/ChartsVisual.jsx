@@ -1392,12 +1392,11 @@ export const ChartsVisual = ({ showingInTrend, data }) => {
                   )}
                 </div>
               </div>
-              <div className="relative space-y-1 mt-2">
+              <div className="relative  mt-1">
                 <label className="text-sm text-[var(--text-color)]">
                   Section Name
                 </label>
                 <div className="space-y-1 w-full">
-
 
                   <div className="relative">
 
@@ -1554,7 +1553,7 @@ export const ChartsVisual = ({ showingInTrend, data }) => {
                         onClick={getTagsApiCall}
                         className="
       w-full flex items-center justify-between
-      px-3 py-2
+      px-3 text-center
       text-sm font-medium
       text-[var(--text-color)]
       bg-[var(--button-bg)]
@@ -1574,7 +1573,7 @@ export const ChartsVisual = ({ showingInTrend, data }) => {
                           type="text"
                           placeholder="Search Tags"
                           onChange={searchTags}
-                          className=" w-full mb-2 px-2 py-1 text-sm rounded border border-[var(--search-border)] bg-[var(--input-enable-bg)] text-[var(--text-color)] placeholder-[var(--search-placeholder)] focus:outline-none  "
+                          className=" w-full mb-2 px-2 py-0.5 text-sm rounded border border-[var(--search-border)] bg-[var(--input-enable-bg)] text-[var(--text-color)] placeholder-[var(--search-placeholder)] focus:outline-none  "
                         />
                       )}
 
@@ -1595,7 +1594,7 @@ export const ChartsVisual = ({ showingInTrend, data }) => {
                                 onDragStart={handleDragStart}
                                 onDragEnd={handleDragOver}
                                 onTouchStart={handleDragStart} onTouchEnd={handleDragOver}
-                                className="px-2 py-1 text-[10px] font-medium text-[var(--text-color)] rounded cursor-move hover:bg-[var(--search-bg)] transition break-all w-full"
+                                className="px-2 py-0.5 text-[10px] font-medium text-[var(--text-color)] rounded cursor-move hover:bg-[var(--search-bg)] transition break-all w-full"
                               >
                                 {i.label && keywords?.length > 0 && keywords[0]?.trim() !== "" ? (
                                   <Highlighter
